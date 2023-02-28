@@ -28,7 +28,6 @@ export default hopeTheme({
   displayFooter: true,
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
   fullscreen: true,
   themeColor: {
     blue: "#087CFA",
