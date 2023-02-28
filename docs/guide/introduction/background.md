@@ -6,8 +6,10 @@ author: yanhom
 date: 2022-06-11
 category:
   - 项目背景
+  - dynamictp
 tag:
   - 项目背景
+  - dynamictp
 sticky: false
 star: true
 ---

@@ -6,12 +6,15 @@ author: yanhom
 date: 2022-06-11
 category:
   - maven依赖
+  - dynamictp
 tag:
   - maven依赖
+  - dynamictp
 sticky: true
 star: true
 ---
 
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 **maven 依赖**
 
@@ -106,8 +109,17 @@ star: true
            <version>1.1.1</version>
        </dependency>
    ```
+
+9. huaweicloud 应用接入用此依赖（未发布）
+   ```xml
+       <dependency>
+           <groupId>cn.dynamictp</groupId>
+           <artifactId>dynamic-tp-spring-cloud-starter-huawei</artifactId>
+           <version>1.1.1</version>
+       </dependency>
+   ```
    
-9. 无配置中心应用接入用此依赖，无动态调整能力，有监控告警能力
+10. 无配置中心应用接入用此依赖，无动态调整能力，有监控告警能力
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>

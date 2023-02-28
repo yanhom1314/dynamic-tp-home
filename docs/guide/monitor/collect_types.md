@@ -6,11 +6,15 @@ author: yanhom
 date: 2022-06-11
 category:
   - 采集类型
+  - dynamictp
 tag:
   - 采集类型
+  - dynamictp
 sticky: true
 star: true
 ---
+
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 ::: tip 
 

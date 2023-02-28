@@ -6,12 +6,15 @@ author: yanhom
 date: 2022-08-15
 category:
   - 任务包装
+  - dynamictp
 tag:
   - 任务包装
+  - dynamictp
 sticky: true
 star: true
 ---
 
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 **任务包装**
 

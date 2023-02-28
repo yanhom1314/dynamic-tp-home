@@ -7,7 +7,7 @@ const routeItems = [
   ["v-2be5ef72","/guide/introduction/functions.html",{"title":"功能特性","icon":"enum"},["/guide/introduction/functions","/guide/introduction/functions.md"]],
   ["v-4ce8ba29","/guide/monitor/hertzbeat.html",{"title":"hertzbeat 接入流程","icon":"computer"},["/guide/monitor/hertzbeat","/guide/monitor/hertzbeat.md"]],
   ["v-0a66322e","/guide/monitor/prometheus_grafana.html",{"title":"micrometer接入流程","icon":"config"},["/guide/monitor/prometheus_grafana","/guide/monitor/prometheus_grafana.md"]],
-  ["v-5306456a","/guide/monitor/way.html",{"title":"采集类型","icon":"ability"},["/guide/monitor/way","/guide/monitor/way.md"]],
+  ["v-5306456a","/guide/monitor/way.html",{"title":"采集类型","icon":"ability"},["/guide/monitor/way","/guide/monitor/collect_types.md"]],
   ["v-3ee2c8de","/guide/other/articles.html",{"title":"介绍文章","icon":"article"},["/guide/other/articles","/guide/other/articles.md"]],
   ["v-ad6e9978","/guide/other/contact.html",{"title":"加群交流","icon":"wechat"},["/guide/other/contact","/guide/other/contact.md"]],
   ["v-300ff086","/guide/other/release.html",{"title":"发版记录","icon":"list"},["/guide/other/release","/guide/other/release.md"]],

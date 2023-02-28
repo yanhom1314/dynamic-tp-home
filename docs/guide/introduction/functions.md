@@ -6,8 +6,10 @@ author: yanhom
 date: 2022-06-11
 category:
   - 功能特性
+  - dynamictp
 tag:
   - 功能特性
+  - dynamictp
 sticky: false
 star: true
 ---

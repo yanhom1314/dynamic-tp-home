@@ -6,9 +6,12 @@ author: yanhom
 date: 2022-06-11
 category:
   - 发版记录
+  - dynamictp
 sticky: false
 star: true
 ---
+
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 ::: tip
 

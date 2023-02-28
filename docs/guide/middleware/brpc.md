@@ -14,6 +14,8 @@ sticky: true
 star: true
 ---
 
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+
 ### 使用步骤
 
 1. 引入下述依赖

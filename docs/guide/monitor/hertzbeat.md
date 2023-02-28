@@ -6,11 +6,15 @@ author: yanhom
 date: 2023-02-12
 category:
   - hertzbeat 接入流程
+  - dynamictp
 tag:
   - hertzbeat 接入流程
+  - dynamictp
 sticky: true
 star: true
 ---
+
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 ## 使用 HertzBeat 对 线程池框架 DynamicTp 进行监控实践，5分钟搞定！
 

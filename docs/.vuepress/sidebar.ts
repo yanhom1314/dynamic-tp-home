@@ -204,6 +204,12 @@ export default sidebar([
         icon: "linter",
         collapsable: false,
         link: "/guide/middleware/sofa"
+      },
+      {
+        text: "rabbitmq 线程池管理",
+        icon: "app",
+        collapsable: false,
+        link: "/guide/middleware/sofa"
       }
     ],
   },

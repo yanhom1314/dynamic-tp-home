@@ -102,7 +102,7 @@ export const data = {
     "minutes": 1.62,
     "words": 487
   },
-  "filePathRelative": "guide/monitor/way.md",
+  "filePathRelative": "guide/monitor/collect_types.md",
   "localizedDate": "2022年6月11日"
 }
 

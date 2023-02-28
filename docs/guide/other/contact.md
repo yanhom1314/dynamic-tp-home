@@ -6,10 +6,12 @@ author: yanhom
 date: 2022-06-11
 category:
   - 加群交流
+  - dynamictp
 sticky: false
 star: true
 ---
 
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 使用过程中有任何问题，或者对项目有什么想法或者建议，可以加入社群，跟 700+ 群友一起交流讨论。
 

@@ -6,12 +6,15 @@ author: yanhom
 date: 2022-06-11
 category:
   - 通知
+  - dynamictp
 tag:
   - 通知
+  - dynamictp
 sticky: true
 star: true
 ---
 
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 - 配置变更会推送通知消息，且会高亮变更的字段
 

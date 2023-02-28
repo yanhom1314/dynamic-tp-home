@@ -6,8 +6,10 @@ author: yanhom
 date: 2022-06-11
 category:
   - 架构设计
+  - dynamictp
 tag:
-  - 架构设计
+  - 架构设计 
+  - dynamictp
 sticky: false
 star: true
 ---
