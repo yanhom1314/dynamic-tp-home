@@ -111,7 +111,7 @@ export default sidebar([
         text: "数据采集",
         icon: "ability",
         collapsable: false,
-        link: "/guide/monitor/way"
+        link: "/guide/monitor/collect_types"
       },
       {
         text: "prometheus+grafana 监控",
@@ -209,7 +209,7 @@ export default sidebar([
         text: "rabbitmq 线程池管理",
         icon: "app",
         collapsable: false,
-        link: "/guide/middleware/sofa"
+        link: "/guide/middleware/rabbitmq"
       }
     ],
   },
