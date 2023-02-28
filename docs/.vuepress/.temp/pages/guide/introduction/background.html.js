@@ -17,7 +17,7 @@ export const data = {
     ],
     "sticky": false,
     "star": true,
-    "summary": "使用线程池 ThreadPoolExecutor 过程中你是否有以下痛点呢？\r\" 1.代码中创建了一个 ThreadPoolExecutor，但是不知道那几个核心参数设置多少比较合适\"\r\"\"\r\" 2.凭经验设置参数值，上线后发现需要调整，改代码重新发布服务，非常麻烦\"\r\"\"\r\" 3.线程池相对开发人员来说是个黑盒，运行情况不能及时感知到，直到出现问题\" 如果",
+    "summary": "万维广告是一个高品质的垂直广告网络联盟，一键购买 dynamictp 等流量资源的广告位广告 使用线程池 ThreadPoolExecutor 过程中你是否有以下痛点呢？ \" 1.代码中创建了一个 ThreadPoolExecutor，但是不知道那几个核心参数设置多少比较合适\" \"\" \" 2.凭经验设置参数值，上线后发现需要调整，改代码重新发布服务，非常麻烦",
     "head": [
       [
         "meta",
@@ -80,8 +80,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 2.29,
-    "words": 686
+    "minutes": 2.92,
+    "words": 875
   },
   "filePathRelative": "guide/introduction/background.md",
   "localizedDate": "2022年6月11日"

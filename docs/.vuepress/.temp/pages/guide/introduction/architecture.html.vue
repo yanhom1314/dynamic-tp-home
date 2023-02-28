@@ -1,4 +1,5 @@
-<template><div><div class="custom-container tip"><p class="custom-container-title">提示</p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<div class="custom-container tip"><p class="custom-container-title">提示</p>
 <p>框架功能大体可以分为以下几个模块</p>
 <p>1.配置变更监听模块</p>
 <p>2.服务内部线程池管理模块</p>
@@ -43,4 +44,4 @@
 <p>5.任务执行超时告警，格式：A/B，A：该报警项前后两次报警区间累加数量，B：该报警项累计总数</p>
 <p>6.任务等待超时告警，格式：A/B，A：该报警项前后两次报警区间累加数量，B：该报警项累计总数</p>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构"></p>
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div></div></template>
+</div></template>
