@@ -7,9 +7,9 @@
 <p>5.通知告警模块</p>
 </div>
 <p>代码结构</p>
-<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/059c87e5767a40ddbc52d74ef4bdbe6d~tplv-k3u1fbpfcp-watermark.image?" alt="图片.png" loading="lazy"></p>
+<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/059c87e5767a40ddbc52d74ef4bdbe6d~tplv-k3u1fbpfcp-watermark.image?" alt="图片.png"></p>
 <div class="custom-container tip"><p class="custom-container-title">提示</p>
-<p>1.adapter 模块：主要是适配一些第三方组件的线程池管理，目前已经实现的有 SpringBoot 内置的三大 web 容器（Tomcat、Jetty、Undertow）、Dubbo、RocketMq、Hystrix、Grpc 的线程池管理，
+<p>1.adapter 模块：主要是适配一些第三方组件的线程池管理，目前已经实现的有 SpringBoot 内置的三大 web 容器（Tomcat、Jetty、Undertow）、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc、RabbitMq 的线程池管理，
 后续会接入其他常用组件的线程池管理。</p>
 <p>2.common 模块：主要是一些各个模板都会用到的类，解耦依赖，复用代码，大家日常开发中可能也经常会这样做。</p>
 <p>3.core 模块：该框架的核心代码都在这个模块里，包括动态调整参数，监控报警，以及串联整个项目流程都在此。</p>
@@ -19,7 +19,7 @@
 <p>7.starter模块：提供独立功能模块的依赖封装、自动配置等相关。</p>
 </div>
 <h2 id="配置变更监听模块" tabindex="-1"><a class="header-anchor" href="#配置变更监听模块" aria-hidden="true">#</a> 配置变更监听模块</h2>
-<p>1.监听特定配置中心的指定配置文件（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd），可通过内部提供的SPI接口扩展其他实现</p>
+<p>1.监听特定配置中心的指定配置文件（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris），可通过内部提供的SPI接口扩展其他实现</p>
 <p>2.解析配置文件内容，内置实现 yml、properties、json 配置文件的解析，可通过内部提供的 SPI 接口扩展其他实现</p>
 <p>3.通知线程池管理模块实现参数的刷新</p>
 <h2 id="服务内部线程池管理模块" tabindex="-1"><a class="header-anchor" href="#服务内部线程池管理模块" aria-hidden="true">#</a> 服务内部线程池管理模块</h2>
@@ -42,5 +42,5 @@
 <p>4.触发拒绝策略告警，格式：A/B，A：该报警项前后两次报警区间累加数量，B：该报警项累计总数</p>
 <p>5.任务执行超时告警，格式：A/B，A：该报警项前后两次报警区间累加数量，B：该报警项累计总数</p>
 <p>6.任务等待超时告警，格式：A/B，A：该报警项前后两次报警区间累加数量，B：该报警项累计总数</p>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构" loading="lazy"></p>
-</div></template>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构"></p>
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div></div></template>

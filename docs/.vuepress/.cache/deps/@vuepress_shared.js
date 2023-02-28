@@ -5,7 +5,7 @@ import {
 } from "./chunk-3UKXF4U3.js";
 import "./chunk-PQECYZMI.js";
 
-// node_modules/@vuepress/shared/dist/idx.js
+// node_modules/@vuepress/shared/dist/index.js
 var resolveHeadIdentifier = ([
   tag,
   attrs,

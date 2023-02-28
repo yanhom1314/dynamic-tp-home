@@ -21,10 +21,10 @@
 <p><strong>任务增强</strong>：提供任务包装功能，实现 TaskWrapper 接口即可，如 MdcTaskWrapper、TtlTaskWrapper、SwTraceTaskWrapper，可以支持线程池上下文信息传递</p>
 </li>
 <li>
-<p><strong>多配置中心支持</strong>：基于主流配置中心实现线程池参数动态调整，实时生效，已支持 Nacos、Apollo、Zookeeper、Consul、Etcd，同时也提供 SPI 接口可自定义扩展实现</p>
+<p><strong>多配置中心支持</strong>：基于主流配置中心实现线程池参数动态调整，实时生效，已支持 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris，同时也提供 SPI 接口可自定义扩展实现</p>
 </li>
 <li>
-<p><strong>中间件线程池管理</strong>：集成管理常用第三方组件的线程池，已集成 Tomcat、Jetty、Undertow、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc 等组件的线程池管理（调参、监控报警）</p>
+<p><strong>中间件线程池管理</strong>：集成管理常用第三方组件的线程池，已集成 Tomcat、Jetty、Undertow、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc、RabbitMq 等组件的线程池管理（调参、监控报警）</p>
 </li>
 <li>
 <p><strong>轻量简单</strong>：基于 SpringBoot 实现，引入 starter，接入只需简单 4 步就可完成，顺利 3 分钟搞定</p>
@@ -46,11 +46,11 @@
 </li>
 </ul>
 <h1 id="技术架构" tabindex="-1"><a class="header-anchor" href="#技术架构" aria-hidden="true">#</a> 技术架构</h1>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构" loading="lazy"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构"></p>
 <h1 id="star-history" tabindex="-1"><a class="header-anchor" href="#star-history" aria-hidden="true">#</a> Star History</h1>
-<p><a href="https://star-history.com/#dromara/dynamic-tp&amp;Date" target="_blank" rel="noopener noreferrer"><img src="https://api.star-history.com/svg?repos=dromara/dynamic-tp&amp;type=Date" alt="Star History Chart" loading="lazy"><ExternalLinkIcon/></a></p>
+<p><a href="https://star-history.com/#dromara/dynamic-tp&amp;Date" target="_blank" rel="noopener noreferrer"><img src="https://api.star-history.com/svg?repos=dromara/dynamic-tp&amp;type=Date" alt="Star History Chart"><ExternalLinkIcon/></a></p>
 <h1 id="知识星球" tabindex="-1"><a class="header-anchor" href="#知识星球" aria-hidden="true">#</a> 知识星球</h1>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/894a4e918ff14c13b4a66d3f30f7ff7e~tplv-k3u1fbpfcp-zoom-1.image" alt="" loading="lazy"></p>
+<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/894a4e918ff14c13b4a66d3f30f7ff7e~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
 <h1 id="dromara-成员项目" tabindex="-1"><a class="header-anchor" href="#dromara-成员项目" aria-hidden="true">#</a> Dromara 成员项目</h1>
 <div>
     <div class="com-box-f s-width">
@@ -135,4 +135,6 @@
     </div>
     <div style="height: 60px;"></div>
 </div>
-<link rel="stylesheet" href="/index.css"></div></template>
+<link rel="stylesheet" href="/index.css">
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+</div></template>

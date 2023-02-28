@@ -1,16 +1,16 @@
 export const data = {
   "key": "v-cf3ff1b6",
   "path": "/guide/middleware/brpc.html",
-  "title": "brpc",
+  "title": "brpc 线程池管理",
   "lang": "zh-CN",
   "frontmatter": {
-    "title": "brpc",
-    "icon": "plugin",
+    "title": "brpc 线程池管理",
+    "icon": "snow",
     "order": 1,
     "author": "yanhom",
     "date": "2023-02-11T00:00:00.000Z",
     "category": [
-      "motan"
+      "brpc"
     ],
     "tag": [
       "brpc",
@@ -39,7 +39,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "brpc"
+          "content": "brpc 线程池管理"
         }
       ],
       [
@@ -47,13 +47,6 @@ export const data = {
         {
           "property": "og:type",
           "content": "article"
-        }
-      ],
-      [
-        "meta",
-        {
-          "property": "og:updated_time",
-          "content": "2023-02-22T13:24:47.000Z"
         }
       ],
       [
@@ -97,13 +90,6 @@ export const data = {
           "property": "article:published_time",
           "content": "2023-02-11T00:00:00.000Z"
         }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-02-22T13:24:47.000Z"
-        }
       ]
     ]
   },
@@ -116,21 +102,23 @@ export const data = {
       "children": []
     }
   ],
-  "git": {
-    "createdTime": 1677072287000,
-    "updatedTime": 1677072287000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 1
-      }
-    ]
-  },
   "readingTime": {
     "minutes": 1.23,
     "words": 368
   },
   "filePathRelative": "guide/middleware/brpc.md",
   "localizedDate": "2023年2月11日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

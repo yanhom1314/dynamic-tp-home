@@ -14,17 +14,35 @@ export const siteData = {
     [
       "script",
       {
-        "src": "https://www.layuicdn.com/layer-v3.1.1/layer.js",
+        "src": "/baidu.js",
         "async": "async"
       }
     ],
     [
       "script",
       {
-        "src": "/baidu.js",
-        "async": "async"
+        "src": "https://cdn.wwads.cn/js/makemoney.js"
+      }
+    ],
+    [
+      "script",
+      {
+        "src": "/adblocked.js"
       }
     ]
   ],
   "locales": {}
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateSiteData) {
+    __VUE_HMR_RUNTIME__.updateSiteData(siteData)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ siteData }) => {
+    __VUE_HMR_RUNTIME__.updateSiteData(siteData)
+  })
 }

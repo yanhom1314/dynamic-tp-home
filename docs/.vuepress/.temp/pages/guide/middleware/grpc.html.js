@@ -1,11 +1,11 @@
 export const data = {
   "key": "v-7db6322a",
   "path": "/guide/middleware/grpc.html",
-  "title": "grpc",
+  "title": "grpc 线程池管理",
   "lang": "zh-CN",
   "frontmatter": {
-    "title": "grpc",
-    "icon": "plugin",
+    "title": "grpc 线程池管理",
+    "icon": "chrome",
     "order": 1,
     "author": "yanhom",
     "date": "2023-02-11T00:00:00.000Z",
@@ -39,7 +39,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "grpc"
+          "content": "grpc 线程池管理"
         }
       ],
       [
@@ -47,13 +47,6 @@ export const data = {
         {
           "property": "og:type",
           "content": "article"
-        }
-      ],
-      [
-        "meta",
-        {
-          "property": "og:updated_time",
-          "content": "2023-02-22T13:24:47.000Z"
         }
       ],
       [
@@ -97,13 +90,6 @@ export const data = {
           "property": "article:published_time",
           "content": "2023-02-11T00:00:00.000Z"
         }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-02-22T13:24:47.000Z"
-        }
       ]
     ]
   },
@@ -116,21 +102,23 @@ export const data = {
       "children": []
     }
   ],
-  "git": {
-    "createdTime": 1677072287000,
-    "updatedTime": 1677072287000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 1
-      }
-    ]
-  },
   "readingTime": {
     "minutes": 1.65,
     "words": 494
   },
   "filePathRelative": "guide/middleware/grpc.md",
   "localizedDate": "2023年2月11日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

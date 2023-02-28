@@ -47,13 +47,6 @@ export const data = {
       [
         "meta",
         {
-          "property": "og:updated_time",
-          "content": "2023-02-18T06:52:43.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
           "property": "og:locale",
           "content": "zh-CN"
         }
@@ -70,13 +63,6 @@ export const data = {
         {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-02-18T06:52:43.000Z"
         }
       ]
     ]
@@ -126,36 +112,23 @@ export const data = {
       "children": []
     }
   ],
-  "git": {
-    "createdTime": 1655003093000,
-    "updatedTime": 1676703163000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 6
-      },
-      {
-        "name": "WindSearcher",
-        "email": "1793521005@qq.com",
-        "commits": 1
-      },
-      {
-        "name": "ryan",
-        "email": "770255975@qq.com",
-        "commits": 1
-      },
-      {
-        "name": "yanhom",
-        "email": "1772140053@qq.com",
-        "commits": 1
-      }
-    ]
-  },
   "readingTime": {
     "minutes": 1.56,
     "words": 467
   },
   "filePathRelative": "guide/other/articles.md",
   "localizedDate": "2022年6月11日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

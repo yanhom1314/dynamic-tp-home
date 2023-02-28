@@ -5,7 +5,7 @@ export const data = {
   "lang": "zh-CN",
   "frontmatter": {
     "title": "hertzbeat 接入流程",
-    "icon": "config",
+    "icon": "computer",
     "order": 1,
     "author": "yanhom",
     "date": "2023-02-12T00:00:00.000Z",
@@ -50,13 +50,6 @@ export const data = {
       [
         "meta",
         {
-          "property": "og:updated_time",
-          "content": "2023-02-18T12:17:52.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
           "property": "og:locale",
           "content": "zh-CN"
         }
@@ -80,13 +73,6 @@ export const data = {
         {
           "property": "article:published_time",
           "content": "2023-02-12T00:00:00.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-02-18T12:17:52.000Z"
         }
       ]
     ]
@@ -125,21 +111,23 @@ export const data = {
       "children": []
     }
   ],
-  "git": {
-    "createdTime": 1676185687000,
-    "updatedTime": 1676722672000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 3
-      }
-    ]
-  },
   "readingTime": {
     "minutes": 4.99,
     "words": 1497
   },
   "filePathRelative": "guide/monitor/hertzbeat.md",
   "localizedDate": "2023年2月12日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

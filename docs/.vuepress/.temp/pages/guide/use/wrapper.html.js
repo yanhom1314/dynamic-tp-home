@@ -50,13 +50,6 @@ export const data = {
       [
         "meta",
         {
-          "property": "og:updated_time",
-          "content": "2023-01-02T14:59:54.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
           "property": "og:locale",
           "content": "zh-CN"
         }
@@ -81,33 +74,28 @@ export const data = {
           "property": "article:published_time",
           "content": "2022-08-15T00:00:00.000Z"
         }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-01-02T14:59:54.000Z"
-        }
       ]
     ]
   },
   "excerpt": "",
   "headers": [],
-  "git": {
-    "createdTime": 1661086327000,
-    "updatedTime": 1672671594000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 4
-      }
-    ]
-  },
   "readingTime": {
     "minutes": 0.6,
     "words": 180
   },
   "filePathRelative": "guide/use/wrapper.md",
   "localizedDate": "2022年8月15日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

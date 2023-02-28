@@ -203,7 +203,7 @@
 </div>
 <div class="custom-container tip"><p class="custom-container-title">提示</p>
 <h2 id="v1-0-7-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-0-7-发布记录" aria-hidden="true">#</a> v1.0.7 发布记录</h2>
-<p>明细：<a href="https://juejin.cn/post/7108551236609114149" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7108551236609114149<ExternalLinkIcon/></a></p>
+<p>明细：https://juejin.cn/post/7108551236609114149</p>
 <p>距离v1.0.5发布已经有差不多2个月时间，这个版本框架源码调整还是比较大的，重构了好一些功能， 主要是围绕第三方中间件线程池集成来改动的，是向前兼容的，同时修复了三个小bug。</p>
 <p>如果你有下述痛点，快快升级体验吧。</p>
 <p>1）如果你在使用 Dubbo，那么你大概率遇到过 Dubbo 线程池耗尽的情况，是不是很烦恼呢？尝试使用下 DynamicTp 的 Dubbo 线程池管理功能，结合告警、实时监控、动态调参等功能尽可能降低 Dubbo 线程池耗尽，请求拒绝的风险。</p>

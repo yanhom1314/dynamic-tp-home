@@ -1,4 +1,4 @@
-import { reveal, revealMarkdown, revealHighlight, revealMath, revealSearch, revealNotes, revealZoom } from "D:/open-source-code/dynamic-tp/docs/node_modules/vuepress-plugin-md-enhance/lib/client/reveal";
+import { reveal, revealMarkdown } from "D:/open-source-code/dynamic-tp/docs/node_modules/vuepress-plugin-md-enhance/lib/client/reveal";
 
-export const useReveal = () => [reveal(), revealMarkdown(), revealHighlight(), revealMath(), revealSearch(), revealNotes(), revealZoom()
+export const useReveal = () => [reveal(), revealMarkdown()
 ];

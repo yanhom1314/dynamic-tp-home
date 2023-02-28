@@ -50,13 +50,6 @@ export const data = {
       [
         "meta",
         {
-          "property": "og:updated_time",
-          "content": "2023-01-02T14:59:54.000Z"
-        }
-      ],
-      [
-        "meta",
-        {
           "property": "og:locale",
           "content": "zh-CN"
         }
@@ -81,43 +74,28 @@ export const data = {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
-      ],
-      [
-        "meta",
-        {
-          "property": "article:modified_time",
-          "content": "2023-01-02T14:59:54.000Z"
-        }
       ]
     ]
   },
   "excerpt": "",
   "headers": [],
-  "git": {
-    "createdTime": 1655003093000,
-    "updatedTime": 1672671594000,
-    "contributors": [
-      {
-        "name": "yanhom",
-        "email": "yanhom1314@foxmail.com",
-        "commits": 8
-      },
-      {
-        "name": "VampireAchao",
-        "email": "achao1441470436@gmail.com",
-        "commits": 1
-      },
-      {
-        "name": "xkxwd",
-        "email": "c278404704@hotmail.com",
-        "commits": 1
-      }
-    ]
-  },
   "readingTime": {
-    "minutes": 1.54,
-    "words": 462
+    "minutes": 1.64,
+    "words": 492
   },
   "filePathRelative": "guide/use/maven.md",
   "localizedDate": "2022年6月11日"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }
