@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "功能特性"
+      "功能特性",
+      "dynamictp"
     ],
     "tag": [
-      "功能特性"
+      "功能特性",
+      "dynamictp"
     ],
     "sticky": false,
     "star": true,
@@ -66,6 +68,13 @@ export const data = {
         {
           "property": "article:tag",
           "content": "功能特性"
+        }
+      ],
+      [
+        "meta",
+        {
+          "property": "article:tag",
+          "content": "dynamictp"
         }
       ],
       [

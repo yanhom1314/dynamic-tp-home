@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "报警"
+      "报警",
+      "dynamictp"
     ],
     "tag": [
-      "报警"
+      "报警",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -111,8 +120,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 3.5,
-    "words": 1049
+    "minutes": 3.55,
+    "words": 1065
   },
   "filePathRelative": "guide/notice/alarm.md",
   "localizedDate": "2022年6月11日"

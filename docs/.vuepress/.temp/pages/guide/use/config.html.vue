@@ -1,4 +1,5 @@
-<template><div><div class="custom-container tip"><p class="custom-container-title">提示</p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<div class="custom-container tip"><p class="custom-container-title">提示</p>
 <p>1.动态线程池配置文件，建议单独开一个文件放到配置中心</p>
 <p>2.建议最好使用 yml 文件配置，可读性、可操作性更友好</p>
 <p>3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项</p>

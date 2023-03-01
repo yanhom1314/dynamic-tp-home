@@ -1,4 +1,5 @@
-<template><div><p><strong>任务包装</strong></p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<p><strong>任务包装</strong></p>
 <ol>
 <li>
 <p>MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc</p>

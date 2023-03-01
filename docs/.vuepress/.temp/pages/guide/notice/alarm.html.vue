@@ -1,4 +1,5 @@
-<template><div><div class="custom-container tip"><p class="custom-container-title">提示</p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<div class="custom-container tip"><p class="custom-container-title">提示</p>
 <p>框架目前提供以下告警功能，每一个告警项都可以独立配置是否开启、告警阈值、告警间隔时间、平台等，具体代码请看 core 模块 notify 包，
 告警信息同时会高亮与该项相关的字段。</p>
 <p>1.核心参数变更通知</p>

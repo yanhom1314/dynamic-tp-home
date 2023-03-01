@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-08-15T00:00:00.000Z",
     "category": [
-      "任务包装"
+      "任务包装",
+      "dynamictp"
     ],
     "tag": [
-      "任务包装"
+      "任务包装",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-08-15T00:00:00.000Z"
         }
@@ -80,8 +89,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 0.6,
-    "words": 180
+    "minutes": 0.65,
+    "words": 196
   },
   "filePathRelative": "guide/use/wrapper.md",
   "localizedDate": "2022年8月15日"

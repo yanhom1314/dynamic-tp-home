@@ -1,4 +1,5 @@
-<template><div><p>你还在为 RocketMq 消费积压而烦恼吗？😭😭😭</p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<p>你还在为 RocketMq 消费积压而烦恼吗？😭😭😭</p>
 <p>快快使用 DynamicTp 的三方中间件线程池管理功能吧，一定程度上能减少你的烦恼。😅😅😅</p>
 <h3 id="使用步骤" tabindex="-1"><a class="header-anchor" href="#使用步骤" aria-hidden="true">#</a> 使用步骤</h3>
 <ol>

@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "maven依赖"
+      "maven依赖",
+      "dynamictp"
     ],
     "tag": [
-      "maven依赖"
+      "maven依赖",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -80,8 +89,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 1.64,
-    "words": 492
+    "minutes": 1.79,
+    "words": 538
   },
   "filePathRelative": "guide/use/maven.md",
   "localizedDate": "2022年6月11日"

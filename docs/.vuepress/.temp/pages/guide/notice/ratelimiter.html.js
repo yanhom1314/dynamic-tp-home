@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "通知限流"
+      "通知限流",
+      "dynamictp"
     ],
     "tag": [
-      "通知限流"
+      "通知限流",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -80,8 +89,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 0.95,
-    "words": 286
+    "minutes": 1.01,
+    "words": 302
   },
   "filePathRelative": "guide/notice/ratelimiter.md",
   "localizedDate": "2022年6月11日"

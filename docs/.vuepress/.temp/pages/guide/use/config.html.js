@@ -10,14 +10,16 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "配置文件"
+      "配置文件",
+      "dynamictp"
     ],
     "tag": [
-      "配置文件"
+      "配置文件",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
-    "summary": "1.动态线程池配置文件，建议单独开一个文件放到配置中心 2.建议最好使用 yml 文件配置，可读性、可操作性更友好 3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项 1.下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整 线程池配置（yml 类型）; 线程池配置（properties 类型）; 线程池配置（json",
+    "summary": "1.动态线程池配置文件，建议单独开一个文件放到配置中心 2.建议最好使用 yml 文件配置，可读性、可操作性更友好 3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项\r1.下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整\r线程池配置（yml 类型）; \r线程池配置（properties 类型）; \r线程池配置（js",
     "head": [
       [
         "meta",
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -80,8 +89,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 7.01,
-    "words": 2102
+    "minutes": 7.06,
+    "words": 2118
   },
   "filePathRelative": "guide/use/config.md",
   "localizedDate": "2022年6月11日"

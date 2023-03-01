@@ -1,31 +1,31 @@
 export const data = {
-  "key": "v-7a9d6b66",
-  "path": "/guide/use/tool.html",
-  "title": "工具",
+  "key": "v-b7544a4c",
+  "path": "/guide/middleware/tars.html",
+  "title": "tars 线程池管理",
   "lang": "zh-CN",
   "frontmatter": {
-    "title": "工具",
-    "icon": "tool",
+    "title": "tars 线程池管理",
+    "icon": "function",
     "order": 1,
     "author": "yanhom",
-    "date": "2022-08-15T00:00:00.000Z",
+    "date": "2023-02-11T00:00:00.000Z",
     "category": [
-      "工具",
-      "dynamictp"
+      "tars"
     ],
     "tag": [
-      "工具",
+      "tars",
+      "rpc",
       "dynamictp"
     ],
     "sticky": true,
     "star": true,
-    "summary": "快速创建内存安全线程池 core 模块 ThreadPoolCreator 类提供快速创建内存安全线程池的静态方法，可以用来替换 Executors 类， 内部是基于 ThreadPoolBuilder 来创建的，也可以通过 ThreadPoolBuilder 来创建线程池对象 责任链模式简单封装 common 模块 pattern.filter 包下提供简",
+    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 tars 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知\r1. tars 线程池享有动态调参、监控、通知告警完整的功能 2. tars 线程池通知告警项有（调参通知、活性告警、队列容量告警），可通过 notifyItems 自定义配置项值，默认全部开启",
     "head": [
       [
         "meta",
         {
           "property": "og:url",
-          "content": "https://gitee.com/dromara/dynamic-tp/guide/use/tool.html"
+          "content": "https://gitee.com/dromara/dynamic-tp/guide/middleware/tars.html"
         }
       ],
       [
@@ -39,7 +39,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "工具"
+          "content": "tars 线程池管理"
         }
       ],
       [
@@ -67,7 +67,14 @@ export const data = {
         "meta",
         {
           "property": "article:tag",
-          "content": "工具"
+          "content": "tars"
+        }
+      ],
+      [
+        "meta",
+        {
+          "property": "article:tag",
+          "content": "rpc"
         }
       ],
       [
@@ -81,7 +88,7 @@ export const data = {
         "meta",
         {
           "property": "article:published_time",
-          "content": "2022-08-15T00:00:00.000Z"
+          "content": "2023-02-11T00:00:00.000Z"
         }
       ]
     ]
@@ -90,35 +97,17 @@ export const data = {
   "headers": [
     {
       "level": 3,
-      "title": "快速创建内存安全线程池",
-      "slug": "快速创建内存安全线程池",
-      "children": []
-    },
-    {
-      "level": 3,
-      "title": "责任链模式简单封装",
-      "slug": "责任链模式简单封装",
-      "children": []
-    },
-    {
-      "level": 3,
-      "title": "内存安全阻塞队列",
-      "slug": "内存安全阻塞队列",
-      "children": []
-    },
-    {
-      "level": 3,
-      "title": "配置文件解析器",
-      "slug": "配置文件解析器",
+      "title": "使用步骤",
+      "slug": "使用步骤",
       "children": []
     }
   ],
   "readingTime": {
-    "minutes": 1.17,
-    "words": 350
+    "minutes": 1.11,
+    "words": 334
   },
-  "filePathRelative": "guide/use/tool.md",
-  "localizedDate": "2022年8月15日"
+  "filePathRelative": "guide/middleware/tars.md",
+  "localizedDate": "2023年2月11日"
 }
 
 if (import.meta.webpackHot) {

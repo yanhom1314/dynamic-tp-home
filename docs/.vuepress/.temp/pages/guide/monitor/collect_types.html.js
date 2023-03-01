@@ -1,31 +1,31 @@
 export const data = {
-  "key": "v-7a9d6b66",
-  "path": "/guide/use/tool.html",
-  "title": "工具",
+  "key": "v-5d4ddef6",
+  "path": "/guide/monitor/collect_types.html",
+  "title": "采集类型",
   "lang": "zh-CN",
   "frontmatter": {
-    "title": "工具",
-    "icon": "tool",
+    "title": "采集类型",
+    "icon": "ability",
     "order": 1,
     "author": "yanhom",
-    "date": "2022-08-15T00:00:00.000Z",
+    "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "工具",
+      "采集类型",
       "dynamictp"
     ],
     "tag": [
-      "工具",
+      "采集类型",
       "dynamictp"
     ],
     "sticky": true,
     "star": true,
-    "summary": "快速创建内存安全线程池 core 模块 ThreadPoolCreator 类提供快速创建内存安全线程池的静态方法，可以用来替换 Executors 类， 内部是基于 ThreadPoolBuilder 来创建的，也可以通过 ThreadPoolBuilder 来创建线程池对象 责任链模式简单封装 common 模块 pattern.filter 包下提供简",
+    "summary": "目前框架提供了四种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer 1.Logging：线程池指标数据会以 Json 格式输出到指定的日志文件里 2.Internal_logging：线程池指标数据会以 Json 格式输出到项目日志文件里 3.Micrometer：采用监控门面，通过引入相关 Micr",
     "head": [
       [
         "meta",
         {
           "property": "og:url",
-          "content": "https://gitee.com/dromara/dynamic-tp/guide/use/tool.html"
+          "content": "https://gitee.com/dromara/dynamic-tp/guide/monitor/collect_types.html"
         }
       ],
       [
@@ -39,7 +39,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "工具"
+          "content": "采集类型"
         }
       ],
       [
@@ -67,7 +67,7 @@ export const data = {
         "meta",
         {
           "property": "article:tag",
-          "content": "工具"
+          "content": "采集类型"
         }
       ],
       [
@@ -81,7 +81,7 @@ export const data = {
         "meta",
         {
           "property": "article:published_time",
-          "content": "2022-08-15T00:00:00.000Z"
+          "content": "2022-06-11T00:00:00.000Z"
         }
       ]
     ]
@@ -90,35 +90,29 @@ export const data = {
   "headers": [
     {
       "level": 3,
-      "title": "快速创建内存安全线程池",
-      "slug": "快速创建内存安全线程池",
+      "title": "micrometer",
+      "slug": "micrometer",
       "children": []
     },
     {
       "level": 3,
-      "title": "责任链模式简单封装",
-      "slug": "责任链模式简单封装",
+      "title": "logging",
+      "slug": "logging",
       "children": []
     },
     {
       "level": 3,
-      "title": "内存安全阻塞队列",
-      "slug": "内存安全阻塞队列",
-      "children": []
-    },
-    {
-      "level": 3,
-      "title": "配置文件解析器",
-      "slug": "配置文件解析器",
+      "title": "endpoint",
+      "slug": "endpoint",
       "children": []
     }
   ],
   "readingTime": {
-    "minutes": 1.17,
-    "words": 350
+    "minutes": 1.68,
+    "words": 503
   },
-  "filePathRelative": "guide/use/tool.md",
-  "localizedDate": "2022年8月15日"
+  "filePathRelative": "guide/monitor/collect_types.md",
+  "localizedDate": "2022年6月11日"
 }
 
 if (import.meta.webpackHot) {

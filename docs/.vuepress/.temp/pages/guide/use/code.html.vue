@@ -1,4 +1,5 @@
-<template><div><ul>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<ul>
 <li>
 <p>线程池实例定义</p>
 <p>建议直接配置在配置中心，但是如果想后期再添加到配置中心，可以先用 @Bean 编码式声明（方便 spring 依赖注入）</p>

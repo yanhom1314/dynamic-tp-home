@@ -1,4 +1,5 @@
-<template><div><p><strong>接入步骤</strong></p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<p><strong>接入步骤</strong></p>
 <p>1.引入相应配置中心的依赖，具体见下述 maven 依赖</p>
 <p>2.配置中心配置线程池实例，配置见下述（给出的是全配置项，不用的可以删除）</p>
 <p>3.启动类加 @EnableDynamicTp 注解</p>

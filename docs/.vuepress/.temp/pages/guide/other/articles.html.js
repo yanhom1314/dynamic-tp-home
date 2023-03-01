@@ -10,7 +10,8 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "介绍文章"
+      "介绍文章",
+      "dynamictp"
     ],
     "sticky": false,
     "star": true,
@@ -113,8 +114,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 1.56,
-    "words": 467
+    "minutes": 1.61,
+    "words": 483
   },
   "filePathRelative": "guide/other/articles.md",
   "localizedDate": "2022年6月11日"

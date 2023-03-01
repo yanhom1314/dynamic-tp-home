@@ -10,7 +10,8 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "加群交流"
+      "加群交流",
+      "dynamictp"
     ],
     "sticky": false,
     "star": true,
@@ -70,8 +71,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 0.26,
-    "words": 79
+    "minutes": 0.32,
+    "words": 95
   },
   "filePathRelative": "guide/other/contact.md",
   "localizedDate": "2022年6月11日"

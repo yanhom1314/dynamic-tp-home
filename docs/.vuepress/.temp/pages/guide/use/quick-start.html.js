@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "接入步骤"
+      "接入步骤",
+      "dynamictp"
     ],
     "tag": [
-      "接入步骤"
+      "接入步骤",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -80,8 +89,8 @@ export const data = {
   "excerpt": "",
   "headers": [],
   "readingTime": {
-    "minutes": 1.18,
-    "words": 354
+    "minutes": 1.23,
+    "words": 370
   },
   "filePathRelative": "guide/use/quick-start.md",
   "localizedDate": "2022年6月11日"

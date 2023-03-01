@@ -10,11 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "发版记录"
+      "发版记录",
+      "dynamictp"
     ],
     "sticky": false,
     "star": true,
-    "summary": "v1.1.0 发布记录 Features adapter 模块新增 motan rpc 框架线程池管理; adapter 模块新增 okhttp3 线程池管理; 新增 OrderedDtpExecutor，感谢 @hailang 提供实现; adapter 模块新增 brpc（starlight） 线程池管理; adapter 模块新增 tars rpc 线",
+    "summary": "v1.1.0 发布记录 Features\radapter 模块新增 motan rpc 框架线程池管理; \radapter 模块新增 okhttp3 线程池管理; \r新增 OrderedDtpExecutor，感谢 @hailang 提供实现; \radapter 模块新增 brpc（starlight） 线程池管理; \radapter 模块新增 tars r",
     "head": [
       [
         "meta",
@@ -119,8 +120,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 6.33,
-    "words": 1899
+    "minutes": 6.38,
+    "words": 1915
   },
   "filePathRelative": "guide/other/release.md",
   "localizedDate": "2022年6月11日"

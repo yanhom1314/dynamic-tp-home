@@ -1,4 +1,5 @@
-<template><div><h3 id="快速创建内存安全线程池" tabindex="-1"><a class="header-anchor" href="#快速创建内存安全线程池" aria-hidden="true">#</a> 快速创建内存安全线程池</h3>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<h3 id="快速创建内存安全线程池" tabindex="-1"><a class="header-anchor" href="#快速创建内存安全线程池" aria-hidden="true">#</a> 快速创建内存安全线程池</h3>
 <p>core 模块 ThreadPoolCreator 类提供快速创建内存安全线程池的静态方法，可以用来替换 Executors 类，
 内部是基于 ThreadPoolBuilder 来创建的，也可以通过 ThreadPoolBuilder 来创建线程池对象</p>
 <div class="language-java ext-java line-numbers-mode"><pre v-pre class="language-java"><code>

@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 tomcat 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知 1. 线程池名称：tomcatTp 2. tomcat 线程池目前只享有动态调参和监控功能，没通知报警功能 3. tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPo",
+    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 tomcat 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知\r1. 线程池名称：tomcatTp 2. tomcat 线程池目前只享有动态调参和监控功能，没通知报警功能 3. tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPo",
     "head": [
       [
         "meta",
@@ -103,8 +103,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 0.83,
-    "words": 248
+    "minutes": 0.88,
+    "words": 264
   },
   "filePathRelative": "guide/middleware/tomcat.md",
   "localizedDate": "2023年2月11日"

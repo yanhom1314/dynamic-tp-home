@@ -21,7 +21,8 @@ export const siteData = {
     [
       "script",
       {
-        "src": "https://cdn.wwads.cn/js/makemoney.js"
+        "src": "/makemoney.js",
+        "async": "async"
       }
     ],
     [

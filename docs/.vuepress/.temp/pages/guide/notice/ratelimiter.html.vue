@@ -1,4 +1,5 @@
-<template><div><p><strong>推送限流</strong></p>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+<p><strong>推送限流</strong></p>
 <ol>
 <li>
 <p>默认通知告警是基于单机模式的，服务集群每个节点都会产生通知告警信息进行推送，在集群机器数量很多的情况下同时可能会产生大量的通知告警信息，影响使用体验。</p>

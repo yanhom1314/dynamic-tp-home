@@ -10,10 +10,12 @@ export const data = {
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
-      "micrometer接入流程"
+      "micrometer接入流程",
+      "dynamictp"
     ],
     "tag": [
-      "micrometer接入流程"
+      "micrometer接入流程",
+      "dynamictp"
     ],
     "sticky": true,
     "star": true,
@@ -71,6 +73,13 @@ export const data = {
       [
         "meta",
         {
+          "property": "article:tag",
+          "content": "dynamictp"
+        }
+      ],
+      [
+        "meta",
+        {
           "property": "article:published_time",
           "content": "2022-06-11T00:00:00.000Z"
         }
@@ -87,8 +96,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 1.42,
-    "words": 427
+    "minutes": 1.48,
+    "words": 443
   },
   "filePathRelative": "guide/monitor/prometheus_grafana.md",
   "localizedDate": "2022年6月11日"
