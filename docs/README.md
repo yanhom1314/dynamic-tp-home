@@ -45,7 +45,7 @@ features:
   <a target="_blank" href="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/530709dc29604630b6d1537d7c160ea5~tplv-k3u1fbpfcp-watermark.image"><img src='https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ddfaed2cce2a47608fb0c0c375a10f08~tplv-k3u1fbpfcp-zoom-1.image' alt='备注加群'></a>
 </p>
 
-<div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"></div>
+<div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"><a href="https://wwads.cn/click/bait" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade" style="display:none !important;"></a><a href="https://wwads.cn/click/bundle?code=fBurOcjPKDEnnz1FjLugW4Dqd7RLjE" onclick="_IsTrustedClick(event)" class="wwads-img" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade"><img src="https://cdn.wwads.cn/creatives/SsLRqW5x8HX42nfLIJArRIdXPducqk5yb9kPXe1h.png" width="130" alt="万维广告联盟"></a><div class="wwads-content"><a href="https://wwads.cn/click/bundle?code=fBurOcjPKDEnnz1FjLugW4Dqd7RLjE" onclick="_IsTrustedClick(event)" class="wwads-text" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade">🔐 <b>杜绝删库跑路</b>。一个平台登录所有资产，实现事先防范、事中控制、事后溯源，满足等保合规要求。</a><a href="https://wwads.cn/?utm_source=property-257&amp;utm_medium=footer" class="wwads-poweredby" title="点击了解万维广告联盟" target="_blank"><img class="wwads-logo"><span class="wwads-logo-text">广告</span></a></div><a class="wwads-hide" onclick="parentNode.remove()" title="隐藏广告"><svg class="hide-svg"></svg></a></div>
 
 # 功能特性 ✅
 

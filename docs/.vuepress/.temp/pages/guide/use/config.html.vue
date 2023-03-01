@@ -1,15 +1,24 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
-<p>1.动态线程池配置文件，建议单独开一个文件放到配置中心</p>
-<p>2.建议最好使用 yml 文件配置，可读性、可操作性更友好</p>
-<p>3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项</p>
+<h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项</h3>
+<div class="custom-container tip"><p class="custom-container-title">建议忠告</p>
+<ol>
+<li>
+<p>动态线程池配置文件，建议单独开一个文件放到配置中心</p>
+</li>
+<li>
+<p>建议最好使用 yml 文件配置，可读性、可操作性更友好</p>
+</li>
+<li>
+<p>给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量</p>
+</li>
+</ol>
 </div>
 <div class="custom-container danger"><p class="custom-container-title">警告</p>
-<p>1.下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整</p>
+<ol>
+<li>下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整</li>
+</ol>
 </div>
-<ul>
-<li>线程池配置（yml 类型）</li>
-</ul>
+<h3 id="线程池配置-yml-类型" tabindex="-1"><a class="header-anchor" href="#线程池配置-yml-类型" aria-hidden="true">#</a> 线程池配置（yml 类型）</h3>
 <div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
   <span class="token key atrule">dynamic</span><span class="token punctuation">:</span>
     <span class="token key atrule">tp</span><span class="token punctuation">:</span>
@@ -134,181 +143,173 @@
             <span class="token punctuation">-</span> <span class="token key atrule">type</span><span class="token punctuation">:</span> queue_timeout
               <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
               <span class="token key atrule">threshold</span><span class="token punctuation">:</span> <span class="token number">1</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
-<li>
-<p>线程池配置（properties 类型）</p>
-<div class="language-properties ext-properties line-numbers-mode"><pre v-pre class="language-properties"><code><span class="token key attr-name">    spring.dynamic.tp.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
-<span class="token key attr-name">    spring.dynamic.tp.enabledBanner</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
-<span class="token key attr-name">    spring.dynamic.tp.enabledCollect</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
-<span class="token key attr-name">    spring.dynamic.tp.collectorTypes</span><span class="token punctuation">=</span><span class="token value attr-value">logging</span>
-<span class="token key attr-name">    spring.dynamic.tp.monitorInterval</span><span class="token punctuation">=</span><span class="token value attr-value">5</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].threadPoolName</span><span class="token punctuation">=</span><span class="token value attr-value">dynamic-tp-test-1</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].corePoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].maximumPoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].queueCapacity</span><span class="token punctuation">=</span><span class="token value attr-value">3000</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].queueType</span><span class="token punctuation">=</span><span class="token value attr-value">VariableLinkedBlockingQueue</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].rejectedHandlerType</span><span class="token punctuation">=</span><span class="token value attr-value">CallerRunsPolicy</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].keepAliveTime</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].allowCoreThreadTimeOut</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].threadNamePrefix</span><span class="token punctuation">=</span><span class="token value attr-value">test1</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].type</span><span class="token punctuation">=</span><span class="token value attr-value">capacity</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">80</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]</span><span class="token punctuation">=</span><span class="token value attr-value">ding</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]</span><span class="token punctuation">=</span><span class="token value attr-value">wechat</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[0].interval</span><span class="token punctuation">=</span><span class="token value attr-value">120</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[1].type</span><span class="token punctuation">=</span><span class="token value attr-value">change</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[1].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[2].type</span><span class="token punctuation">=</span><span class="token value attr-value">liveness</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[2].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[2].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">80</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[3].type</span><span class="token punctuation">=</span><span class="token value attr-value">reject</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[3].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[0].notifyItems[3].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">1</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].threadPoolName</span><span class="token punctuation">=</span><span class="token value attr-value">dynamic-tp-test-2</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].corePoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">20</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].maximumPoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">30</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].queueCapacity</span><span class="token punctuation">=</span><span class="token value attr-value">1000</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].queueType</span><span class="token punctuation">=</span><span class="token value attr-value">VariableLinkedBlockingQueue</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].rejectedHandlerType</span><span class="token punctuation">=</span><span class="token value attr-value">CallerRunsPolicy</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].keepAliveTime</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].allowCoreThreadTimeOut</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
-<span class="token key attr-name">    spring.dynamic.tp.executors[1].threadNamePrefix</span><span class="token punctuation">=</span><span class="token value attr-value">test2</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-<li>
-<p>线程池配置（json 类型）</p>
-</li>
-</ul>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>{
-  "enabled":true,
-  "collectorTypes":"logging",
-  "monitorInterval":5,
-  "enabledBanner":true,
-  "enabledCollect":true,
-  "configType":"json",
-  "zookeeper":{
-    "zkConnectStr":"127.0.0.1:2181",
-    "rootNode":"/configserver/dev",
-    "node":"dynamic-tp-zookeeper-demo",
-    "config-key":"dtp-config"
-  },
-  "platforms":[
-    {
-      "platform":"ding",
-      "urlKey":"aab197577f6d8dcea6f\t",
-      "receivers":"所有人"
-    }
-  ],
-  "executors":[
-    {
-      "threadPoolName":"dtpExecutor1",
-      "executorType":"common",
-      "keepAliveTime":20,
-      "waitForTasksToCompleteOnShutdown":false,
-      "rejectedHandlerType":"AbortPolicy",
-      "queueCapacity":1000,
-      "fair":false,
-      "unit":"SECONDS",
-      "runTimeout":300,
-      "threadNamePrefix":"t0",
-      "allowCoreThreadTimeOut":false,
-      "corePoolSize":15,
-      "queueType":"VariableLinkedBlockingQueue",
-      "maximumPoolSize":30,
-      "awaitTerminationSeconds":1,
-      "preStartAllCoreThreads":true,
-      "notifyItems":[],
-      "queueTimeout":300
-    },
-    {
-      "threadPoolName":"dtpExecutor2",
-      "executorType":"common",
-      "keepAliveTime":20,
-      "waitForTasksToCompleteOnShutdown":false,
-      "rejectedHandlerType":"AbortPolicy",
-      "queueCapacity":1000,
-      "fair":false,
-      "unit":"SECONDS",
-      "runTimeout":300,
-      "threadNamePrefix":"t1",
-      "allowCoreThreadTimeOut":false,
-      "corePoolSize":20,
-      "queueType":"VariableLinkedBlockingQueue",
-      "maximumPoolSize":20,
-      "awaitTerminationSeconds":1,
-      "preStartAllCoreThreads":true,
-      "notifyItems":[],
-      "queueTimeout":300
-    }
-  ]
-}
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
-<li>线程池配置（用于zk工具一键导入）</li>
-</ul>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledBanner=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledCollect=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.collectorTypes=logging
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.monitorInterval=5
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadPoolName=dtpExecutor1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].corePoolSize=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].maximumPoolSize=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueCapacity=3000
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].keepAliveTime=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadNamePrefix=test1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].type=capacity
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].interval=120
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].type=change
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].type=liveness
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].type=reject
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].threshold=1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadPoolName=dtpExecutor2
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].corePoolSize=20
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].maximumPoolSize=30
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueCapacity=1000
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].keepAliveTime=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadNamePrefix=test2
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].type=capacity
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[0]=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[1]=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].interval=120
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].type=change
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].type=liveness
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].type=reject
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].threshold=1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].platform=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].urlKey=38a7e53d8b649c
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].receivers=test
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].platform=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].urlKey=f80dad44d4a8801d593604f4a08dcd6a
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].secret=SECb5444f2c8346741fa6f375d5b9d21
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].receivers=18888888888
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].threadPoolName=dubboTp#20880
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].corePoolSize=100
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].maximumPoolSize=400
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].keepAliveTime=40
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].threadPoolName=test#test
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].corePoolSize=100
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].maximumPoolSize=400
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].keepAliveTime=40
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="线程池配置-properties-类型" tabindex="-1"><a class="header-anchor" href="#线程池配置-properties-类型" aria-hidden="true">#</a> 线程池配置（properties 类型）</h3>
+<div class="language-properties ext-properties line-numbers-mode"><pre v-pre class="language-properties"><code><span class="token key attr-name">spring.dynamic.tp.enabled</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">spring.dynamic.tp.enabledBanner</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">spring.dynamic.tp.enabledCollect</span><span class="token punctuation">=</span><span class="token value attr-value">true</span>
+<span class="token key attr-name">spring.dynamic.tp.collectorTypes</span><span class="token punctuation">=</span><span class="token value attr-value">logging</span>
+<span class="token key attr-name">spring.dynamic.tp.monitorInterval</span><span class="token punctuation">=</span><span class="token value attr-value">5</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].threadPoolName</span><span class="token punctuation">=</span><span class="token value attr-value">dynamic-tp-test-1</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].corePoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].maximumPoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].queueCapacity</span><span class="token punctuation">=</span><span class="token value attr-value">3000</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].queueType</span><span class="token punctuation">=</span><span class="token value attr-value">VariableLinkedBlockingQueue</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].rejectedHandlerType</span><span class="token punctuation">=</span><span class="token value attr-value">CallerRunsPolicy</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].keepAliveTime</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].allowCoreThreadTimeOut</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].threadNamePrefix</span><span class="token punctuation">=</span><span class="token value attr-value">test1</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].type</span><span class="token punctuation">=</span><span class="token value attr-value">capacity</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">80</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]</span><span class="token punctuation">=</span><span class="token value attr-value">ding</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]</span><span class="token punctuation">=</span><span class="token value attr-value">wechat</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[0].interval</span><span class="token punctuation">=</span><span class="token value attr-value">120</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[1].type</span><span class="token punctuation">=</span><span class="token value attr-value">change</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[1].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[2].type</span><span class="token punctuation">=</span><span class="token value attr-value">liveness</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[2].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[2].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">80</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[3].type</span><span class="token punctuation">=</span><span class="token value attr-value">reject</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[3].enabled</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[0].notifyItems[3].threshold</span><span class="token punctuation">=</span><span class="token value attr-value">1</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].threadPoolName</span><span class="token punctuation">=</span><span class="token value attr-value">dynamic-tp-test-2</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].corePoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">20</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].maximumPoolSize</span><span class="token punctuation">=</span><span class="token value attr-value">30</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].queueCapacity</span><span class="token punctuation">=</span><span class="token value attr-value">1000</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].queueType</span><span class="token punctuation">=</span><span class="token value attr-value">VariableLinkedBlockingQueue</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].rejectedHandlerType</span><span class="token punctuation">=</span><span class="token value attr-value">CallerRunsPolicy</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].keepAliveTime</span><span class="token punctuation">=</span><span class="token value attr-value">50</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].allowCoreThreadTimeOut</span><span class="token punctuation">=</span><span class="token value attr-value">false</span>
+<span class="token key attr-name">spring.dynamic.tp.executors[1].threadNamePrefix</span><span class="token punctuation">=</span><span class="token value attr-value">test2</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="线程池配置-json-类型" tabindex="-1"><a class="header-anchor" href="#线程池配置-json-类型" aria-hidden="true">#</a> 线程池配置（json 类型）</h3>
+<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">"enabled"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"collectorTypes"</span><span class="token operator">:</span><span class="token string">"logging"</span><span class="token punctuation">,</span>
+  <span class="token property">"monitorInterval"</span><span class="token operator">:</span><span class="token number">5</span><span class="token punctuation">,</span>
+  <span class="token property">"enabledBanner"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"enabledCollect"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"configType"</span><span class="token operator">:</span><span class="token string">"json"</span><span class="token punctuation">,</span>
+  <span class="token property">"zookeeper"</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token property">"zkConnectStr"</span><span class="token operator">:</span><span class="token string">"127.0.0.1:2181"</span><span class="token punctuation">,</span>
+    <span class="token property">"rootNode"</span><span class="token operator">:</span><span class="token string">"/configserver/dev"</span><span class="token punctuation">,</span>
+    <span class="token property">"node"</span><span class="token operator">:</span><span class="token string">"dynamic-tp-zookeeper-demo"</span><span class="token punctuation">,</span>
+    <span class="token property">"config-key"</span><span class="token operator">:</span><span class="token string">"dtp-config"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"platforms"</span><span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"platform"</span><span class="token operator">:</span><span class="token string">"ding"</span><span class="token punctuation">,</span>
+      <span class="token property">"urlKey"</span><span class="token operator">:</span><span class="token string">"aab197577f6d8dcea6f\t"</span><span class="token punctuation">,</span>
+      <span class="token property">"receivers"</span><span class="token operator">:</span><span class="token string">"所有人"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"executors"</span><span class="token operator">:</span><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"threadPoolName"</span><span class="token operator">:</span><span class="token string">"dtpExecutor1"</span><span class="token punctuation">,</span>
+      <span class="token property">"executorType"</span><span class="token operator">:</span><span class="token string">"common"</span><span class="token punctuation">,</span>
+      <span class="token property">"keepAliveTime"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"waitForTasksToCompleteOnShutdown"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"rejectedHandlerType"</span><span class="token operator">:</span><span class="token string">"AbortPolicy"</span><span class="token punctuation">,</span>
+      <span class="token property">"queueCapacity"</span><span class="token operator">:</span><span class="token number">1000</span><span class="token punctuation">,</span>
+      <span class="token property">"fair"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"unit"</span><span class="token operator">:</span><span class="token string">"SECONDS"</span><span class="token punctuation">,</span>
+      <span class="token property">"runTimeout"</span><span class="token operator">:</span><span class="token number">300</span><span class="token punctuation">,</span>
+      <span class="token property">"threadNamePrefix"</span><span class="token operator">:</span><span class="token string">"t0"</span><span class="token punctuation">,</span>
+      <span class="token property">"allowCoreThreadTimeOut"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"corePoolSize"</span><span class="token operator">:</span><span class="token number">15</span><span class="token punctuation">,</span>
+      <span class="token property">"queueType"</span><span class="token operator">:</span><span class="token string">"VariableLinkedBlockingQueue"</span><span class="token punctuation">,</span>
+      <span class="token property">"maximumPoolSize"</span><span class="token operator">:</span><span class="token number">30</span><span class="token punctuation">,</span>
+      <span class="token property">"awaitTerminationSeconds"</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"preStartAllCoreThreads"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"notifyItems"</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"queueTimeout"</span><span class="token operator">:</span><span class="token number">300</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"threadPoolName"</span><span class="token operator">:</span><span class="token string">"dtpExecutor2"</span><span class="token punctuation">,</span>
+      <span class="token property">"executorType"</span><span class="token operator">:</span><span class="token string">"common"</span><span class="token punctuation">,</span>
+      <span class="token property">"keepAliveTime"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"waitForTasksToCompleteOnShutdown"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"rejectedHandlerType"</span><span class="token operator">:</span><span class="token string">"AbortPolicy"</span><span class="token punctuation">,</span>
+      <span class="token property">"queueCapacity"</span><span class="token operator">:</span><span class="token number">1000</span><span class="token punctuation">,</span>
+      <span class="token property">"fair"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"unit"</span><span class="token operator">:</span><span class="token string">"SECONDS"</span><span class="token punctuation">,</span>
+      <span class="token property">"runTimeout"</span><span class="token operator">:</span><span class="token number">300</span><span class="token punctuation">,</span>
+      <span class="token property">"threadNamePrefix"</span><span class="token operator">:</span><span class="token string">"t1"</span><span class="token punctuation">,</span>
+      <span class="token property">"allowCoreThreadTimeOut"</span><span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"corePoolSize"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"queueType"</span><span class="token operator">:</span><span class="token string">"VariableLinkedBlockingQueue"</span><span class="token punctuation">,</span>
+      <span class="token property">"maximumPoolSize"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+      <span class="token property">"awaitTerminationSeconds"</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"preStartAllCoreThreads"</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"notifyItems"</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"queueTimeout"</span><span class="token operator">:</span><span class="token number">300</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="线程池配置-用于-zk-工具一键导入" tabindex="-1"><a class="header-anchor" href="#线程池配置-用于-zk-工具一键导入" aria-hidden="true">#</a> 线程池配置（用于 zk 工具一键导入）</h3>
+<div class="language-properties ext-properties line-numbers-mode"><pre v-pre class="language-properties"><code><span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.enabledBanner=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.enabledCollect=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.collectorTypes=logging</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.monitorInterval=5</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].threadPoolName=dtpExecutor1</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].corePoolSize=50</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].maximumPoolSize=50</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].queueCapacity=3000</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].keepAliveTime=50</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].threadNamePrefix=test1</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].type=capacity</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].threshold=80</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[0].interval=120</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[1].type=change</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[1].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[2].type=liveness</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[2].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[2].threshold=80</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[3].type=reject</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[3].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[0].notifyItems[3].threshold=1</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].threadPoolName=dtpExecutor2</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].corePoolSize=20</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].maximumPoolSize=30</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].queueCapacity=1000</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].keepAliveTime=50</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].threadNamePrefix=test2</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].type=capacity</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].threshold=80</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].platforms[0]=ding</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].platforms[1]=wechat</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[0].interval=120</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[1].type=change</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[1].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[2].type=liveness</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[2].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[2].threshold=80</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[3].type=reject</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[3].enabled=true</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.executors[1].notifyItems[3].threshold=1</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[0].platform=wechat</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[0].urlKey=38a7e53d8b649c</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[0].receivers=test</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[1].platform=ding</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[1].urlKey=f80dad44d4a8801d593604f4a08dcd6a</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[1].secret=SECb5444f2c8346741fa6f375d5b9d21</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.platforms[1].receivers=18888888888</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.dubboTp[0].threadPoolName=dubboTp#20880</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.dubboTp[0].corePoolSize=100</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.dubboTp[0].maximumPoolSize=400</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.dubboTp[0].keepAliveTime=40</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.rocketMqTp[0].threadPoolName=test#test</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.rocketMqTp[0].corePoolSize=100</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.rocketMqTp[0].maximumPoolSize=400</span>
+<span class="token key attr-name">/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev</span><span class="token punctuation">=</span><span class="token value attr-value">spring.dynamic.tp.rocketMqTp[0].keepAliveTime=40</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>

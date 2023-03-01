@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "配置变更会推送通知消息，且会高亮变更的字段;",
+    "summary": "调参通知 配置变更会推送通知消息，且会高亮变更的字段",
     "head": [
       [
         "meta",
@@ -87,10 +87,17 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "调参通知",
+      "slug": "调参通知",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 0.17,
-    "words": 52
+    "minutes": 0.18,
+    "words": 54
   },
   "filePathRelative": "guide/notice/notice.md",
   "localizedDate": "2022年6月11日"

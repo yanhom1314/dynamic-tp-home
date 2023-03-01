@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "任务包装 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl 3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace 4. NamedRunnable 支持给任务添加名称 5. 可以继承 Ta",
+    "summary": "任务包装器 提供了一些任务包装器，可以实现特定的功能\r\" 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc\"\r\"\"\r\" 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl\"\r\"\"\r\" 3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace\"\r",
     "head": [
       [
         "meta",
@@ -87,10 +87,23 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "任务包装器",
+      "slug": "任务包装器",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "使用步骤",
+      "slug": "使用步骤",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 0.65,
-    "words": 196
+    "minutes": 0.72,
+    "words": 217
   },
   "filePathRelative": "guide/use/wrapper.md",
   "localizedDate": "2022年8月15日"

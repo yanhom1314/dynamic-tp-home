@@ -102,3 +102,7 @@ common 模块 queue 包提供内存安全阻塞队列 MemorySafeLinkedBlockingQu
 ### 配置文件解析器
 
 core 模块提供 json、properties、yaml 类型配置文件解析器，有需要可以使用
+
+### 通知告警 
+
+通知告警模块复用性很强，项目中有这类需求可以调整下使用

@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "邮件通知 1. 框架 core 模块默认集成企微、钉钉、飞书通知渠道，可直接使用，邮件通知需要单独引入下面依赖。 2. 邮件通知告警使用引入以下依赖 3. 加入邮件相关配置 4. 效果图",
+    "summary": "邮件通知 1. 框架 core 模块默认集成企微、钉钉、飞书通知渠道，可直接使用，邮件通知需要单独引入下面依赖。 2. 加入邮件相关配置 3. 效果图",
     "head": [
       [
         "meta",
@@ -87,10 +87,17 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "邮件通知",
+      "slug": "邮件通知",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 0.55,
-    "words": 165
+    "minutes": 0.5,
+    "words": 150
   },
   "filePathRelative": "guide/notice/email.md",
   "localizedDate": "2022年6月11日"

@@ -16,8 +16,6 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-## 使用 HertzBeat 对 线程池框架 DynamicTp 进行监控实践，5分钟搞定！
-
 ### HertzBeat 介绍
 
 > HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。

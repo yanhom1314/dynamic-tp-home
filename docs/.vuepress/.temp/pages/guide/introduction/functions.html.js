@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": false,
     "star": true,
-    "summary": "基于以上背景分析，我们对线程池 ThreadPoolExecutor 做一些扩展增强，主要实现以下目标 1.实现对运行中线程池参数的动态修改，实时生效 2.实时监控线程池的运行状态，触发设置的报警策略时报警，报警信息推送办公平台 3.定时采集线程池指标数据，配合像 grafana 这种可视化监控平台做大盘监控 经过多个版本的迭代，目前最新版本 v1.1.0 ",
+    "summary": "功能特性 基于以上背景分析，我们对线程池 ThreadPoolExecutor 做一些扩展增强，主要实现以下目标\r\" 1. 实现对运行中线程池参数的动态修改，实时生效\"\r\"\"\r\" 2. 实时监控线程池的运行状态，触发设置的报警策略时报警，报警信息推送办公平台\"\r\"\"\r\" 3. 定时采集线程池指标数据，配合像 Grafana 这种可视化监控平台做大盘监控\" 经",
     "head": [
       [
         "meta",
@@ -87,10 +87,17 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "功能特性",
+      "slug": "功能特性",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 2.41,
-    "words": 724
+    "minutes": 2.42,
+    "words": 727
   },
   "filePathRelative": "guide/introduction/functions.md",
   "localizedDate": "2022年6月11日"

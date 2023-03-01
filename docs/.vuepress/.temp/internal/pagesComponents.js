@@ -9,6 +9,14 @@ export const pagesComponents = {
   "v-774e7762": defineAsyncComponent(() => import(/* webpackChunkName: "v-774e7762" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/background.html.vue")),
   // path: /guide/introduction/functions.html
   "v-2be5ef72": defineAsyncComponent(() => import(/* webpackChunkName: "v-2be5ef72" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/functions.html.vue")),
+  // path: /guide/notice/alarm.html
+  "v-d2565d5a": defineAsyncComponent(() => import(/* webpackChunkName: "v-d2565d5a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/alarm.html.vue")),
+  // path: /guide/notice/email.html
+  "v-1e7216e8": defineAsyncComponent(() => import(/* webpackChunkName: "v-1e7216e8" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/email.html.vue")),
+  // path: /guide/notice/notice.html
+  "v-540df636": defineAsyncComponent(() => import(/* webpackChunkName: "v-540df636" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/notice.html.vue")),
+  // path: /guide/notice/ratelimiter.html
+  "v-38eb3608": defineAsyncComponent(() => import(/* webpackChunkName: "v-38eb3608" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/ratelimiter.html.vue")),
   // path: /guide/middleware/brpc.html
   "v-cf3ff1b6": defineAsyncComponent(() => import(/* webpackChunkName: "v-cf3ff1b6" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/brpc.html.vue")),
   // path: /guide/middleware/dubbo.html
@@ -43,14 +51,6 @@ export const pagesComponents = {
   "v-4ce8ba29": defineAsyncComponent(() => import(/* webpackChunkName: "v-4ce8ba29" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/hertzbeat.html.vue")),
   // path: /guide/monitor/prometheus_grafana.html
   "v-0a66322e": defineAsyncComponent(() => import(/* webpackChunkName: "v-0a66322e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/prometheus_grafana.html.vue")),
-  // path: /guide/notice/alarm.html
-  "v-d2565d5a": defineAsyncComponent(() => import(/* webpackChunkName: "v-d2565d5a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/alarm.html.vue")),
-  // path: /guide/notice/email.html
-  "v-1e7216e8": defineAsyncComponent(() => import(/* webpackChunkName: "v-1e7216e8" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/email.html.vue")),
-  // path: /guide/notice/notice.html
-  "v-540df636": defineAsyncComponent(() => import(/* webpackChunkName: "v-540df636" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/notice.html.vue")),
-  // path: /guide/notice/ratelimiter.html
-  "v-38eb3608": defineAsyncComponent(() => import(/* webpackChunkName: "v-38eb3608" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/ratelimiter.html.vue")),
   // path: /guide/other/articles.html
   "v-3ee2c8de": defineAsyncComponent(() => import(/* webpackChunkName: "v-3ee2c8de" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/other/articles.html.vue")),
   // path: /guide/other/contact.html

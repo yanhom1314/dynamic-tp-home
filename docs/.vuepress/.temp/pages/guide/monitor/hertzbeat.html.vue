@@ -1,5 +1,4 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<h2 id="使用-hertzbeat-对-线程池框架-dynamictp-进行监控实践-5分钟搞定" tabindex="-1"><a class="header-anchor" href="#使用-hertzbeat-对-线程池框架-dynamictp-进行监控实践-5分钟搞定" aria-hidden="true">#</a> 使用 HertzBeat 对 线程池框架 DynamicTp 进行监控实践，5分钟搞定！</h2>
 <h3 id="hertzbeat-介绍" tabindex="-1"><a class="header-anchor" href="#hertzbeat-介绍" aria-hidden="true">#</a> HertzBeat 介绍</h3>
 <blockquote>
 <p>HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。</p>

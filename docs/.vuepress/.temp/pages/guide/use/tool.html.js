@@ -111,11 +111,17 @@ export const data = {
       "title": "配置文件解析器",
       "slug": "配置文件解析器",
       "children": []
+    },
+    {
+      "level": 3,
+      "title": "通知告警",
+      "slug": "通知告警",
+      "children": []
     }
   ],
   "readingTime": {
-    "minutes": 1.17,
-    "words": 350
+    "minutes": 1.27,
+    "words": 380
   },
   "filePathRelative": "guide/use/tool.md",
   "localizedDate": "2022年8月15日"

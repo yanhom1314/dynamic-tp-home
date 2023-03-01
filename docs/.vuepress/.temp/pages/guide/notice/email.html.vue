@@ -1,11 +1,8 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<p><strong>邮件通知</strong></p>
+<h3 id="邮件通知" tabindex="-1"><a class="header-anchor" href="#邮件通知" aria-hidden="true">#</a> 邮件通知</h3>
 <ol>
 <li>
 <p>框架 core 模块默认集成企微、钉钉、飞书通知渠道，可直接使用，邮件通知需要单独引入下面依赖。</p>
-</li>
-<li>
-<p>邮件通知告警使用引入以下依赖</p>
 <div class="language-xml ext-xml line-numbers-mode"><pre v-pre class="language-xml"><code>     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>cn.dynamictp<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>dynamic-tp-spring-boot-starter-extension-notify-email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>

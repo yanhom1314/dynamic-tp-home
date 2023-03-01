@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "框架目前提供以下告警功能，每一个告警项都可以独立配置是否开启、告警阈值、告警间隔时间、平台等，具体代码请看 core 模块 notify 包， 告警信息同时会高亮与该项相关的字段。 1.核心参数变更通知 2.线程池活跃度告警 3.队列容量告警 4.拒绝策略告警 5.任务执行超时告警 6.任务排队超时告警 线程池活跃度告警 活跃度 = activeCount ",
+    "summary": "告警类型 框架目前提供以下告警功能，每一个告警项都可以独立配置是否开启、告警阈值、告警间隔时间、平台等，具体代码请看 core 模块 notify 包， 告警信息同时会高亮与该项相关的字段。\r线程池活跃度告警; \r\" 1. 活跃度 = activeCount / maximumPoolSize\"\r\"\"\r\" 2. 服务启动后会开启一个定时监控任务，每隔一定时间",
     "head": [
       [
         "meta",
@@ -89,39 +89,15 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
-      "title": "线程池活跃度告警",
-      "slug": "线程池活跃度告警",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "队列容量告警",
-      "slug": "队列容量告警",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "拒绝策略告警",
-      "slug": "拒绝策略告警",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "任务队列超时告警",
-      "slug": "任务队列超时告警",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "任务执行超时告警",
-      "slug": "任务执行超时告警",
+      "level": 3,
+      "title": "告警类型",
+      "slug": "告警类型",
       "children": []
     }
   ],
   "readingTime": {
-    "minutes": 3.55,
-    "words": 1065
+    "minutes": 3.51,
+    "words": 1052
   },
   "filePathRelative": "guide/notice/alarm.md",
   "localizedDate": "2022年6月11日"

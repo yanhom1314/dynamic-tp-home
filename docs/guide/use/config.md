@@ -16,19 +16,25 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-::: tip
-1.动态线程池配置文件，建议单独开一个文件放到配置中心
+### 注意事项
 
-2.建议最好使用 yml 文件配置，可读性、可操作性更友好
+::: tip 建议忠告
 
-3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项
+1. 动态线程池配置文件，建议单独开一个文件放到配置中心
+
+2. 建议最好使用 yml 文件配置，可读性、可操作性更友好
+
+3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
+
 :::
 
 ::: danger
-1.下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
+
+1. 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
+
 :::
 
-- 线程池配置（yml 类型）
+### 线程池配置（yml 类型）
 
 ```yaml
 spring:
@@ -157,182 +163,183 @@ spring:
               threshold: 1
 ```
 
-- 线程池配置（properties 类型）
+### 线程池配置（properties 类型）
 
-  ```properties
-      spring.dynamic.tp.enabled=true
-      spring.dynamic.tp.enabledBanner=true
-      spring.dynamic.tp.enabledCollect=true
-      spring.dynamic.tp.collectorTypes=logging
-      spring.dynamic.tp.monitorInterval=5
-      spring.dynamic.tp.executors[0].threadPoolName=dynamic-tp-test-1
-      spring.dynamic.tp.executors[0].corePoolSize=50
-      spring.dynamic.tp.executors[0].maximumPoolSize=50
-      spring.dynamic.tp.executors[0].queueCapacity=3000
-      spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue
-      spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy
-      spring.dynamic.tp.executors[0].keepAliveTime=50
-      spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=false
-      spring.dynamic.tp.executors[0].threadNamePrefix=test1
-      spring.dynamic.tp.executors[0].notifyItems[0].type=capacity
-      spring.dynamic.tp.executors[0].notifyItems[0].enabled=false
-      spring.dynamic.tp.executors[0].notifyItems[0].threshold=80
-      spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding
-      spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat
-      spring.dynamic.tp.executors[0].notifyItems[0].interval=120
-      spring.dynamic.tp.executors[0].notifyItems[1].type=change
-      spring.dynamic.tp.executors[0].notifyItems[1].enabled=false
-      spring.dynamic.tp.executors[0].notifyItems[2].type=liveness
-      spring.dynamic.tp.executors[0].notifyItems[2].enabled=false
-      spring.dynamic.tp.executors[0].notifyItems[2].threshold=80
-      spring.dynamic.tp.executors[0].notifyItems[3].type=reject
-      spring.dynamic.tp.executors[0].notifyItems[3].enabled=false
-      spring.dynamic.tp.executors[0].notifyItems[3].threshold=1
-      spring.dynamic.tp.executors[1].threadPoolName=dynamic-tp-test-2
-      spring.dynamic.tp.executors[1].corePoolSize=20
-      spring.dynamic.tp.executors[1].maximumPoolSize=30
-      spring.dynamic.tp.executors[1].queueCapacity=1000
-      spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue
-      spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy
-      spring.dynamic.tp.executors[1].keepAliveTime=50
-      spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=false
-      spring.dynamic.tp.executors[1].threadNamePrefix=test2
+```properties
+spring.dynamic.tp.enabled=true
+spring.dynamic.tp.enabledBanner=true
+spring.dynamic.tp.enabledCollect=true
+spring.dynamic.tp.collectorTypes=logging
+spring.dynamic.tp.monitorInterval=5
+spring.dynamic.tp.executors[0].threadPoolName=dynamic-tp-test-1
+spring.dynamic.tp.executors[0].corePoolSize=50
+spring.dynamic.tp.executors[0].maximumPoolSize=50
+spring.dynamic.tp.executors[0].queueCapacity=3000
+spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue
+spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy
+spring.dynamic.tp.executors[0].keepAliveTime=50
+spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=false
+spring.dynamic.tp.executors[0].threadNamePrefix=test1
+spring.dynamic.tp.executors[0].notifyItems[0].type=capacity
+spring.dynamic.tp.executors[0].notifyItems[0].enabled=false
+spring.dynamic.tp.executors[0].notifyItems[0].threshold=80
+spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding
+spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat
+spring.dynamic.tp.executors[0].notifyItems[0].interval=120
+spring.dynamic.tp.executors[0].notifyItems[1].type=change
+spring.dynamic.tp.executors[0].notifyItems[1].enabled=false
+spring.dynamic.tp.executors[0].notifyItems[2].type=liveness
+spring.dynamic.tp.executors[0].notifyItems[2].enabled=false
+spring.dynamic.tp.executors[0].notifyItems[2].threshold=80
+spring.dynamic.tp.executors[0].notifyItems[3].type=reject
+spring.dynamic.tp.executors[0].notifyItems[3].enabled=false
+spring.dynamic.tp.executors[0].notifyItems[3].threshold=1
+spring.dynamic.tp.executors[1].threadPoolName=dynamic-tp-test-2
+spring.dynamic.tp.executors[1].corePoolSize=20
+spring.dynamic.tp.executors[1].maximumPoolSize=30
+spring.dynamic.tp.executors[1].queueCapacity=1000
+spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue
+spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy
+spring.dynamic.tp.executors[1].keepAliveTime=50
+spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=false
+spring.dynamic.tp.executors[1].threadNamePrefix=test2
+```
+
+### 线程池配置（json 类型）
+
+  ```json
+  {
+    "enabled":true,
+    "collectorTypes":"logging",
+    "monitorInterval":5,
+    "enabledBanner":true,
+    "enabledCollect":true,
+    "configType":"json",
+    "zookeeper":{
+      "zkConnectStr":"127.0.0.1:2181",
+      "rootNode":"/configserver/dev",
+      "node":"dynamic-tp-zookeeper-demo",
+      "config-key":"dtp-config"
+    },
+    "platforms":[
+      {
+        "platform":"ding",
+        "urlKey":"aab197577f6d8dcea6f\t",
+        "receivers":"所有人"
+      }
+    ],
+    "executors":[
+      {
+        "threadPoolName":"dtpExecutor1",
+        "executorType":"common",
+        "keepAliveTime":20,
+        "waitForTasksToCompleteOnShutdown":false,
+        "rejectedHandlerType":"AbortPolicy",
+        "queueCapacity":1000,
+        "fair":false,
+        "unit":"SECONDS",
+        "runTimeout":300,
+        "threadNamePrefix":"t0",
+        "allowCoreThreadTimeOut":false,
+        "corePoolSize":15,
+        "queueType":"VariableLinkedBlockingQueue",
+        "maximumPoolSize":30,
+        "awaitTerminationSeconds":1,
+        "preStartAllCoreThreads":true,
+        "notifyItems":[],
+        "queueTimeout":300
+      },
+      {
+        "threadPoolName":"dtpExecutor2",
+        "executorType":"common",
+        "keepAliveTime":20,
+        "waitForTasksToCompleteOnShutdown":false,
+        "rejectedHandlerType":"AbortPolicy",
+        "queueCapacity":1000,
+        "fair":false,
+        "unit":"SECONDS",
+        "runTimeout":300,
+        "threadNamePrefix":"t1",
+        "allowCoreThreadTimeOut":false,
+        "corePoolSize":20,
+        "queueType":"VariableLinkedBlockingQueue",
+        "maximumPoolSize":20,
+        "awaitTerminationSeconds":1,
+        "preStartAllCoreThreads":true,
+        "notifyItems":[],
+        "queueTimeout":300
+      }
+    ]
+  }
   ```
 
-- 线程池配置（json 类型）
-```
-{
-  "enabled":true,
-  "collectorTypes":"logging",
-  "monitorInterval":5,
-  "enabledBanner":true,
-  "enabledCollect":true,
-  "configType":"json",
-  "zookeeper":{
-    "zkConnectStr":"127.0.0.1:2181",
-    "rootNode":"/configserver/dev",
-    "node":"dynamic-tp-zookeeper-demo",
-    "config-key":"dtp-config"
-  },
-  "platforms":[
-    {
-      "platform":"ding",
-      "urlKey":"aab197577f6d8dcea6f\t",
-      "receivers":"所有人"
-    }
-  ],
-  "executors":[
-    {
-      "threadPoolName":"dtpExecutor1",
-      "executorType":"common",
-      "keepAliveTime":20,
-      "waitForTasksToCompleteOnShutdown":false,
-      "rejectedHandlerType":"AbortPolicy",
-      "queueCapacity":1000,
-      "fair":false,
-      "unit":"SECONDS",
-      "runTimeout":300,
-      "threadNamePrefix":"t0",
-      "allowCoreThreadTimeOut":false,
-      "corePoolSize":15,
-      "queueType":"VariableLinkedBlockingQueue",
-      "maximumPoolSize":30,
-      "awaitTerminationSeconds":1,
-      "preStartAllCoreThreads":true,
-      "notifyItems":[],
-      "queueTimeout":300
-    },
-    {
-      "threadPoolName":"dtpExecutor2",
-      "executorType":"common",
-      "keepAliveTime":20,
-      "waitForTasksToCompleteOnShutdown":false,
-      "rejectedHandlerType":"AbortPolicy",
-      "queueCapacity":1000,
-      "fair":false,
-      "unit":"SECONDS",
-      "runTimeout":300,
-      "threadNamePrefix":"t1",
-      "allowCoreThreadTimeOut":false,
-      "corePoolSize":20,
-      "queueType":"VariableLinkedBlockingQueue",
-      "maximumPoolSize":20,
-      "awaitTerminationSeconds":1,
-      "preStartAllCoreThreads":true,
-      "notifyItems":[],
-      "queueTimeout":300
-    }
-  ]
-}
-```
+### 线程池配置（用于 zk 工具一键导入）
 
-- 线程池配置（用于zk工具一键导入）
-
-```
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledBanner=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledCollect=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.collectorTypes=logging
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.monitorInterval=5
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadPoolName=dtpExecutor1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].corePoolSize=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].maximumPoolSize=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueCapacity=3000
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].keepAliveTime=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadNamePrefix=test1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].type=capacity
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].interval=120
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].type=change
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].type=liveness
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].type=reject
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].threshold=1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadPoolName=dtpExecutor2
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].corePoolSize=20
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].maximumPoolSize=30
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueCapacity=1000
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].keepAliveTime=50
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadNamePrefix=test2
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].type=capacity
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[0]=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[1]=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].interval=120
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].type=change
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].type=liveness
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].threshold=80
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].type=reject
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].enabled=true
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].threshold=1
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].platform=wechat
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].urlKey=38a7e53d8b649c
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].receivers=test
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].platform=ding
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].urlKey=f80dad44d4a8801d593604f4a08dcd6a
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].secret=SECb5444f2c8346741fa6f375d5b9d21
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].receivers=18888888888
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].threadPoolName=dubboTp#20880
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].corePoolSize=100
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].maximumPoolSize=400
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].keepAliveTime=40
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].threadPoolName=test#test
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].corePoolSize=100
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].maximumPoolSize=400
-/configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].keepAliveTime=40
-```
+  ``` properties
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledBanner=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.enabledCollect=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.collectorTypes=logging
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.monitorInterval=5
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadPoolName=dtpExecutor1
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].corePoolSize=50
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].maximumPoolSize=50
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueCapacity=3000
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].queueType=VariableLinkedBlockingQueue
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].rejectedHandlerType=CallerRunsPolicy
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].keepAliveTime=50
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].allowCoreThreadTimeOut=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].threadNamePrefix=test1
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].type=capacity
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].threshold=80
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[0]=ding
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].platforms[1]=wechat
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[0].interval=120
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].type=change
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[1].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].type=liveness
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[2].threshold=80
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].type=reject
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[0].notifyItems[3].threshold=1
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadPoolName=dtpExecutor2
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].corePoolSize=20
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].maximumPoolSize=30
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueCapacity=1000
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].queueType=VariableLinkedBlockingQueue
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].rejectedHandlerType=CallerRunsPolicy
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].keepAliveTime=50
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].allowCoreThreadTimeOut=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].threadNamePrefix=test2
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].type=capacity
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].threshold=80
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[0]=ding
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].platforms[1]=wechat
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[0].interval=120
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].type=change
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[1].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].type=liveness
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[2].threshold=80
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].type=reject
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].enabled=true
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.executors[1].notifyItems[3].threshold=1
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].platform=wechat
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].urlKey=38a7e53d8b649c
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[0].receivers=test
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].platform=ding
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].urlKey=f80dad44d4a8801d593604f4a08dcd6a
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].secret=SECb5444f2c8346741fa6f375d5b9d21
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.platforms[1].receivers=18888888888
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].threadPoolName=dubboTp#20880
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].corePoolSize=100
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].maximumPoolSize=400
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.dubboTp[0].keepAliveTime=40
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].threadPoolName=test#test
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].corePoolSize=100
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].maximumPoolSize=400
+  /configserver/dev/dynamic-tp-cloud-zookeeper-demo,dev=spring.dynamic.tp.rocketMqTp[0].keepAliveTime=40
+  ```

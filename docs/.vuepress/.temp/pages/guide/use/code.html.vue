@@ -1,13 +1,11 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<ul>
-<li>
-<p>线程池实例定义</p>
-<p>建议直接配置在配置中心，但是如果想后期再添加到配置中心，可以先用 @Bean 编码式声明（方便 spring 依赖注入）</p>
+<h3 id="线程池定义" tabindex="-1"><a class="header-anchor" href="#线程池定义" aria-hidden="true">#</a> 线程池定义</h3>
+<p>建议直接配置在配置中心，但是如果想后期再添加到配置中心，可以先用 @Bean 编码式声明（方便 Spring 依赖注入）</p>
 <div class="language-java ext-java line-numbers-mode"><pre v-pre class="language-java"><code><span class="token annotation punctuation">@Configuration</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DtpConfig</span> <span class="token punctuation">{</span>  
   
   <span class="token doc-comment comment">/**
-   * 通过<span class="token punctuation">{</span><span class="token keyword">@link</span> <span class="token reference"><span class="token class-name">DynamicTp</span></span><span class="token punctuation">}</span> 注解定义普通juc线程池，会享受到该框架监控功能，注解名称优先级高于方法名
+   * 通过 <span class="token punctuation">{</span><span class="token keyword">@link</span> @DynamicTp<span class="token punctuation">}</span> 注解定义普通 juc 线程池，会享受到该框架监控功能，注解名称优先级高于方法名
    *
    * <span class="token keyword">@return</span> 线程池实例
    */</span>
@@ -18,8 +16,8 @@
   <span class="token punctuation">}</span>
 
   <span class="token doc-comment comment">/**
-   * 通过<span class="token punctuation">{</span><span class="token keyword">@link</span> <span class="token reference"><span class="token class-name">ThreadPoolCreator</span></span><span class="token punctuation">}</span> 快速创建一些简单配置的动态线程池
-   * tips: 建议直接在配置中心配置就行，不用@Bean声明
+   * 通过 <span class="token punctuation">{</span><span class="token keyword">@link</span> <span class="token reference"><span class="token class-name">ThreadPoolCreator</span></span><span class="token punctuation">}</span> 快速创建一些简单配置的动态线程池
+   * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
    *
    * <span class="token keyword">@return</span> 线程池实例
    */</span>
@@ -29,8 +27,8 @@
   <span class="token punctuation">}</span>
 
   <span class="token doc-comment comment">/**
-   * 通过<span class="token punctuation">{</span><span class="token keyword">@link</span> <span class="token reference"><span class="token class-name">ThreadPoolBuilder</span></span><span class="token punctuation">}</span> 设置详细参数创建动态线程池（推荐方式），
-   * ioIntensive，参考tomcat线程池设计，实现了处理io密集型任务的线程池，具体参数可以看代码注释
+   * 通过 <span class="token punctuation">{</span><span class="token keyword">@link</span> <span class="token reference"><span class="token class-name">ThreadPoolBuilder</span></span><span class="token punctuation">}</span> 设置详细参数创建动态线程池（推荐方式），
+   * ioIntensive，参考 tomcat 线程池设计，实现了处理 io 密集型任务的线程池，具体参数可以看代码注释
    *
    * tips: 建议直接在配置中心配置就行，不用@Bean声明
    * <span class="token keyword">@return</span> 线程池实例
@@ -47,7 +45,7 @@
   <span class="token punctuation">}</span>
 
   <span class="token doc-comment comment">/**
-   * tips: 建议直接在配置中心配置就行，不用@Bean声明
+   * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
    * <span class="token keyword">@return</span> 线程池实例
    */</span>
   <span class="token annotation punctuation">@Bean</span>
@@ -64,25 +62,27 @@
               <span class="token punctuation">.</span><span class="token function">buildDynamic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="代码引用" tabindex="-1"><a class="header-anchor" href="#代码引用" aria-hidden="true">#</a> 代码引用</h3>
+<p>从 DtpRegistry 中根据线程池名称获取，或者通过依赖注入方式（推荐，更优雅）</p>
+<ul>
 <li>
-<p>代码调用</p>
-<p>从 DtpRegistry 中根据线程池名称获取，或者通过依赖注入方式(推荐，更优雅)</p>
-<p>1）依赖注入方式使用，优先推荐依赖注入方式，不能使用依赖注入的场景可以使用方式2</p>
+<p>依赖注入方式使用，优先推荐依赖注入方式，不能使用依赖注入的场景可以使用方式2</p>
 <div class="language-java ext-java line-numbers-mode"><pre v-pre class="language-java"><code><span class="token annotation punctuation">@Resource</span>
 <span class="token keyword">private</span> <span class="token class-name">ThreadPoolExecutor</span> dtpExecutor1<span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">exec</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
    dtpExecutor1<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2）通过 DtpRegistry 注册器获取</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>从 DtpRegistry 注册器获取（接口场景可用）</p>
 <div class="language-java ext-java line-numbers-mode"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
    <span class="token class-name">DtpExecutor</span> dtpExecutor <span class="token operator">=</span> <span class="token class-name">DtpRegistry</span><span class="token punctuation">.</span><span class="token function">getDtpExecutor</span><span class="token punctuation">(</span><span class="token string">"dtpExecutor1"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
    dtpExecutor<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"test"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 <li>
-<p>更详细使用实例请参考<code v-pre>example</code>工程</p>
+<p>更详细使用实例请参考 <code v-pre>example</code> 工程</p>
 </li>
 </ul>
 </div></template>

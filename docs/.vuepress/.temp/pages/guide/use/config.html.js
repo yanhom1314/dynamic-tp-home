@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "1.动态线程池配置文件，建议单独开一个文件放到配置中心 2.建议最好使用 yml 文件配置，可读性、可操作性更友好 3.给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置项\r1.下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整\r线程池配置（yml 类型）; \r线程池配置（properties 类型）; \r线程池配置（js",
+    "summary": "注意事项\r建议忠告 1. 动态线程池配置文件，建议单独开一个文件放到配置中心 2. 建议最好使用 yml 文件配置，可读性、可操作性更友好 3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量\r1. 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整 线程池配置（yml 类型） 线程池配置（properties 类型",
     "head": [
       [
         "meta",
@@ -87,10 +87,41 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "注意事项",
+      "slug": "注意事项",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "线程池配置（yml 类型）",
+      "slug": "线程池配置-yml-类型",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "线程池配置（properties 类型）",
+      "slug": "线程池配置-properties-类型",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "线程池配置（json 类型）",
+      "slug": "线程池配置-json-类型",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "线程池配置（用于 zk 工具一键导入）",
+      "slug": "线程池配置-用于-zk-工具一键导入",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 7.06,
-    "words": 2118
+    "minutes": 7.09,
+    "words": 2128
   },
   "filePathRelative": "guide/use/config.md",
   "localizedDate": "2022年6月11日"

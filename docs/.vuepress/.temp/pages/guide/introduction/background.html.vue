@@ -1,11 +1,20 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<p><strong>使用线程池 ThreadPoolExecutor 过程中你是否有以下痛点呢？</strong></p>
+<h3 id="使用痛点" tabindex="-1"><a class="header-anchor" href="#使用痛点" aria-hidden="true">#</a> 使用痛点</h3>
+<p>使用线程池 ThreadPoolExecutor 过程中你是否有以下痛点呢？</p>
 <blockquote>
-<p>1.代码中创建了一个 ThreadPoolExecutor，但是不知道那几个核心参数设置多少比较合适</p>
-<p>2.凭经验设置参数值，上线后发现需要调整，改代码重新发布服务，非常麻烦</p>
-<p>3.线程池相对开发人员来说是个黑盒，运行情况不能及时感知到，直到出现问题</p>
+<ol>
+<li>
+<p>代码中创建了一个 ThreadPoolExecutor，但是不知道那几个核心参数设置多少比较合适</p>
+</li>
+<li>
+<p>凭经验设置参数值，上线后发现需要调整，改代码重新发布服务，非常麻烦</p>
+</li>
+<li>
+<p>线程池相对开发人员来说是个黑盒，运行情况不能及时感知到，直到出现问题</p>
+</li>
+</ol>
 </blockquote>
-<p>如果你有以上痛点，动态可监控线程池框架（<strong>DynamicTp</strong>）或许能帮助到你。</p>
+<p>如果有以上痛点，动态可监控线程池框架（<strong>DynamicTp</strong>）或许能帮助到你。</p>
 <p>如果看过 ThreadPoolExecutor 的源码，大概可以知道它对核心参数基本都有提供 set / get 方法以及一些扩展方法，可以在运行时动态修改、获取相应的值，这些方法有：</p>
 <div class="language-java ext-java line-numbers-mode"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setCorePoolSize</span><span class="token punctuation">(</span><span class="token keyword">int</span> corePoolSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setMaximumPoolSize</span><span class="token punctuation">(</span><span class="token keyword">int</span> maximumPoolSize<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -23,13 +32,14 @@
 
 <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">beforeExecute</span><span class="token punctuation">(</span><span class="token class-name">Thread</span> t<span class="token punctuation">,</span> <span class="token class-name">Runnable</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">afterExecute</span><span class="token punctuation">(</span><span class="token class-name">Runnable</span> r<span class="token punctuation">,</span> <span class="token class-name">Throwable</span> t<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在大多数的互联网项目其实都会微服务化部署，有一套自己的服务治理体系，微服务组件中的分布式配置中心扮演的就是动态修改配置，
-实时生效的角色。那么我们是否可以结合配置中心来做运行时线程池参数的动态调整呢？答案是肯定的，而且配置中心相对都是高可用的，
-使用它也不用过于担心配置推送出现问题这类事儿，而且也能减少研发动态线程池组件本身的难度和工作量。</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在大多数的互联网项目都会微服务化部署，有一套自己的服务治理体系，微服务组件中的分布式配置中心扮演的就是动态修改配置，
+实时生效的角色。</p>
+<p>那么我们是否可以结合配置中心来做运行时线程池参数的动态调整呢？</p>
+<p>答案是肯定的，而且配置中心相对都是高可用的，使用它也不用过于担心配置推送失败这类问题，而且也能减少研发动态线程池组件本身的难度和工作量。</p>
 <p><strong>综上，可以总结出以下的背景</strong></p>
 <ul>
 <li>
-<p><strong>广泛性</strong>：在 Java 开发中，想要提高系统性能，线程池已经是一个 90%以上的人都会选择使用的基础工具</p>
+<p><strong>广泛性</strong>：在 Java 开发中，想要提高系统性能，线程池已经是一个 90% 以上开发都会选择使用的基础工具</p>
 </li>
 <li>
 <p><strong>不确定性</strong>：项目中可能会创建很多线程池，既有 IO 密集型的，也有 CPU 密集型的，但线程池的参数并不好确定；需要有套机制在运行过程中动态去调整参数</p>

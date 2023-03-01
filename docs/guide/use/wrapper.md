@@ -16,24 +16,27 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-**任务包装**
+### 任务包装器
 
-1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc
+提供了一些任务包装器，可以实现特定的功能
 
-2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl
+> 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc
+>
+> 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl
+>
+> 3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace
+>
+> 4. NamedRunnable 支持给任务添加名称
+>
+> 5. 可以继承 TaskWrapper 接口自定义任务包装器
 
-3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace
 
-4. NamedRunnable 支持给任务添加名称
-
-5. 可以继承 TaskWrapper 接口自定义任务包装器
-
-
-**使用方法**
+### 使用步骤
 
 1. MdcTaskWrapper、TtlTaskWrapper、NamedRunnable 在 core 包中，不需要引入其他依赖
 
-2. SwTraceTaskWrapper 是 extension 模块提供扩展，需要引入依赖
+2. SwTraceTaskWrapper 是 extension 模块提供的扩展，需要引入依赖
+
    ```xml
         <dependency>
             <groupId>cn.dynamictp</groupId>
@@ -43,11 +46,12 @@ star: true
     ```
    
 3. 线程池配置文件加如下配置项
+
    ```yaml
    spring:
      dynamic:
        tp:
          executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
            - threadPoolName: dtpExecutor1
-             taskWrapperNames: ["ttl", "mdc", "swTrace"]    # 任务包装器名称，继承TaskWrapper接口
+             taskWrapperNames: ["ttl", "mdc", "swTrace"]    # 任务包装器名称，继承 TaskWrapper 接口
    ```

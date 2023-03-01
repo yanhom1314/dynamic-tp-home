@@ -16,16 +16,16 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-- 线程池实例定义
+### 线程池定义
  
-  建议直接配置在配置中心，但是如果想后期再添加到配置中心，可以先用 @Bean 编码式声明（方便 spring 依赖注入）
+建议直接配置在配置中心，但是如果想后期再添加到配置中心，可以先用 @Bean 编码式声明（方便 Spring 依赖注入）
 
   ```java
   @Configuration
   public class DtpConfig {  
     
     /**
-     * 通过{@link DynamicTp} 注解定义普通juc线程池，会享受到该框架监控功能，注解名称优先级高于方法名
+     * 通过 {@link @DynamicTp} 注解定义普通 juc 线程池，会享受到该框架监控功能，注解名称优先级高于方法名
      *
      * @return 线程池实例
      */
@@ -36,8 +36,8 @@ star: true
     }
 
     /**
-     * 通过{@link ThreadPoolCreator} 快速创建一些简单配置的动态线程池
-     * tips: 建议直接在配置中心配置就行，不用@Bean声明
+     * 通过 {@link ThreadPoolCreator} 快速创建一些简单配置的动态线程池
+     * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
      *
      * @return 线程池实例
      */
@@ -47,8 +47,8 @@ star: true
     }
 
     /**
-     * 通过{@link ThreadPoolBuilder} 设置详细参数创建动态线程池（推荐方式），
-     * ioIntensive，参考tomcat线程池设计，实现了处理io密集型任务的线程池，具体参数可以看代码注释
+     * 通过 {@link ThreadPoolBuilder} 设置详细参数创建动态线程池（推荐方式），
+     * ioIntensive，参考 tomcat 线程池设计，实现了处理 io 密集型任务的线程池，具体参数可以看代码注释
      *
      * tips: 建议直接在配置中心配置就行，不用@Bean声明
      * @return 线程池实例
@@ -65,7 +65,7 @@ star: true
     }
 
     /**
-     * tips: 建议直接在配置中心配置就行，不用@Bean声明
+     * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
      * @return 线程池实例
      */
     @Bean
@@ -84,12 +84,11 @@ star: true
   }
   ```
 
+### 代码引用
 
-- 代码调用
+从 DtpRegistry 中根据线程池名称获取，或者通过依赖注入方式（推荐，更优雅）
 
-  从 DtpRegistry 中根据线程池名称获取，或者通过依赖注入方式(推荐，更优雅)
-
-  1）依赖注入方式使用，优先推荐依赖注入方式，不能使用依赖注入的场景可以使用方式2
++ 依赖注入方式使用，优先推荐依赖注入方式，不能使用依赖注入的场景可以使用方式2
   
   ```java
   @Resource
@@ -100,7 +99,7 @@ star: true
   }
   ```
   
-  2）通过 DtpRegistry 注册器获取
++ 从 DtpRegistry 注册器获取（接口场景可用）
   
   ```java
   public static void main(String[] args) {
@@ -109,4 +108,4 @@ star: true
   }
   ```
 
-- 更详细使用实例请参考`example`工程
++ 更详细使用实例请参考 `example` 工程

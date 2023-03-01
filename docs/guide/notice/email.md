@@ -16,11 +16,9 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-**邮件通知**
+### 邮件通知
 
 1. 框架 core 模块默认集成企微、钉钉、飞书通知渠道，可直接使用，邮件通知需要单独引入下面依赖。
-
-2. 邮件通知告警使用引入以下依赖
 
    ```xml
         <dependency>
@@ -29,7 +27,8 @@ star: true
             <version>1.1.0</version>
         </dependency>   
     ```
-3. 加入邮件相关配置
+
+2. 加入邮件相关配置
 
    ```yaml
    spring:
@@ -54,7 +53,7 @@ star: true
            debug: false
    ```
    
-4. 效果图
+3. 效果图
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c5af0016c5fe4e998507c92cc46ffae4~tplv-k3u1fbpfcp-zoom-1.image)
 

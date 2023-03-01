@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "集成步骤 这块要讲的是集成 prometheus+grafana 做监控，事先你得安装好 prometheus+grafana，这个就不展开讲了，网上教程很多，测试使用可以直接用 docker 安装，非常简单，安装完之后接着往下看。 1.首先配置文件中开启 micrometer 数据采集 2.项目中引入 micrometer-prometheus 依赖 3.",
+    "summary": "集成步骤 这块要讲的是集成 prometheus+grafana 做监控，事先你得安装好 prometheus+grafana，这个就不展开讲了，网上教程很多，测试使用可以直接用 docker 安装，非常简单，安装完之后接着往下看。 1. 首先配置文件中开启 micrometer 数据采集 2. 项目中引入 micrometer-prometheus 依赖 ",
     "head": [
       [
         "meta",
@@ -89,15 +89,15 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
+      "level": 3,
       "title": "集成步骤",
       "slug": "集成步骤",
       "children": []
     }
   ],
   "readingTime": {
-    "minutes": 1.48,
-    "words": 443
+    "minutes": 1.44,
+    "words": 432
   },
   "filePathRelative": "guide/monitor/prometheus_grafana.md",
   "localizedDate": "2022年6月11日"

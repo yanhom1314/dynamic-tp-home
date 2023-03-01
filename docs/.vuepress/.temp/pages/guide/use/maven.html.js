@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "maven 依赖 1. apollo 应用接入用此依赖 2. spring-cloud 场景下的 nacos 应用接入用此依赖 3. 非 spring-cloud 场景下的 nacos 应用接入用此依赖 注意版本：nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE",
+    "summary": "maven 依赖\rapollo 应用接入用此依赖; \rspring-cloud 场景下的 nacos 应用接入用此依赖; \r非 spring-cloud 场景下的 nacos 应用接入用此依赖; 注意版本：nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE及以下版",
     "head": [
       [
         "meta",
@@ -87,10 +87,23 @@ export const data = {
     ]
   },
   "excerpt": "",
-  "headers": [],
+  "headers": [
+    {
+      "level": 3,
+      "title": "maven 依赖",
+      "slug": "maven-依赖",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "注意事项",
+      "slug": "注意事项",
+      "children": []
+    }
+  ],
   "readingTime": {
-    "minutes": 1.79,
-    "words": 538
+    "minutes": 1.86,
+    "words": 557
   },
   "filePathRelative": "guide/use/maven.md",
   "localizedDate": "2022年6月11日"

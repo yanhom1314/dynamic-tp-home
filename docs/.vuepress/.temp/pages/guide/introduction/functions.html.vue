@@ -1,10 +1,19 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<h3 id="功能特性" tabindex="-1"><a class="header-anchor" href="#功能特性" aria-hidden="true">#</a> 功能特性</h3>
 <p>基于以上背景分析，我们对线程池 ThreadPoolExecutor 做一些扩展增强，主要实现以下目标</p>
-<p>1.实现对运行中线程池参数的动态修改，实时生效</p>
-<p>2.实时监控线程池的运行状态，触发设置的报警策略时报警，报警信息推送办公平台</p>
-<p>3.定时采集线程池指标数据，配合像 grafana 这种可视化监控平台做大盘监控</p>
-</div>
+<blockquote>
+<ol>
+<li>
+<p>实现对运行中线程池参数的动态修改，实时生效</p>
+</li>
+<li>
+<p>实时监控线程池的运行状态，触发设置的报警策略时报警，报警信息推送办公平台</p>
+</li>
+<li>
+<p>定时采集线程池指标数据，配合像 Grafana 这种可视化监控平台做大盘监控</p>
+</li>
+</ol>
+</blockquote>
 <p><strong>经过多个版本的迭代，目前最新版本 v1.1.0 具有以下特性</strong> ✅</p>
 <ul>
 <li>

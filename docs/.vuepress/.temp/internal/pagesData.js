@@ -7,6 +7,14 @@ export const pagesData = {
   "v-774e7762": () => import(/* webpackChunkName: "v-774e7762" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/background.html.js").then(({ data }) => data),
   // path: /guide/introduction/functions.html
   "v-2be5ef72": () => import(/* webpackChunkName: "v-2be5ef72" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/functions.html.js").then(({ data }) => data),
+  // path: /guide/notice/alarm.html
+  "v-d2565d5a": () => import(/* webpackChunkName: "v-d2565d5a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/alarm.html.js").then(({ data }) => data),
+  // path: /guide/notice/email.html
+  "v-1e7216e8": () => import(/* webpackChunkName: "v-1e7216e8" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/email.html.js").then(({ data }) => data),
+  // path: /guide/notice/notice.html
+  "v-540df636": () => import(/* webpackChunkName: "v-540df636" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/notice.html.js").then(({ data }) => data),
+  // path: /guide/notice/ratelimiter.html
+  "v-38eb3608": () => import(/* webpackChunkName: "v-38eb3608" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/ratelimiter.html.js").then(({ data }) => data),
   // path: /guide/middleware/brpc.html
   "v-cf3ff1b6": () => import(/* webpackChunkName: "v-cf3ff1b6" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/brpc.html.js").then(({ data }) => data),
   // path: /guide/middleware/dubbo.html
@@ -41,14 +49,6 @@ export const pagesData = {
   "v-4ce8ba29": () => import(/* webpackChunkName: "v-4ce8ba29" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/hertzbeat.html.js").then(({ data }) => data),
   // path: /guide/monitor/prometheus_grafana.html
   "v-0a66322e": () => import(/* webpackChunkName: "v-0a66322e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/prometheus_grafana.html.js").then(({ data }) => data),
-  // path: /guide/notice/alarm.html
-  "v-d2565d5a": () => import(/* webpackChunkName: "v-d2565d5a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/alarm.html.js").then(({ data }) => data),
-  // path: /guide/notice/email.html
-  "v-1e7216e8": () => import(/* webpackChunkName: "v-1e7216e8" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/email.html.js").then(({ data }) => data),
-  // path: /guide/notice/notice.html
-  "v-540df636": () => import(/* webpackChunkName: "v-540df636" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/notice.html.js").then(({ data }) => data),
-  // path: /guide/notice/ratelimiter.html
-  "v-38eb3608": () => import(/* webpackChunkName: "v-38eb3608" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/ratelimiter.html.js").then(({ data }) => data),
   // path: /guide/other/articles.html
   "v-3ee2c8de": () => import(/* webpackChunkName: "v-3ee2c8de" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/other/articles.html.js").then(({ data }) => data),
   // path: /guide/other/contact.html

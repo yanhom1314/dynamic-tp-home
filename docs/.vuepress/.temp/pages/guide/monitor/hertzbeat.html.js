@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "使用 HertzBeat 对 线程池框架 DynamicTp 进行监控实践，5分钟搞定！ HertzBeat 介绍\r\" HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。\"\r支持对应用服务，数据库，操作系统，中间件，云原生等监控，阈值告警，告警通知(邮件微信钉钉飞书短信 Slack Discord Telegra",
+    "summary": "HertzBeat 介绍\r\" HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。\"\r支持对应用服务，数据库，操作系统，中间件，云原生等监控，阈值告警，告警通知(邮件微信钉钉飞书短信 Slack Discord Telegram)。; \r其将Http,Jmx,Ssh,Snmp,Jdbc等协议规范可配置化，只需配置Y",
     "head": [
       [
         "meta",
@@ -89,29 +89,22 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
-      "title": "使用 HertzBeat 对 线程池框架 DynamicTp 进行监控实践，5分钟搞定！",
-      "slug": "使用-hertzbeat-对-线程池框架-dynamictp-进行监控实践-5分钟搞定",
-      "children": [
-        {
-          "level": 3,
-          "title": "HertzBeat 介绍",
-          "slug": "hertzbeat-介绍",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "在 HertzBeat 5分钟搞定监控 DynamicTp",
-          "slug": "在-hertzbeat-5分钟搞定监控-dynamictp",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "完毕，现在坐等告警消息过来啦。叮叮叮叮",
-          "slug": "完毕-现在坐等告警消息过来啦。叮叮叮叮",
-          "children": []
-        }
-      ]
+      "level": 3,
+      "title": "HertzBeat 介绍",
+      "slug": "hertzbeat-介绍",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "在 HertzBeat 5分钟搞定监控 DynamicTp",
+      "slug": "在-hertzbeat-5分钟搞定监控-dynamictp",
+      "children": []
+    },
+    {
+      "level": 3,
+      "title": "完毕，现在坐等告警消息过来啦。叮叮叮叮",
+      "slug": "完毕-现在坐等告警消息过来啦。叮叮叮叮",
+      "children": []
     },
     {
       "level": 2,
@@ -121,8 +114,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 5.04,
-    "words": 1513
+    "minutes": 4.97,
+    "words": 1492
   },
   "filePathRelative": "guide/monitor/hertzbeat.md",
   "localizedDate": "2023年2月12日"

@@ -312,7 +312,7 @@ export const themeData = {
         {
           "text": "主页",
           "icon": "home",
-          "link": "/"
+          "link": "/guide/article/nacos-config"
         },
         {
           "text": "文档",

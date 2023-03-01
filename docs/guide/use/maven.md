@@ -16,9 +16,10 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-**maven 依赖**
+### maven 依赖
 
-1. apollo 应用接入用此依赖
++ apollo 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -27,7 +28,8 @@ star: true
        </dependency>
    ```
 
-2. spring-cloud 场景下的 nacos 应用接入用此依赖
++ spring-cloud 场景下的 nacos 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -36,7 +38,8 @@ star: true
        </dependency>
    ```
 
-3. 非 spring-cloud 场景下的 nacos 应用接入用此依赖
++ 非 spring-cloud 场景下的 nacos 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -47,7 +50,8 @@ star: true
    注意版本：nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE及以下版本，
    0.2.11-beta及以上版本对应springboot 版本2.4.0及以上版本，具体看官方说明
 
-4. zookeeper 应用接入用此依赖
++ zookeeper 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -72,7 +76,8 @@ star: true
     ```
     注：配置中心配置文件参考example-zookeeper/resource下的config.txt / config.json，该文件可以通过`ZKUI`工具导入到`Zookeeper`
    
-5. spring-cloud 场景下 zookeeper 应用接入用此依赖
++ spring-cloud 场景下 zookeeper 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -83,7 +88,8 @@ star: true
    
    注：配置中心配置文件参考example-zookeeper-cloud/resource下的config.txt，该文件可以通过`ZKUI`工具导入到`Zookeeper`
 
-6. spring-cloud 场景 consul 应用接入用此依赖
++ spring-cloud 场景 consul 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -92,7 +98,8 @@ star: true
        </dependency>
    ```
 
-7. etcd 应用接入用此依赖
++ etcd 应用接入用此依赖
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -101,7 +108,8 @@ star: true
        </dependency>
    ```
 
-8. polaris 应用接入用此依赖（未发布）
++ polaris 应用接入用此依赖（未发布）
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -110,7 +118,8 @@ star: true
        </dependency>
    ```
 
-9. huaweicloud 应用接入用此依赖（未发布）
++ huaweicloud 应用接入用此依赖（未发布）
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -119,7 +128,8 @@ star: true
        </dependency>
    ```
    
-10. 无配置中心应用接入用此依赖，无动态调整能力，有监控告警能力
++ 无配置中心应用接入用此依赖，无动态调整能力，有监控告警能力
+
    ```xml
        <dependency>
            <groupId>cn.dynamictp</groupId>
@@ -127,7 +137,13 @@ star: true
            <version>1.1.0</version>
        </dependency>
    ```
-   
+
+### 注意事项
+
 ::: warning
-一定要根据应用类型引入正确的依赖，不然会集成失败，有版本兼容性问题可以提 Issues 或加群反馈。
+
+1. 一定要根据应用类型引入正确的依赖，不然会集成失败
+
+2. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。
+
 :::

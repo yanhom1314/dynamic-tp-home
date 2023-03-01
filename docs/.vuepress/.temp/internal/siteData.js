@@ -21,8 +21,7 @@ export const siteData = {
     [
       "script",
       {
-        "src": "/makemoney.js",
-        "async": "async"
+        "src": "/makemoney.js"
       }
     ],
     [

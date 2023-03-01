@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": false,
     "star": true,
-    "summary": "框架功能大体可以分为以下几个模块 1.配置变更监听模块 2.服务内部线程池管理模块 3.三方组件线程池管理模块 4.监控模块 5.通知告警模块 代码结构\r1.adapter 模块：主要是适配一些第三方组件的线程池管理，目前已经实现的有 SpringBoot 内置的三大 web 容器（Tomcat、Jetty、Undertow）、Dubbo、RocketMq、",
+    "summary": "模块划分\r配置变更监听模块; \r\" 1. 监听特定配置中心的指定配置文件（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris、ServiceComb），可通过内部提供的 SPI 接口扩展其他实现\"\r\"\"\r\" 2. 解析配置文件内容，内置实现 yml、properties、json 配置文件的解析，可通过内部提供的 S",
     "head": [
       [
         "meta",
@@ -89,39 +89,27 @@ export const data = {
   "excerpt": "",
   "headers": [
     {
-      "level": 2,
-      "title": "配置变更监听模块",
-      "slug": "配置变更监听模块",
+      "level": 3,
+      "title": "模块划分",
+      "slug": "模块划分",
       "children": []
     },
     {
-      "level": 2,
-      "title": "服务内部线程池管理模块",
-      "slug": "服务内部线程池管理模块",
+      "level": 3,
+      "title": "代码结构",
+      "slug": "代码结构",
       "children": []
     },
     {
-      "level": 2,
-      "title": "三方组件线程池管理",
-      "slug": "三方组件线程池管理",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "监控模块",
-      "slug": "监控模块",
-      "children": []
-    },
-    {
-      "level": 2,
-      "title": "通知告警模块",
-      "slug": "通知告警模块",
+      "level": 3,
+      "title": "架构图",
+      "slug": "架构图",
       "children": []
     }
   ],
   "readingTime": {
-    "minutes": 3.32,
-    "words": 997
+    "minutes": 3.42,
+    "words": 1027
   },
   "filePathRelative": "guide/introduction/architecture.md",
   "localizedDate": "2022年6月11日"

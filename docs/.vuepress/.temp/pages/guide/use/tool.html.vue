@@ -75,4 +75,6 @@
 <p>common 模块 queue 包提供内存安全阻塞队列 MemorySafeLinkedBlockingQueue，开发中有需求可以选择使用</p>
 <h3 id="配置文件解析器" tabindex="-1"><a class="header-anchor" href="#配置文件解析器" aria-hidden="true">#</a> 配置文件解析器</h3>
 <p>core 模块提供 json、properties、yaml 类型配置文件解析器，有需要可以使用</p>
+<h3 id="通知告警" tabindex="-1"><a class="header-anchor" href="#通知告警" aria-hidden="true">#</a> 通知告警</h3>
+<p>通知告警模块复用性很强，项目中有这类需求可以调整下使用</p>
 </div></template>

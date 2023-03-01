@@ -1,10 +1,25 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<p><strong>接入步骤</strong></p>
-<p>1.引入相应配置中心的依赖，具体见下述 maven 依赖</p>
-<p>2.配置中心配置线程池实例，配置见下述（给出的是全配置项，不用的可以删除）</p>
-<p>3.启动类加 @EnableDynamicTp 注解</p>
-<p>4.使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getDtpExecutor(&quot;name&quot;) 获取</p>
-<p>5.通过以上4步就可以使用了，是不是感觉很简单啊</p>
+<h3 id="接入步骤" tabindex="-1"><a class="header-anchor" href="#接入步骤" aria-hidden="true">#</a> 接入步骤</h3>
+<blockquote>
+<ol>
+<li>
+<p>引入相应配置中心的依赖，具体见下述 maven 依赖</p>
+</li>
+<li>
+<p>配置中心配置线程池实例，配置见下述（给出的是全配置项，不用的可以删除）</p>
+</li>
+<li>
+<p>启动类加 @EnableDynamicTp 注解</p>
+</li>
+<li>
+<p>使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getDtpExecutor(&quot;name&quot;) 获取</p>
+</li>
+<li>
+<p>通过以上 4 步就可以使用了，是不是感觉超级简单呀</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="日志输出" tabindex="-1"><a class="header-anchor" href="#日志输出" aria-hidden="true">#</a> 日志输出</h3>
 <div class="custom-container tip"><p class="custom-container-title">启动日志输出</p>
 <p>服务启动看到有如下日志输出说明接入成功</p>
 <div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token operator">|</span>  __ <span class="token punctuation">\</span>                            <span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">|</span>__   __<span class="token operator">|</span>
@@ -20,10 +35,19 @@ DynamicTp register dtpExecutor, source: beanPostProcessor, executor: DtpMainProp
 
 DtpRegistry initialization end, remote dtpExecutors: <span class="token punctuation">[</span>dtpExecutor1, dtpExecutor2<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> dtpExecutors: <span class="token punctuation">[</span>ioIntensiveExecutor<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> commonExecutors: <span class="token punctuation">[</span>commonExecutor<span class="token punctuation">]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
+<h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项</h3>
 <div class="custom-container warning"><p class="custom-container-title">注意</p>
-<p>1.普通 JUC 线程池或者 Spring 线程池想要被监控，可以 @Bean 定义时加 @DynamicTp 注解</p>
-<p>2.动态线程池实例服务启动时会根据配置中心的配置动态注册到 Spring 容器中，建议不要用 @Bean 编程式重复声明同一线程池实例，直接配置在配置中心就行</p>
-<p>3.阻塞队列只有 VariableLinkedBlockingQueue 类型可以修改 capacity，该类型功能和 LinkedBlockingQueue 相似， 只是 capacity 不是
-final 类型，可以修改， VariableLinkedBlockingQueue 参考 RabbitMq 的实现</p>
+<ol>
+<li>
+<p>普通 JUC 线程池或者 Spring 线程池想要被监控，可以 @Bean 定义时加 @DynamicTp 注解</p>
+</li>
+<li>
+<p>动态线程池实例服务启动时会根据配置中心的配置动态注册到 Spring 容器中，建议不要用 @Bean 编程式重复声明同一线程池实例，直接配置在配置中心就行</p>
+</li>
+<li>
+<p>阻塞队列只有 VariableLinkedBlockingQueue 及其子类可以修改 capacity，该类型功能和 LinkedBlockingQueue 相似， 只是 capacity 不是
+final 类型，可以修改，VariableLinkedBlockingQueue 参考 RabbitMq 的实现</p>
+</li>
+</ol>
 </div>
 </div></template>
