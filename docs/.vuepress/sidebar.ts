@@ -226,6 +226,12 @@ export default sidebar([
         link: "/guide/other/contact"
       },
       {
+        text: "接入公司",
+        icon: "people",
+        collapsable: false,
+        link: "/guide/other/users"
+      },
+      {
         text: "相关文章",
         icon: "note",
         collapsable: false,

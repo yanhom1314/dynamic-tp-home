@@ -20,7 +20,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "你还在为 Dubbo 线程池耗尽而烦恼吗？😭😭😭 快快使用 DynamicTp 的三方中间件线程池管理功能吧，一定程度上能减少你的烦恼。😅😅😅\r同时支持以下三种 dubbo 版本 1. apache dubbo 2. alibaba dubbo 3. dubbox 使用步骤 1. 引入下述依赖 2. 配置文件中配置 dubbo 线程池 3. 启动",
+    "summary": "你还在为 Dubbo 线程池耗尽而烦恼吗？😭😭😭 快快使用 DynamicTp 的三方中间件线程池管理功能吧，一定程度上能减少你的烦恼。😅😅😅 同时支持以下三种 dubbo 版本 1. apache dubbo 2. alibaba dubbo 3. dubbox 使用步骤 1. 引入下述依赖 2. 配置文件中配置 dubbo 线程池 3. 启动",
     "head": [
       [
         "meta",

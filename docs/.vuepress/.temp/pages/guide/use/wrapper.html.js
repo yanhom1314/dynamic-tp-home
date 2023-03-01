@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "任务包装器 提供了一些任务包装器，可以实现特定的功能\r\" 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc\"\r\"\"\r\" 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl\"\r\"\"\r\" 3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace\"\r",
+    "summary": "任务包装器 提供了一些任务包装器，可以实现特定的功能 \" 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc\" \"\" \" 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl\" \"\" \" 3. SwTraceTaskWrapper 支持 skywalking TID 传递，名称：swTrace\" ",
     "head": [
       [
         "meta",

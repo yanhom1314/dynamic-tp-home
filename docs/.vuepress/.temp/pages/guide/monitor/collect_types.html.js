@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "采集类型 目前框架提供了四种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer\r\" 1. Logging：线程池指标数据会以 Json 格式输出到指定的日志文件里\"\r\"\"\r\" 2. Internal_logging：线程池指标数据会以 Json 格式输出到项目日志文件里\"\r\"\"\r\" 3. Microme",
+    "summary": "采集类型 目前框架提供了四种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer \" 1. Logging：线程池指标数据会以 Json 格式输出到指定的日志文件里\" \"\" \" 2. Internal_logging：线程池指标数据会以 Json 格式输出到项目日志文件里\" \"\" \" 3. Microme",
     "head": [
       [
         "meta",
