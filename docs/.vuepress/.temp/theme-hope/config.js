@@ -10,7 +10,7 @@ import { injectMobile, setupMobile, useScrollPromise } from "@theme-hope/composa
 import { injectDarkMode, setupDarkMode } from "@theme-hope/module/outlook/composables";
 import { setupSidebarItems } from "@theme-hope/module/sidebar/composables";
 
-import "D:/dynamic-tp-home/node_modules/vuepress-theme-hope/lib/client/styles/index.scss";
+import "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-theme-hope/lib/client/styles/index.scss";
 
 
 

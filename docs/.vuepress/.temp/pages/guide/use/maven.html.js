@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "maven 依赖\rapollo 应用接入用此依赖; \rspring-cloud 场景下的 nacos 应用接入用此依赖; \r非 spring-cloud 场景下的 nacos 应用接入用此依赖; 注意版本：nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE及以下版",
+    "summary": "maven 依赖 apollo 应用接入用此依赖; spring-cloud 场景下的 nacos 应用接入用此依赖; 非 spring-cloud 场景下的 nacos 应用接入用此依赖; 注意版本：nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE及以下版本，",
     "head": [
       [
         "meta",

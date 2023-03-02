@@ -1,9 +1,9 @@
-import { useStyleTag } from "D:/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/composables";
+import { useStyleTag } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/composables";
 import { h } from "vue";
 import { defineClientConfig } from "@vuepress/client";
-import Badge from "D:/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/Badge";
-import FontIcon from "D:/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/FontIcon";
-import BackToTop from "D:/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/BackToTop";
+import Badge from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/Badge";
+import FontIcon from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/FontIcon";
+import BackToTop from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/BackToTop";
 
 
 export default defineClientConfig({

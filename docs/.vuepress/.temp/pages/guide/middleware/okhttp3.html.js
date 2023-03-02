@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 okhttp3 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知\r1. 服务启动会自动从 Spring 容器中获取所有被 Spring 容器管理的 OkHttpClient 实例 2. 线程池名称规则：beanName + Tp（可以在启动日志找输出的线",
+    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 okhttp3 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知 1. 服务启动会自动从 Spring 容器中获取所有被 Spring 容器管理的 OkHttpClient 实例 2. 线程池名称规则：beanName + Tp（可以在启动日志找输出的线",
     "head": [
       [
         "meta",

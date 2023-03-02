@@ -241,6 +241,12 @@ export const themeData = {
               "link": "/guide/other/contact"
             },
             {
+              "text": "接入公司",
+              "icon": "people",
+              "collapsable": false,
+              "link": "/guide/other/users"
+            },
+            {
               "text": "相关文章",
               "icon": "note",
               "collapsable": false,
@@ -312,7 +318,7 @@ export const themeData = {
         {
           "text": "主页",
           "icon": "home",
-          "link": "/guide/article/nacos-config"
+          "link": "/"
         },
         {
           "text": "文档",
@@ -328,6 +334,11 @@ export const themeData = {
           "text": "加入社群",
           "icon": "wechat",
           "link": "/guide/other/contact"
+        },
+        {
+          "text": "用户",
+          "icon": "people",
+          "link": "/guide/other/users"
         },
         {
           "text": "Gitee",

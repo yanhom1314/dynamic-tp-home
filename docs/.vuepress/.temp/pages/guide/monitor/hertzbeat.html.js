@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "HertzBeat 介绍\r\" HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。\"\r支持对应用服务，数据库，操作系统，中间件，云原生等监控，阈值告警，告警通知(邮件微信钉钉飞书短信 Slack Discord Telegram)。; \r其将Http,Jmx,Ssh,Snmp,Jdbc等协议规范可配置化，只需配置Y",
+    "summary": "HertzBeat 介绍 \" HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。\" 支持对应用服务，数据库，操作系统，中间件，云原生等监控，阈值告警，告警通知(邮件微信钉钉飞书短信 Slack Discord Telegram)。; 其将Http,Jmx,Ssh,Snmp,Jdbc等协议规范可配置化，只需配置YM",
     "head": [
       [
         "meta",
