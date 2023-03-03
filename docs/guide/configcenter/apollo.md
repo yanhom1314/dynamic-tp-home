@@ -1,6 +1,6 @@
 ---
 title: apollo 应用接入
-icon: install
+icon: palette
 order: 1
 author: yanhom
 date: 2022-06-11
@@ -16,6 +16,24 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
+::: tip 建议忠告
+
+1. 动态线程池配置文件，建议单独开一个文件放到配置中心
+
+2. 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
+
+3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
+
+4. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。
+
+:::
+
+::: danger
+
+1. 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
+
+:::
+
 ### maven 依赖
 
  ```xml
@@ -28,9 +46,7 @@ star: true
 
 ### 线程池配置文件
 
-#### yml 配置
-
-建议单独开一个配置文件放在 apollo 中，如：user-center-dtp-dev.yml
+#### yml 格式
 
 ```yaml
 spring:
@@ -98,7 +114,7 @@ spring:
               threshold: 1
 ```
 
-#### properties 配置
+#### properties 格式
 
 ```properties
 spring.dynamic.tp.enabled=true

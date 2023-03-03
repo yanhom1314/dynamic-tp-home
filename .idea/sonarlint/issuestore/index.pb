@@ -73,8 +73,6 @@ M
 docs/guide/middleware/brpc.md,7\f\7f99fc12e2f6f2e2509c188bafa747383abf10e4
 N
 docs/guide/middleware/dubbo.md,a\4\a4e99a4579583f76a8e6091c23211c74db75ca9a
-F
-docs/guide/use/tool.md,0\e\0ee95bbca8bea31bffd769a8a3bbe76f09121133
 I
 docs/guide/use/wrapper.md,e\5\e57125dab0912387d0d35834d7c0da3ea061dfba
 >
@@ -83,8 +81,6 @@ S
 #docs/guide/monitor/collect_types.md,a\9\a91be2252811371e9b352ff4902f4e42e89e942f
 H
 docs/.vuepress/config.ts,4\f\4f54910eac21c1cf4a4e0a2e94886b9638a2970a
-I
-docs/.vuepress/sidebar.ts,c\c\cc35a1d273609bd9dbe806c1d1b7d9b8fb4bf7c6
 G
 docs/.vuepress/theme.ts,f\7\f72ac5aa48dcc42975d024ee433c1f01c99b679f
 W

@@ -1,6 +1,6 @@
 ---
 title: zookeeper 应用接入
-icon: install
+icon: leaf
 order: 1
 author: yanhom
 date: 2022-06-11
@@ -15,6 +15,28 @@ star: true
 ---
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
+
+::: tip 建议忠告
+
+1. 动态线程池配置文件，建议单独开一个文件放到配置中心
+
+2. 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
+
+3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
+
+4. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。 
+
+5. zookpeer 支持 properties / json 两种配置 
+
+6. 可以通过 `ZKUI` 工具快速导入下述格式的配置
+
+:::
+
+::: danger
+
+1. 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
+
+:::
 
 ### maven 依赖
 
@@ -184,7 +206,7 @@ spring.dynamic.tp.executors[0].notifyItems[4].threshold=1
 }
 ```
 
-#### 通过 `ZKUI` 工具导入
+#### 通过 `ZKUI` 工具导入 properties 格式
 
 ```text
 /configserver/dev/user-center=spring.dynamic.tp.enabled=true
@@ -242,6 +264,7 @@ spring.dynamic.tp.executors[0].notifyItems[4].threshold=1
 /configserver/dev/user-center=spring.dynamic.tp.executors[0].notifyItems[4].enabled=true
 /configserver/dev/user-center=spring.dynamic.tp.executors[0].notifyItems[4].threshold=1
 ```
+
 ### application.yml 配置
 
 ```yaml
@@ -257,8 +280,3 @@ spring:
         node: dtp-group
         config-key: user-center-dtp-json   # json 格式会用到
 ```
-
-::: tip
-1. zookpeer 支持 properties / json 两种配置
-2. 可以通过 `ZKUI` 工具快速导入上述格式的配置
-:::

@@ -26,6 +26,7 @@ star: true
 - [视旅科技](https://visiotrip.com)
 - [牛信网络科技有限公司](https://www.nxcloud.com)
 - [壹融站信息技术（深圳）有限公司](https://www.yirongzhan.com)
+- [深圳市时代华盛网络科技有限公司](https://www.hstong.com/)
 
 :::
 

@@ -38,18 +38,6 @@ export default sidebar([
         link: "/guide/use/quick-start"
       },
       {
-        text: "maven依赖",
-        icon: "install",
-        collapsable: false,
-        link: "/guide/use/maven"
-      },
-      {
-        text: "配置文件",
-        icon: "config",
-        collapsable: false,
-        link: "/guide/use/config"
-      },
-      {
         text: "代码使用",
         icon: "code",
         collapsable: false,
@@ -69,7 +57,73 @@ export default sidebar([
       }
     ],
   },
-
+  {
+    text: "配置中心",
+    icon: "type",
+    prefix: "/guide",
+    children: [
+      {
+        text: "apollo 应用接入",
+        icon: "palette",
+        collapsable: false,
+        link: "/guide/configcenter/apollo"
+      },
+      {
+        text: "nacos 应用接入",
+        icon: "module",
+        collapsable: false,
+        link: "/guide/configcenter/nacos"
+      },
+      {
+        text: "nacos-cloud 应用接入",
+        icon: "mesh",
+        collapsable: false,
+        link: "/guide/configcenter/nacos-cloud"
+      },
+      {
+        text: "zoopkeeper 应用接入",
+        icon: "leaf",
+        collapsable: false,
+        link: "/guide/configcenter/zoopkeeper"
+      },
+      {
+        text: "zookeeper-cloud 应用接入",
+        icon: "interact",
+        collapsable: false,
+        link: "/guide/configcenter/zookeeper-cloud"
+      },
+      {
+        text: "consul-cloud 应用接入",
+        icon: "emoji",
+        collapsable: false,
+        link: "/guide/configcenter/consul-cloud"
+      },
+      {
+        text: "etcd 应用接入",
+        icon: "contrast",
+        collapsable: false,
+        link: "/guide/configcenter/etcd"
+      },
+      {
+        text: "polaris 应用接入",
+        icon: "alias",
+        collapsable: false,
+        link: "/guide/configcenter/polaris"
+      },
+      {
+        text: "huawei-cloud 应用接入",
+        icon: "speed",
+        collapsable: false,
+        link: "/guide/configcenter/huawei-cloud"
+      },
+      {
+        text: "无配置中心应用接入",
+        icon: "discover",
+        collapsable: false,
+        link: "/guide/configcenter/none"
+      }
+    ],
+  },
   {
     text: "通知报警",
     icon: "notice",
