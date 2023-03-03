@@ -16,9 +16,9 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-::: tip 建议忠告
+::: tip
 
-1. 动态线程池配置文件，建议单独开一个文件放到配置中心
+1. 动态线程池配置文件，建议单独开一个文件放到 consul 中，如：user-center-dtp
 
 2. 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
 
@@ -47,8 +47,6 @@ star: true
 ### 线程池配置文件
 
 #### yaml 格式
-
-建议单独开一个配置文件放在 consul 中，如：user-center-dtp
 
 ```yaml
 spring:

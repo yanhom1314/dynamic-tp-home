@@ -84,7 +84,7 @@ export default sidebar([
         text: "zoopkeeper 应用接入",
         icon: "leaf",
         collapsable: false,
-        link: "/guide/configcenter/zoopkeeper"
+        link: "/guide/configcenter/zookeeper"
       },
       {
         text: "zookeeper-cloud 应用接入",

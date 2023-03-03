@@ -16,9 +16,9 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-::: tip 建议忠告
+::: tip
 
-1. 动态线程池配置文件，建议单独开一个文件放到配置中心
+1. 动态线程池配置文件，建议单独开一个文件放在 nacos 中，如：user-center-dtp-dev.yml
 
 2. 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
 
@@ -26,9 +26,9 @@ star: true
 
 4. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。 
 
-5. nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE及以下版本 
+5. nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE 及以下版本 
 
-6. 0.2.11-beta及以上版本对应springboot 版本2.4.0及以上版本，具体看官方说明
+6. 0.2.11-beta 及以上版本对应 springboot 版本 2.4.0 及以上版本，具体看官方说明
 
 :::
 
@@ -51,8 +51,6 @@ star: true
 ### 线程池配置文件
 
 #### yml 格式
-
-建议单独开一个配置文件放在 nacos 中，如：user-center-dtp-dev.yml
 
 ```yaml
 spring:

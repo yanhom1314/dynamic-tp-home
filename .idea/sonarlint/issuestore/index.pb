@@ -79,8 +79,6 @@ I
 docs/README.md,9\f\9f7cbce127b94a94ee14460050fbff2ce58417d0
 S
 #docs/guide/monitor/collect_types.md,a\9\a91be2252811371e9b352ff4902f4e42e89e942f
-H
-docs/.vuepress/config.ts,4\f\4f54910eac21c1cf4a4e0a2e94886b9638a2970a
 G
 docs/.vuepress/theme.ts,f\7\f72ac5aa48dcc42975d024ee433c1f01c99b679f
 W
