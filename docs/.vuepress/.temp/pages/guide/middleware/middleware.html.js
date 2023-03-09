@@ -17,7 +17,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "你还在为 Dubbo 线程池耗尽而烦恼吗？😭😭😭 你还在为 RocketMq 消费积压而烦恼吗？😭😭😭 快快使用 DynamicTp 的三方中间件线程池管理功能吧，一定程度上能减少你的烦恼。😅😅😅 已接入三方中间件 1. SpringBoot 内置 Tomcat 线程池管理 2. SpringBoot 内置 Jetty 线程池管理 3. S",
+    "summary": "你还在为 Dubbo 线程池耗尽而烦恼吗？😭😭😭 你还在为 RocketMq 消费积压而烦恼吗？😭😭😭 快快使用 DynamicTp 的三方中间件线程池管理功能吧，一定程度上能减少你的烦恼。😅😅😅\r已接入三方中间件 1. SpringBoot 内置 Tomcat 线程池管理 2. SpringBoot 内置 Jetty 线程池管理 3. S",
     "head": [
       [
         "meta",

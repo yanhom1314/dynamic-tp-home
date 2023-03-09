@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 grpc 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知 1. grpc 官方没有提供 springboot starter，我们对开源项目 https://github.com/yidongnan/grpc-spring-boot-starter 进",
+    "summary": "使用步骤 1. 引入下述依赖 2. 配置文件中配置 grpc 线程池 3. 启动日志 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知\r1. grpc 官方没有提供 springboot starter，我们对开源项目 https://github.com/yidongnan/grpc-spring-boot-starter 进",
     "head": [
       [
         "meta",

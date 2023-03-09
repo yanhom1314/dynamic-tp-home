@@ -1,20 +1,22 @@
 export const data = {
   "key": "v-0a66322e",
   "path": "/guide/monitor/prometheus_grafana.html",
-  "title": "micrometer接入流程",
+  "title": "prometheus+grafana 接入流程",
   "lang": "zh-CN",
   "frontmatter": {
-    "title": "micrometer接入流程",
+    "title": "prometheus+grafana 接入流程",
     "icon": "config",
     "order": 1,
     "author": "yanhom",
     "date": "2022-06-11T00:00:00.000Z",
     "category": [
       "micrometer接入流程",
+      "prometheus+grafana 接入流程",
       "dynamictp"
     ],
     "tag": [
       "micrometer接入流程",
+      "prometheus+grafana 接入流程",
       "dynamictp"
     ],
     "sticky": true,
@@ -39,7 +41,7 @@ export const data = {
         "meta",
         {
           "property": "og:title",
-          "content": "micrometer接入流程"
+          "content": "prometheus+grafana 接入流程"
         }
       ],
       [
@@ -68,6 +70,13 @@ export const data = {
         {
           "property": "article:tag",
           "content": "micrometer接入流程"
+        }
+      ],
+      [
+        "meta",
+        {
+          "property": "article:tag",
+          "content": "prometheus+grafana 接入流程"
         }
       ],
       [

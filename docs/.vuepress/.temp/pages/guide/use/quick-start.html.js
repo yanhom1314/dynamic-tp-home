@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": true,
     "star": true,
-    "summary": "接入步骤 \" 1. 引入相应配置中心的依赖，具体见下述 maven 依赖\" \"\" \" 2. 配置中心配置线程池实例，配置见下述（给出的是全配置项，不用的可以删除）\" \"\" \" 3. 启动类加 @EnableDynamicTp 注解\" \"\" \" 4. 使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getDtp",
+    "summary": "接入步骤\r\" 1. 引入相应配置中心的依赖，具体见下述 maven 依赖\"\r\"\"\r\" 2. 配置中心配置线程池实例，配置文件见下述\"\r\"\"\r\" 3. 启动类加 @EnableDynamicTp 注解\"\r\"\"\r\" 4. 使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getDtpExecutor(\"name\")",
     "head": [
       [
         "meta",
@@ -108,8 +108,8 @@ export const data = {
     }
   ],
   "readingTime": {
-    "minutes": 1.27,
-    "words": 381
+    "minutes": 1.23,
+    "words": 368
   },
   "filePathRelative": "guide/use/quick-start.md",
   "localizedDate": "2022年6月11日"

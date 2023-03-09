@@ -57,18 +57,6 @@ export const themeData = {
               "link": "/guide/use/quick-start"
             },
             {
-              "text": "maven依赖",
-              "icon": "install",
-              "collapsable": false,
-              "link": "/guide/use/maven"
-            },
-            {
-              "text": "配置文件",
-              "icon": "config",
-              "collapsable": false,
-              "link": "/guide/use/config"
-            },
-            {
               "text": "代码使用",
               "icon": "code",
               "collapsable": false,
@@ -85,6 +73,73 @@ export const themeData = {
               "icon": "tool",
               "collapsable": false,
               "link": "/guide/use/tool"
+            }
+          ]
+        },
+        {
+          "text": "配置中心",
+          "icon": "type",
+          "prefix": "/guide",
+          "children": [
+            {
+              "text": "apollo 应用接入",
+              "icon": "palette",
+              "collapsable": false,
+              "link": "/guide/configcenter/apollo"
+            },
+            {
+              "text": "nacos 应用接入",
+              "icon": "module",
+              "collapsable": false,
+              "link": "/guide/configcenter/nacos"
+            },
+            {
+              "text": "nacos-cloud 应用接入",
+              "icon": "mesh",
+              "collapsable": false,
+              "link": "/guide/configcenter/nacos-cloud"
+            },
+            {
+              "text": "zoopkeeper 应用接入",
+              "icon": "leaf",
+              "collapsable": false,
+              "link": "/guide/configcenter/zookeeper"
+            },
+            {
+              "text": "zookeeper-cloud 应用接入",
+              "icon": "interact",
+              "collapsable": false,
+              "link": "/guide/configcenter/zookeeper-cloud"
+            },
+            {
+              "text": "consul-cloud 应用接入",
+              "icon": "emoji",
+              "collapsable": false,
+              "link": "/guide/configcenter/consul-cloud"
+            },
+            {
+              "text": "etcd 应用接入",
+              "icon": "contrast",
+              "collapsable": false,
+              "link": "/guide/configcenter/etcd"
+            },
+            {
+              "text": "polaris 应用接入",
+              "icon": "alias",
+              "collapsable": false,
+              "link": "/guide/configcenter/polaris"
+            },
+            {
+              "text": "huawei-cloud 应用接入",
+              "icon": "speed",
+              "collapsable": false,
+              "link": "/guide/configcenter/huawei-cloud"
+            },
+            {
+              "text": "无配置中心应用接入",
+              "icon": "discover",
+              "collapsable": false,
+              "link": "/guide/configcenter/none"
             }
           ]
         },
@@ -308,7 +363,7 @@ export const themeData = {
         "openInNewWindow": "Open in new window"
       },
       "footer": "MIT Licensed  | Theme by <a href=\"https://vuepress-theme-hope.github.io\">vuepress-theme-hope</a> ",
-      "copyright": "Copyright © 2022-present <a href=\"https://github.com/yanhom1314\">yanhom</a>",
+      "copyright": "Copyright © 2022-present <a href=\"https://github.com/yanhom1314\">yanhom</a> | <a href=\"https://beian.miit.gov.cn\">京ICP备2023004774号</a>",
       "author": {
         "name": "yanhom",
         "url": "https://gitee.com/dromara/dynamic-tp"

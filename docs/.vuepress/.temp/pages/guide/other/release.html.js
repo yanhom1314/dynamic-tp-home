@@ -15,7 +15,7 @@ export const data = {
     ],
     "sticky": false,
     "star": true,
-    "summary": "v1.1.0 发布记录 Features adapter 模块新增 motan rpc 框架线程池管理; adapter 模块新增 okhttp3 线程池管理; 新增 OrderedDtpExecutor，感谢 @hailang 提供实现; adapter 模块新增 brpc（starlight） 线程池管理; adapter 模块新增 tars rpc 线",
+    "summary": "v1.1.0 发布记录 Features\radapter 模块新增 motan rpc 框架线程池管理; \radapter 模块新增 okhttp3 线程池管理; \r新增 OrderedDtpExecutor，感谢 @hailang 提供实现; \radapter 模块新增 brpc（starlight） 线程池管理; \radapter 模块新增 tars r",
     "head": [
       [
         "meta",

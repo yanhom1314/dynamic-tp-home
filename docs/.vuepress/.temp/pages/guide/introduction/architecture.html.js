@@ -19,7 +19,7 @@ export const data = {
     ],
     "sticky": false,
     "star": true,
-    "summary": "模块划分 配置变更监听模块; \" 1. 监听特定配置中心的指定配置文件（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris、ServiceComb），可通过内部提供的 SPI 接口扩展其他实现\" \"\" \" 2. 解析配置文件内容，内置实现 yml、properties、json 配置文件的解析，可通过内部提供的 SP",
+    "summary": "模块划分\r配置变更监听模块; \r\" 1. 监听特定配置中心的指定配置文件（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris、ServiceComb），可通过内部提供的 SPI 接口扩展其他实现\"\r\"\"\r\" 2. 解析配置文件内容，内置实现 yml、properties、json 配置文件的解析，可通过内部提供的 S",
     "head": [
       [
         "meta",

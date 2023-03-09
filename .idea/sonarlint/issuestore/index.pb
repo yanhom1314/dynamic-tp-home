@@ -1,8 +1,4 @@
 
-9
-	deploy.sh,b/e/be94fd40f0c4b440044c3f852e44fd2a75f7b3cc
-A
-package-lock.json,f/a/fa288d1472d29beccb489a676f68739ad365fc47
 Y
 )docs/.vuepress/.temp/components/config.js,c\b\cb358df1d6630e82caf7a63adfb7da92b8513f4b
 ^
@@ -97,3 +93,19 @@ M
 docs/guide/use/quick-start.md,2\1\21fe4e119dffc96d0e37135af0916d6fe06b5cd7
 S
 #docs/guide/monitor/collect_types.md,a\9\a91be2252811371e9b352ff4902f4e42e89e942f
+W
+'docs/guide/configcenter/huawei-cloud.md,c\b\cbcbccb6065c74a6d5988a5d3aafbce13f659fcb
+H
+docs/.vuepress/config.ts,4\f\4f54910eac21c1cf4a4e0a2e94886b9638a2970a
+H
+docs/.vuepress/navbar.ts,8\6\86c6248549502539da941b78d6df103a764b7de4
+O
+docs/.vuepress/public/index.css,f\f\ffdcef587042973914dbb38469cc2f2795dd75b6
+R
+"docs/.vuepress/public/makemoney.js,a\d\ad4b31f60927784cddff3cb24cfe27da288ce52e
+R
+"docs/.vuepress/public/adblocked.js,a\a\aa1b56f2d90bb1837dacb7d2d5229e560431c2a0
+O
+docs/guide/configcenter/none.md,5\3\536b5673c73a764ee27e158cbd269b3e47c2b8f2
+>
+docs/README.md,9\f\9f7cbce127b94a94ee14460050fbff2ce58417d0
