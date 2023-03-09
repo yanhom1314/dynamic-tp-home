@@ -36,7 +36,7 @@ features:
     link: "/guide/middleware/middleware"
 ---
 
-<div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"></div>
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 # 功能特性 ✅
 
