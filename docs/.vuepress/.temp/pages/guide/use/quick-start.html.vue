@@ -20,9 +20,10 @@
 </ol>
 </blockquote>
 <h3 id="日志输出" tabindex="-1"><a class="header-anchor" href="#日志输出" aria-hidden="true">#</a> 日志输出</h3>
-<div class="custom-container tip"><p class="custom-container-title">启动日志输出</p>
+<div class="hint-container tip">
+<p class="hint-container-title">启动日志输出</p>
 <p>服务启动看到有如下日志输出说明接入成功</p>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token operator">|</span>  __ <span class="token punctuation">\</span>                            <span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">|</span>__   __<span class="token operator">|</span>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token operator">|</span>  __ <span class="token punctuation">\</span>                            <span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">|</span>__   __<span class="token operator">|</span>
 <span class="token operator">|</span> <span class="token operator">|</span>  <span class="token operator">|</span> <span class="token operator">|</span>_   _ _ __   __ _ _ __ ___  _  ___<span class="token operator">|</span> <span class="token operator">|</span>_ __
 <span class="token operator">|</span> <span class="token operator">|</span>  <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token string">'_ \ / _` | '</span>_ ` _ <span class="token operator">|</span> <span class="token operator">|</span>/ __<span class="token operator">|</span> <span class="token operator">|</span> '_ <span class="token punctuation">\</span>
 <span class="token operator">|</span> <span class="token operator">|</span>__<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span>_<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token punctuation">(</span>_<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token punctuation">(</span>__<span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span>_<span class="token punctuation">)</span> <span class="token operator">|</span>
@@ -36,7 +37,8 @@ DynamicTp register dtpExecutor, source: beanPostProcessor, executor: DtpMainProp
 DtpRegistry initialization end, remote dtpExecutors: <span class="token punctuation">[</span>dtpExecutor1, dtpExecutor2<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> dtpExecutors: <span class="token punctuation">[</span>ioIntensiveExecutor<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> commonExecutors: <span class="token punctuation">[</span>commonExecutor<span class="token punctuation">]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
 <h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项</h3>
-<div class="custom-container warning"><p class="custom-container-title">注意</p>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
 <ol>
 <li>
 <p>普通 JUC 线程池或者 Spring 线程池想要被监控，可以 @Bean 定义时加 @DynamicTp 注解</p>
@@ -51,3 +53,5 @@ final 类型，可以修改，VariableLinkedBlockingQueue 参考 RabbitMq 的实
 </ol>
 </div>
 </div></template>
+
+

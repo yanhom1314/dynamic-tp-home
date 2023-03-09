@@ -18,7 +18,7 @@
 <ol>
 <li>开启 SpringBoot Actuator Endpoint 暴露出<code v-pre>DynamicTp</code>指标接口</li>
 </ol>
-<div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code><span class="token key atrule">management</span><span class="token punctuation">:</span>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token key atrule">management</span><span class="token punctuation">:</span>
   <span class="token key atrule">endpoints</span><span class="token punctuation">:</span>
     <span class="token key atrule">web</span><span class="token punctuation">:</span>
       <span class="token key atrule">exposure</span><span class="token punctuation">:</span>
@@ -26,7 +26,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
 <li>重启后测试访问指标接口 <code v-pre>ip:port/actuator/dynamic-tp</code> 是否有响应json数据如下:</li>
 </ol>
-<div class="language-json ext-json line-numbers-mode"><pre v-pre class="language-json"><code><span class="token punctuation">[</span>
+<div class="language-json line-numbers-mode" data-ext="json"><pre v-pre class="language-json"><code><span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
     <span class="token property">"poolName"</span><span class="token operator">:</span> <span class="token string">"commonExecutor"</span><span class="token punctuation">,</span>
     <span class="token property">"corePoolSize"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
@@ -85,7 +85,8 @@
 <li><strong>第一步暴露 DynamicTp 端<code v-pre>metrics</code>端点<code v-pre>/actuator/dynamic-tp</code></strong></li>
 <li><strong>第二步在 HertzBeat 监控页面配置IP端口添加监控即可</strong></li>
 </ul>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <p>通过上面的两步我们就完成了对 DynamicTp 的监控，我们可以在 HertzBeat 随时查看监控详情指标信息来观测其服务状态。
 当然只是看肯定是不完美的，监控往往伴随着告警阈值，当 DynamicTp 的线程池指标超出我们的期望值或异常时，能及时的通知到我们对应的负责人，负责人收到通知处理问题，这样才是一个完整的监控告警流程。</p>
 </div>
@@ -122,7 +123,7 @@
 </blockquote>
 <p><img src="/images/hertzbeat/alert-notice-2.png" alt="hertzbeat"></p>
 <h3 id="完毕-现在坐等告警消息过来啦。叮叮叮叮" tabindex="-1"><a class="header-anchor" href="#完毕-现在坐等告警消息过来啦。叮叮叮叮" aria-hidden="true">#</a> 完毕，现在坐等告警消息过来啦。叮叮叮叮</h3>
-<div class="language-text ext-text line-numbers-mode"><pre v-pre class="language-text"><code>[HertzBeat告警通知]
+<div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>[HertzBeat告警通知]
 告警目标对象 : dynamic_tp.thread_pool_running.run_timeout_count
 所属监控ID : 205540620349493
 所属监控名称 : DynamicTp_localhost
@@ -130,7 +131,8 @@
 告警触发时间 : 2023-02-02 22:17:06
 内容详情 : DynamicTp has run timeout thread, count is 2
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="小结" tabindex="-1"><a class="header-anchor" href="#小结" aria-hidden="true">#</a> 小结</h2>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <p>这篇实践文章带我们体验了如何使用 HertzBeat 监控 DynamicTp线程池 指标数据，可以发现集 <code v-pre>监控-告警-通知</code> 的 HertzBeat 在操作与使用方面更加的便捷，只需页面上简单点一点就能把 DynamicTp线程池 纳入监控并告警通知，再也不需要部署多个组件写YML配置文件那些繁琐操作了。</p>
 </div>
 <p>DynamicTp Github: https://github.com/dromara/dynamic-tp<br>
@@ -139,3 +141,5 @@ HertzBeat Github: https://github.com/dromara/hertzbeat</p>
 <p>只需要一条docker命令即可安装体验heartbeat ：<br>
 <code v-pre>docker run -d -p 1157:1157 --name hertzbeat tancloud/hertzbeat</code></p>
 </div></template>
+
+

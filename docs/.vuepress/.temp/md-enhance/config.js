@@ -5,5 +5,5 @@ import "D:/dynamic-tp-home/node_modules/vuepress-plugin-md-enhance/lib/client/st
 export default defineClientConfig({
   enhance: ({ app }) => {
     
-  }
+  },
 });

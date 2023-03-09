@@ -1,7 +1,8 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 <h3 id="接入公司" tabindex="-1"><a class="header-anchor" href="#接入公司" aria-hidden="true">#</a> 接入公司</h3>
 <p>按登记时间排序</p>
-<div class="custom-container tip"><p class="custom-container-title">用户</p>
+<div class="hint-container tip">
+<p class="hint-container-title">用户</p>
 <ul>
 <li><a href="https://www.pwrd.com" target="_blank" rel="noopener noreferrer">完美世界<ExternalLinkIcon/></a></li>
 <li><a href="https://www.ai-indeed.com" target="_blank" rel="noopener noreferrer">实在智能<ExternalLinkIcon/></a></li>
@@ -19,3 +20,5 @@
 <p><a href="https://gitee.com/dromara/dynamic-tp/issues/I4YVFU" target="_blank" rel="noopener noreferrer">gitee 登记<ExternalLinkIcon/></a></p>
 <p><a href="https://github.com/dromara/dynamic-tp/issues/20" target="_blank" rel="noopener noreferrer">github 登记<ExternalLinkIcon/></a></p>
 </div></template>
+
+

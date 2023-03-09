@@ -1,26 +1,6 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/apollo.html
-  "v-6b8af25e": () => import(/* webpackChunkName: "v-6b8af25e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/apollo.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/consul-cloud.html
-  "v-67d5631d": () => import(/* webpackChunkName: "v-67d5631d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/consul-cloud.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/etcd.html
-  "v-a237d906": () => import(/* webpackChunkName: "v-a237d906" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/etcd.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/huawei-cloud.html
-  "v-3c9f555e": () => import(/* webpackChunkName: "v-3c9f555e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/huawei-cloud.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/nacos-cloud.html
-  "v-fcc2e06e": () => import(/* webpackChunkName: "v-fcc2e06e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos-cloud.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/nacos.html
-  "v-7b8b5af1": () => import(/* webpackChunkName: "v-7b8b5af1" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/none.html
-  "v-257f7e95": () => import(/* webpackChunkName: "v-257f7e95" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/none.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/polaris.html
-  "v-4cf39e7d": () => import(/* webpackChunkName: "v-4cf39e7d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/polaris.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/zookeeper-cloud.html
-  "v-35c1031e": () => import(/* webpackChunkName: "v-35c1031e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper-cloud.html.js").then(({ data }) => data),
-  // path: /guide/configcenter/zookeeper.html
-  "v-136e6799": () => import(/* webpackChunkName: "v-136e6799" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper.html.js").then(({ data }) => data),
   // path: /guide/introduction/architecture.html
   "v-3406509d": () => import(/* webpackChunkName: "v-3406509d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/architecture.html.js").then(({ data }) => data),
   // path: /guide/introduction/background.html
@@ -85,6 +65,42 @@ export const pagesData = {
   "v-7a9d6b66": () => import(/* webpackChunkName: "v-7a9d6b66" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/tool.html.js").then(({ data }) => data),
   // path: /guide/use/wrapper.html
   "v-fa813ecc": () => import(/* webpackChunkName: "v-fa813ecc" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/wrapper.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/apollo.html
+  "v-6b8af25e": () => import(/* webpackChunkName: "v-6b8af25e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/apollo.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/consul-cloud.html
+  "v-67d5631d": () => import(/* webpackChunkName: "v-67d5631d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/consul-cloud.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/etcd.html
+  "v-a237d906": () => import(/* webpackChunkName: "v-a237d906" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/etcd.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/huawei-cloud.html
+  "v-3c9f555e": () => import(/* webpackChunkName: "v-3c9f555e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/huawei-cloud.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/nacos-cloud.html
+  "v-fcc2e06e": () => import(/* webpackChunkName: "v-fcc2e06e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos-cloud.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/nacos.html
+  "v-7b8b5af1": () => import(/* webpackChunkName: "v-7b8b5af1" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/none.html
+  "v-257f7e95": () => import(/* webpackChunkName: "v-257f7e95" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/none.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/polaris.html
+  "v-4cf39e7d": () => import(/* webpackChunkName: "v-4cf39e7d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/polaris.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/zookeeper-cloud.html
+  "v-35c1031e": () => import(/* webpackChunkName: "v-35c1031e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper-cloud.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/zookeeper.html
+  "v-136e6799": () => import(/* webpackChunkName: "v-136e6799" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
+  // path: /guide/introduction/
+  "v-26d55c2e": () => import(/* webpackChunkName: "v-26d55c2e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/index.html.js").then(({ data }) => data),
+  // path: /guide/
+  "v-fffb8e28": () => import(/* webpackChunkName: "v-fffb8e28" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/index.html.js").then(({ data }) => data),
+  // path: /guide/monitor/
+  "v-1c7109fe": () => import(/* webpackChunkName: "v-1c7109fe" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/index.html.js").then(({ data }) => data),
+  // path: /guide/notice/
+  "v-5e0f69eb": () => import(/* webpackChunkName: "v-5e0f69eb" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/index.html.js").then(({ data }) => data),
+  // path: /guide/other/
+  "v-489789ea": () => import(/* webpackChunkName: "v-489789ea" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/other/index.html.js").then(({ data }) => data),
+  // path: /guide/middleware/
+  "v-4dd6571e": () => import(/* webpackChunkName: "v-4dd6571e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/index.html.js").then(({ data }) => data),
+  // path: /guide/use/
+  "v-5d4a6318": () => import(/* webpackChunkName: "v-5d4a6318" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/index.html.js").then(({ data }) => data),
+  // path: /guide/configcenter/
+  "v-755a138c": () => import(/* webpackChunkName: "v-755a138c" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/index.html.js").then(({ data }) => data),
 }

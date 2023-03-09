@@ -83,12 +83,6 @@ Q
 !docs/guide/configcenter/apollo.md,8\3\8360924c02deb7e4b86dbab8f440f69c85d6eab8
 W
 'docs/guide/configcenter/consul-cloud.md,9\b\9b251b28cd4860c0a2e64b9ea57ae246e40f2698
-U
-%docs/guide/introduction/background.md,b\2\b284c6947e6dd66552c4d1ff4f7184cf03c3ba35
-T
-$docs/guide/introduction/functions.md,4\f\4f99f6a1e07b38174b4bf9b1c631ec2f78897dde
-W
-'docs/guide/introduction/architecture.md,4\5\456cafba273c90f7f8073a22714404644cc654bb
 M
 docs/guide/use/quick-start.md,2\1\21fe4e119dffc96d0e37135af0916d6fe06b5cd7
 S
@@ -107,5 +101,3 @@ R
 "docs/.vuepress/public/adblocked.js,a\a\aa1b56f2d90bb1837dacb7d2d5229e560431c2a0
 O
 docs/guide/configcenter/none.md,5\3\536b5673c73a764ee27e158cbd269b3e47c2b8f2
->
-docs/README.md,9\f\9f7cbce127b94a94ee14460050fbff2ce58417d0

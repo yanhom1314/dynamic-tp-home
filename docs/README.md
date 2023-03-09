@@ -36,16 +36,7 @@ features:
     link: "/guide/middleware/middleware"
 ---
 
-<p align="center">
-  <a href="https://gitee.com/dromara/dynamic-tp"><img src="https://gitee.com/dromara/dynamic-tp/badge/star.svg"></a>
-  <a href="https://gitee.com/dromara/dynamic-tp/members"><img src="https://gitee.com/dromara/dynamic-tp/badge/fork.svg"></a>
-  <a href="https://github.com/dromara/dynamic-tp"><img src="https://img.shields.io/github/stars/dromara/dynamic-tp?style=flat-square&logo=github"></a>
-  <a href="https://github.com/dromara/dynamic-tp/network/members"><img src="https://img.shields.io/github/forks/dromara/dynamic-tp?style=flat-square&logo=GitHub"></a>
-  <a href="https://github.com/dromara/dynamic-tp/blob/master/LICENSE"><img src="https://img.shields.io/github/license/dromara/dynamic-tp.svg?style=flat-square"></a>
-  <a target="_blank" href="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/530709dc29604630b6d1537d7c160ea5~tplv-k3u1fbpfcp-watermark.image"><img src='https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ddfaed2cce2a47608fb0c0c375a10f08~tplv-k3u1fbpfcp-zoom-1.image' alt='备注加群'></a>
-</p>
-
-<div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"><a href="https://wwads.cn/click/bait" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade" style="display:none !important;"></a><a href="https://wwads.cn/click/bundle?code=fBurOcjPKDEnnz1FjLugW4Dqd7RLjE" onclick="_IsTrustedClick(event)" class="wwads-img" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade"><img src="https://cdn.wwads.cn/creatives/SsLRqW5x8HX42nfLIJArRIdXPducqk5yb9kPXe1h.png" width="130" alt="万维广告联盟"></a><div class="wwads-content"><a href="https://wwads.cn/click/bundle?code=fBurOcjPKDEnnz1FjLugW4Dqd7RLjE" onclick="_IsTrustedClick(event)" class="wwads-text" target="_blank" rel="sponsored noopener" referrerpolicy="no-referrer-when-downgrade">🔐 <b>杜绝删库跑路</b>。一个平台登录所有资产，实现事先防范、事中控制、事后溯源，满足等保合规要求。</a><a href="https://wwads.cn/?utm_source=property-257&amp;utm_medium=footer" class="wwads-poweredby" title="点击了解万维广告联盟" target="_blank"><img class="wwads-logo"><span class="wwads-logo-text">广告</span></a></div><a class="wwads-hide" onclick="parentNode.remove()" title="隐藏广告"><svg class="hide-svg"></svg></a></div>
+<div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"></div>
 
 # 功能特性 ✅
 
@@ -84,7 +75,7 @@ features:
 
 # 知识星球
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/894a4e918ff14c13b4a66d3f30f7ff7e~tplv-k3u1fbpfcp-zoom-1.image)
+![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/598a7ff2872a46b4a021ead20f9bd4f9~tplv-k3u1fbpfcp-zoom-1.image)
 
 # Dromara 成员项目
 

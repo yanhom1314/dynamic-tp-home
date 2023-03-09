@@ -3,26 +3,6 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/index.html.vue")),
-  // path: /guide/configcenter/apollo.html
-  "v-6b8af25e": defineAsyncComponent(() => import(/* webpackChunkName: "v-6b8af25e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/apollo.html.vue")),
-  // path: /guide/configcenter/consul-cloud.html
-  "v-67d5631d": defineAsyncComponent(() => import(/* webpackChunkName: "v-67d5631d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/consul-cloud.html.vue")),
-  // path: /guide/configcenter/etcd.html
-  "v-a237d906": defineAsyncComponent(() => import(/* webpackChunkName: "v-a237d906" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/etcd.html.vue")),
-  // path: /guide/configcenter/huawei-cloud.html
-  "v-3c9f555e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3c9f555e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/huawei-cloud.html.vue")),
-  // path: /guide/configcenter/nacos-cloud.html
-  "v-fcc2e06e": defineAsyncComponent(() => import(/* webpackChunkName: "v-fcc2e06e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos-cloud.html.vue")),
-  // path: /guide/configcenter/nacos.html
-  "v-7b8b5af1": defineAsyncComponent(() => import(/* webpackChunkName: "v-7b8b5af1" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos.html.vue")),
-  // path: /guide/configcenter/none.html
-  "v-257f7e95": defineAsyncComponent(() => import(/* webpackChunkName: "v-257f7e95" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/none.html.vue")),
-  // path: /guide/configcenter/polaris.html
-  "v-4cf39e7d": defineAsyncComponent(() => import(/* webpackChunkName: "v-4cf39e7d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/polaris.html.vue")),
-  // path: /guide/configcenter/zookeeper-cloud.html
-  "v-35c1031e": defineAsyncComponent(() => import(/* webpackChunkName: "v-35c1031e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper-cloud.html.vue")),
-  // path: /guide/configcenter/zookeeper.html
-  "v-136e6799": defineAsyncComponent(() => import(/* webpackChunkName: "v-136e6799" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper.html.vue")),
   // path: /guide/introduction/architecture.html
   "v-3406509d": defineAsyncComponent(() => import(/* webpackChunkName: "v-3406509d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/architecture.html.vue")),
   // path: /guide/introduction/background.html
@@ -87,6 +67,42 @@ export const pagesComponents = {
   "v-7a9d6b66": defineAsyncComponent(() => import(/* webpackChunkName: "v-7a9d6b66" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/tool.html.vue")),
   // path: /guide/use/wrapper.html
   "v-fa813ecc": defineAsyncComponent(() => import(/* webpackChunkName: "v-fa813ecc" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/wrapper.html.vue")),
+  // path: /guide/configcenter/apollo.html
+  "v-6b8af25e": defineAsyncComponent(() => import(/* webpackChunkName: "v-6b8af25e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/apollo.html.vue")),
+  // path: /guide/configcenter/consul-cloud.html
+  "v-67d5631d": defineAsyncComponent(() => import(/* webpackChunkName: "v-67d5631d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/consul-cloud.html.vue")),
+  // path: /guide/configcenter/etcd.html
+  "v-a237d906": defineAsyncComponent(() => import(/* webpackChunkName: "v-a237d906" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/etcd.html.vue")),
+  // path: /guide/configcenter/huawei-cloud.html
+  "v-3c9f555e": defineAsyncComponent(() => import(/* webpackChunkName: "v-3c9f555e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/huawei-cloud.html.vue")),
+  // path: /guide/configcenter/nacos-cloud.html
+  "v-fcc2e06e": defineAsyncComponent(() => import(/* webpackChunkName: "v-fcc2e06e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos-cloud.html.vue")),
+  // path: /guide/configcenter/nacos.html
+  "v-7b8b5af1": defineAsyncComponent(() => import(/* webpackChunkName: "v-7b8b5af1" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/nacos.html.vue")),
+  // path: /guide/configcenter/none.html
+  "v-257f7e95": defineAsyncComponent(() => import(/* webpackChunkName: "v-257f7e95" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/none.html.vue")),
+  // path: /guide/configcenter/polaris.html
+  "v-4cf39e7d": defineAsyncComponent(() => import(/* webpackChunkName: "v-4cf39e7d" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/polaris.html.vue")),
+  // path: /guide/configcenter/zookeeper-cloud.html
+  "v-35c1031e": defineAsyncComponent(() => import(/* webpackChunkName: "v-35c1031e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper-cloud.html.vue")),
+  // path: /guide/configcenter/zookeeper.html
+  "v-136e6799": defineAsyncComponent(() => import(/* webpackChunkName: "v-136e6799" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/zookeeper.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/404.html.vue")),
+  // path: /guide/introduction/
+  "v-26d55c2e": defineAsyncComponent(() => import(/* webpackChunkName: "v-26d55c2e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/index.html.vue")),
+  // path: /guide/
+  "v-fffb8e28": defineAsyncComponent(() => import(/* webpackChunkName: "v-fffb8e28" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/index.html.vue")),
+  // path: /guide/monitor/
+  "v-1c7109fe": defineAsyncComponent(() => import(/* webpackChunkName: "v-1c7109fe" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/index.html.vue")),
+  // path: /guide/notice/
+  "v-5e0f69eb": defineAsyncComponent(() => import(/* webpackChunkName: "v-5e0f69eb" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/notice/index.html.vue")),
+  // path: /guide/other/
+  "v-489789ea": defineAsyncComponent(() => import(/* webpackChunkName: "v-489789ea" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/other/index.html.vue")),
+  // path: /guide/middleware/
+  "v-4dd6571e": defineAsyncComponent(() => import(/* webpackChunkName: "v-4dd6571e" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/index.html.vue")),
+  // path: /guide/use/
+  "v-5d4a6318": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d4a6318" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/index.html.vue")),
+  // path: /guide/configcenter/
+  "v-755a138c": defineAsyncComponent(() => import(/* webpackChunkName: "v-755a138c" */"D:/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/configcenter/index.html.vue")),
 }

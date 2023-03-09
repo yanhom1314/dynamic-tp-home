@@ -3,7 +3,7 @@
 <ol>
 <li>引入下述依赖</li>
 </ol>
-<div class="language-xml ext-xml line-numbers-mode"><pre v-pre class="language-xml"><code>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+<div class="language-xml line-numbers-mode" data-ext="xml"><pre v-pre class="language-xml"><code>   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>cn.dynamictp<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>dynamic-tp-spring-boot-starter-adapter-webserver<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>1.1.0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
@@ -11,7 +11,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
 <li>配置文件中配置 undertow 线程池</li>
 </ol>
-<div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
   <span class="token key atrule">dynamic</span><span class="token punctuation">:</span>
     <span class="token key atrule">tp</span><span class="token punctuation">:</span>
       <span class="token key atrule">enabled</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
@@ -26,9 +26,10 @@
 <li>启动日志</li>
 </ol>
 <p>服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知</p>
-<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>DynamicTp adapter, web server executor init end, executor: org.xnio.nio.NioXnioWorker@17ce31c   
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>DynamicTp adapter, web server executor init end, executor: org.xnio.nio.NioXnioWorker@17ce31c   
 DynamicTp adapter <span class="token punctuation">[</span>undertowTp<span class="token punctuation">]</span> refreshed end, corePoolSize: <span class="token punctuation">[</span><span class="token number">10</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token number">100</span><span class="token punctuation">]</span>, maxPoolSize: <span class="token punctuation">[</span><span class="token number">200</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token number">200</span><span class="token punctuation">]</span>, keepAliveTime: <span class="token punctuation">[</span><span class="token number">60</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token number">60</span><span class="token punctuation">]</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip"><p class="custom-container-title">提示</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <ol>
 <li>线程池名称：undertowTp</li>
 <li>undertow 线程池目前只享有动态调参和监控功能，没通知报警功能</li>
@@ -36,3 +37,5 @@ DynamicTp adapter <span class="token punctuation">[</span>undertowTp<span class=
 </ol>
 </div>
 </div></template>
+
+

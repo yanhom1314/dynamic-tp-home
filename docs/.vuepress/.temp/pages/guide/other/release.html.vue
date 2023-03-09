@@ -1,5 +1,6 @@
 <template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-1-0-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-1-0-发布记录" aria-hidden="true">#</a> v1.1.0 发布记录</h2>
 <h4 id="features" tabindex="-1"><a class="header-anchor" href="#features" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -60,7 +61,8 @@
 <li></li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-9-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-0-9-发布记录" aria-hidden="true">#</a> v1.0.9 发布记录</h2>
 <h4 id="features-1" tabindex="-1"><a class="header-anchor" href="#features-1" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -114,7 +116,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-8-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-0-8-发布记录" aria-hidden="true">#</a> v1.0.8 发布记录</h2>
 <p>距离 v1.0.7 发布已经有差不多 2 个月时间，这个版本新增了好些功能，同时优化重构了一些代码设计，欢迎大家升级体验哦！</p>
 <h4 id="features-2" tabindex="-1"><a class="header-anchor" href="#features-2" aria-hidden="true">#</a> Features</h4>
@@ -202,7 +205,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-7-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-0-7-发布记录" aria-hidden="true">#</a> v1.0.7 发布记录</h2>
 <p>明细：https://juejin.cn/post/7108551236609114149</p>
 <p>距离v1.0.5发布已经有差不多2个月时间，这个版本框架源码调整还是比较大的，重构了好一些功能， 主要是围绕第三方中间件线程池集成来改动的，是向前兼容的，同时修复了三个小bug。</p>
@@ -259,7 +263,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-5" tabindex="-1"><a class="header-anchor" href="#v1-0-5" aria-hidden="true">#</a> v1.0.5</h2>
 <h4 id="features-4" tabindex="-1"><a class="header-anchor" href="#features-4" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -288,7 +293,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-4" tabindex="-1"><a class="header-anchor" href="#v1-0-4" aria-hidden="true">#</a> v1.0.4</h2>
 <h4 id="features-5" tabindex="-1"><a class="header-anchor" href="#features-5" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -309,7 +315,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-3" tabindex="-1"><a class="header-anchor" href="#v1-0-3" aria-hidden="true">#</a> v1.0.3</h2>
 <h4 id="features-6" tabindex="-1"><a class="header-anchor" href="#features-6" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -330,7 +337,8 @@
 </li>
 </ul>
 </div>
-<div class="custom-container tip"><p class="custom-container-title">提示</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
 <h2 id="v1-0-2" tabindex="-1"><a class="header-anchor" href="#v1-0-2" aria-hidden="true">#</a> v1.0.2</h2>
 <h4 id="features-7" tabindex="-1"><a class="header-anchor" href="#features-7" aria-hidden="true">#</a> Features</h4>
 <ul>
@@ -355,3 +363,5 @@
 </ul>
 </div>
 </div></template>
+
+
