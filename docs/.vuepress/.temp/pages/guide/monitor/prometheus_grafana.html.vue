@@ -4,19 +4,19 @@
 <ol>
 <li>首先配置文件中开启 micrometer 数据采集</li>
 </ol>
-<div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code>   <span class="token key atrule">enabledCollect</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code>   <span class="token key atrule">enabledCollect</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
    <span class="token key atrule">collectorTypes</span><span class="token punctuation">:</span> micrometer
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
 <li>项目中引入 micrometer-prometheus 依赖</li>
 </ol>
-<div class="language-xml ext-xml line-numbers-mode"><pre v-pre class="language-xml"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+<div class="language-xml line-numbers-mode" data-ext="xml"><pre v-pre class="language-xml"><code>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>io.micrometer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>micrometer-registry-prometheus<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
 <li>开启 prometheus 指标采集端点</li>
 </ol>
-<div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code><span class="token key atrule">management</span><span class="token punctuation">:</span>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token key atrule">management</span><span class="token punctuation">:</span>
   <span class="token key atrule">metrics</span><span class="token punctuation">:</span>
     <span class="token key atrule">export</span><span class="token punctuation">:</span>
       <span class="token key atrule">prometheus</span><span class="token punctuation">:</span> 
@@ -28,7 +28,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="4">
 <li>配置 prometheus 数据采集 job，这块可以去了解下他的 SD 机制（Service Discovery），也就是自动到注册中心发现服务，看你所用的注册中心支不支持这种方式，<a href="https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config" target="_blank" rel="noopener noreferrer">可以去官网查看<ExternalLinkIcon/></a>，k8s，ZK，Eureka、Consul 等都是支持的。这里使用 static_configs 方式，简单的指定地址的静态配置</li>
 </ol>
-<div class="language-yaml ext-yml line-numbers-mode"><pre v-pre class="language-yaml"><code><span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'prometheus'</span>
+<div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token punctuation">-</span> <span class="token key atrule">job_name</span><span class="token punctuation">:</span> <span class="token string">'prometheus'</span>
     <span class="token key atrule">metrics_path</span><span class="token punctuation">:</span> <span class="token string">'/actuator/prometheus'</span>
     <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
       <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'192.168.2.104:9098'</span><span class="token punctuation">]</span>
@@ -43,3 +43,5 @@
 </ol>
 <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/39e2c37af1fb48679b5fdd56e7f89c37~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p>
 </div></template>
+
+

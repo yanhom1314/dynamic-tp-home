@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme";
+import {docsearchPlugin} from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -14,5 +15,30 @@ export default defineUserConfig({
     ['script', {src: '/baidu.js', async: 'async'}],
     ['script', {src: '/makemoney.js'}],
     ['script', {src: '/adblocked.js'}],
+  ],
+  plugins: [
+    docsearchPlugin({
+      appId: "8FRYEU6KK8",
+      apiKey: "84f513df1e83406ba42179da778d87b4",
+      indexName: "dromara-fast-request",
+      locales: {
+        "/": {
+          placeholder: "搜索文档",
+          translations: {
+            button: {
+              buttonText: "搜索文档",
+            },
+          },
+        },
+        "/en": {
+          placeholder: "Search Documentation",
+          translations: {
+            button: {
+              buttonText: "Search Documentation",
+            },
+          },
+        },
+      },
+    }),
   ],
 });
