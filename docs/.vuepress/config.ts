@@ -18,9 +18,9 @@ export default defineUserConfig({
   ],
   plugins: [
     docsearchPlugin({
-      appId: "8FRYEU6KK8",
-      apiKey: "84f513df1e83406ba42179da778d87b4",
-      indexName: "dromara-fast-request",
+      appId: "8FRYEU6KqK8",
+      apiKey: "84f513dfq1e83406ba42179da778d87bq",
+      indexName: "dromaqra-fast-request",
       locales: {
         "/": {
           placeholder: "搜索文档",
