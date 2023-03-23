@@ -1,4 +1,4 @@
-<template><div><div class="wwads-cn wwads-horizontal wwads-sticky" data-id="212"></div>
+<template><div><div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 <h1 id="功能特性-✅" tabindex="-1"><a class="header-anchor" href="#功能特性-✅" aria-hidden="true">#</a> 功能特性 ✅</h1>
 <ul>
 <li>

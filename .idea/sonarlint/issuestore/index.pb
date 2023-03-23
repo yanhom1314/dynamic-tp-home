@@ -71,14 +71,10 @@ K
 docs/guide/notice/notice.md,1\b\1b73674b25e90cf6c1b2db3cfe97559cc1a7ef90
 P
  docs/guide/notice/ratelimiter.md,0\8\08ae78d50904a9d1fb5df53c4385d033776126d8
-L
-docs/guide/other/articles.md,4\f\4f06534beaef239cfff1ecc0815051e991245938
 F
 docs/guide/use/code.md,d\a\da920fd6d4b7cf43683a7e2e8d728ec26290d0f9
 F
 docs/guide/use/tool.md,0\e\0ee95bbca8bea31bffd769a8a3bbe76f09121133
-I
-docs/guide/other/users.md,2\3\23cf996b0e32bf2770e40eb39f44cb220b348a44
 Q
 !docs/guide/configcenter/apollo.md,8\3\8360924c02deb7e4b86dbab8f440f69c85d6eab8
 W
@@ -89,10 +85,6 @@ S
 #docs/guide/monitor/collect_types.md,a\9\a91be2252811371e9b352ff4902f4e42e89e942f
 W
 'docs/guide/configcenter/huawei-cloud.md,c\b\cbcbccb6065c74a6d5988a5d3aafbce13f659fcb
-H
-docs/.vuepress/config.ts,4\f\4f54910eac21c1cf4a4e0a2e94886b9638a2970a
-H
-docs/.vuepress/navbar.ts,8\6\86c6248549502539da941b78d6df103a764b7de4
 O
 docs/.vuepress/public/index.css,f\f\ffdcef587042973914dbb38469cc2f2795dd75b6
 R
@@ -101,3 +93,17 @@ R
 "docs/.vuepress/public/adblocked.js,a\a\aa1b56f2d90bb1837dacb7d2d5229e560431c2a0
 O
 docs/guide/configcenter/none.md,5\3\536b5673c73a764ee27e158cbd269b3e47c2b8f2
+Z
+*docs/guide/configcenter/zookeeper-cloud.md,2\7\2762cee2a6160bab65a88b5a8e4444b29a91f48b
+N
+docs/.vuepress/public/baidu.js,2\d\2db790f84de43f4c03a835e2cef27e29ab778200
+9
+	deploy.sh,b\e\be94fd40f0c4b440044c3f852e44fd2a75f7b3cc
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+W
+'docs/guide/introduction/architecture.md,4\5\456cafba273c90f7f8073a22714404644cc654bb
+T
+$docs/guide/introduction/functions.md,4\f\4f99f6a1e07b38174b4bf9b1c631ec2f78897dde
+U
+%docs/guide/introduction/background.md,b\2\b284c6947e6dd66552c4d1ff4f7184cf03c3ba35
