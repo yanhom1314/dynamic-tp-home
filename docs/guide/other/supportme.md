@@ -1,6 +1,6 @@
 ---
 title: 支持
-icon: people
+icon: like
 order: 1
 author: yanhom
 date: 2022-06-11
