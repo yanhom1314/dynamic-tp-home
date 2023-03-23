@@ -18,23 +18,15 @@ export default defineUserConfig({
   ],
   plugins: [
     docsearchPlugin({
-      appId: "8FRYEU6KqK8",
-      apiKey: "84f513dfq1e83406ba42179da778d87bq",
-      indexName: "dromaqra-fast-request",
+      appId: "ZQ91KEQ2WE",
+      apiKey: "ebbe1f390be1164a60e0b4befec3c816",
+      indexName: "dynamictp",
       locales: {
         "/": {
           placeholder: "搜索文档",
           translations: {
             button: {
               buttonText: "搜索文档",
-            },
-          },
-        },
-        "/en": {
-          placeholder: "Search Documentation",
-          translations: {
-            button: {
-              buttonText: "Search Documentation",
             },
           },
         },
