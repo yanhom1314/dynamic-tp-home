@@ -19,7 +19,7 @@ export default defineUserConfig({
   plugins: [
     docsearchPlugin({
       appId: "QS7KPCCCMF",
-      apiKey: "748c46e8a474fc153fcc545ff35ef12f",
+      apiKey: "6bccf3b65c5a2bef2f4406bf9f0a6e9d",
       indexName: "dynamictp",
       locales: {
         "/": {
