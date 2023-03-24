@@ -3,7 +3,7 @@ title: 支持
 icon: like
 order: 1
 author: yanhom
-date: 2022-06-11
+date: 2023-03-23
 category:
   - 支持
   - dynamictp
@@ -13,7 +13,7 @@ star: true
 
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-## 用爱发电
+### 用爱发电
 
 开源不易，如果感觉该项目对您有点帮助，可以通过如下方式支持我们
 
@@ -28,7 +28,7 @@ star: true
 <img :src="$withBase('/supportme.jpg')" style="zoom: 35%">
 
 
-## 成为赞助商
+### 成为赞助商
 
 1. 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme/#赞助人列表) 的永久留名。
 
@@ -42,10 +42,10 @@ star: true
 
 **[联系我们](/guide/other/contact)**
 
-## 赞助人列表
+### 赞助人列表
 
 注: 赞助按捐赠的时间排序
 
-| 赞助人ID  | 金额      | 附言    |
-|--------|---------|-------|
-| yanhom | **100** | 开源不易！ |
+| 赞助人ID  | 金额   | 附言  | 赞助时间 | 投放链接 |
+|--------|------|-----|------|--------|
+| **JOS  | **￥5**| 感谢开源 | 2023-03-24 | 无|

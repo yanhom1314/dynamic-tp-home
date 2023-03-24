@@ -292,6 +292,12 @@ export default sidebar([
         link: "/guide/other/supportme"
       },
       {
+        text: "参与开发",
+        icon: "merge",
+        collapsable: false,
+        link: "/guide/other/develop"
+      },
+      {
         text: "相关文章",
         icon: "note",
         collapsable: false,

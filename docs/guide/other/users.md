@@ -3,7 +3,7 @@ title: 接入公司
 icon: people
 order: 1
 author: yanhom
-date: 2022-06-11
+date: 2023-03-11
 category:
   - 接入公司
   - dynamictp
@@ -27,6 +27,7 @@ star: true
 - [牛信网络科技有限公司](https://www.nxcloud.com)
 - [壹融站信息技术（深圳）有限公司](https://www.yirongzhan.com)
 - [深圳市时代华盛网络科技有限公司](https://www.hstong.com/)
+- [利宝保险有限公司](https://www.libertymutual.com.cn/)
 
 :::
 
