@@ -38,7 +38,6 @@ star: true
 
 5. 赞助达500元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/)所有文档页面的广告栏位（长达1年）。
 
-**[联系我们](/guide/other/contact)**
 
 ## 赞助人列表
 
