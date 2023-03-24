@@ -75,8 +75,6 @@ N
 	deploy.sh,b\e\be94fd40f0c4b440044c3f852e44fd2a75f7b3cc
 A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
-W
-'docs/guide/introduction/architecture.md,4\5\456cafba273c90f7f8073a22714404644cc654bb
 T
 $docs/guide/introduction/functions.md,4\f\4f99f6a1e07b38174b4bf9b1c631ec2f78897dde
 U
@@ -87,10 +85,6 @@ V
 &docs/guide/configcenter/nacos-cloud.md,7\6\7625b510d0da8f15bc9b50c73bd0443a9f40aece
 R
 "docs/guide/configcenter/polaris.md,b\0\b05c11c6dee74e8ad102aa2c9903953aafed9238
-L
-docs/guide/other/articles.md,4\f\4f06534beaef239cfff1ecc0815051e991245938
-K
-docs/guide/other/contact.md,f\f\ff3fd74dbc90bba263bf73c443c071c434be09a7
 K
 docs/guide/other/release.md,0\d\0d514a921ceae1db1e01497e8a5abaaa05eb8335
 G
