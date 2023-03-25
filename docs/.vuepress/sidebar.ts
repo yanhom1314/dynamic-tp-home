@@ -286,6 +286,12 @@ export default sidebar([
         link: "/guide/other/users"
       },
       {
+        text: "支持我们",
+        icon: "like",
+        collapsable: false,
+        link: "/guide/other/supportme"
+      },
+      {
         text: "相关文章",
         icon: "note",
         collapsable: false,

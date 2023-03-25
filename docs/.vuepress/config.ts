@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme";
+import {docsearchPlugin} from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -14,5 +15,22 @@ export default defineUserConfig({
     ['script', {src: '/baidu.js', async: 'async'}],
     ['script', {src: '/makemoney.js'}],
     ['script', {src: '/adblocked.js'}],
+  ],
+  plugins: [
+    docsearchPlugin({
+      appId: "QS7KPCCCMF",
+      apiKey: "748c46e8a474fc153fcc545ff35ef12f",
+      indexName: "dynamictp",
+      locales: {
+        "/": {
+          placeholder: "搜索文档",
+          translations: {
+            button: {
+              buttonText: "搜索文档",
+            },
+          },
+        },
+      },
+    }),
   ],
 });

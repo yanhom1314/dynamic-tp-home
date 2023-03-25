@@ -3,7 +3,7 @@ title: 支持
 icon: like
 order: 1
 author: yanhom
-date: 2022-06-11
+date: 2023-03-23
 category:
   - 支持
   - dynamictp
@@ -11,9 +11,11 @@ sticky: false
 star: true
 ---
 
-## 用爱发电
+<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
-开源不易，如果感觉该项目对您有点帮助，您可以通过如下方式支持我们
+### 用爱发电
+
+开源不易，如果感觉该项目对您有点帮助，可以通过如下方式支持我们
 
 1. Star 并向您的朋友推荐或分享[DynamicTp](https://gitee.com/dromara/dynamic-tp)🚀
 
@@ -26,7 +28,7 @@ star: true
 <img :src="$withBase('/supportme.jpg')" style="zoom: 35%">
 
 
-## 成为赞助商
+### 成为赞助商
 
 1. 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme/#赞助人列表) 的永久留名。
 
@@ -34,12 +36,12 @@ star: true
 
 3. 赞助达50元，您额外获得 [DynamicTp](https://dynamictp.cn/) 的私下 VIP 1对1的技术咨询服务（长达1年）。
 
-4. 赞助达100元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/)文档首页的特别赞助广告展示栏位（长达1年）。
+4. 赞助达100元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达1年）。
 
-5. 赞助达500元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/)所有文档页面的广告栏位（长达1年）。
+5. 赞助达500元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/) 所有文档页面的广告栏位（长达1年）。
 
 
-## 赞助人列表
+### 赞助人列表
 
 注: 赞助按捐赠的时间排序
 
