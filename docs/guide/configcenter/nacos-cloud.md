@@ -40,7 +40,7 @@ star: true
      <dependency>
          <groupId>cn.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-cloud-starter-nacos</artifactId>
-         <version>1.1.0</version>
+         <version>1.1.2</version>
      </dependency>
  ```
 
