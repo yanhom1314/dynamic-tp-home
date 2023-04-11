@@ -24,7 +24,7 @@ star: true
    <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-rabbitmq</artifactId>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 

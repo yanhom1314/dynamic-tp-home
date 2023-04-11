@@ -40,7 +40,7 @@ star: true
      <dependency>
          <groupId>cn.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-cloud-starter-polaris</artifactId>
-         <version>1.1.1</version>
+         <version>1.1.2</version>
      </dependency>
  ```
 
@@ -57,18 +57,22 @@ spring:
       collectorTypes: micrometer,logging     # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
       logPath: /home/logs                    # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                     # 监控时间间隔（报警检测、指标采集），默认5s
-      platforms:                             # 通知报警平台配置
+      platforms:                              # 通知报警平台配置
         - platform: wechat
+          platformId: 1                            # 平台id
           urlKey: 3a700-127-4bd-a798-c53d8b69c     # 替换
           receivers: test1,test2                   # 接受人企微名称
         - platform: ding
+          platformId: 2                            # 平台id
           urlKey: f80dad441fcd655438f4a08dcd6a     # 替换
           secret: SECb5441fa6f375d5b9d21           # 替换，非sign模式可以没有此值
           receivers: 18888888888                   # 钉钉账号手机号
         - platform: lark
+          platformId: 3
           urlKey: 0d944ae7-b24a-40                 # 替换
           receivers: test1,test2                   # 接受人飞书名称/openid
         - platform: email
+          platformId: 4
           receivers: 123456@qq.com,789789@qq.com   # 收件人
       executors:                                   # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
         - threadPoolName: dtpExecutor1

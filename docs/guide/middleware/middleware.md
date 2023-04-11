@@ -53,7 +53,7 @@ star: true
    <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-webserver</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -61,7 +61,7 @@ star: true
    <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-dubbo</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -69,7 +69,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-rocketmq</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -77,7 +77,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-hystrix</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -85,7 +85,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-grpc</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -93,7 +93,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-motan</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -101,7 +101,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-okhttp3</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -109,7 +109,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-brpc</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -117,7 +117,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-tars</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 
@@ -125,7 +125,7 @@ star: true
     <dependency>
         <groupId>cn.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-sofa</artifactId>
-        <version>1.1.0</version>
+        <version>1.1.2</version>
     </dependency>
 ```
 ::: tip

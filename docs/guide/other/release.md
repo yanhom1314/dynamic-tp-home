@@ -14,6 +14,58 @@ star: true
 <div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
 
 ::: tip
+## v1.1.2 发布记录
+
+#### Features
+
++ 增加对 juc 线程池的动态调参能力，感谢@wenpan的贡献
+
++ 增加 ScheduledDtpExecutor，感谢@WindSearcher的贡献
+
++ 增加spring-cloud-tencent配置中心polaris的支持，感谢@fabian4的贡献
+
++ 增加对rocketmq producer线程池的管理，感谢@fabian4的贡献
+
++ 增加对rabbitmq消费线程池的管理，感谢@fabian4的贡献
+
++ 任务执行超时、拒绝等场景下日志输出 & 告警信息里添加打印tid，感谢@kyao的贡献
+
++ 增加spring-cloud-huawei配置中心servicecomb的支持，感谢@WindSearcher的贡献
+
++ platfrom 新增id字段，可以配置多个通知平台，根据配置推送相应报警群，感谢@KamToHung的贡献
+
++ StreamRocketMqDtpAdapter 增加对producer线程池的管理，感谢@hailang的贡献
+
+#### Bugfix
+
++ 修复 alibaba dubbo 初始化错误赋值的bug，感谢@WindSearcher的贡献
+
++ 修复webserver undertow 高低版本不兼容问题，感谢@WindSearcher的贡献
+
++ 修复DtpPostProcessor类中AnnotatedBeanDefinition强制转换失败问题，感谢@文攀锋的贡献
+
+#### Optimize
+
++ jackson-databind版本升级
+
++ hutool 版本升级5.8.12
+
++ 优化在JDK8下, corePoolSize为0时, ScheduledThreadPoolExecutor会导致死循环问题，感谢@WindSearcher的贡献
+
++ 优化获取本机ip地址的方式，感谢@yaokai的贡献
+
++ 优化submit提交的任务执行异常时，无法被UncaughtExceptionHandler处理，感谢@dailingx的贡献
+
++ 优化只有打开dynamicTP开关才加载第三方adapter类，感谢@hkhuang的贡献
+
++ 启动优化，启动时只通过@EnableDynamicTp决定是否使用dtp，感谢@KamToHung的贡献
+
++ 日志输出优化
+
++ 部分代码优化重构
+:::
+
+::: tip
 
 ## v1.1.0 发布记录
 
