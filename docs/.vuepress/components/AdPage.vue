@@ -1,5 +1,5 @@
 <template>
-  <div :class="`wwads-cn wwads-${mode} page-wwads-${sticky}`" data-id="212"></div>
+  <div :class="`wwads-cn wwads-${mode} page-wwads-${content}`" data-id="212"></div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -10,9 +10,9 @@ export default defineComponent({
       type: String,
       default: 'horizontal',
     },
-    sticky: {
+    content: {
       type: String,
-      default: 'sticky',
+      default: '',
     },
   }
 
