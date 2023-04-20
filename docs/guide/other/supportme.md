@@ -17,7 +17,7 @@ star: true
 
 1. Star 并向您的朋友推荐或分享[DynamicTp](https://gitee.com/dromara/dynamic-tp)🚀
 
-2. 轻轻点击一次右边的广告卡片🙃
+2. 轻轻点击一次上边的广告卡片🙃
 
 3. 扫描下面微信二维码进行赞赏，请作者喝一杯咖啡☕️
 

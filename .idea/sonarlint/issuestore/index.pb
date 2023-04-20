@@ -1,6 +1,4 @@
 
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 I
 docs/.vuepress/sidebar.ts,c\c\cc35a1d273609bd9dbe806c1d1b7d9b8fb4bf7c6
 H
@@ -10,5 +8,3 @@ W
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-R
-"docs/.vuepress/public/adblocked.js,a\a\aa1b56f2d90bb1837dacb7d2d5229e560431c2a0
