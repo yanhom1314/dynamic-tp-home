@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 采集类型
 
 目前框架提供了四种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer

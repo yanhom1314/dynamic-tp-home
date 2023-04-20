@@ -16,8 +16,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 集成步骤
 
 这块要讲的是集成 prometheus+grafana 做监控，事先你得安装好 prometheus+grafana，这个就不展开讲了，网上教程很多，测试使用可以直接用 docker 安装，非常简单，安装完之后接着往下看。

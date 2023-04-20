@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ::: tip
 
 1. 动态线程池配置文件，建议单独开一个文件放在 nacos 中，如：user-center-dtp-dev.yml

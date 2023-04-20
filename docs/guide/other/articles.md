@@ -11,8 +11,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### By yanhom(掘金)
 
 [以面试官视角万字解读线程池10大经典面试题！](https://juejin.cn/post/7137186083074703391)

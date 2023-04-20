@@ -11,8 +11,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ::: tip
 ## v1.1.2 发布记录
 

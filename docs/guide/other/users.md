@@ -11,8 +11,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 接入公司
 
 按登记时间排序

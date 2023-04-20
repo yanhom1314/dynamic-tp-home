@@ -19,3 +19,18 @@ docReady(function () {
         }
     }, 3000);
 });
+
+setTimeout(() => {
+    const pageAD = document.querySelector(".page-ad");
+    if (!pageAD) return;
+    const btnEl = pageAD.querySelector(".wwads-hide");
+    if (btnEl) {
+        btnEl.onclick = () => {
+            pageAD.style.display = "none";
+        };
+    }
+    // 显示广告模块
+    if (pageAD.style.display === "none") {
+        pageAD.style.display = "flex";
+    }
+}, 900);

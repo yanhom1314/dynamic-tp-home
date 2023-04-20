@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 无配置中心可以用此依赖，将配置放到本地配置文件中，无动态调参功能，但有监控告警功能
 
 ::: tip

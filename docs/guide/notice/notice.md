@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 调参通知
 
 配置变更会推送通知消息，且会高亮变更的字段

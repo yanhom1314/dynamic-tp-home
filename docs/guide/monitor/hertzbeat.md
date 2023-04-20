@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### HertzBeat 介绍
 
 > HertzBeat 是一款开源，易用友好的实时监控系统，无需Agent，拥有强大自定义监控能力。

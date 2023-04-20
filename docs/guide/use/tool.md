@@ -14,8 +14,6 @@ sticky: true
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 快速创建内存安全线程池
 
 core 模块 ThreadPoolCreator 类提供快速创建内存安全线程池的静态方法，可以用来替换 Executors 类，

@@ -11,8 +11,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 用爱发电
 
 开源不易，如果感觉该项目对您有点帮助，可以通过如下方式支持我们

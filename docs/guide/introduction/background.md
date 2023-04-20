@@ -14,8 +14,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 使用痛点 
 
 使用线程池 ThreadPoolExecutor 过程中你是否有以下痛点呢？

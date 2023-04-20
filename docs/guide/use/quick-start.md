@@ -15,8 +15,6 @@ star: true
 
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 接入步骤
 
 > 1. 引入相应配置中心的依赖，具体见下述 maven 依赖

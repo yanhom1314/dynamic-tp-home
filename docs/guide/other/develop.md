@@ -11,8 +11,6 @@ sticky: false
 star: true
 ---
 
-<div class="wwads-cn wwads-vertical wwads-sticky" data-id="212" style="max-width:180px"></div>
-
 ### 成为 Committer
 
 1. 对开源感兴趣，有一颗用爱发电的心。
