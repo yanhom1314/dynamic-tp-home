@@ -8,7 +8,7 @@ export default defineComponent({
   props: {
     mode: {
       type: String,
-      default: 'vertical',
+      default: 'horizontal',
     },
     sticky: {
       type: String,
@@ -23,7 +23,7 @@ export default defineComponent({
 @use "vuepress-shared/styles/wrapper";
 
 .page-wwads-content {
-  max-width: var(--content-width, 180px);
-  margin: 0 auto;
+    max-width: var(--content-width, 740px);
+    margin: 0 auto;
 }
 </style>
