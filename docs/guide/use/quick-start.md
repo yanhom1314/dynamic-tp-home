@@ -4,9 +4,6 @@ icon: launch
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 接入步骤
-  - dynamictp
 tag:
   - 接入步骤
   - dynamictp
@@ -17,7 +14,7 @@ star: true
 
 ### 接入步骤
 
-> 1. 引入相应配置中心的依赖，具体见下述 maven 依赖
+> 1. 引入相应配置中心的依赖，maven 依赖见下述
 >
 > 2. 配置中心配置线程池实例，配置文件见下述
 >
@@ -46,7 +43,7 @@ star: true
 
   DynamicTp register dtpExecutor, source: beanPostProcessor, executor: DtpMainPropWrapper(dtpName=dynamic-tp-test-1, corePoolSize=6, maxPoolSize=8, keepAliveTime=50, queueType=VariableLinkedBlockingQueue, queueCapacity=200, rejectType=RejectedCountableCallerRunsPolicy, allowCoreThreadTimeOut=false)
 
-  DtpRegistry initialization end, remote dtpExecutors: [dtpExecutor1, dtpExecutor2], local dtpExecutors: [ioIntensiveExecutor], local commonExecutors: [commonExecutor]
+  DtpRegistry has been initialized, remote executors: [dtpExecutor1, dtpExecutor2], local executors: [ioIntensiveExecutor]
   ```
 
 :::
@@ -55,7 +52,7 @@ star: true
 
 ::: warning
 
-1. 普通 JUC 线程池或者 Spring 线程池想要被监控，可以 @Bean 定义时加 @DynamicTp 注解
+1. 普通 JUC 线程池或者 Spring 线程池想要被框架管理，可以 @Bean 定义时加 @DynamicTp 注解
 
 2. 动态线程池实例服务启动时会根据配置中心的配置动态注册到 Spring 容器中，建议不要用 @Bean 编程式重复声明同一线程池实例，直接配置在配置中心就行
 

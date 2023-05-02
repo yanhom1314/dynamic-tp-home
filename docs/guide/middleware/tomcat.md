@@ -4,8 +4,6 @@ icon: Apache
 order: 1
 author: yanhom
 date: 2023-02-11
-category:
-  - tomcat
 tag:
   - tomcat
   - webserver
@@ -20,9 +18,9 @@ star: true
 
 ```xml
    <dependency>
-        <groupId>cn.dynamictp</groupId>
+        <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-webserver</artifactId>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
     </dependency>
 ```
 
@@ -54,6 +52,6 @@ DynamicTp adapter [tomcatTp] refreshed end, corePoolSize: [10 => 100], maxPoolSi
 ::: tip
 
 1. 线程池名称：tomcatTp
-2. tomcat 线程池目前只享有动态调参和监控功能，没通知报警功能
+2. tomcat 线程池享有动态调参、监控、通知告警完整的功能
 3. tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPoolExecutor
 :::

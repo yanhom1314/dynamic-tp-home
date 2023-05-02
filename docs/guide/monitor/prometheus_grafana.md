@@ -4,10 +4,6 @@ icon: config
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - micrometer接入流程
-  - prometheus+grafana 接入流程
-  - dynamictp
 tag:
   - micrometer接入流程
   - prometheus+grafana 接入流程

@@ -4,9 +4,6 @@ icon: emoji
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - consul-cloud 应用接入
-  - dynamictp
 tag:
   - consul-cloud 应用接入
   - dynamictp
@@ -36,9 +33,9 @@ star: true
 
  ```xml
      <dependency>
-         <groupId>cn.dynamictp</groupId>
+         <groupId>org.dromara.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-cloud-starter-consul</artifactId>
-         <version>1.1.2</version>
+         <version>1.1.3</version>
      </dependency>
  ```
 

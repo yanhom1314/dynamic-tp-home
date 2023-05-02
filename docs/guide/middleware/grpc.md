@@ -4,8 +4,6 @@ icon: chrome
 order: 1
 author: yanhom
 date: 2023-02-11
-category:
-  - grpc
 tag:
   - grpc
   - rpc
@@ -20,9 +18,9 @@ star: true
 
 ```xml
    <dependency>
-        <groupId>cn.dynamictp</groupId>
+        <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-grpc</artifactId>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
     </dependency>
 ```
 
@@ -56,7 +54,7 @@ DynamicTp grpcTp adapter, [shadedNettyTp] refreshed end, changed keys: [corePool
 
 1. grpc 官方没有提供 springboot starter，我们对开源项目 https://github.com/yidongnan/grpc-spring-boot-starter 进行了适配，该项目也是 star 最多最活跃的 grpc springboot starter
 2. 线程池名称规则，基于上述项目提供的三种模式 shadedNettyGrpcServerLifecycle / inProcessGrpcServerLifecycle / nettyGrpcServerLifecycle，分别对应 shadedNettyTp / inProcessTp / nettyTp 三个名称（可以在启动日志找输出的线程池名称）
-3. hystrix 线程池享有动态调参、监控、通知告警完整的功能
+3. grpc 线程池享有动态调参、监控、通知告警完整的功能
 4. grpc 线程池通知告警项有（调参通知、活性告警、队列容量告警），可通过 notifyItems 自定义配置项值，默认全部开启
 5. 只支持 server 端线程池管理
 :::

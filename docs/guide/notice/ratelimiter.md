@@ -4,9 +4,6 @@ icon: decorate
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 通知限流
-  - dynamictp
 tag:
   - 通知限流
   - dynamictp
@@ -21,9 +18,9 @@ star: true
 2. 1.0.8 版本开始支持集群限流，基于 redis 实现的滑动窗口限流，会限制实际进行推送的节点个数，使用引入以下依赖
    ```xml
         <dependency>
-            <groupId>cn.dynamictp</groupId>
+            <groupId>org.dromara.dynamictp</groupId>
             <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-            <version>1.1.2</version>
+            <version>1.1.3</version>
         </dependency>
     ```
 3. 通知项配置 clusterLimit 字段

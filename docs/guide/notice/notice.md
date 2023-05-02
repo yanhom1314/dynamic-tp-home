@@ -1,14 +1,11 @@
 ---
-title: 通知
+title: 调参通知
 icon: notice
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 通知
-  - dynamictp
 tag:
-  - 通知
+  - 调参通知
   - dynamictp
 sticky: true
 star: true

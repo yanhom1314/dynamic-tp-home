@@ -4,9 +4,6 @@ icon: code
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 代码使用
-  - dynamictp
 tag:
   - 代码使用
   - dynamictp

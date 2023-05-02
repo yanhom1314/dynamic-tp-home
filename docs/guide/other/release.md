@@ -4,12 +4,62 @@ icon: list
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
+tag:
   - 发版记录
   - dynamictp
 sticky: false
 star: true
 ---
+
+::: tip
+## v1.1.3 发布记录
+
+groupId 及包名改为 org.dromara.dynamictp
+
+#### Feature
+
+- 引入时间轮重构任务超时（排队超时、执行超时）功能，@KamToHung
+
+- 增加 ExecutorAdapter，做各种框架线程池的适配器，@dragon-zhang
+
+- WebServer（Tomcat、Undertow、Jetty）支持通知告警，@dragon-zhang
+
+- 阿里云商业版 RocketMQ 线程池管理支持，@Redick01
+
+- 引入 JsonUtil，根据依赖选择 Jackson/Gson/FastJson 做框架 json 序列化工具，减少外部依赖，@topsuder
+
+- 重构 OrderedDtpExecutor 有序线程池实现，@yanhom, @KamToHung
+
+- 实现优雅关闭线程池功能，@yanhom
+
+- 增加 dependencies 模块，统一管理依赖，@KamToHung
+
+- TaskWrapper 支持 OpenTelemetry，@brendanv
+
+#### Bugfix
+
+- 修复飞书告警失败问题，@KamToHung
+
+- 修复配置变更后不通知的问题，@yanhom
+
+- 修复 dtp-alarm 线程 StackOverflowError 异常，@yanhom
+
+- 修复 DtpPostProcessor 初始化晚于线程池实例初始化问题，@KamToHung
+
+#### Optimize
+
+- 丰富 Undertow 线程池监控指标，@yanhom
+
+- 优化当引入 Dtp 包，不启用时可以通过手动配置关闭，@ruoan777
+
+- 优化告警功能，解决实际推送的告警信息看着不准的问题，@ruoan777
+
+- 线程池内部注册器模块优化，@KamToHung
+
+- Hutool 依赖优化，只引入用到的包，@KamToHung
+
+- 部分代码优化重构，@yanhom，@KamToHung，@dragon-zhang
+:::
 
 ::: tip
 ## v1.1.2 发布记录
