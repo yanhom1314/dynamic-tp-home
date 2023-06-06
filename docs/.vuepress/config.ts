@@ -47,5 +47,11 @@ export default defineUserConfig({
         __dirname,
         "./components/NormalPage.vue"
     ),
+    "@theme-hope/modules/sidebar/components/Sidebar": path.resolve(
+        __dirname,
+        "./components/Sidebar.vue"
+    ),
   },
+
+  pagePatterns: ["**/*.md", "!*.snippet.md", "!.vuepress", "!node_modules"],
 });
