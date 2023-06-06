@@ -16,9 +16,9 @@
     "@vuepress/client": "2.0.0-beta.62",
     "@vuepress/plugin-docsearch": "2.0.0-beta.62",
     "@vuepress/utils": "2.0.0-beta.62",
-    "vue": "^3.3.2",
+    "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.62",
-    "vuepress-theme-hope": "2.0.0-beta.211"
+    "vuepress-theme-hope": "2.0.0-beta.220"
   },
   "devDependencies": {
     "prettier": "2.8.4",
