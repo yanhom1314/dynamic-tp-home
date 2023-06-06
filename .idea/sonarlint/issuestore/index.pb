@@ -40,3 +40,5 @@ I
 docs/.vuepress/sidebar.ts,c\c\cc35a1d273609bd9dbe806c1d1b7d9b8fb4bf7c6
 >
 docs/README.md,9\f\9f7cbce127b94a94ee14460050fbff2ce58417d0
+J
+docs/guide/notice/alarm.md,8\2\82ad9b5389e63fb17ef6c50bd143877e50dc5514
