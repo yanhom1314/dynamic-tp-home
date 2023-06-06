@@ -10,14 +10,13 @@
     "docs:eject-theme": "vuepress eject-hope docs"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-back-to-top": "2.0.0-beta.38",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
-    "@vuepress/utils": "2.0.0-beta.61",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-plugin-search-pro": "2.0.0-beta.205",
-    "vuepress-theme-hope": "2.0.0-beta.202"
+    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
+    "@vuepress/utils": "2.0.0-beta.62",
+    "vue": "^3.3.2",
+    "@vuepress/bundler-vite": "2.0.0-beta.62",
+    "vuepress": "2.0.0-beta.62",
+    "vuepress-theme-hope": "2.0.0-beta.211"
   },
   "dependencies": {
     "@vuepress/client": "2.0.0-beta.62",
