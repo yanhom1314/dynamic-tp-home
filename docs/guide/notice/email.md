@@ -4,9 +4,6 @@ icon: at
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 邮件通知
-  - dynamictp
 tag:
   - 邮件通知
   - dynamictp
@@ -20,9 +17,9 @@ star: true
 
    ```xml
         <dependency>
-            <groupId>cn.dynamictp</groupId>
+            <groupId>org.dromara.dynamictp</groupId>
             <artifactId>dynamic-tp-spring-boot-starter-extension-notify-email</artifactId>
-            <version>1.1.2</version>
+            <version>1.1.3</version>
         </dependency>   
     ```
 

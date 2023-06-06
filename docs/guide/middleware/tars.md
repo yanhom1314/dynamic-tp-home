@@ -4,8 +4,6 @@ icon: function
 order: 1
 author: yanhom
 date: 2023-02-11
-category:
-  - tars
 tag:
   - tars
   - rpc
@@ -20,9 +18,9 @@ star: true
 
 ```xml
    <dependency>
-        <groupId>cn.dynamictp</groupId>
+        <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-tars</artifactId>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
     </dependency>
 ```
 

@@ -4,7 +4,7 @@ icon: people
 order: 1
 author: yanhom
 date: 2023-03-11
-category:
+tag:
   - 接入公司
   - dynamictp
 sticky: false
@@ -26,6 +26,8 @@ star: true
 - [壹融站信息技术（深圳）有限公司](https://www.yirongzhan.com)
 - [深圳市时代华盛网络科技有限公司](https://www.hstong.com/)
 - [利宝保险有限公司](https://www.libertymutual.com.cn/)
+- [深圳集贤科技有限公司](https://www.uascent-iot.com/)
+- [杭州群赞网络科技有限公司](https://www.jingling.group)
 
 :::
 

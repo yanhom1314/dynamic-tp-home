@@ -4,9 +4,6 @@ icon: tool
 order: 1
 author: yanhom
 date: 2022-08-15
-category:
-  - 工具
-  - dynamictp
 tag:
   - 工具
   - dynamictp

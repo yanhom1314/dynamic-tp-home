@@ -4,9 +4,6 @@ icon: ability
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 采集类型
-  - dynamictp
 tag:
   - 采集类型
   - dynamictp

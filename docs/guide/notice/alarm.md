@@ -1,14 +1,11 @@
 ---
-title: 报警
+title: 运行报警
 icon: warn
 order: 1
 author: yanhom
 date: 2022-06-11
-category:
-  - 报警
-  - dynamictp
 tag:
-  - 报警
+  - 运行报警
   - dynamictp
 sticky: true
 star: true
@@ -16,124 +13,105 @@ star: true
 
 ### 告警类型
 
-框架目前提供以下告警功能，每一个告警项都可以独立配置是否开启、告警阈值、告警间隔时间、平台等，具体代码请看 core 模块 notify 包，
-告警信息同时会高亮与该项相关的字段。
+框架目前提供以下告警功能，每一个告警项都可以独立配置是否开启、告警阈值、告警间隔时间、平台等，具体代码请看 core 模块 notifier 包，
+告警信息同时会高亮与该告警项相关的字段。
 
 + 线程池活跃度告警
 
-> 1. 活跃度 = activeCount / maximumPoolSize
->
-> 2. 服务启动后会开启一个定时监控任务，每隔一定时间（可配置）去计算线程池的活跃度，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知
+> 1. 活跃度 = (activeCount / maximumPoolSize) * 100
+> 
+> 2. 比如 threshold 阈值配置 80，表示活跃度达到 80% 时触发告警
+> 
+> 3. 服务启动后会开启一个定时监控任务，每隔一定时间（可配置）去计算线程池的活跃度，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知
 >
 > <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/675f7b2732ba46ae9a0539ec69698c6b~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
 
 
 + 队列容量告警
 
-> 1. 容量使用率 = queueSize / queueCapacity
+> 1. 容量使用率 = (queueSize / queueCapacity) * 100
 >
-> 2. 服务启动后会开启一个定时监控任务，每隔一定时间去计算任务队列的使用率，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知
+> 2. 比如 threshold 阈值配置 80，表示容量使用率达到 80% 时触发告警
+> 
+> 3. 服务启动后会开启一个定时监控任务，每隔一定时间去计算任务队列的使用率，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知
 >
 > <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d65151e3e9ca460eac18f30ea6be05d3~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
 
+
 + 拒绝策略告警
 
-  线程池线程数达到配置的最大线程数，且任务队列已满，再提交任务会触发拒绝策略。DtpExecutor 线程池用到的 RejectedExecutionHandler 是经过动态代理包装过的，在执行具体的拒绝策略之前会执行 RejectedAware 类 beforeReject() 方法，此方法会去做拒绝数量累加（总数值累加、周期值累加）。且判断如果周期累计值达到配置的阈值，则会触发一次告警通知（同时重置周期累加值为0及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知
+  线程池线程数达到配置的最大线程数，且任务队列已满，再提交任务会触发拒绝策略。DtpExecutor 线程池用到的 RejectedExecutionHandler 是经过动态代理包装过的，
+  在执行具体的拒绝策略之前会执行 RejectedAware 类 beforeReject() 方法，此方法会去做拒绝数量累加（总数值累加、周期值累加）。且判断如果周期累计值达到配置的阈值，
+  则会触发一次告警通知（同时重置周期累加值为 0 及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知
 
     ```java
     /**
      * Do sth before reject.
+     *
+     * @param runnable Runnable instance
      * @param executor ThreadPoolExecutor instance
+     * @param log      logger
      */
-    default void beforeReject(ThreadPoolExecutor executor) {
+    default void beforeReject(Runnable runnable, ThreadPoolExecutor executor, Logger log) {
         if (executor instanceof DtpExecutor) {
+            val dtpRunnable = (DtpRunnable) runnable;
+            dtpRunnable.cancelQueueTimeoutTask();
             DtpExecutor dtpExecutor = (DtpExecutor) executor;
             dtpExecutor.incRejectCount(1);
-            Runnable runnable = () -> AlarmManager.doAlarm(dtpExecutor, REJECT);
-            AlarmManager.triggerAlarm(dtpExecutor.getThreadPoolName(), REJECT.getValue(), runnable);
+            AlarmManager.doAlarmAsync(dtpExecutor, REJECT);
+            log.warn("DynamicTp execute, thread pool is exhausted, tpName: {}, taskName: {}, traceId: {}, " +
+                            "poolSize: {} (active: {}, core: {}, max: {}, largest: {}), " +
+                            "task: {} (completed: {}), queueCapacity: {}, (currSize: {}, remaining: {}), " +
+                            "executorStatus: (isShutdown: {}, isTerminated: {}, isTerminating: {})",
+                    dtpExecutor.getThreadPoolName(), dtpRunnable.getTaskName(), MDC.get(TRACE_ID), executor.getPoolSize(),
+                    executor.getActiveCount(), executor.getCorePoolSize(), executor.getMaximumPoolSize(),
+                    executor.getLargestPoolSize(), executor.getTaskCount(), executor.getCompletedTaskCount(),
+                    dtpExecutor.getQueueCapacity(), dtpExecutor.getQueue().size(), executor.getQueue().remainingCapacity(),
+                    executor.isShutdown(), executor.isTerminated(), executor.isTerminating());
         }
     }
     ```
 > <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/651049fe286f4cb099ab8936bfc4b425~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
 
+
 + 任务排队超时告警
 
-  重写 ThreadPoolExecutor 的 execute() 方法和 beforeExecute() 方法，如果配置了执行超时或排队超时值，则会用DtpRunnable包装任务，同时记录任务的提交时间submitTime，beforeExecute根据当前时间和submitTime的差值就可以计算到该任务在队列中的等待时间，然后判断如果差值大于配置的queueTimeout则累加排队超时任务数量（总数值累加、周期值累加）。且判断如果周期累计值达到配置的阈值，则会触发一次告警通知（同时重置周期累加值为0及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知
+  重写 ThreadPoolExecutor 的 execute() 方法和 beforeExecute() 方法，采用时间轮处理任务排队超时逻辑。
+  任务提交时用 DtpRunnable 包装任务， 并根据 queueTimeout 开启一个处理排队超时的 TimerTask，
+  排队超时后执行 TimerTask 的 run 方法，累加排队超时任务数量（总数值累加、周期值累加）。 且判断如果周期累计值达到配置的阈值，
+  则会触发一次告警通知（同时重置周期累加值为 0 及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知。
 
     ```java
-    @Override
-    public void execute(Runnable command) {
-        String taskName = null;
-        if (command instanceof NamedRunnable) {
-            taskName = ((NamedRunnable) command).getName();
-        }
-    
-        if (CollUtil.isNotEmpty(taskWrappers)) {
-            for (TaskWrapper t : taskWrappers) {
-                command = t.wrap(command);
-            }
-        }
-    
-        if (runTimeout > 0 || queueTimeout > 0) {
-            command = new DtpRunnable(command, taskName);
-        }
-        super.execute(command);
+   public void execute(Runnable command) {
+        DtpRunnable dtpRunnable = (DtpRunnable) wrapTasks(command);
+        dtpRunnable.startQueueTimeoutTask(this);
+        super.execute(dtpRunnable);
     }
     ```
 
     ```java
-    @Override
-    protected void beforeExecute(Thread t, Runnable r) {
-        if (!(r instanceof DtpRunnable)) {
-            super.beforeExecute(t, r);
-            return;
-        }
-        DtpRunnable runnable = (DtpRunnable) r;
-        long currTime = System.currentTimeMillis();
-        if (runTimeout > 0) {
-            runnable.setStartTime(currTime);
-        }
-        if (queueTimeout > 0) {
-            long waitTime = currTime - runnable.getSubmitTime();
-            if (waitTime > queueTimeout) {
-                queueTimeoutCount.incrementAndGet();
-                Runnable alarmTask = () -> AlarmManager.doAlarm(this, QUEUE_TIMEOUT);
-                AlarmManager.triggerAlarm(this.getThreadPoolName(), QUEUE_TIMEOUT.getValue(), alarmTask);
-                if (StringUtils.isNotBlank(runnable.getTaskName())) {
-                    log.warn("DynamicTp execute, queue timeout, poolName: {}, taskName: {}, waitTime: {}ms",
-                            this.getThreadPoolName(), runnable.getTaskName(), waitTime);
-                }
-            }
-        }
-    
+   protected void beforeExecute(Thread t, Runnable r) {
         super.beforeExecute(t, r);
+        DtpRunnable runnable = (DtpRunnable) r;
+        runnable.cancelQueueTimeoutTask();
+        runnable.startRunTimeoutTask(this, t);
     }
     ```
 > <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a8f34edbedee4683a9525a6e9423a1be~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
 
 + 任务执行超时告警
 
-  重写ThreadPoolExecutor的afterExecute()方法，根据当前时间和beforeExecute()中设置的startTime的差值即可算出任务的实际执行时间，然后判断如果差值大于配置的runTimeout则累加排队超时任务数量（总数值累加、周期值累加）。且判断如果周期累计值达到配置的阈值，则会触发一次告警通知（同时重置周期累加值为0及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知
+  重写 ThreadPoolExecutor 的 beforeExecute() 和 afterExecute() 方法，采用时间轮处理任务执行超时逻辑。
+  beforeExecute() 阶段根据 runTimeout 开启一个处理执行超时的 TimerTask，超时后执行 TimerTask 的 run 方法，
+  累加执行超时任务数量（总数值累加、周期值累加）。且判断如果周期累计值达到配置的阈值，则会触发一次告警通知
+ （同时重置周期累加值为 0 及上次告警时间为当前时间），告警间隔内多次触发不会发送告警通知。
 
     ```java
-    @Override
-    protected void afterExecute(Runnable r, Throwable t) {
-    
-        if (runTimeout > 0) {
-            DtpRunnable runnable = (DtpRunnable) r;
-            long runTime = System.currentTimeMillis() - runnable.getStartTime();
-            if (runTime > runTimeout) {
-                runTimeoutCount.incrementAndGet();
-                Runnable alarmTask = () -> AlarmManager.doAlarm(this, RUN_TIMEOUT);
-                AlarmManager.triggerAlarm(this.getThreadPoolName(), RUN_TIMEOUT.getValue(), alarmTask);
-                if (StringUtils.isNotBlank(runnable.getTaskName())) {
-                    log.warn("DynamicTp execute, run timeout, poolName: {}, taskName: {}, runTime: {}ms",
-                            this.getThreadPoolName(), runnable.getTaskName(), runTime);
-                }
-            }
-        }
-    
+  protected void afterExecute(Runnable r, Throwable t) {
         super.afterExecute(r, t);
+        ((DtpRunnable) r).cancelRunTimeoutTask();
+        tryPrintError(r, t);
+        clearContext();
     }
     ```
 > <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b360e0a129e4413b962b40f6ef415af2~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">

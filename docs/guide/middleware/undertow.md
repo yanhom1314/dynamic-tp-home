@@ -4,8 +4,6 @@ icon: safari
 order: 1
 author: yanhom
 date: 2023-02-11
-category:
-  - undertow
 tag:
   - undertow
   - webserver
@@ -20,9 +18,9 @@ star: true
 
 ```xml
    <dependency>
-        <groupId>cn.dynamictp</groupId>
+        <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-webserver</artifactId>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
     </dependency>
 ```
 
@@ -54,6 +52,6 @@ DynamicTp adapter [undertowTp] refreshed end, corePoolSize: [10 => 100], maxPool
 ::: tip
 
 1. 线程池名称：undertowTp
-2. undertow 线程池目前只享有动态调参和监控功能，没通知报警功能
+2. undertow 线程池享有动态调参、监控、通知告警完整的功能
 3. undertow 内部使用 xnio 网络框架，类似 netty
 :::

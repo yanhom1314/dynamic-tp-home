@@ -4,9 +4,6 @@ icon: computer
 order: 1
 author: yanhom
 date: 2023-02-12
-category:
-  - hertzbeat 接入流程
-  - dynamictp
 tag:
   - hertzbeat 接入流程
   - dynamictp
