@@ -27,6 +27,7 @@ star: true
 - [深圳市时代华盛网络科技有限公司](https://www.hstong.com/)
 - [利宝保险有限公司](https://www.libertymutual.com.cn/)
 - [深圳集贤科技有限公司](https://www.uascent-iot.com/)
+- [杭州群赞网络科技有限公司](https://www.jingling.group)
 
 :::
 
