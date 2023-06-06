@@ -1,7 +1,6 @@
 <template>
   <HopeHomePage>
-      <template #contentBefore>
-          <AdPage content="content" />
+      <template #center>
       </template>
   </HopeHomePage>
 </template>

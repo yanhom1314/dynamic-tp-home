@@ -1,7 +1,7 @@
 import {defineUserConfig} from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { getDirname, path } from "@vuepress/utils";
-import theme from "./theme";
+import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
 

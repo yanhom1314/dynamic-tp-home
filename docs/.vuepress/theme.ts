@@ -1,3 +1,4 @@
+import { getDirname, path } from "@vuepress/utils";
 import {hopeTheme} from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
@@ -36,5 +37,40 @@ export default hopeTheme({
     orange: "#FC801D",
     pink :"#FF318C",
     lightBlue:"#07C3F2"
+  },
+
+  plugins: {
+    mdEnhance: {
+      align: true,
+      chart: true,
+      tabs: true,
+      codetabs: true,
+      container: true,
+      mermaid: true,
+      flowchart: true,
+      // 启用 figure
+      figure: true,
+      // 启用图片懒加载
+      imgLazyload: true,
+      // 启用图片标记
+      imgMark: true,
+      // 启用图片大小
+      imgSize: true,
+      include: {
+        resolvePath: (file) =>
+            file.startsWith("@src")
+                ? file.replace("@src", path.resolve(__dirname, ".."))
+                : file,
+      },
+      demo: true,
+      mark: true,
+      footnote: true,
+      tasklist: true,
+      // 启用下角标功能
+      sub: true,
+      // 启用上角标
+      sup: true,
+      presentation: true,
+    }
   }
 });
