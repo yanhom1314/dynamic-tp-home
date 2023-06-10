@@ -1,4 +1,5 @@
-<template><div><h1 id="功能特性-✅" tabindex="-1"><a class="header-anchor" href="#功能特性-✅" aria-hidden="true">#</a> 功能特性 ✅</h1>
+<template><div><div style="padding-bottom: 0px;"></div>
+<h1 id="功能特性" tabindex="-1"><a class="header-anchor" href="#功能特性" aria-hidden="true">#</a> 功能特性</h1>
 <ul>
 <li>
 <p><strong>代码零侵入</strong>：我们改变了线程池以往的使用姿势，所有配置均放在配置中心，服务启动时会从配置中心拉取配置生成线程池对象放到 Spring 容器中，使用时直接从 Spring 容器中获取，对业务代码零侵入</p>
