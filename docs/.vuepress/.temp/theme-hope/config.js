@@ -1,10 +1,14 @@
 import { defineClientConfig } from "@vuepress/client";
 
-import { HopeIcon, Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-theme-hope/lib/bundle/export.js";
+import { Layout, NotFound, useScrollPromise, injectDarkmode, setupDarkmode, setupSidebarItems } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-theme-hope/lib/client/export.js";
 
+import { HopeIcon } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-theme-hope/lib/client/export.js";
+import { defineAutoCatalogIconComponent } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-auto-catalog/lib/client/index.js"
+import Slide from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-md-enhance/lib/client/SlidePage.js";
 
+import "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-theme-hope/lib/client/styles/index.scss";
 
-import "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-theme-hope@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-theme-hope/lib/bundle/styles/all.scss";
+defineAutoCatalogIconComponent(HopeIcon);
 
 export default defineClientConfig({
   enhance: ({ app, router }) => {
@@ -19,9 +23,6 @@ export default defineClientConfig({
     // inject global properties
     injectDarkmode(app);
 
-    // render icon for auto-catalog
-    app.component("HopeIcon", HopeIcon);
-
 
   },
   setup: () => {
@@ -32,6 +33,6 @@ export default defineClientConfig({
   layouts: {
     Layout,
     NotFound,
-
+    Slide,
   }
 });

@@ -40,6 +40,10 @@ export default hopeTheme({
   },
 
   plugins: {
+    copyCode: {
+      showInMobile: true,
+      duration: 1000
+    },
     mdEnhance: {
       align: true,
       chart: true,
@@ -71,6 +75,8 @@ export default hopeTheme({
       // 启用上角标
       sup: true,
       presentation: true,
-    }
-  }
+    },
+  },
+}, {
+  custom: true,
 });

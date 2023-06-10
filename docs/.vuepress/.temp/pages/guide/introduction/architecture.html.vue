@@ -90,7 +90,7 @@
 </blockquote>
 <h3 id="代码结构" tabindex="-1"><a class="header-anchor" href="#代码结构" aria-hidden="true">#</a> 代码结构</h3>
 <p>以多 Module 的方式组织代码，提升代码的可维护性，方便扩展</p>
-<p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/059c87e5767a40ddbc52d74ef4bdbe6d~tplv-k3u1fbpfcp-watermark.image?" alt="图片.png"></p>
+<figure><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/059c87e5767a40ddbc52d74ef4bdbe6d~tplv-k3u1fbpfcp-watermark.image?" alt="图片.png" tabindex="0" loading="lazy"><figcaption>图片.png</figcaption></figure>
 <blockquote>
 <ol>
 <li>
@@ -121,7 +121,7 @@
 </ol>
 </blockquote>
 <h3 id="架构图" tabindex="-1"><a class="header-anchor" href="#架构图" aria-hidden="true">#</a> 架构图</h3>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构"></p>
+<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构" tabindex="0" loading="lazy"><figcaption>技术架构</figcaption></figure>
 </div></template>
 
 

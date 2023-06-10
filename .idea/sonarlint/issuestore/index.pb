@@ -1,18 +1,10 @@
 
-P
- docs/.vuepress/styles/index.scss,3\e\3eb7f2cf7e8b2d3f90aa34f9bcbece53ebc91617
-R
-"docs/.vuepress/styles/palette.scss,9\b\9b98fa495495988668a8b0f02fc167ad94a9c043
 I
 docs/guide/other/users.md,2\3\23cf996b0e32bf2770e40eb39f44cb220b348a44
 L
 docs/guide/other/articles.md,4\f\4f06534beaef239cfff1ecc0815051e991245938
 Q
 !docs/guide/configcenter/apollo.md,8\3\8360924c02deb7e4b86dbab8f440f69c85d6eab8
->
-docs/README.md,9\f\9f7cbce127b94a94ee14460050fbff2ce58417d0
-H
-docs/.vuepress/navbar.ts,8\6\86c6248549502539da941b78d6df103a764b7de4
 I
 docs/.vuepress/sidebar.ts,c\c\cc35a1d273609bd9dbe806c1d1b7d9b8fb4bf7c6
 F
@@ -29,9 +21,5 @@ T
 $docs/.vuepress/dist/guide/index.html,b\4\b41ab09d60ceb4be1bfff9d549a82019ac802470
 ]
 -docs/.vuepress/dist/guide/other/articles.html,2\e\2e34f15d6492a33127dea779df549c8e84fea6d7
-R
-"docs/.vuepress/public/adblocked.js,a\a\aa1b56f2d90bb1837dacb7d2d5229e560431c2a0
 t
 Dnode_modules/vuepress-theme-hope/lib/client/components/NormalPage.js,2\5\256e157411504fde4e1995f2ba9d439e4ebbb8c4
-X
-(docs/.vuepress/components/NormalPage.vue,7\d\7d78902b868cc52b92ae164ea6623f9e4bc12bea

@@ -59,26 +59,26 @@
 <li>点击新增 DynamicTp 监控</li>
 </ol>
 <p>路径：菜单 -&gt; 中间件监控 -&gt; DynamicTp监控 -&gt; 新增DynamicTp监控</p>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-1.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-1.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="2">
 <li>配置监控 DynamicTp 所需参数</li>
 </ol>
 <p>在监控页面填写 DynamicTp <strong>服务IP</strong>，<strong>监控端口</strong>(默认8080)，最后点击确定添加即可。<br>
 其他参数如<strong>采集间隔</strong>，<strong>超时时间</strong>等可以参考<a href="https://hertzbeat.com/docs/help/dynamic_tp/" target="_blank" rel="noopener noreferrer">帮助文档<ExternalLinkIcon/></a> https://hertzbeat.com/docs/help/dynamic_tp/</p>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-2.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-2.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="3">
 <li>完成✅,现在我们已经添加好对 DynamicTp 的监控了，查看监控列表即可看到我们的添加项。</li>
 </ol>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-1.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-1.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="4">
 <li>点击监控列表项的<strong>操作</strong>-&gt;<strong>监控详情图标</strong> 即可浏览 DynamicTp线程池 的实时监控指标数据。</li>
 </ol>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-3.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-3.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="5">
 <li>点击<strong>监控历史详情TAB</strong> 即可浏览 DynamicTp线程池 的历史监控指标数据图表📈。</li>
 </ol>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-4.png" alt="hertzbeat"></p>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-5.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-4.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-5.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <p><strong>DONE！完成啦！通过上面几步，总结起来其实也就只用两步</strong></p>
 <ul>
 <li><strong>第一步暴露 DynamicTp 端<code v-pre>metrics</code>端点<code v-pre>/actuator/dynamic-tp</code></strong></li>
@@ -99,7 +99,7 @@
 <li>选择配置的指标对象，DynamicTp监控主要是一些线程池相关指标，我们举例对 <code v-pre>运行超时线程数量</code> <code v-pre>thread_pool_running</code> -&gt; <code v-pre>run_timeout_count</code> 这个指标进行阈值设置， 当线程运行超时数量大于1时发出告警。</li>
 <li>这里我们就配置当此指标<code v-pre>thread_pool_running</code> 的 <code v-pre>run_timeout_count&gt;1</code> 时发出告警，告警级别为<strong>严重告警</strong>，三次即触发，具体如下图。</li>
 </ul>
-<p><img src="/images/hertzbeat/monitor-dynamic-tp-6.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/monitor-dynamic-tp-6.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="2">
 <li>新增消息通知接收人</li>
 </ol>
@@ -113,14 +113,14 @@
 <li>在 HertzBeat 配置接收人参数如下。</li>
 </ul>
 <p>【告警通知】-&gt;【新增接收人】 -&gt;【选择钉钉机器人通知方式】-&gt;【设置钉钉机器人ACCESS_TOKEN】-&gt; 【确定】</p>
-<p><img src="/images/hertzbeat/alert-notice-1.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/alert-notice-1.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <ol start="3">
 <li>配置关联的告警通知策略⚠️ 【新增通知策略】-&gt; 【将刚设置的接收人关联】-&gt; 【确定】</li>
 </ol>
 <blockquote>
 <p>配置告警通知策略，让告警消息与接收人绑定，这样就能决定哪些告警发给哪个人。</p>
 </blockquote>
-<p><img src="/images/hertzbeat/alert-notice-2.png" alt="hertzbeat"></p>
+<figure><img src="/images/hertzbeat/alert-notice-2.png" alt="hertzbeat" tabindex="0" loading="lazy"><figcaption>hertzbeat</figcaption></figure>
 <h3 id="完毕-现在坐等告警消息过来啦。叮叮叮叮" tabindex="-1"><a class="header-anchor" href="#完毕-现在坐等告警消息过来啦。叮叮叮叮" aria-hidden="true">#</a> 完毕，现在坐等告警消息过来啦。叮叮叮叮</h3>
 <div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>[HertzBeat告警通知]
 告警目标对象 : dynamic_tp.thread_pool_running.run_timeout_count
