@@ -1,5 +1,5 @@
 import { defineClientConfig } from "@vuepress/client";
-import { hasGlobalComponent } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/node_modules/vuepress-shared/lib/client/index.js";
+import { hasGlobalComponent } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-shared/lib/client/index.js";
 import { h } from "vue";
 
 import { useStyleTag } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/@vueuse/core/index.mjs";
