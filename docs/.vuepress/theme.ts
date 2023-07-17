@@ -29,17 +29,14 @@ export default hopeTheme({
   displayFooter: true,
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-  fullscreen: true,
-  themeColor: {
-    blue: "#087CFA",
-    red: "#FE2857",
-    green: "#21D789",
-    orange: "#FC801D",
-    pink :"#FF318C",
-    lightBlue:"#07C3F2"
-  },
+
+  darkmode: "enable",
 
   plugins: {
+    copyCode: {
+      showInMobile: true,
+      duration: 1000
+    },
     mdEnhance: {
       align: true,
       chart: true,
@@ -71,6 +68,8 @@ export default hopeTheme({
       // 启用上角标
       sup: true,
       presentation: true,
-    }
-  }
+    },
+  },
+}, {
+  custom: true,
 });

@@ -36,7 +36,9 @@ features:
     link: "/guide/middleware/tomcat"
 ---
 
-# 功能特性 ✅
+<div style="padding-bottom: 0px;"></div>
+
+# 功能特性
 
 - **代码零侵入**：我们改变了线程池以往的使用姿势，所有配置均放在配置中心，服务启动时会从配置中心拉取配置生成线程池对象放到 Spring 容器中，使用时直接从 Spring 容器中获取，对业务代码零侵入
 
@@ -65,7 +67,7 @@ features:
 
 # 技术架构 
 
-![技术架构](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image)
+![技术架构](/images/dynamictp/arch.image)
 
 # Star History
 
@@ -73,7 +75,7 @@ features:
 
 # 知识星球
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/598a7ff2872a46b4a021ead20f9bd4f9~tplv-k3u1fbpfcp-zoom-1.image)
+![](/images/dynamictp/dromara-zsxq.image)
 
 # Dromara 成员项目
 

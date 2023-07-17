@@ -1,4 +1,5 @@
-<template><div><h1 id="功能特性-✅" tabindex="-1"><a class="header-anchor" href="#功能特性-✅" aria-hidden="true">#</a> 功能特性 ✅</h1>
+<template><div><div style="padding-bottom: 0px;"></div>
+<h1 id="功能特性" tabindex="-1"><a class="header-anchor" href="#功能特性" aria-hidden="true">#</a> 功能特性</h1>
 <ul>
 <li>
 <p><strong>代码零侵入</strong>：我们改变了线程池以往的使用姿势，所有配置均放在配置中心，服务启动时会从配置中心拉取配置生成线程池对象放到 Spring 容器中，使用时直接从 Spring 容器中获取，对业务代码零侵入</p>
@@ -38,11 +39,11 @@
 </li>
 </ul>
 <h1 id="技术架构" tabindex="-1"><a class="header-anchor" href="#技术架构" aria-hidden="true">#</a> 技术架构</h1>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构"></p>
+<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image" alt="技术架构" tabindex="0" loading="lazy"><figcaption>技术架构</figcaption></figure>
 <h1 id="star-history" tabindex="-1"><a class="header-anchor" href="#star-history" aria-hidden="true">#</a> Star History</h1>
-<p><a href="https://star-history.com/#dromara/dynamic-tp&amp;Date" target="_blank" rel="noopener noreferrer"><img src="https://api.star-history.com/svg?repos=dromara/dynamic-tp&amp;type=Date" alt="Star History Chart"><ExternalLinkIcon/></a></p>
+<figure><a href="https://star-history.com/#dromara/dynamic-tp&amp;Date" target="_blank" rel="noopener noreferrer"><img src="https://api.star-history.com/svg?repos=dromara/dynamic-tp&amp;type=Date" alt="Star History Chart" tabindex="0" loading="lazy"><ExternalLinkIcon/></a><figcaption>Star History Chart</figcaption></figure>
 <h1 id="知识星球" tabindex="-1"><a class="header-anchor" href="#知识星球" aria-hidden="true">#</a> 知识星球</h1>
-<p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/598a7ff2872a46b4a021ead20f9bd4f9~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p>
+<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/598a7ff2872a46b4a021ead20f9bd4f9~tplv-k3u1fbpfcp-zoom-1.image" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <h1 id="dromara-成员项目" tabindex="-1"><a class="header-anchor" href="#dromara-成员项目" aria-hidden="true">#</a> Dromara 成员项目</h1>
 <div>
     <div class="com-box-f s-width">

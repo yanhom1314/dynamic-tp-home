@@ -59,6 +59,13 @@
 <td>2023-04-24</td>
 <td>无</td>
 </tr>
+<tr>
+<td>yai**</td>
+<td><strong>￥20</strong></td>
+<td>喝杯咖啡</td>
+<td>2023-06-09</td>
+<td>无</td>
+</tr>
 </tbody>
 </table>
 </div></template>

@@ -1,13 +1,13 @@
 import { defineClientConfig } from "@vuepress/client";
-import { hasGlobalComponent } from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/shared.js";
+import { hasGlobalComponent } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-shared/lib/client/index.js";
 import { h } from "vue";
 
-import { useStyleTag } from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/vueuse.js";
-import Badge from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
-import FontIcon from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
-import BackToTop from "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
+import { useStyleTag } from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/@vueuse/core/index.mjs";
+import Badge from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/Badge.js";
+import FontIcon from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/FontIcon.js";
+import BackToTop from "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/components/BackToTop.js";
 
-import "D:/dynamic-tp-home/node_modules/.pnpm/vuepress-plugin-components@2.0.0-beta.205_vuepress@2.0.0-beta.61/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
+import "/Users/yanhom/opensource/dynamic-tp-home/node_modules/vuepress-plugin-components/lib/client/styles/sr-only.scss";
 
 export default defineClientConfig({
   enhance: ({ app }) => {
