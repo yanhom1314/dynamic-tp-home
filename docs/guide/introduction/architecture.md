@@ -68,7 +68,7 @@ star: true
 
 以多 Module 的方式组织代码，提升代码的可维护性，方便扩展
 
-![图片.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/059c87e5767a40ddbc52d74ef4bdbe6d~tplv-k3u1fbpfcp-watermark.image?)
+![图片.png](/images/dynamictp/code.png)
 
 > 1. adapter 模块：主要是适配一些第三方组件的线程池管理，目前已经实现的有 SpringBoot 内置的三大 web 容器（Tomcat、Jetty、Undertow）、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc、RabbitMq 的线程池管理，
 后续会接入其他常用组件的线程池管理
@@ -89,4 +89,4 @@ star: true
 
 ### 架构图
 
-![技术架构](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image)
+![技术架构](/images/dynamictp/arch.png)

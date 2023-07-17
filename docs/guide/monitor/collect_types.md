@@ -28,7 +28,7 @@ star: true
 
 引入 prometheus（也可以用其他） 对应依赖，job 配置后 prometheus 管理台看到如下图所示，说明已经开始正常采集指标配置
 
-![采集指标](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/435f0a69790946f8bff7761c40a0a0db~tplv-k3u1fbpfcp-zoom-1.image)
+![采集指标](/images/dynamictp/prometheus.png)
 
 ### logging
 
