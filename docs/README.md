@@ -67,7 +67,7 @@ features:
 
 # 技术架构 
 
-![技术架构](/images/dynamictp/arch.image)
+![技术架构](/images/dynamictp/arch.png)
 
 # Star History
 
@@ -75,7 +75,7 @@ features:
 
 # 知识星球
 
-![](/images/dynamictp/dromara-zsxq.image)
+![](/images/dynamictp/dromara-zsxq.png)
 
 # Dromara 成员项目
 
