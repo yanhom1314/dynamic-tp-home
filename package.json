@@ -13,11 +13,11 @@
     "packages:update": "pnpm dlx vp-update"
   },
   "dependencies": {
-    "@vuepress/client": "2.0.0-beta.63",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.63",
-    "@vuepress/utils": "2.0.0-beta.63",
+    "@vuepress/client": "2.0.0-beta.66",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.66",
+    "@vuepress/utils": "2.0.0-beta.66",
     "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.63",
+    "vuepress": "2.0.0-beta.66",
     "vuepress-theme-hope": "2.0.0-beta.237"
   },
   "devDependencies": {
