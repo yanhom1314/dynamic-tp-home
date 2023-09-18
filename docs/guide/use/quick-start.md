@@ -14,7 +14,7 @@ star: true
 
 ### 接入步骤
 
-> 1. 引入相应配置中心的依赖 [maven 依赖](/guide/configcenter/apollo/#maven 依赖)
+> 1. 引入相应配置中心的依赖 [maven 依赖](/guide/configcenter/apollo/#maven依赖)
 >
 > 2. 配置中心配置线程池实例 [配置文件](/guide/configcenter/apollo/#线程池配置文件)
 >

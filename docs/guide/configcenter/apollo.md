@@ -29,7 +29,7 @@ star: true
 
 :::
 
-### maven 依赖
+### maven依赖
 
  ```xml
      <dependency>
