@@ -33,7 +33,7 @@ star: true
    <dependency>
         <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-dubbo</artifactId>
-        <version>1.1.3</version>
+        <version>1.1.4</version>
     </dependency>
 ```
 
@@ -53,6 +53,8 @@ spring:
           corePoolSize: 100
           maximumPoolSize: 200
           keepAliveTime: 60
+          runTimeout: 200                                # 任务执行超时阈值，目前只做告警用，单位（ms）
+          queueTimeout: 100
           notifyItems:                             # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警）
             - type: capacity                       # 报警项类型，查看源码 NotifyTypeEnum枚举类
               enabled: true

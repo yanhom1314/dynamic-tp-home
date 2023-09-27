@@ -36,8 +36,8 @@ star: true
  ```xml
      <dependency>
          <groupId>org.dromara.dynamictp</groupId>
-         <artifactId>dynamic-tp-core</artifactId>
-         <version>1.1.3</version>
+         <artifactId>dynamic-tp-spring-boot-starter-common</artifactId>
+         <version>1.1.4</version>
      </dependency>
  ```
 

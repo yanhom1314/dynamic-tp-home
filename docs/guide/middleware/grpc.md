@@ -20,7 +20,7 @@ star: true
    <dependency>
         <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-grpc</artifactId>
-        <version>1.1.3</version>
+        <version>1.1.4</version>
     </dependency>
 ```
 
@@ -39,6 +39,8 @@ spring:
           corePoolSize: 100
           maximumPoolSize: 200
           keepAliveTime: 60
+          runTimeout: 200                             
+          queueTimeout: 100
 ```
 
 3. 启动日志

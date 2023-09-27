@@ -12,6 +12,56 @@ star: true
 ---
 
 ::: tip
+## v1.1.4 发布记录
+
+#### Feature
+
+- 支持 Spring 项目，SpringBoot 相关特性只在 starter 模块引入，@dragon-zhang
+
+- 添加 jvmti 黑科技模块，方便集成管理各种三方包线程池，@dragon-zhang
+
+- 升级 VariableLinkedBlockingQueue 到 jdk1.8 的 LinkedBlockingQueue 的实现，@yanhom
+
+- 添加插件机制，基于此可以对框架做自定义开发扩展，@WindSearcher
+
+- 细化告警配置，支持不同告警项配置不同接受人，@kyao
+
+- 通知告警平台支持云之家，@chunhui_lu
+
+- 支持 SpringBoot 1.x，@yanhom
+
+- 第三方线程池（tomcat、undertow、dubbo、rocketmq、okhttp3 等等）支持 run_timeout、queue_timeout、reject 告警，@kyao，@yanhom
+
+- 提供 Aware 扩展，可以扩展自定义线程池执行过程，@kyao
+
+- 监控数据新增线程池别名，@zhifei
+
+#### Bugfix
+
+- 修复 Tomcat 高低版本兼容性报错问题，@yanhom
+
+- 修复其他 agent 增强线程池后，强转 DtpRunnable 失败的问题，@yanhom
+
+- 修复企微告警无@提醒的问题，@yanhom
+
+- 修复企微告警配置多个接受人不能正确@的问题，@KamToHung
+
+- 修复钉钉告警不能@所有人问题，@chenan
+
+- 修复因 Bean 初始化顺序不确定导致的 ApplicationContextHolder npe 问题，@yanhom
+
+- 修复修复拒绝策略为 CallerRunsPolicy 时，MdcRunnable 会删除主线程 mdc 信息的问题，@kyao
+
+#### Optimize
+
+- 优化 dtp 内部 spi 的使用，统一封装管理，@peachyy
+
+- 部分代码优化重构，@yanhom，@KamToHung，@dragon-zhang，@kyao
+
+- 告警信息优化，trace 信息可以自己扩展，集成内部 ELK 等平台，@yanhom
+:::
+
+::: tip
 ## v1.1.3 发布记录
 
 groupId 及包名改为 org.dromara.dynamictp

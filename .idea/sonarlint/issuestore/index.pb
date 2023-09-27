@@ -101,3 +101,7 @@ S
 #docs/guide/monitor/collect_types.md,a\9\a91be2252811371e9b352ff4902f4e42e89e942f
 M
 docs/guide/other/supportme.md,3\c\3c13f68d0cde21f6c1ecc693f94091bd980bb846
+W
+'docs/guide/configcenter/huawei-cloud.md,c\b\cbcbccb6065c74a6d5988a5d3aafbce13f659fcb
+T
+$docs/guide/configcenter/zookeeper.md,6\9\6950782e8ff1f75dba103214891fc4a671da9c44
