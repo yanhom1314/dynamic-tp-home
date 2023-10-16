@@ -29,13 +29,13 @@ star: true
 
 :::
 
-### maven 依赖
+### maven依赖
 
  ```xml
      <dependency>
          <groupId>org.dromara.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-boot-starter-apollo</artifactId>
-         <version>1.1.3</version>
+         <version>1.1.4.1</version>
      </dependency>
  ```
 
@@ -52,7 +52,7 @@ spring:
       collectorTypes: micrometer,logging      # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
       logPath: /home/logs                     # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                      # 监控时间间隔（报警检测、指标采集），默认5s
-      apollo:                                 # apollo配置，不配置默认拿apollo配置第一个namespace
+      apollo:                                 # 存放该线程池配置的 namespace，不配置默认拿apollo配置第一个namespace，动态调参会用到该配置项
         namespace: user-center-dtp-dev.yml
       configType: yml                         # 配置文件类型
       platforms:                              # 通知报警平台配置
@@ -75,10 +75,10 @@ spring:
       executors:                                   # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
         - threadPoolName: dtpExecutor1
           threadPoolAliasName: 测试线程池             # 线程池别名
-          executorType: common                     # 线程池类型common、eager：适用于io密集型
+          executorType: common                       # 线程池类型 common、eager、ordered、scheduled，默认 common
           corePoolSize: 6
           maximumPoolSize: 8
-          queueCapacity: 200
+          queueCapacity: 2000
           queueType: VariableLinkedBlockingQueue   # 任务队列，查看源码QueueTypeEnum枚举类
           rejectedHandlerType: CallerRunsPolicy    # 拒绝策略，查看RejectedTypeEnum枚举类
           keepAliveTime: 50
@@ -183,7 +183,7 @@ spring.dynamic.tp.executors[0].notifyItems[5].threshold=1
 apollo:
   bootstrap:
     enabled: true
-    namespaces: user-center-dev.yml,user-center-dtp-dev.yml
+    namespaces: user-center-dev.yml,user-center-dtp-dev.yml  # 注意：这里要加上动态线程池配置文件，服务启动会根据此配置拉取配置	
   meta: http://localhost:8080
   config-service: http://localhost:8080
 app:

@@ -19,11 +19,13 @@ star: true
 
 3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
 
-4. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。 
+4. 注意非 spring-cloud-alibaba 场景下使用 nacos 用此依赖，cloud 场景下使用 nacos 用下一个依赖
 
-5. nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE 及以下版本 
+5. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈。
 
-6. 0.2.11-beta 及以上版本对应 springboot 版本 2.4.0 及以上版本，具体看官方说明
+6. nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE 及以下版本 
+
+7. 0.2.11-beta 及以上版本对应 springboot 版本 2.4.0 及以上版本，具体看官方说明
 
 :::
 
@@ -39,7 +41,7 @@ star: true
      <dependency>
          <groupId>org.dromara.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-boot-starter-nacos</artifactId>
-         <version>1.1.3</version>
+         <version>1.1.4.1</version>
      </dependency>
  ```
 
@@ -57,7 +59,7 @@ spring:
       logPath: /home/logs                     # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                      # 监控时间间隔（报警检测、指标采集），默认5s
       nacos:                                  # nacos配置，不配置有默认值（user-center-dev.yml这样）
-        dataId: dynamic-tp-demo-dev.yml       # 该配置文件的 dataId，如上述 user-center-dtp-dev.yml
+        dataId: dynamic-tp-demo-dev.yml       # 该配置文件的 dataId，如上述 user-center-dtp-dev.yml，动态调参会用到该配置项
         group: DEFAULT_GROUP
       configType: yml                         # 配置文件类型
       platforms:                              # 通知报警平台配置
@@ -80,7 +82,7 @@ spring:
       executors:                                   # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
         - threadPoolName: dtpExecutor1
           threadPoolAliasName: 测试线程池             # 线程池别名
-          executorType: common                     # 线程池类型common、eager：适用于io密集型
+          executorType: common                      # 线程池类型 common、eager、ordered、scheduled，默认 common
           corePoolSize: 6
           maximumPoolSize: 8
           queueCapacity: 200

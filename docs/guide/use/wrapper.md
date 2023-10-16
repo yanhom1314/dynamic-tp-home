@@ -38,7 +38,7 @@ star: true
         <dependency>
             <groupId>org.dromara.dynamictp</groupId>
             <artifactId>dynamic-tp-extension-skywalking</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.4</version>
         </dependency>
     ```
    
@@ -48,7 +48,7 @@ star: true
         <dependency>
             <groupId>org.dromara.dynamictp</groupId>
             <artifactId>dynamic-tp-extension-opentelemetry</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.4</version>
         </dependency>
     ```
    

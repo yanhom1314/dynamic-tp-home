@@ -19,7 +19,7 @@ star: true
         <dependency>
             <groupId>org.dromara.dynamictp</groupId>
             <artifactId>dynamic-tp-spring-boot-starter-extension-notify-email</artifactId>
-            <version>1.1.3</version>
+            <version>1.1.4.1</version>
         </dependency>   
     ```
 
@@ -50,5 +50,5 @@ star: true
    
 3. 效果图
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c5af0016c5fe4e998507c92cc46ffae4~tplv-k3u1fbpfcp-zoom-1.image)
+![email](/images/dynamictp/email.png)
 

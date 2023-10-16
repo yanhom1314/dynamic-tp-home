@@ -20,7 +20,7 @@ star: true
    <dependency>
         <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-brpc</artifactId>
-        <version>1.1.3</version>
+        <version>1.1.4.1</version>
     </dependency>
 ```
 

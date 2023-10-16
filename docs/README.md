@@ -67,7 +67,7 @@ features:
 
 # 技术架构 
 
-![技术架构](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/38e4bf71d2c84b7ba67d7059b5432a7e~tplv-k3u1fbpfcp-zoom-1.image)
+![技术架构](/images/dynamictp/arch.png)
 
 # Star History
 
@@ -75,7 +75,7 @@ features:
 
 # 知识星球
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/598a7ff2872a46b4a021ead20f9bd4f9~tplv-k3u1fbpfcp-zoom-1.image)
+![](/images/dynamictp/dromara-zsxq.png)
 
 # Dromara 成员项目
 

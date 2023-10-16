@@ -24,7 +24,7 @@ star: true
    <dependency>
         <groupId>org.dromara.dynamictp</groupId>
         <artifactId>dynamic-tp-spring-boot-starter-adapter-rocketmq</artifactId>
-        <version>1.1.3</version>
+        <version>1.1.4.1</version>
     </dependency>
 ```
 
@@ -39,10 +39,12 @@ spring:
       collectorTypes: micrometer    # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
       monitorInterval: 5            # 监控时间间隔（报警判断、指标采集），默认5s
       rocketMqTp:                                  # rocketmq 线程池配置
-        - threadPoolName: group1#topic1            # 名称规则：group + "#" + topic
+        - threadPoolName: rocketMqTp#consumer#concurrently#group            # 名称规则：rocketMqTp#consumer#concurrently#group
           corePoolSize: 200
           maximumPoolSize: 200
           keepAliveTime: 60
+          runTimeout: 200                              
+          queueTimeout: 100
 ```
 
 3. 启动日志
