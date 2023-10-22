@@ -114,5 +114,5 @@ star: true
         clearContext();
     }
     ```
-> <img src="/images/dynamictp/run_timeout.png" width="50%" height="50%">
+> <img src="/images/dynamictp/run_timeout.jpg" width="50%" height="50%">
 

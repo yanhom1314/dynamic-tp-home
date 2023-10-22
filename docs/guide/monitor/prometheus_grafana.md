@@ -61,7 +61,9 @@ job 配置后 prometheus 管理台看到如下图所示，说明已经开始正�
 
 5. 然后就是配置 grafana 数据可视化，配置如下图，需要该 pannel 配置 Json 的可以加我发你，到这里监控就搭建起来了，其实也很简单，然后就可以实时监控线程池数据指标变动了
 
-![监控数据](/images/dynamictp/grafana.png)
+![监控数据1](/images/dynamictp/monitor1.jpg)
+![监控数据2](/images/dynamictp/monitor2.jpg)
+![监控数据3](/images/dynamictp/monitor3.jpg)
 
 
 6. 重新修改下每个 pannel 的数据源，这样才会正确显示监控数据

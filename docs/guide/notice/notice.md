@@ -15,5 +15,5 @@ star: true
 
 配置变更会推送通知消息，且会高亮变更的字段
 
-<img src="/images/dynamictp/notice.png">
+<img src="/images/dynamictp/notice.jpg">
 
