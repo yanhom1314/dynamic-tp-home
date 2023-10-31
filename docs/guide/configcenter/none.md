@@ -37,7 +37,7 @@ star: true
      <dependency>
          <groupId>org.dromara.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-boot-starter-common</artifactId>
-         <version>1.1.4.1</version>
+         <version>1.1.5</version>
      </dependency>
  ```
 

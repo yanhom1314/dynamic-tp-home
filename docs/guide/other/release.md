@@ -12,6 +12,36 @@ star: true
 ---
 
 ::: tip
+## v1.1.5 发版记录
+
+#### Feature
+
+- 监控模块新增 TPS、TP99、TP95、TP50 等监控指标，@kyao，@yanhom
+
+- Grafana 监控面板升级，支持更丰富指标查看，@yanhom
+
+- 告警信息里添加系统负载，cpu 使用率，cpu 核数等指标，@yanhom
+
+#### Bugfix
+
+- 修复 jetty 线程池代理后一直触发任务超时告警的问题，@kyao
+
+- 修复 DtpPostProcessor 增强普通线程池后没返回代理，shutdown 原线程池的问题，@yanhom
+
+- 修复代理三方线程池时直接继承 juc 线程池，没兼容框架内自定义线程池的场景，如 dubbo、motan 的 eager 模式，@yanhom
+
+#### Optimize
+
+- 各三方中间件线程池被代理后，原线程池优雅关闭，@yanhom
+
+- 设置 hutool http 工具包的超时时间，@chenkangning
+
+- 调整告警项的默认阈值，@yanhom
+
+- 部分代码优化重构，@yanhom
+:::
+
+::: tip
 ## v1.1.4 发布记录
 
 #### Feature

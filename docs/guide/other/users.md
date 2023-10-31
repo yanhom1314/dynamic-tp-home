@@ -31,6 +31,7 @@ star: true
 - [易工品](https://www.gongpin.com)
 - [上海营联信息技术有限公司](https://www.shylsoft.com)
 - [西安朝前智能科技有限公司](https://swifthealth.cn/)
+- [广州乐摇摇](https://www.leyaoyao.com/)
 :::
 
 ### 登记
