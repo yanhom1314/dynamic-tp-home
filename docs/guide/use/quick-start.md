@@ -41,9 +41,9 @@ star: true
           |___/                               |_|
    :: Dynamic Thread Pool ::
 
-  DynamicTp register dtpExecutor, source: beanPostProcessor, executor: DtpMainPropWrapper(dtpName=dynamic-tp-test-1, corePoolSize=6, maxPoolSize=8, keepAliveTime=50, queueType=VariableLinkedBlockingQueue, queueCapacity=200, rejectType=RejectedCountableCallerRunsPolicy, allowCoreThreadTimeOut=false)
+  DynamicTp register executor: TpMainFields(threadPoolName=dtpExecutor1, corePoolSize=2, maxPoolSize=10, keepAliveTime=50, queueType=TaskQueue, queueCapacity=200, rejectType=CallerRunsPolicy, allowCoreThreadTimeOut=false), source: beanPostProcessor
 
-  DtpRegistry has been initialized, remote executors: [dtpExecutor1, dtpExecutor2], local executors: [ioIntensiveExecutor]
+  DtpRegistry has been initialized, remote executors: [dtpExecutor1], local executors: [ioIntensiveExecutor, commonExecutor, dtpExecutor2]
   ```
 
 :::

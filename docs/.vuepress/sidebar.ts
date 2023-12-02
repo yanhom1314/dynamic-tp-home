@@ -48,12 +48,6 @@ export default sidebar([
         icon: "wrap",
         collapsable: false,
         link: "/guide/use/wrapper"
-      },
-      {
-        text: "工具",
-        icon: "tool",
-        collapsable: false,
-        link: "/guide/use/tool"
       }
     ],
   },

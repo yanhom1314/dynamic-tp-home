@@ -2,19 +2,19 @@
 <blockquote>
 <ol>
 <li>
-<p>引入相应配置中心的依赖，maven 依赖见下述</p>
+<p>引入相应配置中心的依赖 <RouterLink to="/guide/configcenter/apollo/#maven%E4%BE%9D%E8%B5%96">maven 依赖</RouterLink></p>
 </li>
 <li>
-<p>配置中心配置线程池实例，配置文件见下述</p>
+<p>配置中心配置线程池实例 <RouterLink to="/guide/configcenter/apollo/#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6">配置文件</RouterLink></p>
 </li>
 <li>
 <p>启动类加 @EnableDynamicTp 注解</p>
 </li>
 <li>
-<p>使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getDtpExecutor(&quot;name&quot;) 获取</p>
+<p>使用 @Resource 或 @Autowired 进行依赖注入，或通过 DtpRegistry.getExecutor(&quot;name&quot;) 获取</p>
 </li>
 <li>
-<p>通过以上 4 步就可以使用了，是不是感觉超级简单呀</p>
+<p>通过以上 4 步就可以接入使用了，是不是感觉超级简单呀</p>
 </li>
 </ol>
 </blockquote>
@@ -31,9 +31,9 @@
         <span class="token operator">|</span>___/                               <span class="token operator">|</span>_<span class="token operator">|</span>
  :: Dynamic Thread Pool ::
 
-DynamicTp register dtpExecutor, source: beanPostProcessor, executor: DtpMainPropWrapper<span class="token punctuation">(</span>dtpName<span class="token operator">=</span>dynamic-tp-test-1, <span class="token assign-left variable">corePoolSize</span><span class="token operator">=</span><span class="token number">6</span>, <span class="token assign-left variable">maxPoolSize</span><span class="token operator">=</span><span class="token number">8</span>, <span class="token assign-left variable">keepAliveTime</span><span class="token operator">=</span><span class="token number">50</span>, <span class="token assign-left variable">queueType</span><span class="token operator">=</span>VariableLinkedBlockingQueue, <span class="token assign-left variable">queueCapacity</span><span class="token operator">=</span><span class="token number">200</span>, <span class="token assign-left variable">rejectType</span><span class="token operator">=</span>RejectedCountableCallerRunsPolicy, <span class="token assign-left variable">allowCoreThreadTimeOut</span><span class="token operator">=</span>false<span class="token punctuation">)</span>
+DynamicTp register executor: TpMainFields<span class="token punctuation">(</span>threadPoolName<span class="token operator">=</span>dtpExecutor1, <span class="token assign-left variable">corePoolSize</span><span class="token operator">=</span><span class="token number">2</span>, <span class="token assign-left variable">maxPoolSize</span><span class="token operator">=</span><span class="token number">10</span>, <span class="token assign-left variable">keepAliveTime</span><span class="token operator">=</span><span class="token number">50</span>, <span class="token assign-left variable">queueType</span><span class="token operator">=</span>TaskQueue, <span class="token assign-left variable">queueCapacity</span><span class="token operator">=</span><span class="token number">200</span>, <span class="token assign-left variable">rejectType</span><span class="token operator">=</span>CallerRunsPolicy, <span class="token assign-left variable">allowCoreThreadTimeOut</span><span class="token operator">=</span>false<span class="token punctuation">)</span>, source: beanPostProcessor
 
-DtpRegistry has been initialized, remote executors: <span class="token punctuation">[</span>dtpExecutor1, dtpExecutor2<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> executors: <span class="token punctuation">[</span>ioIntensiveExecutor<span class="token punctuation">]</span>
+DtpRegistry has been initialized, remote executors: <span class="token punctuation">[</span>dtpExecutor1<span class="token punctuation">]</span>, <span class="token builtin class-name">local</span> executors: <span class="token punctuation">[</span>ioIntensiveExecutor, commonExecutor, dtpExecutor2<span class="token punctuation">]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>
 <h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项</h3>
 <div class="hint-container warning">

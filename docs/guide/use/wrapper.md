@@ -13,7 +13,7 @@ star: true
 
 ### 任务包装器
 
-提供了一些任务包装器，可以实现特定的功能
+框架默认提供了一些任务包装器，可以实现特定的功能
 
 > 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc
 >
@@ -25,34 +25,86 @@ star: true
 >
 > 5. NamedRunnable 支持给任务添加名称
 >
-> 6. 可以继承 TaskWrapper 接口自定义任务包装器
+> 6. 可以继承 TaskWrapper SPI 接口自定义任务包装器
 
 
-### 使用步骤
+### 使用方式
 
 1. MdcTaskWrapper、TtlTaskWrapper、NamedRunnable 在 core 包中，不需要引入其他依赖
 
 2. SwTraceTaskWrapper 是 extension 模块提供的扩展，需要引入依赖
 
-   ```xml
-        <dependency>
-            <groupId>org.dromara.dynamictp</groupId>
-            <artifactId>dynamic-tp-extension-skywalking</artifactId>
-            <version>1.1.4</version>
-        </dependency>
-    ```
+```xml
+  <dependency>
+      <groupId>org.dromara.dynamictp</groupId>
+      <artifactId>dynamic-tp-extension-skywalking</artifactId>
+      <version>1.1.5</version>
+  </dependency>
+ ```
    
 3. OpenTelemetryWrapper 是 extension 模块提供的扩展，需要引入依赖
 
-   ```xml
-        <dependency>
-            <groupId>org.dromara.dynamictp</groupId>
-            <artifactId>dynamic-tp-extension-opentelemetry</artifactId>
-            <version>1.1.4</version>
-        </dependency>
-    ```
-   
-4. 线程池配置文件加如下配置项
+```xml
+  <dependency>
+      <groupId>org.dromara.dynamictp</groupId>
+      <artifactId>dynamic-tp-extension-opentelemetry</artifactId>
+      <version>1.1.5</version>
+  </dependency>
+ ```
+
+4. 自定义 TaskWrapper 示例
+
+```java
+package org.dromara.dynamictp.example.wrapper;
+
+import lombok.extern.slf4j.Slf4j;
+import org.dromara.dynamictp.core.support.task.wrapper.TaskWrapper;
+
+/**
+ * CustomTaskWrapper related
+ *
+ * @author yanhom
+ * @since 1.1.0
+ */
+@Slf4j
+public class CustomTaskWrapper implements TaskWrapper {
+
+   @Override
+   public String name() {
+      return "custom";
+   }
+
+   @Override
+   public Runnable wrap(Runnable runnable) {
+      return new MyRunnable(runnable);
+   }
+
+   public static class MyRunnable implements Runnable {
+
+      private final Runnable runnable;
+
+      public MyRunnable(Runnable runnable) {
+         this.runnable = runnable;
+      }
+
+      @Override
+      public void run() {
+         log.info("before run");
+         runnable.run();
+         log.info("after run");
+      }
+   }
+}
+
+```
+
+resources/META-INF/services 下配置 java spi 实现
+
+文件名：org.dromara.dynamictp.core.support.task.wrapper.TaskWrapper
+
+文件值：org.dromara.dynamictp.example.wrapper.CustomTaskWrapper
+
+5. 线程池配置文件加如下配置项
 
    ```yaml
    spring:
@@ -60,5 +112,5 @@ star: true
        tp:
          executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
            - threadPoolName: dtpExecutor1
-             taskWrapperNames: ["ttl", "mdc", "swTrace", "OTel"]    # 任务包装器名称，继承 TaskWrapper 接口
+             taskWrapperNames: ["ttl", "mdc", "swTrace", "custom"]    # 任务包装器名称，继承 TaskWrapper 接口
    ```

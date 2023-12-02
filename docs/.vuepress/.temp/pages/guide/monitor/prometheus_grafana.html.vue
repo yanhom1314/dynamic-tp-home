@@ -32,15 +32,17 @@
     <span class="token key atrule">static_configs</span><span class="token punctuation">:</span>
       <span class="token punctuation">-</span> <span class="token key atrule">targets</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'192.168.2.104:9098'</span><span class="token punctuation">]</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>job 配置后 prometheus 管理台看到如下图所示，说明已经开始正常采集指标配置</p>
-<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/435f0a69790946f8bff7761c40a0a0db~tplv-k3u1fbpfcp-zoom-1.image" alt="采集指标" tabindex="0" loading="lazy"><figcaption>采集指标</figcaption></figure>
+<figure><img src="/images/dynamictp/prometheus.png" alt="采集指标" tabindex="0" loading="lazy"><figcaption>采集指标</figcaption></figure>
 <ol start="5">
 <li>然后就是配置 grafana 数据可视化，配置如下图，需要该 pannel 配置 Json 的可以加我发你，到这里监控就搭建起来了，其实也很简单，然后就可以实时监控线程池数据指标变动了</li>
 </ol>
-<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a36430c06bf44ca987ff54b500a14172~tplv-k3u1fbpfcp-zoom-1.image" alt="监控数据" tabindex="0" loading="lazy"><figcaption>监控数据</figcaption></figure>
+<p><img src="/images/dynamictp/monitor1.jpg" alt="监控数据1" loading="lazy">
+<img src="/images/dynamictp/monitor2.jpg" alt="监控数据2" loading="lazy">
+<img src="/images/dynamictp/monitor3.jpg" alt="监控数据3" loading="lazy"></p>
 <ol start="6">
 <li>重新修改下每个 pannel 的数据源，这样才会正确显示监控数据</li>
 </ol>
-<figure><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/39e2c37af1fb48679b5fdd56e7f89c37~tplv-k3u1fbpfcp-watermark.image?" alt="image.png" tabindex="0" loading="lazy"><figcaption>image.png</figcaption></figure>
+<figure><img src="/images/dynamictp/grafana_datasource.png" alt="image.png" tabindex="0" loading="lazy"><figcaption>image.png</figcaption></figure>
 </div></template>
 
 

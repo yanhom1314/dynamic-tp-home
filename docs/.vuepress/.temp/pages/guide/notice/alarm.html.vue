@@ -16,7 +16,7 @@
 <p>服务启动后会开启一个定时监控任务，每隔一定时间（可配置）去计算线程池的活跃度，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知</p>
 </li>
 </ol>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/675f7b2732ba46ae9a0539ec69698c6b~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
+<img src="/images/dynamictp/liveness.png" width="50%" height="50%">
 </blockquote>
 <ul>
 <li>队列容量告警</li>
@@ -33,7 +33,7 @@
 <p>服务启动后会开启一个定时监控任务，每隔一定时间去计算任务队列的使用率，达到配置的 threshold 阈值后会触发一次告警，告警间隔内多次触发不会发送告警通知</p>
 </li>
 </ol>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d65151e3e9ca460eac18f30ea6be05d3~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
+<img src="/images/dynamictp/capacity.png" width="50%" height="50%">
 </blockquote>
 <ul>
 <li>
@@ -69,7 +69,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
 <blockquote>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/651049fe286f4cb099ab8936bfc4b425~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
+<img src="/images/dynamictp/reject.png" width="50%" height="50%">
 </blockquote>
 <ul>
 <li>
@@ -92,7 +92,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
 <blockquote>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a8f34edbedee4683a9525a6e9423a1be~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
+<img src="/images/dynamictp/queue_timeout.png" width="50%" height="50%">
 </blockquote>
 <ul>
 <li>
@@ -110,7 +110,7 @@ beforeExecute() 阶段根据 runTimeout 开启一个处理执行超时的 TimerT
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
 </ul>
 <blockquote>
-<img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b360e0a129e4413b962b40f6ef415af2~tplv-k3u1fbpfcp-zoom-1.image" width="50%" height="50%">
+<img src="/images/dynamictp/run_timeout.jpg" width="50%" height="50%">
 </blockquote>
 </div></template>
 
