@@ -34,17 +34,42 @@ star: true
 spring:
   dynamic:
     tp:
-      enabled: true
       enabledCollect: true          # 是否开启监控指标采集，默认false
       collectorTypes: micrometer    # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
       monitorInterval: 5            # 监控时间间隔（报警判断、指标采集），默认5s
       rocketMqTp:                                  # rocketmq 线程池配置
-        - threadPoolName: rocketMqTp#consumer#concurrently#group            # 名称规则：rocketMqTp#consumer#concurrently#group
+        - threadPoolName: rocketMqTp#consumer#concurrently#group    # 名称规则：rocketMqTp#consumer#concurrently#group
           corePoolSize: 200
           maximumPoolSize: 200
           keepAliveTime: 60
           runTimeout: 200                              
           queueTimeout: 100
+          platformIds: [1,2]               # 通知报警平台id，不配置默认拿上层platforms配置的所有平台
+          notifyItems:                     # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
+            - type: change
+              enabled: true
+
+            - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
+              enabled: true
+              threshold: 80                # 报警阈值，默认70，意思是队列使用率达到70%告警
+              platformIds: [2]             # 可选配置，本配置优先级 > 所属线程池platformIds > 全局配置platforms
+              interval: 120                # 报警间隔（单位：s），默认120
+
+            - type: liveness               # 线程池活性
+              enabled: true
+              threshold: 80                # 报警阈值，默认 70，意思是活性达到70%告警
+
+            - type: reject                 # 触发任务拒绝告警
+              enabled: true
+              threshold: 100               # 默认阈值10
+
+            - type: run_timeout            # 任务执行超时告警
+              enabled: true
+              threshold: 100               # 默认阈值10
+
+            - type: queue_timeout          # 任务排队超时告警
+              enabled: true
+              threshold: 100               # 默认阈值10
 ```
 
 3. 启动日志
@@ -52,14 +77,12 @@ spring:
 服务启动看到有如下日志输出说明接入成功，如果开启了通知，同时会推送参数修改通知
 
 ```bash
-DynamicTp adapter, rocketMq consumer executors init end, executors: {group#topic=ExecutorWrapper(threadPoolName=group#topic, executor=java.util.concurrent.ThreadPoolExecutor@1acd1f1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], threadPoolAliasName=null, notifyItems=[NotifyItem(platforms=null, enabled=true, type=liveness, threshold=70, interval=120, clusterLimit=1), NotifyItem(platforms=null, enabled=true, type=change, threshold=0, interval=1, clusterLimit=1), NotifyItem(platforms=null, enabled=true, type=capacity, threshold=70, interval=120, clusterLimit=1)], notifyEnabled=true)}
-DynamicTp rocketMqTp adapter, [group#topic] refreshed end, changed keys: [corePoolSize, maxPoolSize], corePoolSize: [20 => 200], maxPoolSize: [20 => 200], keepAliveTime: [60 => 60]
+DynamicTp adapter, rocketMq consumer executors init end, executors: {group#topic=ExecutorWrapper(threadPoolName=rocketMqTp#consumer#concurrently#sms, executor=java.util.concurrent.ThreadPoolExecutor@1acd1f1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], threadPoolAliasName=null, notifyItems=[NotifyItem(platforms=null, enabled=true, type=liveness, threshold=70, interval=120, clusterLimit=1), NotifyItem(platforms=null, enabled=true, type=change, threshold=0, interval=1, clusterLimit=1), NotifyItem(platforms=null, enabled=true, type=capacity, threshold=70, interval=120, clusterLimit=1)], notifyEnabled=true)}
+DynamicTp rocketMqTp adapter, [rocketMqTp#consumer#concurrently#sms] refreshed end, changed keys: [corePoolSize, maxPoolSize], corePoolSize: [20 => 200], maxPoolSize: [20 => 200], keepAliveTime: [60 => 60]
 ```
 
 ::: tip
 
-1. 线程池名称规则：group + "#" + topic（可以在启动日志找输出的线程池名称）
+1. 线程池名称规则：rocketMqTp#consumer#concurrently#group（可以在启动日志找输出的线程池名称）
 2. rocketmq 线程池享有动态调参、监控、通知告警完整的功能
-3. rocketmq 线程池通知告警项有（调参通知、活性告警、队列容量告警），可通过 notifyItems 自定义配置项值，默认全部开启
-4. 只支持消费端线程池管理
 :::

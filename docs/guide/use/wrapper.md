@@ -106,11 +106,11 @@ resources/META-INF/services 下配置 java spi 实现
 
 5. 线程池配置文件加如下配置项
 
-   ```yaml
-   spring:
-     dynamic:
-       tp:
-         executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
-           - threadPoolName: dtpExecutor1
-             taskWrapperNames: ["ttl", "mdc", "swTrace", "custom"]    # 任务包装器名称，继承 TaskWrapper 接口
-   ```
+```yaml
+spring:
+  dynamic:
+    tp:
+      executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
+        - threadPoolName: dtpExecutor1
+          taskWrapperNames: ["ttl", "mdc", "swTrace", "custom"]    # 任务包装器名称，继承 TaskWrapper 接口
+```

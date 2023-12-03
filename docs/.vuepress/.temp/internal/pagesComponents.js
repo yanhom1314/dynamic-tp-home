@@ -29,8 +29,38 @@ export const pagesComponents = {
   "v-774e7762": defineAsyncComponent(() => import(/* webpackChunkName: "v-774e7762" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/background.html.vue")),
   // path: /guide/introduction/functions.html
   "v-2be5ef72": defineAsyncComponent(() => import(/* webpackChunkName: "v-2be5ef72" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/functions.html.vue")),
+  // path: /guide/middleware/brpc.html
+  "v-cf3ff1b6": defineAsyncComponent(() => import(/* webpackChunkName: "v-cf3ff1b6" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/brpc.html.vue")),
+  // path: /guide/middleware/dubbo.html
+  "v-bd029e68": defineAsyncComponent(() => import(/* webpackChunkName: "v-bd029e68" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/dubbo.html.vue")),
+  // path: /guide/middleware/grpc.html
+  "v-7db6322a": defineAsyncComponent(() => import(/* webpackChunkName: "v-7db6322a" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/grpc.html.vue")),
+  // path: /guide/middleware/hystrix.html
+  "v-5678df0a": defineAsyncComponent(() => import(/* webpackChunkName: "v-5678df0a" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/hystrix.html.vue")),
+  // path: /guide/middleware/jetty.html
+  "v-2e062fec": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e062fec" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/jetty.html.vue")),
+  // path: /guide/middleware/middleware.html
+  "v-f89b2414": defineAsyncComponent(() => import(/* webpackChunkName: "v-f89b2414" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/middleware.html.vue")),
+  // path: /guide/middleware/motan.html
+  "v-5499b6aa": defineAsyncComponent(() => import(/* webpackChunkName: "v-5499b6aa" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/motan.html.vue")),
+  // path: /guide/middleware/okhttp3.html
+  "v-334508db": defineAsyncComponent(() => import(/* webpackChunkName: "v-334508db" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/okhttp3.html.vue")),
+  // path: /guide/middleware/rabbitmq.html
+  "v-956c28ec": defineAsyncComponent(() => import(/* webpackChunkName: "v-956c28ec" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/rabbitmq.html.vue")),
+  // path: /guide/middleware/rocketmq.html
+  "v-092e30e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-092e30e0" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/rocketmq.html.vue")),
+  // path: /guide/middleware/sofa.html
+  "v-24dfddd1": defineAsyncComponent(() => import(/* webpackChunkName: "v-24dfddd1" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/sofa.html.vue")),
+  // path: /guide/middleware/tars.html
+  "v-b7544a4c": defineAsyncComponent(() => import(/* webpackChunkName: "v-b7544a4c" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/tars.html.vue")),
+  // path: /guide/middleware/tomcat.html
+  "v-79613104": defineAsyncComponent(() => import(/* webpackChunkName: "v-79613104" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/tomcat.html.vue")),
+  // path: /guide/middleware/undertow.html
+  "v-d420e1f8": defineAsyncComponent(() => import(/* webpackChunkName: "v-d420e1f8" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/undertow.html.vue")),
   // path: /guide/monitor/collect_types.html
   "v-5d4ddef6": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d4ddef6" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/collect_types.html.vue")),
+  // path: /guide/monitor/custom.html
+  "v-1d570332": defineAsyncComponent(() => import(/* webpackChunkName: "v-1d570332" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/custom.html.vue")),
   // path: /guide/monitor/hertzbeat.html
   "v-4ce8ba29": defineAsyncComponent(() => import(/* webpackChunkName: "v-4ce8ba29" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/hertzbeat.html.vue")),
   // path: /guide/monitor/prometheus_grafana.html
@@ -69,34 +99,6 @@ export const pagesComponents = {
   "v-bd86dfea": defineAsyncComponent(() => import(/* webpackChunkName: "v-bd86dfea" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/quick-start.html.vue")),
   // path: /guide/use/wrapper.html
   "v-fa813ecc": defineAsyncComponent(() => import(/* webpackChunkName: "v-fa813ecc" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/wrapper.html.vue")),
-  // path: /guide/middleware/brpc.html
-  "v-cf3ff1b6": defineAsyncComponent(() => import(/* webpackChunkName: "v-cf3ff1b6" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/brpc.html.vue")),
-  // path: /guide/middleware/dubbo.html
-  "v-bd029e68": defineAsyncComponent(() => import(/* webpackChunkName: "v-bd029e68" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/dubbo.html.vue")),
-  // path: /guide/middleware/grpc.html
-  "v-7db6322a": defineAsyncComponent(() => import(/* webpackChunkName: "v-7db6322a" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/grpc.html.vue")),
-  // path: /guide/middleware/hystrix.html
-  "v-5678df0a": defineAsyncComponent(() => import(/* webpackChunkName: "v-5678df0a" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/hystrix.html.vue")),
-  // path: /guide/middleware/jetty.html
-  "v-2e062fec": defineAsyncComponent(() => import(/* webpackChunkName: "v-2e062fec" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/jetty.html.vue")),
-  // path: /guide/middleware/middleware.html
-  "v-f89b2414": defineAsyncComponent(() => import(/* webpackChunkName: "v-f89b2414" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/middleware.html.vue")),
-  // path: /guide/middleware/motan.html
-  "v-5499b6aa": defineAsyncComponent(() => import(/* webpackChunkName: "v-5499b6aa" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/motan.html.vue")),
-  // path: /guide/middleware/okhttp3.html
-  "v-334508db": defineAsyncComponent(() => import(/* webpackChunkName: "v-334508db" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/okhttp3.html.vue")),
-  // path: /guide/middleware/rabbitmq.html
-  "v-956c28ec": defineAsyncComponent(() => import(/* webpackChunkName: "v-956c28ec" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/rabbitmq.html.vue")),
-  // path: /guide/middleware/rocketmq.html
-  "v-092e30e0": defineAsyncComponent(() => import(/* webpackChunkName: "v-092e30e0" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/rocketmq.html.vue")),
-  // path: /guide/middleware/sofa.html
-  "v-24dfddd1": defineAsyncComponent(() => import(/* webpackChunkName: "v-24dfddd1" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/sofa.html.vue")),
-  // path: /guide/middleware/tars.html
-  "v-b7544a4c": defineAsyncComponent(() => import(/* webpackChunkName: "v-b7544a4c" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/tars.html.vue")),
-  // path: /guide/middleware/tomcat.html
-  "v-79613104": defineAsyncComponent(() => import(/* webpackChunkName: "v-79613104" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/tomcat.html.vue")),
-  // path: /guide/middleware/undertow.html
-  "v-d420e1f8": defineAsyncComponent(() => import(/* webpackChunkName: "v-d420e1f8" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/undertow.html.vue")),
   // path: /404.html
   "v-3706649a": defineAsyncComponent(() => import(/* webpackChunkName: "v-3706649a" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/404.html.vue")),
   // path: /guide/configcenter/
@@ -105,6 +107,8 @@ export const pagesComponents = {
   "v-fffb8e28": defineAsyncComponent(() => import(/* webpackChunkName: "v-fffb8e28" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/index.html.vue")),
   // path: /guide/introduction/
   "v-26d55c2e": defineAsyncComponent(() => import(/* webpackChunkName: "v-26d55c2e" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/introduction/index.html.vue")),
+  // path: /guide/middleware/
+  "v-4dd6571e": defineAsyncComponent(() => import(/* webpackChunkName: "v-4dd6571e" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/index.html.vue")),
   // path: /guide/monitor/
   "v-1c7109fe": defineAsyncComponent(() => import(/* webpackChunkName: "v-1c7109fe" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/index.html.vue")),
   // path: /guide/notice/
@@ -113,8 +117,4 @@ export const pagesComponents = {
   "v-489789ea": defineAsyncComponent(() => import(/* webpackChunkName: "v-489789ea" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/other/index.html.vue")),
   // path: /guide/use/
   "v-5d4a6318": defineAsyncComponent(() => import(/* webpackChunkName: "v-5d4a6318" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/use/index.html.vue")),
-  // path: /guide/middleware/
-  "v-4dd6571e": defineAsyncComponent(() => import(/* webpackChunkName: "v-4dd6571e" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/middleware/index.html.vue")),
-  // path: /guide/monitor/custom.html
-  "v-1d570332": defineAsyncComponent(() => import(/* webpackChunkName: "v-1d570332" */"/Users/yanhom/opensource/dynamic-tp-home/docs/.vuepress/.temp/pages/guide/monitor/custom.html.vue")),
 }

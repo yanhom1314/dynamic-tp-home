@@ -14,7 +14,7 @@ star: true
 
 ### 环境说明
 
-目前 DynamicTp 有不少特效是基于 Spring 做的，所以强依赖 Spring 环境。
+目前 DynamicTp 有不少特性是基于 Spring 做的，所以强依赖 Spring 环境。
 
 ### Java 版本
 

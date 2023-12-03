@@ -107,7 +107,6 @@ spring:
             - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
               enabled: true
               threshold: 80                # 报警阈值，默认70，意思是队列使用率达到70%告警
-              platforms: [ding,wechat]     # 可选配置，不配置默认拿上层platforms配置的所有平台
               interval: 120                # 报警间隔（单位：s），默认120
             - type: liveness               # 线程池活性
               enabled: true

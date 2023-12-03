@@ -30,7 +30,7 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
-  darkmode: "enable",
+  // darkmode: "enable",
 
   plugins: {
     copyCode: {

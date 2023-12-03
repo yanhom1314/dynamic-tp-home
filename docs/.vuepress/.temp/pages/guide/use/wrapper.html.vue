@@ -92,16 +92,14 @@
 <p>文件名：org.dromara.dynamictp.core.support.task.wrapper.TaskWrapper</p>
 <p>文件值：org.dromara.dynamictp.example.wrapper.CustomTaskWrapper</p>
 <ol start="5">
-<li>
-<p>线程池配置文件加如下配置项</p>
+<li>线程池配置文件加如下配置项</li>
+</ol>
 <div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code><span class="token key atrule">spring</span><span class="token punctuation">:</span>
   <span class="token key atrule">dynamic</span><span class="token punctuation">:</span>
     <span class="token key atrule">tp</span><span class="token punctuation">:</span>
       <span class="token key atrule">executors</span><span class="token punctuation">:</span>                                         <span class="token comment"># 动态线程池配置，省略其他项，具体看上述配置文件</span>
         <span class="token punctuation">-</span> <span class="token key atrule">threadPoolName</span><span class="token punctuation">:</span> dtpExecutor1
           <span class="token key atrule">taskWrapperNames</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"ttl"</span><span class="token punctuation">,</span> <span class="token string">"mdc"</span><span class="token punctuation">,</span> <span class="token string">"swTrace"</span><span class="token punctuation">,</span> <span class="token string">"custom"</span><span class="token punctuation">]</span>    <span class="token comment"># 任务包装器名称，继承 TaskWrapper 接口</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ol>
-</div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
