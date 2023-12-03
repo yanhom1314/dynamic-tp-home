@@ -1,7 +1,7 @@
 <template><div><h3 id="集成步骤" tabindex="-1"><a class="header-anchor" href="#集成步骤" aria-hidden="true">#</a> 集成步骤</h3>
 <p>这块要讲的是集成 prometheus+grafana 做监控，事先你得安装好 prometheus+grafana，这个就不展开讲了，网上教程很多，测试使用可以直接用 docker 安装，非常简单，安装完之后接着往下看。</p>
 <ol>
-<li>首先配置文件中开启 micrometer 数据采集</li>
+<li>首先线程池配置文件中开启 micrometer 数据采集</li>
 </ol>
 <div class="language-yaml line-numbers-mode" data-ext="yml"><pre v-pre class="language-yaml"><code>   <span class="token key atrule">enabledCollect</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
    <span class="token key atrule">collectorTypes</span><span class="token punctuation">:</span> micrometer
@@ -40,7 +40,7 @@
 <img src="/images/dynamictp/monitor2.jpg" alt="监控数据2" loading="lazy">
 <img src="/images/dynamictp/monitor3.jpg" alt="监控数据3" loading="lazy"></p>
 <ol start="6">
-<li>重新修改下每个 pannel 的数据源，这样才会正确显示监控数据</li>
+<li>重新修改下每个 pannel 的数据源，这样才会正确显示监控数据；或者替换 json 中的 uid 为你自己的数据源 id</li>
 </ol>
 <figure><img src="/images/dynamictp/grafana_datasource.png" alt="image.png" tabindex="0" loading="lazy"><figcaption>image.png</figcaption></figure>
 </div></template>

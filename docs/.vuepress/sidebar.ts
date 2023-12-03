@@ -38,6 +38,12 @@ export default sidebar([
         link: "/guide/use/quick-start"
       },
       {
+        text: "环境支持",
+        icon: "set",
+        collapsable: false,
+        link: "/guide/use/env"
+      },
+      {
         text: "代码使用",
         icon: "code",
         collapsable: false,
@@ -146,6 +152,24 @@ export default sidebar([
         icon: "at",
         collapsable: false,
         link: "/guide/notice/email"
+      },
+      {
+        text: "云之家通知",
+        icon: "community",
+        collapsable: false,
+        link: "/guide/notice/yunzhijia"
+      },
+      {
+        text: "自定义通知渠道",
+        icon: "variable",
+        collapsable: false,
+        link: "/guide/notice/custom"
+      },
+      {
+        text: "扩展告警信息",
+        icon: "add",
+        collapsable: false,
+        link: "/guide/notice/populate_message"
       }
     ],
   },
@@ -172,6 +196,12 @@ export default sidebar([
         icon: "computer",
         collapsable: false,
         link: "/guide/monitor/hertzbeat"
+      },
+      {
+        text: "自定义采集器",
+        icon: "customize",
+        collapsable: false,
+        link: "/guide/monitor/custom"
       }
     ],
   },
