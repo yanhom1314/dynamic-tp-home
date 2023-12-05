@@ -198,3 +198,37 @@ apollo:
 app:
   id: user-center
 ```
+
+
+
+::: warning
+
+如果 Apollo 使用 docker 方式安装，需要更改配置，参考这篇文章：https://blog.csdn.net/qq_35530042/article/details/113985623
+
+docker 方式安装请参考这篇文章：https://www.apolloconfig.com/#/zh/deployment/quick-start-docker
+
+:::
+
+
+
+### 接入 Apollo 配置流程
+
+1. 本地或 docker 安装 apollo 之后访问 `localhost:8070`
+
+![image-20231205191955993](apollo.assets/image-20231205191955993.png)
+
+2. 创建项目，appid 即为配置文件里的 app.id
+
+![image-20231205192141255](apollo.assets/image-20231205192141255.png)
+
+3. 新建 namespace，除非您想使用默认的 application 作为 namespace name，此时您的配置文件里应该将 namespace 设置为 namespace: application 或者不配置
+
+![image-20231205192514239](apollo.assets/image-20231205192514239.png)
+
+![image-20231205192713419](apollo.assets/image-20231205192713419.png)
+
+![image-20231205192944618](apollo.assets/image-20231205192944618.png)
+
+4. 创建 namespace 后将 dynamic-tp 动态线程池配置文件放置在配置中心 apollo 里
+
+![image-20231205193214034](apollo.assets/image-20231205193214034.png)
