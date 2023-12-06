@@ -223,7 +223,7 @@ docker 方式安装请参考这篇文章：https://www.apolloconfig.com/#/zh/dep
 
 3. 新建 namespace，除非您想使用默认的 application 作为 namespace name，此时您的配置文件里应该将 namespace 设置为 namespace: application 或者不配置
 
-![image-20231205192514239](apollo.assets/image-20231205192514239.png)
+![image-20231206102730485](apollo.assets/image-20231206102730485.png)
 
 ![image-20231205192713419](apollo.assets/image-20231205192713419.png)
 
