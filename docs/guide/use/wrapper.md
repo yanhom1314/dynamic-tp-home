@@ -104,6 +104,8 @@ resources/META-INF/services 下配置 java spi 实现
 
 文件值：org.dromara.dynamictp.example.wrapper.CustomTaskWrapper
 
+![图片.png](/images/dynamictp/spi-wrapper.png)
+
 5. 线程池配置文件加如下配置项
 
 ```yaml

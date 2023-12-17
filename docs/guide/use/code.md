@@ -17,64 +17,108 @@ star: true
 
   ```java
   @Configuration
-  public class DtpConfig {  
-    
+  public class ThreadPoolConfiguration {
+  
     /**
-     * 通过 {@link @DynamicTp} 注解定义普通 juc 线程池，会享受到该框架监控功能，注解名称优先级高于方法名
+     * 通过{@link DynamicTp} 注解定义普通juc线程池，会享受到该框架增强能力，注解名称优先级高于方法名
      *
      * @return 线程池实例
      */
-    @DynamicTp("commonExecutor")
+    @DynamicTp("jucThreadPoolExecutor")
     @Bean
-    public ThreadPoolExecutor commonExecutor() {
-        return (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
+    public ThreadPoolExecutor jucThreadPoolExecutor() {
+      return (ThreadPoolExecutor) Executors.newFixedThreadPool(1);
     }
-
+  
     /**
-     * 通过 {@link ThreadPoolCreator} 快速创建一些简单配置的动态线程池
-     * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
+     * 通过{@link DynamicTp} 注解定义spring线程池，会享受到该框架增强能力，注解名称优先级高于方法名
+     *
+     * @return 线程池实例
+     */
+    @DynamicTp("threadPoolTaskExecutor")
+    @Bean
+    public ThreadPoolTaskExecutor threadPoolTaskExecutor() {
+      return new ThreadPoolTaskExecutor();
+    }
+  
+    /**
+     * 通过{@link ThreadPoolCreator} 快速创建一些简单配置的线程池，使用默认参数
+     * tips: 建议直接在配置中心配置就行，不用@Bean声明
      *
      * @return 线程池实例
      */
     @Bean
-    public DtpExecutor dtpExecutor1() {
-        return ThreadPoolCreator.createDynamicFast("dtpExecutor1");
+    public DtpExecutor dtpExecutor0() {
+      return ThreadPoolCreator.createDynamicFast("dtpExecutor0");
     }
-
+  
     /**
-     * 通过 {@link ThreadPoolBuilder} 设置详细参数创建动态线程池（推荐方式），
-     * ioIntensive，参考 tomcat 线程池设计，实现了处理 io 密集型任务的线程池，具体参数可以看代码注释
-     *
+     * 通过{@link ThreadPoolBuilder} 设置详细参数创建动态线程池
      * tips: 建议直接在配置中心配置就行，不用@Bean声明
      * @return 线程池实例
      */
     @Bean
-    public DtpExecutor ioIntensiveExecutor() {
-        return ThreadPoolBuilder.newBuilder()
-                .threadPoolName("ioIntensiveExecutor")
-                .corePoolSize(20)
-                .maximumPoolSize(50)
-                .queueCapacity(2048)
-                .ioIntensive(true)
-                .buildDynamic();
+    public ThreadPoolExecutor dtpExecutor1() {
+      return ThreadPoolBuilder.newBuilder()
+              .threadPoolName("dtpExecutor1")
+              .threadFactory("test-dtp-common")
+              .corePoolSize(10)
+              .maximumPoolSize(15)
+              .keepAliveTime(40)
+              .timeUnit(TimeUnit.SECONDS)
+              .workQueue(MEMORY_SAFE_LINKED_BLOCKING_QUEUE.getName(), 2000)
+              .buildDynamic();
     }
-
+  
     /**
-     * tips: 建议直接在配置中心配置就行，不用 @Bean 声明
+     * 通过{@link ThreadPoolBuilder} 设置详细参数创建动态线程池
+     * eager，参考tomcat线程池设计，适用于处理io密集型任务场景，具体参数可以看代码注释
+     * tips: 建议直接在配置中心配置就行，不用@Bean声明
      * @return 线程池实例
      */
     @Bean
-    public ThreadPoolExecutor dtpExecutor2() {
-        return ThreadPoolBuilder.newBuilder()
-                .threadPoolName("dtpExecutor2")
-                .corePoolSize(10)
-                .maximumPoolSize(15)
-                .keepAliveTime(50)
-                .timeUnit(TimeUnit.MILLISECONDS)
-                .workQueue(QueueTypeEnum.SYNCHRONOUS_QUEUE.getName(), null, false)
-                .waitForTasksToCompleteOnShutdown(true)
-                .awaitTerminationSeconds(5)
-                .buildDynamic();
+    public DtpExecutor eagerDtpExecutor() {
+      return ThreadPoolBuilder.newBuilder()
+              .threadPoolName("eagerDtpExecutor")
+              .threadFactory("test-eager")
+              .corePoolSize(2)
+              .maximumPoolSize(4)
+              .queueCapacity(2000)
+              .eager(true)
+              .buildDynamic();
+    }
+  
+    /**
+     * 通过{@link ThreadPoolBuilder} 设置详细参数创建动态线程池
+     * ordered，适用于处理有序任务场景，任务要实现Ordered接口，具体参数可以看代码注释
+     * tips: 建议直接在配置中心配置就行，不用@Bean声明
+     * @return 线程池实例
+     */
+    @Bean
+    public OrderedDtpExecutor orderedDtpExecutor() {
+      return ThreadPoolBuilder.newBuilder()
+              .threadPoolName("orderedDtpExecutor")
+              .threadFactory("test-ordered")
+              .corePoolSize(4)
+              .maximumPoolSize(4)
+              .queueCapacity(2000)
+              .buildOrdered();
+    }
+  
+    /**
+     * 通过{@link ThreadPoolBuilder} 设置详细参数创建线程池
+     * scheduled，适用于处理定时任务场景，具体参数可以看代码注释
+     * tips: 建议直接在配置中心配置就行，不用@Bean声明
+     * @return 线程池实例
+     */
+    @Bean
+    public ScheduledExecutorService scheduledDtpExecutor() {
+      return ThreadPoolBuilder.newBuilder()
+              .threadPoolName("scheduledDtpExecutor")
+              .corePoolSize(2)
+              .threadFactory("test-scheduled")
+              .rejectedExecutionHandler(CALLER_RUNS_POLICY.getName())
+              .buildScheduled();
     }
   }
   ```

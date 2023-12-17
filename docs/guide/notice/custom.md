@@ -15,20 +15,9 @@ star: true
 
 如下示例定义了一个短信通知渠道
 
-1. 定义 SmsNotifier 继承 Notifier 接口，实现 platform() 和 send() 方法
+1. 定义 SmsNotifier 继承 AbstractNotifier 抽象类，实现 platform() 和 send0() 方法
 
 ```java
-package org.dromara.dynamictp.example.notifier;
-
-import org.dromara.dynamictp.common.entity.NotifyPlatform;
-import org.dromara.dynamictp.core.notifier.base.Notifier;
-
-/**
- * SmsNotifier related
- *
- * @author yanhom
- * @since 1.1.0
- */
 public class SmsNotifier extends AbstractNotifier {
 
     private final SmsClient smsClient;
@@ -66,8 +55,8 @@ import org.dromara.dynamictp.core.notifier.AbstractDtpNotifier;
  */
 public class SmsDtpNotifier extends AbstractDtpNotifier {
 
-    public SmsDtpNotifier(SmsNotifier smsNotifier) {
-        super(smsNotifier);
+    public SmsDtpNotifier() {
+        super(new SmsNotifier(new SmsClient()));
     }
 
     @Override
@@ -160,13 +149,15 @@ resources/META-INF/services 下配置 java spi 实现
 
 文件值：org.dromara.dynamictp.example.notifier.SmsDtpNotifier
 
+![图片.png](/images/dynamictp/spi-notifier.png)
+
 4. 配置文件
 
 ```yaml
 spring:
   dynamic:
     tp:
-      platforms:                                   # 通知报警平台配置
+      platforms:                                    # 通知报警平台配置
         - platform: sms                             # 平台名称
           platformId: sms1
           secret: 3a7500-1287-4bd-a798-c5c3d8b69c   # 短信平台密钥
