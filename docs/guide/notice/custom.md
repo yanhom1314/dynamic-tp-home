@@ -33,7 +33,7 @@ public class SmsNotifier extends AbstractNotifier {
 
     @Override
     protected void send0(NotifyPlatform platform, String content) {
-        String[] receivers = getReceivers(platform);
+        String[] receivers = platform.getReceivers().split(",");
         smsClient.send(platform.getSecret(), receivers, content);
     }
 }

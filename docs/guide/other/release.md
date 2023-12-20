@@ -12,6 +12,65 @@ star: true
 ---
 
 ::: tip
+## v1.1.6.1 发版记录
+
+#### Feature
+
+- 支持 springboot3、jdk17、spring6，@KamToHung，@dragon-zhang，@yanhom
+
+- 支持 springboot 1.x、springboot 2.0.x、spring 5.0.x 等低版本，@yanhom
+
+- 新增初始化器 DtpInitizlizer SPI 接口，可以在框架启动前做一些自定义初始化操作，@yanhom
+
+- 支持兼容 skywalking 9.0 引入的线程池插件，1.1.5 版本在跟 skywalking 线程池插件一起使用有内存泄露问题，@yanhom
+
+- 告警信息里新增堆内存占比相关信息，@yanhom
+
+- 配置文件配置 dynamictp 时，新增 DtpProperties 相关属性字段自动提示功能，@yanhom
+
+
+#### Bugfix
+
+- 修复 allowCoreThreadTimeOut 参数为 true 时，ScheduledDtpExecutor 初始化失败的问题，@kyao
+
+- 修复 ExecutorWrapper#threadPoolStatProvider 成员属性初始化失败问题，@KamToHung
+
+- 修复 ALARM_EXECUTOR 没有移除 traceId，导致告警信息里的 traceId 错乱问题，@yanhom
+
+- 修复线程池别名不一致导致 Prometheus 指标上报失败问题，@androidcj
+
+- 修复使用注解注入 ScheduledThreadPoolExecutor 线程池报错的问题，@kyao
+
+- 修复 ScheduledDtpExecutor 不支持超时告警的问题，@kyao
+
+- 修复 alibaba dubbo 初始化失败问题，@yanhom
+
+#### Optimize
+
+- ThreadPoolBuilder、ThreadPoolCreator 方法完善丰富，@yanhom
+
+- 优化 tps、tp99 等指标监控相关代码，@yanhom
+
+- DtpProperties 配置类中一些字段默认值调整，enabledCollect=true，waitForTasksToCompleteOnShutdown=true，awaitTerminationSeconds=3，@yanhom
+
+- 优化 JVMTI 相关模块，@dragon-zhang，@yanhom
+
+- 完善 example，@yanhom
+
+- 部分代码优化重构，@yanhom
+
+- hutool、sc、sca、sb 等依赖版本升级，@yanhom
+
+#### Refactor
+
+- 重构 NacosRefresher，去掉在配置中手动指定线程池配置文件 data-id，降低接入成本，@wuhui
+
+- 重构 ApolloRefresher，去掉在配置中手动指定线程池配置文件 namespace，降低接入成本，@BanTanger
+
+- 重构所有 cloud 模块的 refresher，通过监听 EnvironmentChangeEvent 事件，更精准的判断是否线程池配置变动进行刷新，@yanhom
+:::
+
+::: tip
 ## v1.1.5 发版记录
 
 #### Feature

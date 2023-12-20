@@ -21,7 +21,7 @@ star: true
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-     <version>1.1.5</version>
+     <version>1.1.6.1</version>
  </dependency>
  ```
 

@@ -35,7 +35,7 @@ star: true
      <dependency>
          <groupId>org.dromara.dynamictp</groupId>
          <artifactId>dynamic-tp-spring-cloud-starter-polaris</artifactId>
-         <version>1.1.5</version>
+         <version>1.1.6.1</version>
      </dependency>
  ```
 
@@ -48,30 +48,32 @@ spring:
   dynamic:
     tp:
       enabled: true                               # 是否启用 dynamictp，默认true
-      enabledCollect: true                        # 是否开启监控指标采集，默认false
+      enabledCollect: true                        # 是否开启监控指标采集，默认true
       collectorTypes: micrometer,logging          # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
       logPath: /home/logs/dynamictp/user-center/  # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                          # 监控时间间隔（报警检测、指标采集），默认5s
       platforms:                                  # 通知报警平台配置
         - platform: wechat
-          platformId: 1                            # 平台id
-          urlKey: 3a700-127-4bd-a798-c53d8b69c     # 替换
-          receivers: test1,test2                   # 接受人企微名称
-          
+          platformId: 1                            # 平台id，自定义
+          urlKey: 3a700-127-4bd-a798-c53d8b69c     # webhook 中的 key
+          receivers: test1,test2                   # 接受人企微账号
+
         - platform: ding
-          platformId: 2                            # 平台id
-          urlKey: f80dad441fcd655438f4a08dcd6a     # 替换
-          secret: SECb5441fa6f375d5b9d21           # 替换，非sign模式可以没有此值
+          platformId: 2                            # 平台id，自定义
+          urlKey: f80dad441fcd655438f4a08dcd6a     # webhook 中的 access_token
+          secret: SECb5441fa6f375d5b9d21           # 安全设置在验签模式下才的秘钥，非验签模式没有此值
           receivers: 18888888888                   # 钉钉账号手机号
-          
+
         - platform: lark
           platformId: 3
-          urlKey: 0d944ae7-b24a-40                 # 替换
-          receivers: test1,test2                   # 接受人飞书名称/openid
-          
+          urlKey: 0d944ae7-b24a-40                 # webhook 中的 token
+          secret: 3a750012874bdac5c3d8b69c         # 安全设置在签名校验模式下才的秘钥，非验签模式没有此值
+          receivers: test1,test2                   # 接受人username / openid
+
         - platform: email
           platformId: 4
-          receivers: 123456@qq.com,789789@qq.com   # 收件人
+          receivers: 123456@qq.com,789789@qq.com   # 收件人邮箱，多个用逗号隔开
+          
       executors:                                   # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
         - threadPoolName: dtpExecutor1
           threadPoolAliasName: 测试线程池        # 线程池别名

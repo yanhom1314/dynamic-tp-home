@@ -72,7 +72,7 @@ SpringBoot1x、2x、Spring6 以下用此依赖
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.1.5</version>
+    <version>1.1.6.1</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
@@ -84,7 +84,7 @@ SpringBoot3x、Spring6 以上用此依赖（预览版）
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.1.6-3.x-alpha</version>
+    <version>1.1.6.1-3.x</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
