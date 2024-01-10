@@ -121,6 +121,24 @@ star: true
               .buildScheduled();
     }
   }
+
+    /**
+     * 通过{@link ThreadPoolBuilder} 设置详细参数创建线程池
+     * priority，适用于处理优先级任务场景，具体参数可以看代码注释
+     * tips: 建议直接在配置中心配置就行，不用@Bean声明
+     *
+     * @return 线程池实例
+     */
+    @Bean
+    public PriorityDtpExecutor priorityDtpExecutor() {
+      return ThreadPoolBuilder.newBuilder()
+              .threadPoolName("priorityDtpExecutor")
+              .corePoolSize(2)
+              .maximumPoolSize(4)
+              .threadFactory("test-priority")
+              .rejectedExecutionHandler(CALLER_RUNS_POLICY.getName())
+              .buildPriority();
+    }
   ```
 
 ### 代码引用
