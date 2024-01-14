@@ -52,7 +52,7 @@ spring:
     tp:
       enabled: true                               # 是否启用 dynamictp，默认true
       enabledCollect: true                        # 是否开启监控指标采集，默认true
-      collectorTypes: micrometer,logging          # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
+      collectorTypes: micrometer,logging          # 监控数据采集器类型（logging | micrometer | internal_logging | JMX），默认micrometer
       logPath: /home/logs/dynamictp/user-center/  # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                          # 监控时间间隔（报警检测、指标采集），默认5s
       platforms:                                  # 通知报警平台配置
