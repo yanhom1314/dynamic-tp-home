@@ -22,6 +22,8 @@ star: true
 > 3. Micrometer：采用监控门面，通过引入相关 Micrometer 依赖采集到相应的存储平台里（如 Prometheus，InfluxDb...）
 >
 > 4. Endpoint：暴露 Endpoint 端点，可以通过 http 方式实时获取指标数据
+>
+> 5. JMX: 通过 JMX 方式采集指标数据，来监视线程池的性能指标
 
 
 ### micrometer
@@ -41,10 +43,10 @@ star: true
   {"datetime": "2022-04-17 11:35:15.209", "app_name": "dynamic-tp-nacos-cloud-demo", "thread_pool_metrics": {"activeCount":0,"queueSize":0,"largestPoolSize":100,"poolSize":100,"queueCapacity":2147483647,"fair":false,"queueTimeoutCount":0,"rejectCount":0,"waitTaskCount":0,"taskCount":177,"runTimeoutCount":0,"queueRemainingCapacity":2147483647,"corePoolSize":100,"queueType":"TaskQueue","completedTaskCount":177,"dynamic":false,"maximumPoolSize":400,"poolName":"tomcatWebServerTp"}}
   ```
 
-### endpoint 
+### endpoint
 
 暴露端点(dynamic-tp)，可以通过 http 方式实时请求
-  
+
   ```json
   [
       {
@@ -67,3 +69,9 @@ star: true
       }
   ]
   ```
+
+### JMX
+
+通过 JMX 监控管理MXBean
+
+![采集指标](/images/dynamictp/jmx.png)
