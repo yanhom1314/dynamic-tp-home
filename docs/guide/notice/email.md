@@ -15,12 +15,23 @@ star: true
 
 1. 框架 core 模块默认集成企微、钉钉、飞书通知渠道，可直接使用，邮件通知需要单独引入下面依赖。
 
+SpringBoot1x、2x 用此依赖
+
 ```xml
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-notify-email</artifactId>
      <version>1.1.6.1</version>
  </dependency>   
+ ```
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-spring-boot-starter-extension-notify-email</artifactId>
+     <version>1.1.6.1-3.x</version>
+ </dependency>
  ```
 
 2. 加入邮件相关配置

@@ -1,5 +1,5 @@
 <template><div><h3 id="采集类型" tabindex="-1"><a class="header-anchor" href="#采集类型" aria-hidden="true">#</a> 采集类型</h3>
-<p>目前框架提供了四种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer</p>
+<p>目前框架提供了五种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer</p>
 <blockquote>
 <ol>
 <li>
@@ -13,6 +13,9 @@
 </li>
 <li>
 <p>Endpoint：暴露 Endpoint 端点，可以通过 http 方式实时获取指标数据</p>
+</li>
+<li>
+<p>JMX: 通过 JMX 方式采集指标数据，来监视线程池的性能指标</p>
 </li>
 </ol>
 </blockquote>
@@ -47,6 +50,9 @@
         <span class="token property">"reject_handler_name"</span><span class="token operator">:</span> <span class="token string">"CallerRunsPolicy"</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">]</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="jmx" tabindex="-1"><a class="header-anchor" href="#jmx" aria-hidden="true">#</a> JMX</h3>
+<p>通过 JMX 监控管理MXBean</p>
+<figure><img src="/images/dynamictp/jmx.png" alt="采集指标" tabindex="0" loading="lazy"><figcaption>采集指标</figcaption></figure>
+</div></template>
 
 

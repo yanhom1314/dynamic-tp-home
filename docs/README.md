@@ -27,7 +27,7 @@ features:
 
   - title: 运行监控
     icon: eye
-    details: 定时采集线程池运行指标数据，提供jsonlog、micrometer、endpoint、jmx 四种指标数据采集方式，可灵活选择
+    details: 定时采集线程池运行指标数据，提供jsonlog、micrometer、endpoint、JMX 四种指标数据采集方式，可灵活选择
     link: "/guide/monitor/collect_types"
 
   - title: 三方包集成
@@ -78,7 +78,7 @@ SpringBoot1x、2x、Spring6 以下用此依赖
 </dependency>
 ```
 
-SpringBoot3x、Spring6 以上用此依赖（预览版）
+SpringBoot3x、Spring6 以上用此依赖
 
 ```xml
 <dependency>

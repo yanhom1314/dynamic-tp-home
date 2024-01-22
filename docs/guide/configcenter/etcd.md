@@ -31,14 +31,25 @@ star: true
 
 ### maven 依赖
 
+SpringBoot1x、2x 用此依赖
+
  ```xml
-     <dependency>
-         <groupId>org.dromara.dynamictp</groupId>
-         <artifactId>dynamic-tp-spring-boot-starter-etcd</artifactId>
-         <version>1.1.6.1</version>
-     </dependency>
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-spring-boot-starter-etcd</artifactId>
+     <version>1.1.6.1</version>
+ </dependency>
  ```
 
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-spring-boot-starter-etcd</artifactId>
+     <version>1.1.6.1-3.x</version>
+ </dependency>
+ ```
 ### 线程池配置文件
 
 #### properties 格式

@@ -16,13 +16,24 @@ star: true
 
 1. 引入下述依赖
 
+SpringBoot1x、2x 用此依赖
+
 ```xml
-   <dependency>
-        <groupId>org.dromara.dynamictp</groupId>
-        <artifactId>dynamic-tp-spring-boot-starter-adapter-tars</artifactId>
-        <version>1.1.6.1</version>
-    </dependency>
+<dependency>
+    <groupId>org.dromara.dynamictp</groupId>
+    <artifactId>dynamic-tp-spring-boot-starter-adapter-tars</artifactId>
+    <version>1.1.6.1</version>
+</dependency>
 ```
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-spring-boot-starter-adapter-tars</artifactId>
+     <version>1.1.6.1-3.x</version>
+ </dependency>
+ ```
 
 2. 配置文件中配置 tars 线程池
 

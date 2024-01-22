@@ -17,11 +17,22 @@ star: true
 
 2. 1.0.8 版本开始支持集群限流，基于 redis 实现的滑动窗口限流，会限制实际进行推送的节点个数，使用引入以下依赖
 
+SpringBoot1x、2x 用此依赖
+
 ```xml
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
      <version>1.1.6.1</version>
+ </dependency>
+ ```
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
+     <version>1.1.6.1-3.x</version>
  </dependency>
  ```
 

@@ -34,6 +34,8 @@ star: true
 
 2. SwTraceTaskWrapper 是 extension 模块提供的扩展，需要引入依赖
 
+SpringBoot1x、2x 用此依赖
+
 ```xml
   <dependency>
       <groupId>org.dromara.dynamictp</groupId>
@@ -41,8 +43,20 @@ star: true
       <version>1.1.6.1</version>
   </dependency>
  ```
-   
+
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-extension-skywalking</artifactId>
+     <version>1.1.6.1-3.x</version>
+ </dependency>
+ ```
+
 3. OpenTelemetryWrapper 是 extension 模块提供的扩展，需要引入依赖
+
+SpringBoot1x、2x 用此依赖
 
 ```xml
   <dependency>
@@ -50,6 +64,15 @@ star: true
       <artifactId>dynamic-tp-extension-opentelemetry</artifactId>
       <version>1.1.6.1</version>
   </dependency>
+ ```
+SpringBoot3x 用此依赖
+
+```xml
+ <dependency>
+     <groupId>org.dromara.dynamictp</groupId>
+     <artifactId>dynamic-tp-extension-opentelemetry</artifactId>
+     <version>1.1.6.1-3.x</version>
+ </dependency>
  ```
 
 4. 自定义 TaskWrapper 示例
