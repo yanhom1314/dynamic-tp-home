@@ -49,7 +49,7 @@ spring:
     tp:
       enabled: true                               # 是否启用 dynamictp，默认true
       enabledCollect: true                        # 是否开启监控指标采集，默认true
-      collectorTypes: micrometer,logging          # 监控数据采集器类型（logging | micrometer | internal_logging），默认micrometer
+      collectorTypes: micrometer,logging          # 监控数据采集器类型（logging | micrometer | internal_logging | JMX），默认micrometer
       logPath: /home/logs/dynamictp/user-center/  # 监控日志数据路径，默认 ${user.home}/logs，采集类型非logging不用配置
       monitorInterval: 5                          # 监控时间间隔（报警检测、指标采集），默认5s
       platforms:                                  # 通知报警平台配置
@@ -77,7 +77,7 @@ spring:
       executors:                                   # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
         - threadPoolName: dtpExecutor1
           threadPoolAliasName: 测试线程池        # 线程池别名
-          executorType: common                 # 线程池类型 common、eager、ordered、scheduled，默认 common
+          executorType: common                 # 线程池类型 common、eager、ordered、scheduled、priority，默认 common
           corePoolSize: 6                      # 核心线程数，默认1
           maximumPoolSize: 8                   # 最大线程数，默认cpu核数
           queueCapacity: 2000                  # 队列容量，默认1024

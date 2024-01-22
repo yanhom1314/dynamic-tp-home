@@ -71,7 +71,7 @@
       <span class="token key atrule">executors</span><span class="token punctuation">:</span>                                   <span class="token comment"># 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量</span>
         <span class="token punctuation">-</span> <span class="token key atrule">threadPoolName</span><span class="token punctuation">:</span> dtpExecutor1
           <span class="token key atrule">threadPoolAliasName</span><span class="token punctuation">:</span> 测试线程池        <span class="token comment"># 线程池别名</span>
-          <span class="token key atrule">executorType</span><span class="token punctuation">:</span> common                 <span class="token comment"># 线程池类型 common、eager、ordered、scheduled，默认 common</span>
+          <span class="token key atrule">executorType</span><span class="token punctuation">:</span> common                 <span class="token comment"># 线程池类型 common、eager、ordered、scheduled、priority，默认 common</span>
           <span class="token key atrule">corePoolSize</span><span class="token punctuation">:</span> <span class="token number">6</span>                      <span class="token comment"># 核心线程数，默认1</span>
           <span class="token key atrule">maximumPoolSize</span><span class="token punctuation">:</span> <span class="token number">8</span>                   <span class="token comment"># 最大线程数，默认cpu核数</span>
           <span class="token key atrule">queueCapacity</span><span class="token punctuation">:</span> <span class="token number">2000</span>                  <span class="token comment"># 队列容量，默认1024</span>
