@@ -18,6 +18,7 @@
 <li><a href="https://www.shylsoft.com" target="_blank" rel="noopener noreferrer">上海营联信息技术有限公司<ExternalLinkIcon/></a></li>
 <li><a href="https://swifthealth.cn/" target="_blank" rel="noopener noreferrer">西安朝前智能科技有限公司<ExternalLinkIcon/></a></li>
 <li><a href="https://www.leyaoyao.com/" target="_blank" rel="noopener noreferrer">广州乐摇摇<ExternalLinkIcon/></a></li>
+<li><a href="https://dynamictp.cn" target="_blank" rel="noopener noreferrer">上海惟秀科技有限公司<ExternalLinkIcon/></a></li>
 </ul>
 </div>
 <h3 id="登记" tabindex="-1"><a class="header-anchor" href="#登记" aria-hidden="true">#</a> 登记</h3>

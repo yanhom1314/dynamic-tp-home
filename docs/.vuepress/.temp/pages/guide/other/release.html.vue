@@ -1,7 +1,92 @@
 <template><div><div class="hint-container tip">
 <p class="hint-container-title">提示</p>
-<h2 id="v1-1-5-发版记录" tabindex="-1"><a class="header-anchor" href="#v1-1-5-发版记录" aria-hidden="true">#</a> v1.1.5 发版记录</h2>
+<h2 id="v1-1-6-1-发版记录" tabindex="-1"><a class="header-anchor" href="#v1-1-6-1-发版记录" aria-hidden="true">#</a> v1.1.6.1 发版记录</h2>
 <h4 id="feature" tabindex="-1"><a class="header-anchor" href="#feature" aria-hidden="true">#</a> Feature</h4>
+<ul>
+<li>
+<p>支持 springboot3、jdk17、spring6，@KamToHung，@dragon-zhang，@yanhom</p>
+</li>
+<li>
+<p>支持 springboot 1.x、springboot 2.0.x、spring 5.0.x 等低版本，@yanhom</p>
+</li>
+<li>
+<p>新增初始化器 DtpInitizlizer SPI 接口，可以在框架启动前做一些自定义初始化操作，@yanhom</p>
+</li>
+<li>
+<p>支持兼容 skywalking 9.0 引入的线程池插件，1.1.5 版本在跟 skywalking 线程池插件一起使用有内存泄露问题，@yanhom</p>
+</li>
+<li>
+<p>告警信息里新增堆内存占比相关信息，@yanhom</p>
+</li>
+<li>
+<p>配置文件配置 dynamictp 时，新增 DtpProperties 相关属性字段自动提示功能，@yanhom</p>
+</li>
+</ul>
+<h4 id="bugfix" tabindex="-1"><a class="header-anchor" href="#bugfix" aria-hidden="true">#</a> Bugfix</h4>
+<ul>
+<li>
+<p>修复 allowCoreThreadTimeOut 参数为 true 时，ScheduledDtpExecutor 初始化失败的问题，@kyao</p>
+</li>
+<li>
+<p>修复 ExecutorWrapper#threadPoolStatProvider 成员属性初始化失败问题，@KamToHung</p>
+</li>
+<li>
+<p>修复 ALARM_EXECUTOR 没有移除 traceId，导致告警信息里的 traceId 错乱问题，@yanhom</p>
+</li>
+<li>
+<p>修复线程池别名不一致导致 Prometheus 指标上报失败问题，@androidcj</p>
+</li>
+<li>
+<p>修复使用注解注入 ScheduledThreadPoolExecutor 线程池报错的问题，@kyao</p>
+</li>
+<li>
+<p>修复 ScheduledDtpExecutor 不支持超时告警的问题，@kyao</p>
+</li>
+<li>
+<p>修复 alibaba dubbo 初始化失败问题，@yanhom</p>
+</li>
+</ul>
+<h4 id="optimize" tabindex="-1"><a class="header-anchor" href="#optimize" aria-hidden="true">#</a> Optimize</h4>
+<ul>
+<li>
+<p>ThreadPoolBuilder、ThreadPoolCreator 方法完善丰富，@yanhom</p>
+</li>
+<li>
+<p>优化 tps、tp99 等指标监控相关代码，@yanhom</p>
+</li>
+<li>
+<p>DtpProperties 配置类中一些字段默认值调整，enabledCollect=true，waitForTasksToCompleteOnShutdown=true，awaitTerminationSeconds=3，@yanhom</p>
+</li>
+<li>
+<p>优化 JVMTI 相关模块，@dragon-zhang，@yanhom</p>
+</li>
+<li>
+<p>完善 example，@yanhom</p>
+</li>
+<li>
+<p>部分代码优化重构，@yanhom</p>
+</li>
+<li>
+<p>hutool、sc、sca、sb 等依赖版本升级，@yanhom</p>
+</li>
+</ul>
+<h4 id="refactor" tabindex="-1"><a class="header-anchor" href="#refactor" aria-hidden="true">#</a> Refactor</h4>
+<ul>
+<li>
+<p>重构 NacosRefresher，去掉在配置中手动指定线程池配置文件 data-id，降低接入成本，@wuhui</p>
+</li>
+<li>
+<p>重构 ApolloRefresher，去掉在配置中手动指定线程池配置文件 namespace，降低接入成本，@BanTanger</p>
+</li>
+<li>
+<p>重构所有 cloud 模块的 refresher，通过监听 EnvironmentChangeEvent 事件，更精准的判断是否线程池配置变动进行刷新，@yanhom</p>
+</li>
+</ul>
+</div>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<h2 id="v1-1-5-发版记录" tabindex="-1"><a class="header-anchor" href="#v1-1-5-发版记录" aria-hidden="true">#</a> v1.1.5 发版记录</h2>
+<h4 id="feature-1" tabindex="-1"><a class="header-anchor" href="#feature-1" aria-hidden="true">#</a> Feature</h4>
 <ul>
 <li>
 <p>监控模块新增 TPS、TP99、TP95、TP50 等监控指标，@kyao，@yanhom</p>
@@ -13,7 +98,7 @@
 <p>告警信息里添加系统负载，cpu 使用率，cpu 核数等指标，@yanhom</p>
 </li>
 </ul>
-<h4 id="bugfix" tabindex="-1"><a class="header-anchor" href="#bugfix" aria-hidden="true">#</a> Bugfix</h4>
+<h4 id="bugfix-1" tabindex="-1"><a class="header-anchor" href="#bugfix-1" aria-hidden="true">#</a> Bugfix</h4>
 <ul>
 <li>
 <p>修复 jetty 线程池代理后一直触发任务超时告警的问题，@kyao</p>
@@ -25,7 +110,7 @@
 <p>修复代理三方线程池时直接继承 juc 线程池，没兼容框架内自定义线程池的场景，如 dubbo、motan 的 eager 模式，@yanhom</p>
 </li>
 </ul>
-<h4 id="optimize" tabindex="-1"><a class="header-anchor" href="#optimize" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-1" tabindex="-1"><a class="header-anchor" href="#optimize-1" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>各三方中间件线程池被代理后，原线程池优雅关闭，@yanhom</p>
@@ -44,7 +129,7 @@
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
 <h2 id="v1-1-4-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-1-4-发布记录" aria-hidden="true">#</a> v1.1.4 发布记录</h2>
-<h4 id="feature-1" tabindex="-1"><a class="header-anchor" href="#feature-1" aria-hidden="true">#</a> Feature</h4>
+<h4 id="feature-2" tabindex="-1"><a class="header-anchor" href="#feature-2" aria-hidden="true">#</a> Feature</h4>
 <ul>
 <li>
 <p>支持 Spring 项目，SpringBoot 相关特性只在 starter 模块引入，@dragon-zhang</p>
@@ -77,7 +162,7 @@
 <p>监控数据新增线程池别名，@zhifei</p>
 </li>
 </ul>
-<h4 id="bugfix-1" tabindex="-1"><a class="header-anchor" href="#bugfix-1" aria-hidden="true">#</a> Bugfix</h4>
+<h4 id="bugfix-2" tabindex="-1"><a class="header-anchor" href="#bugfix-2" aria-hidden="true">#</a> Bugfix</h4>
 <ul>
 <li>
 <p>修复 Tomcat 高低版本兼容性报错问题，@yanhom</p>
@@ -101,7 +186,7 @@
 <p>修复修复拒绝策略为 CallerRunsPolicy 时，MdcRunnable 会删除主线程 mdc 信息的问题，@kyao</p>
 </li>
 </ul>
-<h4 id="optimize-1" tabindex="-1"><a class="header-anchor" href="#optimize-1" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-2" tabindex="-1"><a class="header-anchor" href="#optimize-2" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>优化 dtp 内部 spi 的使用，统一封装管理，@peachyy</p>
@@ -118,7 +203,7 @@
 <p class="hint-container-title">提示</p>
 <h2 id="v1-1-3-发布记录" tabindex="-1"><a class="header-anchor" href="#v1-1-3-发布记录" aria-hidden="true">#</a> v1.1.3 发布记录</h2>
 <p>groupId 及包名改为 org.dromara.dynamictp</p>
-<h4 id="feature-2" tabindex="-1"><a class="header-anchor" href="#feature-2" aria-hidden="true">#</a> Feature</h4>
+<h4 id="feature-3" tabindex="-1"><a class="header-anchor" href="#feature-3" aria-hidden="true">#</a> Feature</h4>
 <ul>
 <li>
 <p>引入时间轮重构任务超时（排队超时、执行超时）功能，@KamToHung</p>
@@ -148,7 +233,7 @@
 <p>TaskWrapper 支持 OpenTelemetry，@brendanv</p>
 </li>
 </ul>
-<h4 id="bugfix-2" tabindex="-1"><a class="header-anchor" href="#bugfix-2" aria-hidden="true">#</a> Bugfix</h4>
+<h4 id="bugfix-3" tabindex="-1"><a class="header-anchor" href="#bugfix-3" aria-hidden="true">#</a> Bugfix</h4>
 <ul>
 <li>
 <p>修复飞书告警失败问题，@KamToHung</p>
@@ -163,7 +248,7 @@
 <p>修复 DtpPostProcessor 初始化晚于线程池实例初始化问题，@KamToHung</p>
 </li>
 </ul>
-<h4 id="optimize-2" tabindex="-1"><a class="header-anchor" href="#optimize-2" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-3" tabindex="-1"><a class="header-anchor" href="#optimize-3" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>丰富 Undertow 线程池监控指标，@yanhom</p>
@@ -218,7 +303,7 @@
 <p>StreamRocketMqDtpAdapter 增加对producer线程池的管理，感谢@hailang的贡献</p>
 </li>
 </ul>
-<h4 id="bugfix-3" tabindex="-1"><a class="header-anchor" href="#bugfix-3" aria-hidden="true">#</a> Bugfix</h4>
+<h4 id="bugfix-4" tabindex="-1"><a class="header-anchor" href="#bugfix-4" aria-hidden="true">#</a> Bugfix</h4>
 <ul>
 <li>
 <p>修复 alibaba dubbo 初始化错误赋值的bug，感谢@WindSearcher的贡献</p>
@@ -230,7 +315,7 @@
 <p>修复DtpPostProcessor类中AnnotatedBeanDefinition强制转换失败问题，感谢@文攀锋的贡献</p>
 </li>
 </ul>
-<h4 id="optimize-3" tabindex="-1"><a class="header-anchor" href="#optimize-3" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-4" tabindex="-1"><a class="header-anchor" href="#optimize-4" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>jackson-databind版本升级</p>
@@ -297,7 +382,7 @@
 <p>支持飞书验签，感谢@ZhaoGZ 提供实现</p>
 </li>
 </ul>
-<h4 id="bugfix-4" tabindex="-1"><a class="header-anchor" href="#bugfix-4" aria-hidden="true">#</a> BugFix</h4>
+<h4 id="bugfix-5" tabindex="-1"><a class="header-anchor" href="#bugfix-5" aria-hidden="true">#</a> BugFix</h4>
 <ul>
 <li>
 <p>ApacheDubbo 线程池初始化失败问题修复，感谢 @hdgaadd 提供实现</p>
@@ -306,7 +391,7 @@
 <p>SimpleTpProperties keepAliveTime 字段数据类型错误问题修复</p>
 </li>
 </ul>
-<h4 id="optimize-4" tabindex="-1"><a class="header-anchor" href="#optimize-4" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-5" tabindex="-1"><a class="header-anchor" href="#optimize-5" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>要修改的核心线程数大于当前最大线程数不能修改问题优化</p>
@@ -335,7 +420,7 @@
 <p>adapter 模块新增 grpc 服务端线程池管理</p>
 </li>
 </ul>
-<h4 id="bugfix-5" tabindex="-1"><a class="header-anchor" href="#bugfix-5" aria-hidden="true">#</a> BugFix</h4>
+<h4 id="bugfix-6" tabindex="-1"><a class="header-anchor" href="#bugfix-6" aria-hidden="true">#</a> BugFix</h4>
 <ul>
 <li>
 <p>AbstractDtpNotifier 添加无参构造函数，修复 SPI 自定义无法接入问题</p>
@@ -347,7 +432,7 @@
 <p>调整线程池告警配置初始化时机，修复提前使用因告警项没初始化导致的 NPE 问题，感谢 @林林林 提供实现</p>
 </li>
 </ul>
-<h4 id="refactor" tabindex="-1"><a class="header-anchor" href="#refactor" aria-hidden="true">#</a> Refactor</h4>
+<h4 id="refactor-1" tabindex="-1"><a class="header-anchor" href="#refactor-1" aria-hidden="true">#</a> Refactor</h4>
 <ul>
 <li>
 <p>将 core 模块中 adapter 包迁移到 adapter-common 模块中，彻底解耦</p>
@@ -362,7 +447,7 @@
 <p>责任链模式重构 notify 模块</p>
 </li>
 </ul>
-<h4 id="optimize-5" tabindex="-1"><a class="header-anchor" href="#optimize-5" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-6" tabindex="-1"><a class="header-anchor" href="#optimize-6" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>兼容低版本 dubbo（2.7.3） 线程池监控，感谢 @songxiaohua 提供实现</p>
@@ -424,7 +509,7 @@
 <p>ThreadPoolCreator 类新增一些内存安全快捷创建线程池方法</p>
 </li>
 </ul>
-<h4 id="bugfix-6" tabindex="-1"><a class="header-anchor" href="#bugfix-6" aria-hidden="true">#</a> BugFix</h4>
+<h4 id="bugfix-7" tabindex="-1"><a class="header-anchor" href="#bugfix-7" aria-hidden="true">#</a> BugFix</h4>
 <ul>
 <li>
 <p>兼容 JDK11 当前要设置核心线程数不能大于上次设置的最大线程数限制</p>
@@ -436,7 +521,7 @@
 <p>修复 Hystrix 线程池获取失败 &amp; 调参被覆盖问题</p>
 </li>
 </ul>
-<h4 id="refactor-1" tabindex="-1"><a class="header-anchor" href="#refactor-1" aria-hidden="true">#</a> Refactor</h4>
+<h4 id="refactor-2" tabindex="-1"><a class="header-anchor" href="#refactor-2" aria-hidden="true">#</a> Refactor</h4>
 <ul>
 <li>
 <p>重构 logging 模块，去掉事件监听依赖</p>
@@ -448,7 +533,7 @@
 <p>责任链模式重构 notify 模块</p>
 </li>
 </ul>
-<h4 id="optimize-6" tabindex="-1"><a class="header-anchor" href="#optimize-6" aria-hidden="true">#</a> Optimize</h4>
+<h4 id="optimize-7" tabindex="-1"><a class="header-anchor" href="#optimize-7" aria-hidden="true">#</a> Optimize</h4>
 <ul>
 <li>
 <p>example 添加 Hystrix 线程池的测试例子</p>
@@ -503,7 +588,7 @@
 <p>告警项自定义配置，不配置的项用默认值</p>
 </li>
 </ul>
-<h4 id="bugfix-7" tabindex="-1"><a class="header-anchor" href="#bugfix-7" aria-hidden="true">#</a> BugFix</h4>
+<h4 id="bugfix-8" tabindex="-1"><a class="header-anchor" href="#bugfix-8" aria-hidden="true">#</a> BugFix</h4>
 <ul>
 <li>
 <p>修复并发导致通知报警信息发送多条的问题</p>
@@ -515,7 +600,7 @@
 <p>修复钉钉手机端报警信息高亮失效问题</p>
 </li>
 </ul>
-<h4 id="refactor-2" tabindex="-1"><a class="header-anchor" href="#refactor-2" aria-hidden="true">#</a> Refactor</h4>
+<h4 id="refactor-3" tabindex="-1"><a class="header-anchor" href="#refactor-3" aria-hidden="true">#</a> Refactor</h4>
 <ul>
 <li>
 <p>重构部分通知告警模块实现，支持三方中间件通知告警</p>
@@ -537,11 +622,11 @@
 <p>配置文件支持json格式，zk已支持json、properties格式配置</p>
 </li>
 </ul>
-<h4 id="bugfix-8" tabindex="-1"><a class="header-anchor" href="#bugfix-8" aria-hidden="true">#</a> BugFix</h4>
+<h4 id="bugfix-9" tabindex="-1"><a class="header-anchor" href="#bugfix-9" aria-hidden="true">#</a> BugFix</h4>
 <ul>
 <li><a href="https://gitee.com/dromara/dynamic-tp/issues/I54B4R" target="_blank" rel="noopener noreferrer">#I54B4R<ExternalLinkIcon/></a></li>
 </ul>
-<h4 id="refactor-3" tabindex="-1"><a class="header-anchor" href="#refactor-3" aria-hidden="true">#</a> Refactor</h4>
+<h4 id="refactor-4" tabindex="-1"><a class="header-anchor" href="#refactor-4" aria-hidden="true">#</a> Refactor</h4>
 <ul>
 <li>部分代码优化</li>
 </ul>
