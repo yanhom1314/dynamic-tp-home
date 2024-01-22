@@ -27,7 +27,7 @@ features:
 
   - title: 运行监控
     icon: eye
-    details: 定时采集线程池运行指标数据，提供jsonlog、micrometer、endpoint、JMX 四种指标数据采集方式，可灵活选择
+    details: 定时采集线程池运行指标数据，提供jsonlog、micrometer、endpoint、jmx 四种指标数据采集方式，可灵活选择
     link: "/guide/monitor/collect_types"
 
   - title: 三方包集成
