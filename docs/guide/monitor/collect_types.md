@@ -23,7 +23,7 @@ star: true
 >
 > 4. Endpoint：暴露 Endpoint 端点，可以通过 http 方式实时获取指标数据
 >
-> 5. JMX: 通过 JMX 方式采集指标数据，来监视线程池的性能指标
+> 5. JMX：通过 JMX 方式采集指标数据，来监视线程池的性能指标
 
 
 ### micrometer
