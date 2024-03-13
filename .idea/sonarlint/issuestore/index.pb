@@ -1,6 +1,6 @@
 
 H
-docs/.vuepress/config.ts,4\f\4f54910eac21c1cf4a4e0a2e94886b9638a2970a
+docs/.vuepress/config.ts,4/f/4f54910eac21c1cf4a4e0a2e94886b9638a2970a
 R
 "docs/.vuepress/styles/palette.scss,9/b/9b98fa495495988668a8b0f02fc167ad94a9c043
 V
@@ -111,7 +111,7 @@ O
 M
 docs/guide/other/supportme.md,3\c\3c13f68d0cde21f6c1ecc693f94091bd980bb846
 <
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 K
 docs/guide/other/contact.md,f\f\ff3fd74dbc90bba263bf73c443c071c434be09a7
 K
