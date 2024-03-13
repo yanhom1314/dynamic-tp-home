@@ -8,6 +8,7 @@ const __dirname = getDirname(import.meta.url);
 export default defineUserConfig({
   lang: "zh-CN",
   title: "动态线程池DynamicTp",
+
   description: "DynamicTp，基于配置中心的轻量级动态线程池，内置监控告警功能，可通过SPI自定义扩展实现",
   base: "/",
   theme,
