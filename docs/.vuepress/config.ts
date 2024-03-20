@@ -2,6 +2,7 @@ import {defineUserConfig} from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
+import { viteBundler } from "@vuepress/bundler-vite";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -12,6 +13,7 @@ export default defineUserConfig({
   description: "DynamicTp，基于配置中心的轻量级动态线程池，内置监控告警功能，可通过SPI自定义扩展实现",
   base: "/",
   theme,
+  bundler: viteBundler(),
   head: [
     ['meta', { name: 'keywords', content: 'DynamicTp，dynamic-tp，动态线程池，' +
           'ThreadPoolExecutor，美团线程池，线程池，Dynamic ThreadPool，线程池监控，' +
