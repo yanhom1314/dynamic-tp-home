@@ -81,28 +81,10 @@ export default sidebar([
         link: "/guide/configcenter/nacos-cloud"
       },
       {
-        text: "zoopkeeper 应用接入",
-        icon: "leaf",
-        collapsable: false,
-        link: "/guide/configcenter/zookeeper"
-      },
-      {
-        text: "zookeeper-cloud 应用接入",
-        icon: "interact",
-        collapsable: false,
-        link: "/guide/configcenter/zookeeper-cloud"
-      },
-      {
         text: "consul-cloud 应用接入",
         icon: "emoji",
         collapsable: false,
         link: "/guide/configcenter/consul-cloud"
-      },
-      {
-        text: "etcd 应用接入",
-        icon: "contrast",
-        collapsable: false,
-        link: "/guide/configcenter/etcd"
       },
       {
         text: "polaris 应用接入",
@@ -115,6 +97,30 @@ export default sidebar([
         icon: "speed",
         collapsable: false,
         link: "/guide/configcenter/huawei-cloud"
+      },
+      {
+        text: "zoopkeeper 应用接入",
+        icon: "leaf",
+        collapsable: false,
+        link: "/guide/configcenter/zookeeper"
+      },
+      {
+        text: "zookeeper-cloud 应用接入",
+        icon: "interact",
+        collapsable: false,
+        link: "/guide/configcenter/zookeeper-cloud"
+      },
+      {
+        text: "etcd 应用接入",
+        icon: "contrast",
+        collapsable: false,
+        link: "/guide/configcenter/etcd"
+      },
+      {
+        text: "自研配置中心应用接入",
+        icon: "customize",
+        collapsable: false,
+        link: "/guide/configcenter/custom"
       },
       {
         text: "无配置中心应用接入",
