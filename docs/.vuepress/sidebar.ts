@@ -50,6 +50,12 @@ export default sidebar([
         link: "/guide/use/code"
       },
       {
+        text: "注意事项",
+        icon: "info",
+        collapsable: false,
+        link: "/guide/use/attention"
+      },
+      {
         text: "任务包装器",
         icon: "wrap",
         collapsable: false,

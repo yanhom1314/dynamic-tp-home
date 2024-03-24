@@ -11,9 +11,7 @@ sticky: true
 star: true
 ---
 
-如果你没使用上述任何一种配置中心，有内部自研的配置中心，接入也很简单，只需要自定义一个 Refresher 即可，
-
-创建继承自 AbstractRefresher 的 GalaxyRefresher 类，实现监听特定的配置刷新事件，下面是一个简单的示例：
+如果你没使用上述任何一种配置中心，有内部自研的配置中心，接入也很简单，只需要自定义一个 Refresher 即可，创建继承自 AbstractRefresher 的 GalaxyRefresher 类，实现监听特定的配置刷新事件，下面是一个简单的示例：
 
 ```java
 public class GalaxyRefresher extends AbstractRefresher implements SmartApplicationListener {

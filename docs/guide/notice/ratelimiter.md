@@ -53,6 +53,4 @@ spring:
               clusterLimit: 1                            # 一个报警窗口内，只允许该配置数量的机器进行推送通知，默认为1
 ```
 
-4. 此功能实现使用了责任链设计模式，如果项目中没有引入 redis，也可以自定义限流器，实现 NotifyFilter 接口即可，
-
-具体参考 NotifyRedisRateLimiterFilter 的实现
+4. 此功能实现使用了责任链设计模式，如果项目中没有引入 redis，也可以自定义限流器，实现 NotifyFilter 接口即可，具体参考 NotifyRedisRateLimiterFilter 的实现
