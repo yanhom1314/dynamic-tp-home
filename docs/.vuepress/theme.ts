@@ -1,4 +1,4 @@
-import { getDirname, path } from "@vuepress/utils";
+import { getDirname, path } from "vuepress/utils";
 import {hopeTheme} from "vuepress-theme-hope";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
@@ -33,6 +33,9 @@ export default hopeTheme({
   // darkmode: "enable",
 
   plugins: {
+    components: {
+      components: ["Badge", "SiteInfo", "VPCard","VPBanner"]
+    },
     copyCode: {
       showInMobile: true,
       duration: 1000
@@ -43,6 +46,7 @@ export default hopeTheme({
       tabs: true,
       codetabs: true,
       container: true,
+      component: true,
       mermaid: true,
       flowchart: true,
       // 启用 figure

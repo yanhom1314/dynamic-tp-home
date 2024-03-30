@@ -38,6 +38,38 @@ features:
 
 <div style="padding-bottom: 0px;"></div>
 
+# 🌈 特别赞助
+
+<SiteInfo
+    name="引迈信息"
+    desc="JNPF低代码开发平台，技术双引擎系统，无限制业务场景，永久使用权，全源码交付"
+    url="https://www.jnpfsoft.com/"
+    logo="/images/sponsor/jnpfsoft-logo.png"
+    preview="/images/sponsor/jnpfsoft-site.png"
+    style="max-width:300px"
+/>
+
+<br/>
+
+<div align="center" class="sponsor">
+  <a class="become-sponsor" href="/guide/other/supportme">成为赞助者</a>
+</div>
+
+<style>
+.sponsor{
+  margin-top: 20px;
+}
+.become-sponsor {
+  padding: 8px 20px;
+  display: inline-block;
+  color: #3eaf7c;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 3px solid #3eaf7c;
+}
+</style>
+<br/>
+
 # 功能特性
 
 - **代码零侵入**：我们改变了线程池以往的使用姿势，所有配置均放在配置中心，服务启动时会从配置中心拉取配置生成线程池对象放到 Spring 容器中，使用时直接从 Spring 容器中获取，对业务代码零侵入
@@ -72,7 +104,7 @@ SpringBoot1x、2x、Spring6 以下用此依赖
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.1.6.1</version>
+    <version>1.1.7</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
@@ -84,7 +116,7 @@ SpringBoot3x、Spring6 以上用此依赖
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.1.6.1-3.x</version>
+    <version>1.1.7-3.x</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>

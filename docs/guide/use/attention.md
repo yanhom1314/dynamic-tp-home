@@ -24,7 +24,7 @@ star: true
   <dependency>
       <groupId>org.dromara.dynamictp</groupId>
       <artifactId>dynamic-tp-extension-skywalking</artifactId>
-      <version>1.1.6.1</version>
+      <version>1.1.7</version>
   </dependency>
  ```
 其他线程池增强 agent 也可能会有类似问题，使用时需注意，可以通过设置下述环境变量来解决。

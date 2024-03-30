@@ -1,6 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
-import { getDirname, path } from "@vuepress/utils";
+import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -42,6 +42,10 @@ export default defineUserConfig({
   ],
 
   alias: {
+    "@theme-hope/layouts/Layout": path.resolve(
+        __dirname,
+        "./layouts/Layout.vue",
+    ),
     "@theme-hope/components/HomePage": path.resolve(
         __dirname,
         "./components/HomePage.vue"
@@ -49,10 +53,6 @@ export default defineUserConfig({
     "@theme-hope/components/NormalPage": path.resolve(
         __dirname,
         "./components/NormalPage.vue"
-    ),
-    "@theme-hope/modules/sidebar/components/Sidebar": path.resolve(
-        __dirname,
-        "./components/Sidebar.vue"
     ),
   },
 
