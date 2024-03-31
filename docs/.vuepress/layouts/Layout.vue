@@ -14,7 +14,7 @@ const page = usePageData();
 const frontmatter = usePageFrontmatter<ThemePageFrontmatter>();
 
 const sidebarTopArray = [
-  `<a href="https://www.jnpfsoft.com" target="_blank">
+  `<a href="https://www.jnpfsoft.com?from=dynamictp" target="_blank">
     <img className="no-zoom" height="50px" width="220px" src="/images/sponsor/jnpfsoft.png">
   </a>`,
 ];
@@ -48,7 +48,7 @@ ${sidebarTopArray.slice(0, 4).join("\n  ")}
 <br/>
 <!--  <span style='color: grey;font-size: 11px;'>广告采用随机方式显示</span>-->
   <span style='float: right; margin-top:2px; '>
-  <a href='/guide/other/supportme' style='color: var(--theme-color);font-size: 11px;font-weight: bolder;'>成为赞助商</a>
+  <a href='/guide/other/supportme.html#成为赞助商' style='color: var(--theme-color);font-size: 11px;font-weight: bolder;'>成为赞助商</a>
   </span>
 </div>
 `;

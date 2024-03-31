@@ -142,5 +142,5 @@ e
 5node_modules/@vue/runtime-core/dist/runtime-core.d.ts,4/5/4545a9b6bf10ea4b316af5f23a49db0a60ba55eb
 a
 1node_modules/@vue/reactivity/dist/reactivity.d.ts,6/9/697cbd55c92c1c3becc9f1f682e6766a794106ed
-X
-(docs/.vuepress/components/SidebarCus.vue,4/c/4ceeabf626aa802052bdfb9c27edfaf8e0893d1d
+F
+docs/guide/use/mode.md,b/e/be1b4171e14736ca5536205d28809f28a0b5020f

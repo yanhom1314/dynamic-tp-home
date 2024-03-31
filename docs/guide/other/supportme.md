@@ -25,20 +25,17 @@ star: true
 
 <img :src="$withBase('/supportme.jpg')" style="zoom: 35%">
 
-
 ### 成为赞助商
 
-1. 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme/#赞助人列表) 的永久留名。
+1. 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名。
 
-2. 赞助达到20元，您将获得 [赞助者列表](/guide/other/supportme/#赞助人列表) 的永久留名，并可附上在赞助者列表里的投放链接。
+2. 赞助达到50元，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名，并可在赞助者列表里附上投放链接。
 
-3. 赞助达50元，您额外获得 [DynamicTp](https://dynamictp.cn/) 的私下 VIP 1对1的技术咨询服务（长达1年）。
+3. 赞助达200元，您将获得 [DynamicTp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达1年）。
 
-4. 赞助达100元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达1年）。
+4. 赞助达1000元，您将获得 [DynamicTp](https://dynamictp.cn/) 所有文档页面的广告栏位，包括 gitee、github（长达1年），并且在 1000+ 社群里@全体推广一次。
 
-5. 赞助达500元，您将额外同时获得 [DynamicTp](https://dynamictp.cn/) 所有文档页面的广告栏位（长达1年）。
-
-**[联系我们](/guide/other/contact)**
+**[联系我们](/guide/other/contact) 备注 dynamic-tp 赞助**
 
 ### 赞助人列表
 

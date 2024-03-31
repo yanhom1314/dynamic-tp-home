@@ -3,7 +3,7 @@ home: true
 icon: home
 title: 首页
 heroImage: /logo.png
-heroText: dynamic-tp
+heroText: dynamictp
 tagline: 🔥🔥🔥 基于配置中心的轻量级动态可监控线程池
 actions:
     - text: 快速上手 🎉
@@ -43,7 +43,7 @@ features:
 <SiteInfo
     name="引迈信息"
     desc="JNPF低代码开发平台，技术双引擎系统，无限制业务场景，永久使用权，全源码交付"
-    url="https://www.jnpfsoft.com/"
+    url="https://www.jnpfsoft.com?from=dynamictp"
     logo="/images/sponsor/jnpfsoft-logo.png"
     preview="/images/sponsor/jnpfsoft-site.png"
     style="max-width:300px"
@@ -52,7 +52,7 @@ features:
 <br/>
 
 <div align="center" class="sponsor">
-  <a class="become-sponsor" href="/guide/other/supportme">成为赞助者</a>
+  <a class="become-sponsor" href="/guide/other/supportme.html#成为赞助商">成为赞助者</a>
 </div>
 
 <style>

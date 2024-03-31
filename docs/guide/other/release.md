@@ -12,6 +12,52 @@ star: true
 ---
 
 ::: tip
+## v1.1.7 发版记录
+
+#### Feature
+
+- 线程池配置增加 tryInterrupt 字段，控制任务执行超时后是否需要中断当前线程，@yanhom
+
+- 新增 PriorityDtpExecutor，适用于可以指定任务的处理优先级场景，@KamToHung
+
+- 指标数据采集器新增 jmx 方式，@KamToHung
+
+- 线程池配置新增 env 字段，控制告警信息里的环境取值，@少鹏
+
+- 告警平台配置增加 webhook 字段，降低配置复杂度，@kyao，@KamToHung
+
+#### Bugfix
+
+- 修复上下文刷新后，DtpMonitor 重复创建调度任务的问题，@trevzhang
+
+- 修复 OpenTelemetryWrapper 没有将 traceId 传入 DynamicTp 框架的问题，@少鹏
+
+- 修复告警时，tid 错乱问题，@yanhom
+
+- 修复 dubbo 2.7.5 以下版本动态线程池不生效的问题，@piemon-nyah
+
+- 修复异常拒绝任务时跳过 afterReject 执行的问题，@SimpleIto
+
+- 修复飞书告警，机器人签名不为空时报错的问题，@guozi
+
+#### Optimize
+
+- 优化 spring-configuration-metadata，配置提示完整化，@KamToHung
+
+- 支持 apache dubbo 最新版本，@KamToHung
+
+- 完善 example
+
+- 部分代码优化重构
+
+#### Refactor
+
+- 将通知告警基础包从 core 模块移动到 common 模块
+
+- 将 plugin 插件包从 core 模块移动到 common 模块
+:::
+
+::: tip
 ## v1.1.6.1 发版记录
 
 #### Feature

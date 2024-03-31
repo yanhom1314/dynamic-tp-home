@@ -31,5 +31,4 @@ star: true
 
 ```java
 System.setProperty(DTP_EXECUTE_ENHANCED, FALSE_STR);
-
 ```
