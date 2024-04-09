@@ -44,12 +44,6 @@ export default sidebar([
         link: "/guide/use/env"
       },
       {
-        text: "线程池模式",
-        icon: "select",
-        collapsable: false,
-        link: "/guide/use/mode"
-      },
-      {
         text: "代码使用",
         icon: "code",
         collapsable: false,
