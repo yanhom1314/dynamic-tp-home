@@ -181,9 +181,6 @@ SpringBoot3x、Spring6 以上用此依赖
             <a href="https://gitee.com/dromara/northstar" target="_blank">
                 <img src="/images/northstar_logo.png" msg="Northstar盈富量化交易平台">
             </a>
-            <a href="https://hertzbeat.com/" target="_blank">
-                <img src="/images/hertzbeat-logo.png" msg="易用友好的云监控系统">
-            </a>
             <a href="https://dromara.gitee.io/fast-request/" target="_blank">
                 <img src="/images/fast-request.png" msg="Idea 版 Postman，为简化调试API而生">
             </a>

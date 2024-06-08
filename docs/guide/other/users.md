@@ -33,6 +33,7 @@ star: true
 - [西安朝前智能科技有限公司](https://swifthealth.cn/)
 - [广州乐摇摇](https://www.leyaoyao.com/)
 - [上海惟秀科技有限公司](https://dynamictp.cn)
+- [携程](https://www.ctrip.com/)
 :::
 
 ### 登记
