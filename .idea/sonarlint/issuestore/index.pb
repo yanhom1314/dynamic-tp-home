@@ -138,9 +138,5 @@ d
 4node_modules/vuepress-theme-hope/lib/node/index.d.ts,7/4/74e7c443a9f8f836002e11cfd21aee4b8b724029
 ]
 -node_modules/@vuepress/client/dist/index.d.ts,a/6/a66717ae5a71e4b799d3df8b1d0625bc891ab010
-e
-5node_modules/@vue/runtime-core/dist/runtime-core.d.ts,4/5/4545a9b6bf10ea4b316af5f23a49db0a60ba55eb
-a
-1node_modules/@vue/reactivity/dist/reactivity.d.ts,6/9/697cbd55c92c1c3becc9f1f682e6766a794106ed
 F
 docs/guide/use/mode.md,b/e/be1b4171e14736ca5536205d28809f28a0b5020f

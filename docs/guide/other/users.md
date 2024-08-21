@@ -34,6 +34,7 @@ star: true
 - [广州乐摇摇](https://www.leyaoyao.com/)
 - [上海惟秀科技有限公司](https://dynamictp.cn)
 - [携程](https://www.ctrip.com/)
+- [衢州东鱼物联网技术有限公司](https://dynamictp.cn)
 :::
 
 ### 登记
