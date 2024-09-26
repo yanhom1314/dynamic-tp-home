@@ -23,7 +23,7 @@ SpringBoot1x、2x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-     <version>1.1.7</version>
+     <version>1.1.9</version>
  </dependency>
  ```
 SpringBoot3x 用此依赖
@@ -32,7 +32,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-     <version>1.1.7-3.x</version>
+     <version>1.1.9-3.x</version>
  </dependency>
  ```
 

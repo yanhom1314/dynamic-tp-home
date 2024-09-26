@@ -56,10 +56,16 @@ export default sidebar([
         link: "/guide/use/code"
       },
       {
-        text: "注意事项",
+        text: "agent 场景下使用",
         icon: "info",
         collapsable: false,
-        link: "/guide/use/attention"
+        link: "/guide/use/agent"
+      },
+      {
+        text: "全局配置",
+        icon: "info",
+        collapsable: false,
+        link: "/guide/use/global"
       },
       {
         text: "任务包装器",
@@ -306,6 +312,12 @@ export default sidebar([
         icon: "app",
         collapsable: false,
         link: "/guide/middleware/rabbitmq"
+      },
+      {
+        text: "liteflow 线程池管理",
+        icon: "app",
+        collapsable: false,
+        link: "/guide/middleware/liteflow"
       }
     ],
   },

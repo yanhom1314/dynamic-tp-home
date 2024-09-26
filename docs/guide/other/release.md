@@ -12,6 +12,191 @@ star: true
 ---
 
 ::: tip
+## v1.1.9 发版记录
+
+这里要问了，上个版本是 1.1.7，怎么跳过 1.1.8 直接到 1.1.9 了？
+
+原因是 1.1.8 引入了一个低级的 npe bug，在没有配置 executors 时会导致服务启动失败，测试过程中没发现，所以 1.1.8 这个版本就废掉了。
+
+后续也将会完善提高 DynamicTp 单测覆盖率。
+
+**以下是具体发版详情：**
+
+#### Feature
+
+- 新增 AgentAware，解决在有其他 agent 增强 Runnable 情况下尝试去拿 DtpRunnable，进行 tps、tpxx、运行超时等统计功能，1.1.7 及之前版本为了防止内存泄露会关闭这些功能。
+
+```xml
+https://gitee.com/dromara/dynamic-tp/issues/IAPNE8
+```
+
+```xml
+<dependency>
+    <groupId>org.dromara.dynamictp</groupId>
+    <artifactId>dynamic-tp-extension-agent</artifactId>
+    <version>1.1.9</version>
+</dependency>
+```
+
+- 新增全局配置功能，减少配置量，项目中可能会定义多个线程池，除了一些核心参数外，其他配置可能都是相同的，新增 globalExecutorProps 配置项，如果线程池某一配置项没配置，则从全局配置中取。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/443
+```
+
+```yml
+spring:
+  dynamic:
+    tp:
+      globalExecutorProps:
+        queueType: VariableLinkedBlockingQueue
+        rejectedHandlerType: CallerRunsPolicy
+        allowCoreThreadTimeOut: false
+        awaitTerminationSeconds: 5
+        taskWrapperNames: ["ttl", "mdc"]
+      executors:
+        - threadPoolName: dtpExecutor1
+          executorType: eager
+          corePoolSize: 10
+          maximumPoolSize: 20
+          queueCapacity: 2000
+          threadNamePrefix: test
+        - threadPoolName: dtpExecutor2
+          corePoolSize: 20
+          maximumPoolSize: 40
+          queueCapacity: 1000
+          threadNamePrefix: test2
+```
+
+- 线程池配置新增 autoCreate 字段，标识是否自动生成 DtpExecutor 实例，默认为 true；若想使用 juc 原生线程池或 spring 线程池可置为 false，需在代码中手动创建线程池。1.1.9 之前版本中，配置在 executors 下的所有线程池在服务启动时会自动生成 DtpExecutor 注册到 spring 容器中，如果项目中大量使用了 Spring ThreadPoolTaskExecutor 接线程池对象，若配置的线程池名称相同，此时会报类型转换异常。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/472
+```
+
+```yml
+spring:
+  dynamic:
+    tp:
+      globalExecutorProps:
+        taskWrapperNames: ["ttl", "mdc"]
+      executors:
+        - threadPoolName: springTaskExecutor
+          autoCreate: false
+          corePoolSize: 10
+          maximumPoolSize: 20
+          queueCapacity: 2000
+          threadNamePrefix: test
+        - threadPoolName: dtpExecutor2
+          corePoolSize: 20
+          maximumPoolSize: 40
+          queueCapacity: 1000
+          threadNamePrefix: test2
+```
+
+- 新增规则引擎框架 Liteflow 线程池适配模块
+
+```
+https://github.com/dromara/dynamic-tp/issues/474
+```
+
+引入以下依赖即可
+
+```xml
+<dependency>
+    <groupId>org.dromara.dynamictp</groupId>
+    <artifactId>dynamic-tp-spring-boot-starter-adapter-liteflow</artifactId>
+    <version>1.1.9</version>
+</dependency>
+```
+
+```yml
+spring:
+  dynamic:
+    tp:
+      liteflowTp:
+        - threadPoolName: liteflowTp#LiteFlowDefaultWhenExecutorBuilder
+          corePoolSize: 10
+          maximumPoolSize: 20
+          keepAliveTime: 60
+```
+
+- ScheduledDtpExecutor 支持 TaskWrapper 任务包装。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/431
+```
+
+```yml
+spring:
+  dynamic:
+    tp:
+      executors:
+        - threadPoolName: dtpExecutor1
+          executorType: scheduled
+          corePoolSize: 10
+          threadNamePrefix: test
+          taskWrapperNames: ["ttl", "mdc"]
+```
+
+#### Bugfix
+
+- 修复 Spring ThreadPoolTaskExecutor 被框架管理后，ThreadPoolTaskExecutor 中定义的线程池装饰器失效问题。
+
+```xml
+https://gitee.com/dromara/dynamic-tp/issues/I9D31H
+```
+
+- 修复 RocketMQ 线程池适配模块，在低版本时 getAsyncSenderExecutor 报 NoSuchMethodError 错误问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/417
+```
+
+- 修复 TaskEnhanceAware 在多 Wrapper 包装后 taskName 丢失问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/420
+```
+
+- 修复 JMX 报错 InstanceAlreadyExistsException 问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/437
+```
+
+- 修复飞书报警填写了 username(非 openid 的情况), 发出的消息接受人为空问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/428
+```
+
+- 修复钉钉告警 @所有人 不生效问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/439
+```
+
+- 修复动态更新 taskWrappers 后导致 spring 线程池任务装饰器丢失问题。
+
+```shell
+https://github.com/dromara/dynamic-tp/issues/481
+```
+
+- 修复 dubbo adapter missing afterInitialize step。
+
+#### Optimize
+
+- 三方中间件线程池支持运行过程异常打印
+
+- Undertow 线程池支持任务包装器
+
+- juc 线程池、spring 线程池支持更多参数动态调整
+
+- 部分代码设计优化重构
+:::
+
+::: tip
 ## v1.1.7 发版记录
 
 #### Feature
