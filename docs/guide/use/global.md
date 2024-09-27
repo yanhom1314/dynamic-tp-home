@@ -1,6 +1,6 @@
 ---
 title: 全局配置
-icon: global
+icon: discover
 order: 1
 author: yanhom
 date: 2022-06-11
