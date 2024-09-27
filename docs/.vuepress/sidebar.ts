@@ -56,7 +56,7 @@ export default sidebar([
         link: "/guide/use/code"
       },
       {
-        text: "agent 场景下使用",
+        text: "agent 场景",
         icon: "info",
         collapsable: false,
         link: "/guide/use/agent"
