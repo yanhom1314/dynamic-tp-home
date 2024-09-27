@@ -63,7 +63,7 @@ export default sidebar([
       },
       {
         text: "全局配置",
-        icon: "info",
+        icon: "discover",
         collapsable: false,
         link: "/guide/use/global"
       },
@@ -315,7 +315,7 @@ export default sidebar([
       },
       {
         text: "liteflow 线程池管理",
-        icon: "app",
+        icon: "mesh",
         collapsable: false,
         link: "/guide/middleware/liteflow"
       }
