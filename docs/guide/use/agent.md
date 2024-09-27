@@ -1,6 +1,6 @@
 ---
 title: agent 场景下使用
-icon: solar:global-bold
+icon: info
 order: 1
 author: yanhom
 date: 2022-06-11
