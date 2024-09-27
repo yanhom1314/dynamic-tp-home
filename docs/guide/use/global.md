@@ -1,6 +1,6 @@
 ---
 title: 全局配置
-icon: info
+icon: global
 order: 1
 author: yanhom
 date: 2022-06-11
