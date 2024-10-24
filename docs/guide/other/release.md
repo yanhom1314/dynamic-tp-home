@@ -12,6 +12,26 @@ star: true
 ---
 
 ::: tip
+## v1.1.9.1 发版记录
+
+#### Bugfix
+
+- 修复定时任务只能运行 corePoolSize 次数的问题 #485
+
+- 修复 ScheduledDtpExecutor 增强 execute方法，导致功能 map 清理不掉，有内存溢出风险 #493
+
+- 修复 AgentAware 在处理有内部属性引用自身这类任务时的栈溢出问题。
+
+```xml
+https://gitee.com/dromara/dynamic-tp/issues/IAX904
+```
+
+#### Optimize
+
+- 告警 SPI、监控 SPI 内部使用时忽略大小写
+:::
+
+::: tip
 ## v1.1.9 发版记录
 
 这里要问了，上个版本是 1.1.7，怎么跳过 1.1.8 直接到 1.1.9 了？
@@ -34,7 +54,7 @@ https://gitee.com/dromara/dynamic-tp/issues/IAPNE8
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-extension-agent</artifactId>
-    <version>1.1.9</version>
+    <version>1.1.9.1</version>
 </dependency>
 ```
 
@@ -106,7 +126,7 @@ https://github.com/dromara/dynamic-tp/issues/474
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-spring-boot-starter-adapter-liteflow</artifactId>
-    <version>1.1.9</version>
+    <version>1.1.9.1</version>
 </dependency>
 ```
 

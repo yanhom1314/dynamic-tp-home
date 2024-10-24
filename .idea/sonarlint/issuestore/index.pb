@@ -128,8 +128,6 @@ X
 (docs/.vuepress/components/NormalPage.vue,7/d/7d78902b868cc52b92ae164ea6623f9e4bc12bea
 Q
 !docs/guide/configcenter/custom.md,d/1/d19f1388ea96e65d1e0ab9ae2861fa8704e3f090
-K
-docs/guide/use/attention.md,3/4/347962796be9ae61a2e4df7e79509ab56390601c
 Q
 !docs/.vuepress/layouts/layout.vue,9/8/98507a71cb9921cafc0a9e0d654b997416ea6d49
 Q
