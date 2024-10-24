@@ -56,14 +56,14 @@ export default sidebar([
         link: "/guide/use/code"
       },
       {
-        text: "agent 场景下使用",
+        text: "agent 场景",
         icon: "info",
         collapsable: false,
         link: "/guide/use/agent"
       },
       {
         text: "全局配置",
-        icon: "info",
+        icon: "discover",
         collapsable: false,
         link: "/guide/use/global"
       },
@@ -315,7 +315,7 @@ export default sidebar([
       },
       {
         text: "liteflow 线程池管理",
-        icon: "app",
+        icon: "mesh",
         collapsable: false,
         link: "/guide/middleware/liteflow"
       }
