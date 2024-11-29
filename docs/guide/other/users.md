@@ -36,6 +36,7 @@ star: true
 - [携程](https://www.ctrip.com/)
 - [衢州东鱼物联网技术有限公司](https://dynamictp.cn)
 - [深圳点猫科技有限公司](https://www.codemao.cn/)
+- [东方福利网](https://www.dongfangfuli.com/)
 :::
 
 ### 登记
