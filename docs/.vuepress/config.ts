@@ -4,7 +4,7 @@ import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
-const vuepressDir = getDirname(import.meta.url);
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -43,15 +43,15 @@ export default defineUserConfig({
 
   alias: {
     "@theme-hope/layouts/Layout": path.resolve(
-        vuepressDir,
+        __dirname,
         "./layouts/Layout.vue",
     ),
     "@theme-hope/components/HomePage": path.resolve(
-        vuepressDir,
+        __dirname,
         "./components/HomePage.vue"
     ),
     "@theme-hope/components/NormalPage": path.resolve(
-        vuepressDir,
+        __dirname,
         "./components/NormalPage.vue"
     ),
   },
