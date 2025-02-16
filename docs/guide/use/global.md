@@ -19,58 +19,56 @@ star: true
 优先级：线程池配置 > 全局配置 > 字段默认值
 
 ```yml
-spring:
-  dynamic:
-    tp:
-      globalExecutorProps:
-        rejectedHandlerType: CallerRunsPolicy
-        queueType: VariableLinkedBlockingQueue
-        waitForTasksToCompleteOnShutdown: true        
-        awaitTerminationSeconds: 3   
-        queueTimeout: 100    
-        taskWrapperNames: ["ttl", "mdc", "swTrace"]
-        notifyItems:                   
-          - type: capacity              
-            threshold: 80             
-            interval: 300         
-          - type: liveness
-            threshold: 80
-            interval: 300
-          - type: change
-            interval: 2
-            clusterLimit: 1 
-          - type: reject
-            threshold: 1
-            interval: 300
-          - type: run_timeout
-            threshold: 300
-            interval: 300
-          - type: queue_timeout
-            threshold: 10
-            interval: 300  
+dynamictp:
+  globalExecutorProps:
+    rejectedHandlerType: CallerRunsPolicy
+    queueType: VariableLinkedBlockingQueue
+    waitForTasksToCompleteOnShutdown: true        
+    awaitTerminationSeconds: 3   
+    queueTimeout: 100    
+    taskWrapperNames: ["ttl", "mdc", "swTrace"]
+    notifyItems:                   
+      - type: capacity              
+        threshold: 80             
+        interval: 300         
+      - type: liveness
+        threshold: 80
+        interval: 300
+      - type: change
+        interval: 2
+        clusterLimit: 1 
+      - type: reject
+        threshold: 1
+        interval: 300
+      - type: run_timeout
+        threshold: 300
+        interval: 300
+      - type: queue_timeout
+        threshold: 10
+        interval: 300  
 
-      undertowTp:                               
-        corePoolSize: 100
-        maximumPoolSize: 200
-        keepAliveTime: 60
- 
-      executors:
-        - threadPoolName: dtpExecutor1
-          executorType: eager
-          corePoolSize: 10
-          maximumPoolSize: 20
-          queueCapacity: 2000
-          threadNamePrefix: test
-          
-        - threadPoolName: dtpExecutor2
-          corePoolSize: 20
-          maximumPoolSize: 40
-          queueCapacity: 1000
-          threadNamePrefix: test2
+  undertowTp:                               
+    corePoolSize: 100
+    maximumPoolSize: 200
+    keepAliveTime: 60
 
-        - threadPoolName: springTaskExecutor
-          autoCreate: false
-          corePoolSize: 20
-          maximumPoolSize: 40
-          queueCapacity: 1000
+  executors:
+    - threadPoolName: dtpExecutor1
+      executorType: eager
+      corePoolSize: 10
+      maximumPoolSize: 20
+      queueCapacity: 2000
+      threadNamePrefix: test
+      
+    - threadPoolName: dtpExecutor2
+      corePoolSize: 20
+      maximumPoolSize: 40
+      queueCapacity: 1000
+      threadNamePrefix: test2
+
+    - threadPoolName: springTaskExecutor
+      autoCreate: false
+      corePoolSize: 20
+      maximumPoolSize: 40
+      queueCapacity: 1000
 ```

@@ -154,14 +154,12 @@ resources/META-INF/services 下配置 java spi 实现
 4. 配置文件
 
 ```yaml
-spring:
-  dynamic:
-    tp:
-      platforms:                                    # 通知报警平台配置
-        - platform: sms                             # 平台名称
-          platformId: sms1
-          secret: 3a7500-1287-4bd-a798-c5c3d8b69c   # 短信平台密钥
-          receivers: 188888888,1666666666           # 短信接收人       
+dynamictp:
+  platforms:                                    # 通知报警平台配置
+    - platform: sms                             # 平台名称
+      platformId: sms1
+      secret: 3a7500-1287-4bd-a798-c5c3d8b69c   # 短信平台密钥
+      receivers: 188888888,1666666666           # 短信接收人       
 ```
 
 

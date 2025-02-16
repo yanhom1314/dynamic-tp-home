@@ -26,7 +26,7 @@ SpringBoot1x、2x 用此依赖
   <dependency>
       <groupId>org.dromara.dynamictp</groupId>
       <artifactId>dynamic-tp-extension-agent</artifactId>
-      <version>1.1.9.1</version>
+      <version>1.2.0</version>
   </dependency>
  ```
 
@@ -36,7 +36,7 @@ SpringBoot3x 用此依赖
   <dependency>
       <groupId>org.dromara.dynamictp</groupId>
       <artifactId>dynamic-tp-extension-agent</artifactId>
-      <version>1.1.9.1-3.x</version>
+      <version>1.2.0-x</version>
   </dependency>
  ```
 

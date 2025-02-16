@@ -12,6 +12,76 @@ star: true
 ---
 
 ::: tip
+## v1.2.0 发版记录
+
+v1.1.9 及之前版本核心模块强依赖 Spring，代码中用到了不少 Spring 的特性，这样不利于其他非 Spring 项目的接入集成。
+
+v1.2.0 是一个大版本，主要功能是对 Spring 做了解耦，Spring 相关特性以独立 Module 的形式提供，其他非 Spring 框架集成 DynamicTp 时通过引入核心模块即可。
+
+#### Feature
+
+- 核心模块中移除对 Spring 的依赖，方便在其他非 Spring 项目中使用。
+
+```xml
+https://github.com/dromara/dynamic-tp/issues/527
+```
+
+#### Bugfix
+
+- 兼容当 Dubbo 版本在 3.0.9 到 3.1.8 之间时，需要替换的执行器命名为 INTERNAL_SERVICE_EXECUTOR，而不是 ExecutorService.class.getName()。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/495
+```
+
+- 修复 Redis 限流器在 Redis Cluster 模式下报错问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/502
+```
+
+- 修复执行 scheduledFuture cancel 报错问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/516
+```
+
+- 修复 adapter-grpc 模块，grpc client channel executor 被关闭，调用报线程池关闭的错误。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/520
+```
+
+- 兼容高版本 okhttp3 Dispatcher 中线程池字段为 executorServiceOrNull 的情况。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/525
+```
+
+#### Optimize
+
+- 优化线程池配置文件提示功能。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/498
+```
+
+- etcd kvClient get 添加超时时间控制。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/518
+```
+
+- zookeeper-starter 客户端初始化支持 zk 认证。
+
+```xml
+https://gitee.com/dromara/dynamic-tp/pulls/61
+```
+
+- 部分代码设计优化重构
+:::
+
+::: tip
 ## v1.1.9.1 发版记录
 
 #### Bugfix
@@ -54,7 +124,7 @@ https://gitee.com/dromara/dynamic-tp/issues/IAPNE8
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-extension-agent</artifactId>
-    <version>1.1.9.1</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
@@ -65,9 +135,7 @@ https://github.com/dromara/dynamic-tp/issues/443
 ```
 
 ```yml
-spring:
-  dynamic:
-    tp:
+dynamictp:
       globalExecutorProps:
         queueType: VariableLinkedBlockingQueue
         rejectedHandlerType: CallerRunsPolicy
@@ -95,9 +163,7 @@ https://github.com/dromara/dynamic-tp/issues/472
 ```
 
 ```yml
-spring:
-  dynamic:
-    tp:
+dynamictp:
       globalExecutorProps:
         taskWrapperNames: ["ttl", "mdc"]
       executors:
@@ -126,14 +192,12 @@ https://github.com/dromara/dynamic-tp/issues/474
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-spring-boot-starter-adapter-liteflow</artifactId>
-    <version>1.1.9.1</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
 ```yml
-spring:
-  dynamic:
-    tp:
+dynamictp:
       liteflowTp:
         - threadPoolName: liteflowTp#LiteFlowDefaultWhenExecutorBuilder
           corePoolSize: 10
@@ -148,9 +212,7 @@ https://github.com/dromara/dynamic-tp/issues/431
 ```
 
 ```yml
-spring:
-  dynamic:
-    tp:
+dynamictp:
       executors:
         - threadPoolName: dtpExecutor1
           executorType: scheduled

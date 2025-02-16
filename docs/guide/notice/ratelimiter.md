@@ -23,7 +23,7 @@ SpringBoot1x、2x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-     <version>1.1.9.1</version>
+     <version>1.2.0</version>
  </dependency>
  ```
 SpringBoot3x 用此依赖
@@ -32,25 +32,23 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-extension-limiter-redis</artifactId>
-     <version>1.1.9.1-3.x</version>
+     <version>1.2.0-x</version>
  </dependency>
  ```
 
 3. 通知项配置 clusterLimit 字段
 
 ```yaml
-spring:
-  dynamic:
-    tp:
-      executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
-        - threadPoolName: dtpExecutor1
-          taskWrapperNames: ["ttl", "mdc", "swTrace"]    # 任务包装器名称，继承TaskWrapper接口
-          notifyItems:                                   # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警）
-            - type: capacity                             # 报警项类型，查看源码 NotifyTypeEnum枚举类
-              enabled: true
-              threshold: 80                              # 报警阈值
-              interval: 120                              # 报警间隔（单位：s）
-              clusterLimit: 1                            # 一个报警窗口内，只允许该配置数量的机器进行推送通知，默认为1
+dynamictp:
+  executors:                                         # 动态线程池配置，省略其他项，具体看上述配置文件
+    - threadPoolName: dtpExecutor1
+      taskWrapperNames: ["ttl", "mdc", "swTrace"]    # 任务包装器名称，继承TaskWrapper接口
+      notifyItems:                                   # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警）
+        - type: capacity                             # 报警项类型，查看源码 NotifyTypeEnum枚举类
+          enabled: true
+          threshold: 80                              # 报警阈值
+          interval: 120                              # 报警间隔（单位：s）
+          clusterLimit: 1                            # 一个报警窗口内，只允许该配置数量的机器进行推送通知，默认为1
 ```
 
 4. 此功能实现使用了责任链设计模式，如果项目中没有引入 redis，也可以自定义限流器，实现 NotifyFilter 接口即可，具体参考 NotifyRedisRateLimiterFilter 的实现

@@ -63,9 +63,7 @@ resources/META-INF/services 下配置 java spi 实现
 3. 配置文件
 
 ```yaml
-spring:
-  dynamic:
-    tp:
+dynamictp:
       enabledCollect: true              # 是否开启监控指标采集，默认false
       collectorTypes: micrometer,es     # 监控数据采集器类型（logging | micrometer | internal_logging | JMX），默认micrometer
       monitorInterval: 5                # 监控时间间隔（报警判断、指标采集），默认5s     
