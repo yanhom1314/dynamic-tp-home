@@ -7,4 +7,3 @@ cd docs/.vuepress/dist
 git init
 git add .
 git commit -m 'deploy'
-git push -f git@gitee.com:dromara/dynamic-tp.git master:gh-pages
