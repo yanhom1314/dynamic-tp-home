@@ -98,7 +98,7 @@ features:
 
 # 最新版本
 
-SpringBoot1x、2x、Spring6 以下用此依赖
+SpringBoot1x、2x、Spring6x 以下用此依赖
 
 ```xml
 <dependency>
@@ -110,7 +110,7 @@ SpringBoot1x、2x、Spring6 以下用此依赖
 </dependency>
 ```
 
-SpringBoot3x、Spring6 以上用此依赖
+SpringBoot3x、Spring6x 及以上用此依赖
 
 ```xml
 <dependency>

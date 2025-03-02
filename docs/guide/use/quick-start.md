@@ -55,7 +55,7 @@ star: true
 
 ::: warning
 
-1. 若项目中用到了其他 agent 工具，比如 skywalking、ttl 等，他们也会对线程做拦截增强，跟满血 dtp 会有冲突，可能会造成 OOM，需要引入该依赖 [agent 模式下依赖](/guide/use/agent.htmll#使用场景)
+1. 若项目中用到了其他 agent 工具，比如 skywalking、ttl 等，他们也会对线程做拦截增强，跟满血 dtp 会有冲突，可能会造成 OOM，需要引入该依赖 [agent 模式下依赖](/guide/use/agent.html#使用场景)
 
 2. 普通 JUC 线程池或者 Spring 线程池想要被框架管理，可以 @Bean 定义时加 @DynamicTp 注解，同时配置文件中添加配置项 autoCreate: false
 

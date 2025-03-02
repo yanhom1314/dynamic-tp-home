@@ -56,12 +56,6 @@ export default sidebar([
         link: "/guide/use/code"
       },
       {
-        text: "agent 场景",
-        icon: "info",
-        collapsable: false,
-        link: "/guide/use/agent"
-      },
-      {
         text: "全局配置",
         icon: "discover",
         collapsable: false,
@@ -72,6 +66,18 @@ export default sidebar([
         icon: "wrap",
         collapsable: false,
         link: "/guide/use/wrapper"
+      },
+      {
+        text: "agent 场景",
+        icon: "info",
+        collapsable: false,
+        link: "/guide/use/agent"
+      },
+      {
+        text: "拒绝策略",
+        icon: "linter",
+        collapsable: false,
+        link: "/guide/use/reject"
       }
     ],
   },

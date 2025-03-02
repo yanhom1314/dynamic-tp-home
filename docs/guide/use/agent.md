@@ -19,7 +19,7 @@ star: true
 比如 skywalking 9.0 线程池插件会对提交的任务做增强，导致 dynamictp 在线程池生命周期中先后拿到的不是同一个对象，会导致
 一些功能 Map 清理不掉，使用时需注意。
 
-当有使用 skywalking 线程池插件、ttl agent 等时，引入以下依赖可解决这个问题
+当有使用 skywalking 线程池插件、ttl agent 等时，引入以下依赖可解决这个问题。
 
 SpringBoot1x、2x、Spring5x 用此依赖
 
