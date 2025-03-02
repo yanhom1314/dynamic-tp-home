@@ -34,7 +34,7 @@ star: true
 
 2. SwTraceTaskWrapper 是 extension 模块提供的扩展，需要引入依赖
 
-SpringBoot1x、2x 用此依赖
+SpringBoot1x、2x、Spring5x 用此依赖
 
 ```xml
   <dependency>
@@ -44,7 +44,7 @@ SpringBoot1x、2x 用此依赖
   </dependency>
  ```
 
-SpringBoot3x 用此依赖
+SpringBoot3x、Spring6x 用此依赖
 
 ```xml
  <dependency>
@@ -56,7 +56,7 @@ SpringBoot3x 用此依赖
 
 3. OpenTelemetryWrapper 是 extension 模块提供的扩展，需要引入依赖
 
-SpringBoot1x、2x 用此依赖
+SpringBoot1x、2x、Spring5x 用此依赖
 
 ```xml
   <dependency>
@@ -65,7 +65,7 @@ SpringBoot1x、2x 用此依赖
       <version>1.2.0</version>
   </dependency>
  ```
-SpringBoot3x 用此依赖
+SpringBoot3x、Spring6x 用此依赖
 
 ```xml
  <dependency>

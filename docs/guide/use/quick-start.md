@@ -22,7 +22,7 @@ star: true
 >
 > 4. 使用 @Resource or @Autowired or 构造函数进行依赖注入，或通过 DtpRegistry.getExecutor("name") 获取
 >
-> 5. 通过以上 4 步就可以接入使用了，是不是感觉超级简单呀
+> 5. 通过以上 4 步就可以接入使用了，是不是感觉超级简单呀，[注意事项需查看](/guide/use/quick-start.html#注意事项)
 
 
 ### 日志输出
@@ -40,8 +40,10 @@ star: true
          __/ |                              | |    
         |___/                               |_|   
   :: Dynamic Thread Pool :: 
-  :: 1.1.7 :: 
+  :: 1.2.0 :: 
   :: https://dynamictp.cn ::
+  :: https://github.com/dromara/dynamic-tp ::
+  :: https://gitee.com/dromara/dynamic-tp ::
 
   DynamicTp register executor: TpMainFields(threadPoolName=dtpExecutor1, corePoolSize=2, maxPoolSize=10, keepAliveTime=50, queueType=TaskQueue, queueCapacity=200, rejectType=CallerRunsPolicy, allowCoreThreadTimeOut=false), source: beanPostProcessor
 
@@ -53,11 +55,13 @@ star: true
 
 ::: warning
 
-1. 普通 JUC 线程池或者 Spring 线程池想要被框架管理，可以 @Bean 定义时加 @DynamicTp 注解
+1. 若项目中用到了其他 agent 工具，比如 skywalking、ttl 等，他们也会对线程做拦截增强，跟满血 dtp 会有冲突，可能会造成 OOM，需要引入该依赖 [agent 模式下依赖](/guide/use/agent.htmll#使用场景)
 
-2. 动态线程池实例服务启动时会根据配置中心的配置动态注册到 Spring 容器中，建议不要用 @Bean 编程式重复声明同一线程池实例，直接配置在配置中心就行
+2. 普通 JUC 线程池或者 Spring 线程池想要被框架管理，可以 @Bean 定义时加 @DynamicTp 注解，同时配置文件中添加配置项 autoCreate: false
 
-3. 阻塞队列只有 VariableLinkedBlockingQueue 及其子类可以修改 capacity，该类型功能和 LinkedBlockingQueue 相似， 只是 capacity 不是
+3. 动态线程池实例服务启动时会根据配置中心的配置动态注册到 Spring 容器中，建议不要用 @Bean 编程式重复声明同一线程池实例，直接配置在配置中心就行
+
+4. 阻塞队列只有 VariableLinkedBlockingQueue 及其子类可以修改 capacity，该类型功能和 LinkedBlockingQueue 相似， 只是 capacity 不是
 final 类型，可以修改，VariableLinkedBlockingQueue 参考 RabbitMq 的实现
 :::
 

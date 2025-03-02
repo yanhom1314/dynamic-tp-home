@@ -250,8 +250,6 @@ docker 方式安装请参考这篇文章：https://www.apolloconfig.com/#/zh/dep
 
 :::
 
-
-
 ### 接入 Apollo 配置流程
 
 1. 本地或 docker 安装 apollo 之后访问 `localhost:8070`

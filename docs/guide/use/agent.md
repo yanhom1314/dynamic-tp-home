@@ -14,13 +14,14 @@ star: true
 
 ### 使用场景
 
-当 dynamictp 跟一些 javaagent 组件一起使用时，如果这些 agent 会对线程池做增强，可能会导致内存泄露问题，
+当 dynamictp 跟一些 javaagent 组件一起使用时，如果这些 agent 会对线程池做增强，可能会导致内存泄露问题。
+
 比如 skywalking 9.0 线程池插件会对提交的任务做增强，导致 dynamictp 在线程池生命周期中先后拿到的不是同一个对象，会导致
 一些功能 Map 清理不掉，使用时需注意。
 
-当有使用 skywalking 线程池插件时，引入以下依赖可解决这个问题
+当有使用 skywalking 线程池插件、ttl agent 等时，引入以下依赖可解决这个问题
 
-SpringBoot1x、2x 用此依赖
+SpringBoot1x、2x、Spring5x 用此依赖
 
 ```xml
   <dependency>
@@ -30,7 +31,7 @@ SpringBoot1x、2x 用此依赖
   </dependency>
  ```
 
-SpringBoot3x 用此依赖
+SpringBoot3x、Spring6x 用此依赖
 
 ```xml
   <dependency>

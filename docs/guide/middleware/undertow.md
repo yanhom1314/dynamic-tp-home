@@ -88,5 +88,6 @@ DynamicTp adapter [undertowTp] refreshed end, corePoolSize: [10 => 100], maxPool
 
 1. 线程池名称：undertowTp
 2. undertow 线程池享有动态调参、监控、通知告警完整的功能
-3. undertow 内部使用 xnio 网络框架，类似 netty
+3. undertow 队列大小不能修改
+4. undertow 内部使用 xnio 网络框架，类似 netty
 :::

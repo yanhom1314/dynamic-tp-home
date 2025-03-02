@@ -14,17 +14,44 @@ star: true
 
 ### 环境说明
 
-目前 DynamicTp 有不少特性是基于 Spring 做的，所以强依赖 Spring 环境。
+DynamicTp 从 1.2.0 版本开始，核心模块解耦了 Spring，其他非 Spring 项目使用可以引入 core 自行二开。
 
-### Java 版本
+### jdk 版本
 
-支持 Java 8 到 Java 17 版本
+支持 jdk8 到 jdk21 版本
+
+使用 jdk9 及以上的版本，若遇反射相关异常，请先确保 jvm 启动参数加上以下参数
+
+```bash
+-add-opens java.base/sun.reflect.annotation=ALL-UNNAMED
+```
 
 ### Spring 版本
 
 支持 Spring 4.x、5.x、6.x 版本
 
+5.x 及以下版本用此依赖
+
+```xml
+        <dependency>
+            <groupId>org.dromara.dynamictp</groupId>
+            <artifactId>dynamic-tp-spring</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+```
+6.x 及以上版本用此依赖
+
+```xml
+        <dependency>
+            <groupId>org.dromara.dynamictp</groupId>
+            <artifactId>dynamic-tp-spring</artifactId>
+            <version>1.2.0-x</version>
+        </dependency>
+```
+
 ### SpringBoot 版本
 
-核心功能支持 SpringBoot 1.x、2.x、3.x 版本，部分功能 1.x 支持的不是很好
+良好支持 SpringBoot 2.x、3.x 版本。
+
+SpringBoot 1.x 支持的不是很好，可能有不兼容的地方，如有问题需自行排查。
 

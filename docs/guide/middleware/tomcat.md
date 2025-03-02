@@ -91,4 +91,5 @@ DynamicTp adapter [tomcatTp] refreshed end, corePoolSize: [10 => 100], maxPoolSi
 1. 线程池名称：tomcatTp
 2. tomcat 线程池享有动态调参、监控、通知告警完整的功能
 3. tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPoolExecutor
+4. tomcat 队列大小不能修改
 :::
