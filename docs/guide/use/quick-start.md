@@ -14,16 +14,18 @@ star: true
 
 ### 接入步骤
 
-> 1. 引入相应配置中心的依赖 [maven 依赖](/guide/configcenter/apollo.html#maven依赖)
->
-> 2. 配置中心配置线程池实例 [配置文件](/guide/configcenter/apollo.html#线程池配置文件)
->
-> 3. 启动类加 @EnableDynamicTp 注解
->
-> 4. 使用 @Resource or @Autowired or 构造函数进行依赖注入，或通过 DtpRegistry.getExecutor("name") 获取
->
-> 5. 通过以上 4 步就可以接入使用了，是不是感觉超级简单呀，[注意事项需查看](/guide/use/quick-start.html#注意事项)
+::: tip 接入步骤
 
+1. 引入相应配置中心的依赖 [maven 依赖](/guide/configcenter/apollo.html#maven依赖)
+
+2. 配置中心配置线程池实例 [配置文件](/guide/configcenter/apollo.html#线程池配置文件)
+
+3. 启动类加 @EnableDynamicTp 注解
+
+4. 使用 @Resource or @Autowired or 构造函数进行依赖注入，或通过 DtpRegistry.getExecutor("name") 获取
+
+5. 通过以上 4 步就可以接入使用了，是不是感觉超级简单呀，[注意事项需查看](/guide/use/quick-start.html#注意事项)
+:::
 
 ### 日志输出
 

@@ -19,7 +19,7 @@ export default hopeTheme({
 
   // navbar
   navbar: navbar,
-
+  fullscreen: true,
   // sidebar
   sidebar: sidebar,
   lastUpdated: true,

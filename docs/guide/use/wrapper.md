@@ -15,18 +15,20 @@ star: true
 
 框架默认提供了一些任务包装器，可以实现特定的功能
 
-> 1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc
->
-> 2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl
->
-> 3. SwTraceTaskWrapper 支持 Skywalking TID 传递，名称：swTrace
-> 
-> 4. OpenTelemetryWrapper，支持 OpenTelemetry 上下文传递，名称：OTel
->
-> 5. NamedRunnable 支持给任务添加名称
->
-> 6. 可以继承 TaskWrapper SPI 接口自定义任务包装器
+::: tip 任务包装器
 
+1. MdcTaskWrapper 支持 MDC 上下文传递，名称：mdc
+
+2. TtlTaskWrapper 支持 ThreadLocal 上下文传递，名称：ttl
+
+3. SwTraceTaskWrapper 支持 Skywalking TID 传递，名称：swTrace
+ 
+4. OpenTelemetryWrapper，支持 OpenTelemetry 上下文传递，名称：OTel
+
+5. NamedRunnable 支持给任务添加名称
+
+6. 可以继承 TaskWrapper SPI 接口自定义任务包装器
+:::
 
 ### 使用方式
 
