@@ -12,7 +12,7 @@ star: true
 
 ---
 
-### 使用场景
+### 注意事项
 
 当 dynamictp 跟一些 javaagent 组件一起使用时，如果这些 agent 会对线程池做增强，可能会导致内存泄露问题。
 
