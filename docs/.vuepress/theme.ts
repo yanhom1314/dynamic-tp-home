@@ -38,21 +38,21 @@ export default hopeTheme({
       showInMobile: true,
       duration: 1000
     },
-    docsearch: {
-      appId: "QS7KPCCCMF",
-      apiKey: "748c46e8a474fc153fcc545ff35ef12f",
-      indexName: "dynamictp",
-      locales: {
-        "/": {
-          placeholder: "搜索文档",
-          translations: {
-            button: {
-              buttonText: "搜索文档",
-            },
-          },
-        },
-      },
-    },
+    // docsearch: {
+    //   appId: "QS7KPCCCMF",
+    //   apiKey: "748c46e8a474fc153fcc545ff35ef12f",
+    //   indexName: "dynamictp",
+    //   locales: {
+    //     "/": {
+    //       placeholder: "搜索文档",
+    //       translations: {
+    //         button: {
+    //           buttonText: "搜索文档",
+    //         },
+    //       },
+    //     },
+    //   },
+    // },
     mdEnhance: {
       align: true,
       chart: true,

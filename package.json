@@ -27,7 +27,8 @@
     "vuepress-theme-hope": "2.0.0-rc.32"
   },
   "devDependencies": {
-    "prettier": "3.2.5"
+    "prettier": "3.2.5",
+    "vuepress-plugin-search-pro": "2.0.0-rc.32"
   },
   "pnpm": {
     "peerDependencyRules": {

@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import { getDirname, path } from "vuepress/utils";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -20,7 +21,16 @@ export default defineUserConfig({
     ["script", { src: "https://cdn.wwads.cn/js/makemoney.js", charset: "UTF-8" }],
     ['script', {src: '/adblocked.js'}],
   ],
-
+  plugins: [
+    searchProPlugin({
+      indexContent: true,
+      locales: {
+        "/": {
+          placeholder: "搜索文档"
+        },
+      },
+    }),
+  ],
   alias: {
     "@theme-hope/components/HomePage": path.resolve(
         __dirname,
