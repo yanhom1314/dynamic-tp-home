@@ -27,10 +27,8 @@ export default hopeTheme({
 
   docsDir: 'dtp-docs/docs',
   displayFooter: true,
-
+  darkmode: "auto",
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
-  // darkmode: "enable",
 
   plugins: {
     components: {
