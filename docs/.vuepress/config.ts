@@ -1,6 +1,7 @@
 import {defineUserConfig} from "vuepress";
 import { getDirname, path } from "vuepress/utils";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { slimsearchPlugin } from '@vuepress/plugin-slimsearch'
 import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
@@ -22,7 +23,7 @@ export default defineUserConfig({
     ['script', {src: '/adblocked.js'}],
   ],
   plugins: [
-    searchProPlugin({
+    slimsearchPlugin({
       indexContent: true,
       locales: {
         "/": {
