@@ -16,7 +16,6 @@ star: true
 目前框架提供了五种监控数据采集方式，通过 collectorTypes 属性配置监控指标采集类型，默认 Micrometer
 
 ::: tip 采集类型
-
 1. Logging：线程池指标数据会以 Json 格式输出到指定的日志文件里
 
 2. Internal_logging：线程池指标数据会以 Json 格式输出到项目日志文件里

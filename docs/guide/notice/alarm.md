@@ -19,7 +19,6 @@ star: true
 + 线程池活跃度告警
 
 ::: tip 线程池活跃度告警
-
 1. 活跃度 = (activeCount / maximumPoolSize) * 100
 
 2. 比如 threshold 阈值配置 80，表示活跃度达到 80% 时触发告警
@@ -32,7 +31,6 @@ star: true
 + 队列容量告警
 
 ::: tip 队列容量告警
-
 1. 容量使用率 = (queueSize / queueCapacity) * 100
 
 2. 比如 threshold 阈值配置 80，表示队列容量使用率达到 80% 时触发告警
@@ -45,7 +43,6 @@ star: true
 + 拒绝策略告警
 
 ::: tip 拒绝策略告警
-
 1. 线程池线程数达到配置的最大线程数，且任务队列已满，再提交任务会触发拒绝策略
  
 2. DtpExecutor 线程池用到的 RejectedExecutionHandler 是经过动态代理包装过的，
@@ -71,7 +68,6 @@ star: true
 + 任务执行超时告警
 
 ::: tip 任务执行超时告警
-
 1. 重写 ThreadPoolExecutor 的 beforeExecute() 和 afterExecute() 方法，采用时间轮处理任务执行超时逻辑
 
 2. beforeExecute() 阶段根据 runTimeout 开启一个处理执行超时的 TimerTask，超时后执行 TimerTask 的 run 方法，
