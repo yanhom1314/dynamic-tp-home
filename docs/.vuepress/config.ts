@@ -17,8 +17,7 @@ export default defineUserConfig({
   head: [
     ['meta', { name: 'keywords', content: 'DynamicTp，dynamic-tp，动态线程池，' +
           'ThreadPoolExecutor，美团线程池，线程池，Dynamic ThreadPool，线程池监控，' +
-          'Dubbo线程池，RocketMq线程池，线程池调优，线程池告警，线程池参数设置'}],
-    ['script', {src: '/baidu.js', async: 'async'}],
+          'Dubbo线程池，RocketMq线程池，线程池调优，线程池告警，线程池参数设置，线程池监控'}],
     ["script", { src: "https://cdn.wwads.cn/js/makemoney.js", charset: "UTF-8" }],
     ['script', {src: '/adblocked.js'}],
   ],
