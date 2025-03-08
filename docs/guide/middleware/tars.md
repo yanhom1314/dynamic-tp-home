@@ -89,4 +89,5 @@ DynamicTp tars adapter, [test] refreshed end, changed keys: [corePoolSize, maxPo
 ::: tip
 
 1. tars 线程池享有动态调参、监控、通知告警完整的功能
+2. 队列大小不能调整
 :::

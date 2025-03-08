@@ -33,25 +33,25 @@ DynamicTp 从 1.2.0 版本开始，核心模块解耦了 Spring，其他非 Spri
 5.x 及以下版本用此依赖
 
 ```xml
-        <dependency>
-            <groupId>org.dromara.dynamictp</groupId>
-            <artifactId>dynamic-tp-spring</artifactId>
-            <version>1.2.0</version>
-        </dependency>
+<dependency>
+    <groupId>org.dromara.dynamictp</groupId>
+    <artifactId>dynamic-tp-spring</artifactId>
+    <version>1.2.0</version>
+</dependency>
 ```
 6.x 及以上版本用此依赖
 
 ```xml
-        <dependency>
-            <groupId>org.dromara.dynamictp</groupId>
-            <artifactId>dynamic-tp-spring</artifactId>
-            <version>1.2.0-x</version>
-        </dependency>
+<dependency>
+    <groupId>org.dromara.dynamictp</groupId>
+    <artifactId>dynamic-tp-spring</artifactId>
+    <version>1.2.0-x</version>
+</dependency>
 ```
 
 ### SpringBoot 版本
 
-良好支持 SpringBoot 2.x、3.x 版本。
+良好支持 SpringBoot 2.x、3.x 版本，建议使用这两版本。
 
 SpringBoot 1.x 支持的不是很好，可能有不兼容的地方，如有问题需自行排查。
 

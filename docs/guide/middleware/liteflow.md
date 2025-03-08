@@ -89,4 +89,6 @@ DynamicTp adapter, [liteflowTp#LiteFlowDefaultWhenExecutorBuilder] refreshed end
 
 1. 线程池名称规则：liteflowTp + "#" + 线程池构建者的 Class 类名（可以在启动日志找输出的线程池名称）
 2. liteflow 线程池享有动态调参、监控、通知告警完整的功能
+3. 队列大小不能调整
+4. 目前只能拿到服务启动时能获取到的线程池，懒加载的线程池获取不到
 :::

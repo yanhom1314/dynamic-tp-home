@@ -14,7 +14,6 @@ star: true
 无配置中心可以用此依赖，将配置放到本地配置文件中，无动态调参功能，但有监控告警功能
 
 ::: tip
-
 1. 动态线程池配置文件，建议单独开一个配置文件，方便管理
 
 2. 建议最好使用 yml 文件配置，可读性、可操作性更友好
@@ -140,6 +139,7 @@ dynamictp:
       preStartAllCoreThreads: false                  # 是否预热所有核心线程，默认false
       runTimeout: 200                                # 任务执行超时阈值，单位（ms），默认0（不统计）
       queueTimeout: 100                              # 任务在队列等待超时阈值，单位（ms），默认0（不统计）
+      tryInterrupt: false                            # 执行超时后是否中断线程，默认false
       taskWrapperNames: ["ttl", "mdc"]               # 任务包装器名称，继承TaskWrapper接口
       notifyEnabled: true                            # 是否开启报警，默认true
       platformIds: [1,2]                             # 报警平台id，不配置默认拿上层platforms配置的所有平台
@@ -229,4 +229,12 @@ dynamictp.executors[0].queueTimeout=100                              # 任务在
 dynamictp.executors[0].taskWrapperNames=ttl,mdc                      # 任务包装器名称，继承TaskWrapper接口
 dynamictp.executors[0].notifyEnabled=true                            # 是否开启报警，默认true
 dynamictp.executors[0].platformIds=1,2
+```
+
+### 配置引入
+
+启动类加注解导入相应线程池配置
+
+```java
+@PropertySource(value = "classpath:/demo-dtp-dev.yml", factory = YamlPropertySourceFactory.class)
 ```

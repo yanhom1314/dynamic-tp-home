@@ -16,7 +16,6 @@ star: true
 + 配置变更监听模块
 
 ::: tip 配置变更监听模块
-
 1. 监听配置中心配置变动（已实现 Nacos、Apollo、Zookeeper、Consul、Etcd、Polaris、ServiceComb）的监听器，可通过内部提供的 SPI 接口扩展其他实现
 
 2. 解析配置文件内容，内置实现 yml、properties、json 配置文件的解析，可通过内部提供的 SPI 接口扩展其他实现
@@ -27,7 +26,6 @@ star: true
 + 线程池管理模块
 
 ::: tip 线程池管理模块
-
 1. 服务启动时从配置中心拉取配置，生成线程池实例注册到内部线程池注册中心以及 Spring 容器中
  
 2. 接受配置监听模块的刷新事件，实现线程池参数的刷新
@@ -40,7 +38,6 @@ star: true
 实现监控指标采集以及输出，已支持以下三种方式，也可通过内部提供的 SPI 接口扩展其他实现
 
 ::: tip 监控模块
-
 1. 提供定时任务采集 + 实时获取两种采集方式
  
 2. 定时以 JsonLog 输出到磁盘指定目录，可以自己采集解析日志存储，结合 Grafana 做监控大盘
@@ -55,7 +52,6 @@ star: true
 对接办公平台，实现通知告警功能，已支持钉钉、企微、飞书、邮件、云之家，可通过内部提供的 SPI 接口扩展其他实现，通知告警类型如下
 
 ::: tip 通知告警模块
-
 1. 线程池主要参数变更通知
 
 2. 阻塞队列容量达到设置的告警阈值
@@ -76,7 +72,6 @@ star: true
 利用 Spring 的事件机制和核心逻辑解耦
 
 ::: tip 三方包管理模块
-
 1. 服务启动获取第三方中间件的线程池，被框架管理起来，已集成 Tomcat、Jetty、Undertow、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc、RabbitMq 等组件线程池
 
 2. 接受参数刷新、指标收集、通知报警事件，进行相应的处理
@@ -89,7 +84,6 @@ star: true
 ![图片.png](/images/dynamictp/code.png)
 
 ::: tip 代码结构
-
 1. adapter 模块：主要是适配一些第三方组件的线程池管理，目前已经实现的有 SpringBoot 内置的三大 web 容器（Tomcat、Jetty、Undertow）、Dubbo、RocketMq、Hystrix、Grpc、Motan、Okhttp3、Brpc、Tars、SofaRpc、RabbitMq 的线程池管理，
 后续会接入其他常用组件的线程池管理
 

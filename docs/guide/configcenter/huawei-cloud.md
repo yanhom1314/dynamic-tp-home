@@ -139,6 +139,7 @@ dynamictp:
       preStartAllCoreThreads: false                  # 是否预热所有核心线程，默认false
       runTimeout: 200                                # 任务执行超时阈值，单位（ms），默认0（不统计）
       queueTimeout: 100                              # 任务在队列等待超时阈值，单位（ms），默认0（不统计）
+      tryInterrupt: false                            # 执行超时后是否中断线程，默认false
       taskWrapperNames: ["ttl", "mdc"]               # 任务包装器名称，继承TaskWrapper接口
       notifyEnabled: true                            # 是否开启报警，默认true
       platformIds: [1,2]                             # 报警平台id，不配置默认拿上层platforms配置的所有平台

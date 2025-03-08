@@ -87,4 +87,5 @@ DynamicTp adapter [jettyTp] refreshed end, corePoolSize: [10 => 100], maxPoolSiz
 
 1. 线程池名称：jettyTp
 2. jetty 线程池享有动态调参、监控、通知告警完整的功能
+3. 队列大小不能调整
 :::
