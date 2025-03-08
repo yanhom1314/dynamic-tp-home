@@ -1,5 +1,4 @@
 import {defineUserConfig} from "vuepress";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { getDirname, path } from "vuepress/utils";
 import theme from "./theme.js";
 import { viteBundler } from "@vuepress/bundler-vite";
@@ -20,24 +19,6 @@ export default defineUserConfig({
           'Dubbo线程池，RocketMq线程池，线程池调优，线程池告警，线程池参数设置，线程池监控'}],
     ["script", { src: "https://cdn.wwads.cn/js/makemoney.js", charset: "UTF-8" }],
     ['script', {src: '/adblocked.js'}],
-  ],
-
-  plugins: [
-    searchProPlugin({
-      appId: "QS7KPCCCMF",
-      apiKey: "748c46e8a474fc153fcc545ff35ef12f",
-      indexName: "dynamictp",
-      locales: {
-        "/": {
-          placeholder: "搜索文档",
-          translations: {
-            button: {
-              buttonText: "搜索文档",
-            },
-          },
-        },
-      },
-    }),
   ],
 
   alias: {
