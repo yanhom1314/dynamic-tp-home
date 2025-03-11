@@ -28,8 +28,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-slimsearch": "2.0.0-rc.61",
-    "prettier": "3.2.5",
-    "vuepress-plugin-search-pro": "2.0.0-rc.32"
+    "prettier": "3.2.5"
   },
   "pnpm": {
     "peerDependencyRules": {

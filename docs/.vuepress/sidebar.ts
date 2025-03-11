@@ -23,6 +23,12 @@ export default sidebar([
         collapsable: false,
         link: "/guide/introduction/architecture"
       },
+      {
+        text: "性能测试",
+        icon: "ability",
+        collapsable: false,
+        link: "/guide/introduction/benchmark"
+      },
     ],
   },
 

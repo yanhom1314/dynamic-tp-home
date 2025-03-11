@@ -6,7 +6,7 @@
           <img className="no-zoom" height="60" style="width: 100%; " src="/images/sponsor/jnpf.png">
         </a>
         <div style="margin-top: 10px; order: 9999;">
-          <span><a style="color: #E01E5A;font-size: smaller;font-weight: bolder;float: right" href="/guide/other/supportme.html#成为赞助商">❤️成为赞助商</a></span>
+          <span><a style="color: #E01E5A;font-size: smaller;font-weight: bolder;float: right;margin-right: 10px" href="/guide/other/supportme.html#成为赞助商">❤️成为赞助商</a></span>
         </div>
         <div style="order: 100000;background-color: rgba(0,0,0,.15);width:100%;height:1px;margin: 1rem 0 0 0; position:relative;">
           <button style='border-radius: 100%;padding: 0;text-align: center;border: none;background-color: #ff3861;cursor: pointer;position: absolute;left: calc(50% - 15px);top: -15px;height: 30px;width: 30px;color: #fff;' onclick='document.getElementById("sidebar-slot-top").style.display="none"'>收</button>
