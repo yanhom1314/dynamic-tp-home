@@ -65,7 +65,6 @@ job 配置后 prometheus 管理台看到如下图所示，说明已经开始正�
 ![监控数据2](/images/dynamictp/monitor2.jpg)
 ![监控数据3](/images/dynamictp/monitor3.jpg)
 
-
 6. 如果没显示监控数据，可以重新编辑下每个 pannel 的数据源
 
 ![image.png](/images/dynamictp/grafana_datasource.png)

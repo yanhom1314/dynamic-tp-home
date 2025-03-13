@@ -23,7 +23,7 @@ DynamicTp 从 1.2.0 版本开始，核心模块解耦了 Spring，其他非 Spri
 使用 jdk9 及以上的版本，若遇反射相关异常，请先确保 jvm 启动参数加上以下参数
 
 ```bash
--add-opens java.base/sun.reflect.annotation=ALL-UNNAMED
+--add-opens java.base/sun.reflect.annotation=ALL-UNNAMED
 ```
 
 ### Spring 版本

@@ -103,8 +103,11 @@ DynamicTp dubboTp adapter, [dubboTp#20880] refreshed end, changed keys: [keepAli
 
 ::: tip
 
-1. 线程池名称规则：dubboTp + "#" + 协议端口（可以在启动日志找输出的线程池名称）
-2. dubbo 线程池享有动态调参、监控、通知告警完整的功能
-3. 队列大小不能调整
-4. 只增强服务 provider 端线程池
+- 线程池名称规则：dubboTp + "#" + 协议端口（可以在启动日志找输出的线程池名称）
+
+- dubbo 线程池享有动态调参、监控、通知告警完整的功能
+
+- 队列大小不能调整
+
+- 只增强服务 provider 端线程池
 :::

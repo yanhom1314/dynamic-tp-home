@@ -88,9 +88,13 @@ DynamicTp okhttp3Tp adapter, [okHttpClientTp] refreshed end, changed keys: [core
 
 ::: tip
 
-1. 服务启动会自动从 Spring 容器中获取所有被 Spring 容器管理的 OkHttpClient 实例 
-2. 线程池名称规则：beanName + Tp（可以在启动日志找输出的线程池名称）
-3. okhttp3 线程池只在异步请求时生效，同步请求不会使用 okhttp3 线程池
-4. okhttp3 线程池享有动态调参、监控、通知告警完整的功能
-5. 队列大小不能调整
+- 服务启动会自动从 Spring 容器中获取所有被 Spring 容器管理的 OkHttpClient 实例 
+
+- 线程池名称规则：beanName + Tp（可以在启动日志找输出的线程池名称）
+
+- okhttp3 线程池只在异步请求时生效，同步请求不会使用 okhttp3 线程池
+
+- okhttp3 线程池享有动态调参、监控、通知告警完整的功能
+
+- 队列大小不能调整
 :::

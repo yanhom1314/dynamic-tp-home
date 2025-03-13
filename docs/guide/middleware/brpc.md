@@ -88,8 +88,11 @@ DynamicTp brpcServerTp adapter, [rpc#server] refreshed end, changed keys: [coreP
 ```
 
 ::: tip
-1. 线程池名称规则：biz_thread_pool_name + "#" + client / server（可以在启动日志找输出的线程池名称）
-2. brpc 线程池享有动态调参、监控、通知告警完整的功能
-3. 支持 client / server 端线程池管理
-4. 队列大小不能调整
+- 线程池名称规则：biz_thread_pool_name + "#" + client / server（可以在启动日志找输出的线程池名称）
+
+- brpc 线程池享有动态调参、监控、通知告警完整的功能
+
+- 支持 client / server 端线程池管理
+
+- 队列大小不能调整
 :::

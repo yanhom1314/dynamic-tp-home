@@ -87,9 +87,13 @@ DynamicTp grpcTp adapter, [shadedNettyTp] refreshed end, changed keys: [corePool
 ```
 
 ::: tip
-1. grpc 官方没有提供 springboot starter，我们对开源项目 https://github.com/yidongnan/grpc-spring-boot-starter 进行了适配，该项目也是 star 最多最活跃的 grpc springboot starter
-2. 线程池名称规则，基于上述项目提供的三种模式 shadedNettyGrpcServerLifecycle / inProcessGrpcServerLifecycle / nettyGrpcServerLifecycle，分别对应 shadedNettyTp / inProcessTp / nettyTp 三个名称（可以在启动日志找输出的线程池名称）
-3. grpc 线程池享有动态调参、监控、通知告警完整的功能
-4. 只支持 server 端线程池管理
-5. 队列大小不能调整
+- grpc 官方没有提供 springboot starter，我们对开源项目 https://github.com/yidongnan/grpc-spring-boot-starter 进行了适配，该项目也是 star 最多最活跃的 grpc springboot starter
+
+- 线程池名称规则，基于上述项目提供的三种模式 shadedNettyGrpcServerLifecycle / inProcessGrpcServerLifecycle / nettyGrpcServerLifecycle，分别对应 shadedNettyTp / inProcessTp / nettyTp 三个名称（可以在启动日志找输出的线程池名称）
+
+- grpc 线程池享有动态调参、监控、通知告警完整的功能
+
+- 只支持 server 端线程池管理
+
+- 队列大小不能调整
 :::

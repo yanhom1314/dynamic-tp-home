@@ -87,8 +87,11 @@ DynamicTp hystrixTp adapter, [testThreadPoolKey] refreshed end, changed keys: [c
 ```
 
 ::: tip
+- 线程池名称在项目启动日志里寻找
 
-1. hystrix 线程池在第一次访问时才进行初始化，服务启动并不会立即初始化
-2. hystrix 线程池享有动态调参、监控、通知告警完整的功能
-3. 队列大小不能调整
+- hystrix 线程池在第一次访问时才进行初始化，服务启动并不会立即初始化
+
+- hystrix 线程池享有动态调参、监控、通知告警完整的功能
+
+- 队列大小不能调整
 :::

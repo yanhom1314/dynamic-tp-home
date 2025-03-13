@@ -13,25 +13,25 @@ star: true
 
 ::: tip
 
-1. 动态线程池配置文件，建议单独开一个文件放在 nacos 中，如：user-center-dtp-dev.yml
+- 动态线程池配置文件，建议单独开一个文件放在 nacos 中，如：user-center-dtp-dev.yml
 
-2. 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
+- 如果配置中心支持 yml 格式，建议最好使用 yml 文件配置，可读性、可操作性更友好
 
-3. 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
+- 给出的是全配置项，使用不到的项或者使用默认值的项都可以删除，减少配置量
 
-4. 注意非 spring-cloud-alibaba 场景下使用 nacos 用此依赖，cloud 场景下使用 nacos 用下一个依赖
+- 注意非 spring-cloud-alibaba 场景下使用 nacos 用此依赖，cloud 场景下使用 nacos 用下一个依赖
 
-5. 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈
+- 集成失败 90% 以上情况都是使用姿势有误 / 版本兼容问题，有版本兼容性问题可以提 Issues 或加群反馈
 
-6. nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE 及以下版本 
+- nacos-config-spring-boot-starter 0.2.10 及以下版本对应 springboot 2.3.12.RELEASE 及以下版本 
 
-7. 0.2.11-beta 及以上版本对应 springboot 版本 2.4.0 及以上版本，具体看官方说明
+- 0.2.11-beta 及以上版本对应 springboot 版本 2.4.0 及以上版本，具体看官方说明
 
 :::
 
 ::: danger
 
-1. 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
+- 下述配置项的值都是随便填写的，请不要直接使用该值，根据自己项目做调整
 
 :::
 

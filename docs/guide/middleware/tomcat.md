@@ -86,10 +86,13 @@ DynamicTp adapter, web server executor init end, executor: org.apache.tomcat.uti
 DynamicTp adapter [tomcatTp] refreshed end, corePoolSize: [10 => 100], maxPoolSize: [200 => 200], keepAliveTime: [60 => 60]
 ```
 
-::: tip
+::: tip 
 
-1. 线程池名称：tomcatTp
-2. tomcat 线程池享有动态调参、监控、通知告警完整的功能
-3. tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPoolExecutor
-4. tomcat 队列大小不能修改
+- 线程池名称：tomcatTp
+
+- tomcat 线程池享有动态调参、监控、通知告警完整的功能
+
+- tomcat 线程池并没用 juc 线程池，自己维护了一个 ThreadPoolExecutor
+
+- tomcat 队列大小不能修改
 :::

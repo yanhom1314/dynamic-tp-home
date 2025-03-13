@@ -87,8 +87,9 @@ DynamicTp rabbitmq adapter, [cachingConnectionFactoryTp] refreshed end, changed 
 ```
 
 ::: tip
+- 线程池名称在项目启动日志里寻找
 
-1. rabbitmq 线程池享有动态调参、监控、通知告警完整的功能
-2. 线程池名称规则：BeanName（AbstractConnectionFactory） + Tp（可以在启动日志找输出的线程池名称）
-3. 队列大小不能调整
+- rabbitmq 线程池享有动态调参、监控、通知告警完整的功能
+
+- 线程池名称规则：BeanName（AbstractConnectionFactory） + Tp（可以在启动日志找输出的线程池名称）
 :::
