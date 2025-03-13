@@ -15,25 +15,28 @@ star: true
 
 开源不易，如果感觉该项目对您有点帮助，可以通过如下方式支持我们
 
-1. Star 并向您的朋友推荐或分享[DynamicTp](https://gitee.com/dromara/dynamic-tp)🚀
+::: tip 支持
+- Star 并向您的朋友推荐或分享[DynamicTp](https://gitee.com/dromara/dynamic-tp)🚀
 
-2. 轻轻点击一次上边的广告卡片🙃
+- 轻轻点击一次上边的广告卡片🙃
 
-3. 扫描下面微信二维码进行赞赏，请作者喝一杯咖啡☕️
-
+- 扫描下面微信二维码进行赞赏，请作者喝一杯咖啡☕️
+:::
 非常感谢您对开源精神的支持！❤️
 
 <img :src="$withBase('/supportme.jpg')" style="zoom: 35%">
 
 ### 成为赞助商
 
-1. 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名。
+::: tip 赞助
+- 赞助任意金额，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名。
 
-2. 赞助达到 50 元，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名，并可在赞助者列表里附上投放链接。
+- 赞助达到 50 元，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名，并可在赞助者列表里附上投放链接。
 
-3. 赞助达 500 元，您将获得 [dynamictp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达 1 年）。
+- 赞助达 500 元，您将获得 [dynamictp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达 1 年）。
 
-4. 赞助达 1000 元，您将获得 [dynamictp](https://dynamictp.cn/) 所有文档页面的广告栏位，包括 gitee、github（长达 1 年），并且在 1500+ 社群里 @ 全体推广一次。
+- 赞助达 1000 元，您将获得 [dynamictp](https://dynamictp.cn/) 所有文档页面的广告栏位，包括 gitee、github（长达 1 年），并且在 1500+ 社群里 @ 全体推广一次。
+:::
 
 目前 dynamictp 官网的流量日均 PV 在 2w 左右，日均 UV 900 左右
 
