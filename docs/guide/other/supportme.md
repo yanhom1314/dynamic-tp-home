@@ -16,7 +16,7 @@ star: true
 开源不易，如果感觉该项目对您有点帮助，可以通过如下方式支持我们
 
 ::: tip 支持
-- Star 并向您的朋友推荐或分享[DynamicTp](https://gitee.com/dromara/dynamic-tp)🚀
+- star 并向您的朋友推荐或分享[dynamictp](https://gitee.com/dromara/dynamic-tp)🚀
 
 - 轻轻点击一次上边的广告卡片🙃
 
@@ -42,7 +42,7 @@ star: true
 
 <img :src="$withBase('/images/dynamictp/pvuv.png')">
 
-**[联系我们](/guide/other/contact) 备注 dynamic-tp 赞助**
+**[联系我们](/guide/other/contact.html#联系社区) 备注 dynamic-tp 赞助**
 
 ### 赞助人列表
 
