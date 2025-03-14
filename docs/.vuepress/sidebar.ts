@@ -222,7 +222,7 @@ export default sidebar([
         link: "/guide/monitor/collect_types"
       },
       {
-        text: "prometheus+grafana 监控",
+        text: "grafana 监控",
         icon: "config",
         collapsable: false,
         link: "/guide/monitor/prometheus_grafana"
