@@ -1,6 +1,6 @@
 ---
 title: 支持
-icon: like
+icon: f-support
 order: 1
 author: yanhom
 date: 2023-03-23

@@ -1,6 +1,6 @@
 ---
 title: 告警信息扩展
-icon: add
+icon: extension
 order: 1
 author: yanhom
 date: 2022-06-11

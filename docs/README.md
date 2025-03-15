@@ -1,6 +1,6 @@
 ---
 home: true
-icon: home
+icon: shouye
 title: 首页
 heroImage: /logo.png
 heroText: dynamictp
@@ -21,24 +21,24 @@ features:
     link: "/guide/use/quick-start"
 
   - title: 通知报警
-    icon: notice
+    icon: alert
     details: 目前支持调参通知、活性、队列容量、拒绝策略、超时共六类通知报警维度，在运行时实时+定时检测，触发阈值进行推送
     link: "/guide/notice/alarm"
 
   - title: 运行监控
-    icon: eye
+    icon: monitoring
     details: 定时采集线程池运行指标数据，提供 jsonlog、micrometer、endpoint、jmx 四种指标数据采集方式，可灵活选择
     link: "/guide/monitor/collect_types"
 
   - title: 三方包集成
-    icon: grid
+    icon: plugin
     details: 集成三方中间件线程池管理，已接入dubbo、rocketmq、hystrix、grpc、tomcat、undertow、jetty、grpc、okhttp等组件线程池管理
     link: "/guide/middleware/tomcat"
 ---
 
 <div style="padding-bottom: 0px;"></div>
 
-# 🌈 特别赞助
+# 💓 特别赞助
 
 <SiteInfo
     name="引迈信息"
@@ -70,7 +70,7 @@ features:
 </style>
 <br/>
 
-# 功能特性
+# 🏆 功能特性
 
 - **代码零侵入**：我们改变了线程池以往的使用姿势，所有配置均放在配置中心，服务启动时会从配置中心拉取配置生成线程池对象放到 Spring 容器中，使用时直接从 Spring 容器中获取，对业务代码零侵入
 
@@ -96,7 +96,7 @@ features:
 
 - **线上大规模应用**：参考[美团线程池实践](https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html)，美团内部已经有该理论成熟的应用经验
 
-# 最新版本
+# 🛠 最新版本
 
 SpringBoot1x、2x、Spring6x 以下用此依赖
 
@@ -122,19 +122,36 @@ SpringBoot3x、Spring6x 及以上用此依赖
 </dependency>
 ```
 
-# 技术架构 
+# 💘 致谢
 
-![技术架构](/images/dynamictp/arch.svg)
+DynamicTp 自从 2022 年开源以来，获得了很多开发人员的支持与喜爱。
 
-# Star History
+目前社区群 1500+ 人，Gitee 上 Stars 2.3k+，Github 上 Stars 4.3k+，已登记接入公司 20+，贡献者 100+，非常感谢！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=dromara/dynamic-tp&type=Date)](https://star-history.com/#dromara/dynamic-tp&Date)
+DynamicTp 在 2023 年成为了"中国信通院可信开源社区共同体(TWOS)成员"。
 
-# 知识星球
+DynamicTp 于 2024 年获得 "GitCode G-Star 毕业项目" 认证！
 
-![](/images/dynamictp/dromara-zsxq.png)
+感谢以上官方平台对 DynamicTp 项目的推荐和肯定。
 
-# Dromara 成员项目
+# 🏠 代码托管
+
+<a href='https://gitee.com/dromara/dynamic-tp' target="_blank">
+    <img class="no-zoom" src="/images/Gitee-red.svg"/>
+</a>
+
+<a href="https://github.com/dromara/dynamic-tp" target="_blank">
+    <img class="no-zoom" src="/images/Github-blue.svg"/>
+</a>
+
+<br/>
+<br/>
+
+# ⏳ 技术架构 
+
+![](/images/dynamictp/arch.svg)
+
+# 🌋 Dromara 成员项目
 
 <div>
     <div class="com-box-f s-width">
@@ -209,12 +226,23 @@ SpringBoot3x、Spring6x 及以上用此依赖
 				<img src="/images/go-view.png" msg="GoView 是一个高效的拖拽式低代码数据可视化开发平台。">
             </a>
         </div>
-        <div style="height: 10px; clear: both;"></div>
-        <p>
-            为往圣继绝学，一个人或许能走的更快，但一群人会走的更远。
-        </p>
     </div>
-    <div style="height: 60px;"></div>
+</div>
+<br/>
+
+## 🔇 友情链接
+
+<div>
+    <div class="com-box-f s-width">
+        <div class="com-box com-box-you">
+            <a href="https://gitee.com" target="_blank">
+                <img src="/images/link/gitee-logo.png" class="no-zoom">
+            </a>
+            <a href="https://gitcode.com/" target="_blank">
+                <img src="/images/link/gitcode-logo.svg" class="no-zoom">
+            </a>
+        </div>
+    </div>
 </div>
 
 <link rel="stylesheet" href="/index.css">

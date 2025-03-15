@@ -1,6 +1,6 @@
 ---
 title: huawei-cloud 应用接入
-icon: speed
+icon: huawei
 order: 1
 author: yanhom
 date: 2022-06-11

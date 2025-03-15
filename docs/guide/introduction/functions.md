@@ -1,6 +1,6 @@
 ---
 title: 功能特性
-icon: enum
+icon: feature
 order: 1
 author: yanhom
 date: 2022-06-11

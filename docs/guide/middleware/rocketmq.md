@@ -1,6 +1,6 @@
 ---
 title: rocketmq 线程池管理
-icon: angular
+icon: apacherocketmq
 order: 1
 author: yanhom
 date: 2023-02-11

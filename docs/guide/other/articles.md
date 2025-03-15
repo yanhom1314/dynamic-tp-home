@@ -1,6 +1,6 @@
 ---
 title: 介绍文章
-icon: article
+icon: -article
 order: 1
 author: yanhom
 date: 2022-06-11

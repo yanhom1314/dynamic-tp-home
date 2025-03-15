@@ -2,30 +2,30 @@ import {sidebar} from "vuepress-theme-hope";
 export default sidebar([
   {
     text: "简介",
-    icon: "guide",
+    icon: "introduction",
     prefix: "/guide",
     children: [
       {
         text: "项目背景",
-        icon: "ask",
+        icon: "background1",
         collapsable: false,
         link: "/guide/introduction/background"
       },
       {
         text: "功能特性",
-        icon: "enum",
+        icon: "feature",
         collapsable: false,
         link: "/guide/introduction/functions"
       },
       {
         text: "架构设计",
-        icon: "structure",
+        icon: "Architecture",
         collapsable: false,
         link: "/guide/introduction/architecture"
       },
       {
         text: "性能测试",
-        icon: "ability",
+        icon: "benchmark",
         collapsable: false,
         link: "/guide/introduction/benchmark"
       },
@@ -45,43 +45,43 @@ export default sidebar([
       },
       {
         text: "环境支持",
-        icon: "set",
+        icon: "enviroment-copy",
         collapsable: false,
         link: "/guide/use/env"
       },
       {
         text: "线程池模式",
-        icon: "select",
+        icon: "mode",
         collapsable: false,
         link: "/guide/use/mode"
       },
       {
         text: "代码使用",
-        icon: "code",
+        icon: "code1",
         collapsable: false,
         link: "/guide/use/code"
       },
       {
         text: "全局配置",
-        icon: "discover",
+        icon: "global",
         collapsable: false,
         link: "/guide/use/global"
       },
       {
         text: "任务包装器",
-        icon: "wrap",
+        icon: "wrapper1",
         collapsable: false,
         link: "/guide/use/wrapper"
       },
       {
         text: "agent 场景",
-        icon: "info",
+        icon: "agent",
         collapsable: false,
         link: "/guide/use/agent"
       },
       {
         text: "拒绝策略",
-        icon: "linter",
+        icon: "reject",
         collapsable: false,
         link: "/guide/use/reject"
       }
@@ -94,55 +94,55 @@ export default sidebar([
     children: [
       {
         text: "apollo 应用接入",
-        icon: "palette",
+        icon: "a-apollo1",
         collapsable: false,
         link: "/guide/configcenter/apollo"
       },
       {
         text: "nacos 应用接入",
-        icon: "module",
+        icon: "Nacoskongzhitai",
         collapsable: false,
         link: "/guide/configcenter/nacos"
       },
       {
         text: "nacos-cloud 应用接入",
-        icon: "mesh",
+        icon: "Nacoskongzhitai",
         collapsable: false,
         link: "/guide/configcenter/nacos-cloud"
       },
       {
         text: "consul-cloud 应用接入",
-        icon: "emoji",
+        icon: "a-consul-community_on-lighte8e68a5f",
         collapsable: false,
         link: "/guide/configcenter/consul-cloud"
       },
       {
         text: "polaris 应用接入",
-        icon: "alias",
+        icon: "Polaris",
         collapsable: false,
         link: "/guide/configcenter/polaris"
       },
       {
         text: "huawei-cloud 应用接入",
-        icon: "speed",
+        icon: "huawei",
         collapsable: false,
         link: "/guide/configcenter/huawei-cloud"
       },
       {
         text: "zoopkeeper 应用接入",
-        icon: "leaf",
+        icon: "Zookeeper",
         collapsable: false,
         link: "/guide/configcenter/zookeeper"
       },
       {
         text: "zookeeper-cloud 应用接入",
-        icon: "interact",
+        icon: "Zookeeper",
         collapsable: false,
         link: "/guide/configcenter/zookeeper-cloud"
       },
       {
         text: "etcd 应用接入",
-        icon: "contrast",
+        icon: "icon_etcd",
         collapsable: false,
         link: "/guide/configcenter/etcd"
       },
@@ -167,43 +167,43 @@ export default sidebar([
     children: [
       {
         text: "调参通知",
-        icon: "notice",
+        icon: "change",
         collapsable: false,
         link: "/guide/notice/notice"
       },
       {
         text: "运行报警",
-        icon: "warn",
+        icon: "alert",
         collapsable: false,
         link: "/guide/notice/alarm"
       },
       {
         text: "推送限流",
-        icon: "decorate",
+        icon: "limit_rate",
         collapsable: false,
         link: "/guide/notice/ratelimiter"
       },
       {
         text: "邮件通知",
-        icon: "at",
+        icon: "email",
         collapsable: false,
         link: "/guide/notice/email"
       },
       {
         text: "云之家通知",
-        icon: "community",
+        icon: "yunzhijia",
         collapsable: false,
         link: "/guide/notice/yunzhijia"
       },
       {
         text: "自定义通知渠道",
-        icon: "variable",
+        icon: "customize",
         collapsable: false,
         link: "/guide/notice/custom"
       },
       {
         text: "扩展告警信息",
-        icon: "add",
+        icon: "extension",
         collapsable: false,
         link: "/guide/notice/populate_message"
       }
@@ -212,30 +212,30 @@ export default sidebar([
 
   {
     text: "监控",
-    icon: "eye",
+    icon: "monitoring",
     prefix: "/guide",
     children: [
       {
         text: "数据采集",
-        icon: "ability",
+        icon: "shujucaiji",
         collapsable: false,
         link: "/guide/monitor/collect_types"
       },
       {
-        text: "prometheus+grafana 监控",
-        icon: "config",
+        text: "grafana 监控",
+        icon: "grafana",
         collapsable: false,
         link: "/guide/monitor/prometheus_grafana"
       },
       {
         text: "hertzbeat 监控",
-        icon: "computer",
+        icon: "deals",
         collapsable: false,
         link: "/guide/monitor/hertzbeat"
       },
       {
         text: "自定义采集器",
-        icon: "customize",
+        icon: "customize1",
         collapsable: false,
         link: "/guide/monitor/custom"
       }
@@ -249,85 +249,85 @@ export default sidebar([
     children: [
       {
         text: "tomcat 线程池管理",
-        icon: "Apache",
+        icon: "TOMCAT",
         collapsable: false,
         link: "/guide/middleware/tomcat"
       },
       {
         text: "undertow 线程池管理",
-        icon: "safari",
+        icon: "Undertow",
         collapsable: false,
         link: "/guide/middleware/undertow"
       },
       {
         text: "jetty 线程池管理",
-        icon: "alias",
+        icon: "jetty",
         collapsable: false,
         link: "/guide/middleware/jetty"
       },
       {
         text: "dubbo 线程池管理",
-        icon: "selection",
+        icon: "dubbo2",
         collapsable: false,
         link: "/guide/middleware/dubbo"
       },
       {
         text: "rocketmq 线程池管理",
-        icon: "angular",
+        icon: "apacherocketmq",
         collapsable: false,
         link: "/guide/middleware/rocketmq"
       },
       {
         text: "hystrix 线程池管理",
-        icon: "bit",
+        icon: "hystrix",
         collapsable: false,
         link: "/guide/middleware/hystrix"
       },
       {
         text: "okhttp3 线程池管理",
-        icon: "branch",
+        icon: "http",
         collapsable: false,
         link: "/guide/middleware/okhttp3"
       },
       {
         text: "grpc 线程池管理",
-        icon: "chrome",
+        icon: "GRPC",
         collapsable: false,
         link: "/guide/middleware/grpc"
       },
       {
         text: "brpc 线程池管理",
-        icon: "snow",
+        icon: "brpc",
         collapsable: false,
         link: "/guide/middleware/brpc"
       },
       {
         text: "motan 线程池管理",
-        icon: "dart",
+        icon: "mairui",
         collapsable: false,
         link: "/guide/middleware/motan"
       },
       {
         text: "tars 线程池管理",
-        icon: "function",
+        icon: "stars",
         collapsable: false,
         link: "/guide/middleware/tars"
       },
       {
         text: "sofarpc 线程池管理",
-        icon: "linter",
+        icon: "sofarpc",
         collapsable: false,
         link: "/guide/middleware/sofa"
       },
       {
         text: "rabbitmq 线程池管理",
-        icon: "app",
+        icon: "rabbitmq",
         collapsable: false,
         link: "/guide/middleware/rabbitmq"
       },
       {
         text: "liteflow 线程池管理",
-        icon: "mesh",
+        icon: "flow",
         collapsable: false,
         link: "/guide/middleware/liteflow"
       }
@@ -336,7 +336,7 @@ export default sidebar([
 
   {
     text: "其他",
-    icon: "more",
+    icon: "Other",
     prefix: "/guide",
     children: [
       {
@@ -346,32 +346,38 @@ export default sidebar([
         link: "/guide/other/contact"
       },
       {
+        text: "项目成员",
+        icon: "member",
+        collapsable: false,
+        link: "/guide/other/members"
+      },
+      {
         text: "接入公司",
-        icon: "people",
+        icon: "user1",
         collapsable: false,
         link: "/guide/other/users"
       },
       {
         text: "支持我们",
-        icon: "like",
+        icon: "f-support",
         collapsable: false,
         link: "/guide/other/supportme"
       },
       {
         text: "参与开发",
-        icon: "merge",
+        icon: "develop",
         collapsable: false,
         link: "/guide/other/develop"
       },
       {
         text: "相关文章",
-        icon: "note",
+        icon: "-article",
         collapsable: false,
         link: "/guide/other/articles"
       },
       {
         text: "发版记录",
-        icon: "list",
+        icon: "banbenzi",
         collapsable: false,
         link: "/guide/other/release"
       },

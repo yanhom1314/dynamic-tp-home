@@ -1,6 +1,6 @@
 ---
 title: hystrix 线程池管理
-icon: bit
+icon: hystrix
 order: 1
 author: yanhom
 date: 2023-02-11

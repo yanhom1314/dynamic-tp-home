@@ -1,6 +1,6 @@
 ---
 title: etcd 应用接入
-icon: contrast
+icon: icon_etcd
 order: 1
 author: yanhom
 date: 2022-06-11

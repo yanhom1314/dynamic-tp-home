@@ -1,6 +1,6 @@
 ---
 title: 自定义通知渠道
-icon: variable
+icon: customize
 order: 1
 author: yanhom
 date: 2022-06-11

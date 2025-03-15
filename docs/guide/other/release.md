@@ -1,6 +1,6 @@
 ---
 title: 发版记录
-icon: list
+icon: banbenzi
 order: 1
 author: yanhom
 date: 2022-06-11

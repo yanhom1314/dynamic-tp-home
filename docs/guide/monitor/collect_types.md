@@ -1,6 +1,6 @@
 ---
 title: 采集类型
-icon: ability
+icon: shujucaiji
 order: 1
 author: yanhom
 date: 2022-06-11

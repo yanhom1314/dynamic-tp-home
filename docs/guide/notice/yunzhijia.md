@@ -1,6 +1,6 @@
 ---
 title: 云之家渠道
-icon: community
+icon: yunzhijia
 order: 1
 author: yanhom
 date: 2022-06-11

@@ -1,6 +1,6 @@
 ---
 title: agent 场景下使用
-icon: info
+icon: agent
 order: 1
 author: yanhom
 date: 2022-06-11

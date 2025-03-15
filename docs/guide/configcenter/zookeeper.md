@@ -1,6 +1,6 @@
 ---
 title: zookeeper 应用接入
-icon: leaf
+icon: Zookeeper
 order: 1
 author: yanhom
 date: 2022-06-11

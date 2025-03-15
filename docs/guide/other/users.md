@@ -1,6 +1,6 @@
 ---
 title: 接入公司
-icon: people
+icon: user1
 order: 1
 author: yanhom
 date: 2023-03-11

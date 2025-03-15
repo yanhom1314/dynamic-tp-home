@@ -1,6 +1,6 @@
 ---
 title: 拒绝策略
-icon: linter
+icon: reject
 order: 1
 author: yanhom
 date: 2025-03-02

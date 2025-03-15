@@ -1,6 +1,6 @@
 ---
 title: zookeeper-cloud 应用接入
-icon: interact
+icon: Zookeeper
 order: 1
 author: yanhom
 date: 2022-06-11

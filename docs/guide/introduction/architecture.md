@@ -1,6 +1,6 @@
 ---
 title: 架构设计
-icon: structure
+icon: Architecture
 order: 1
 author: yanhom
 date: 2022-06-11

@@ -1,6 +1,6 @@
 ---
 title: 邮件通知
-icon: at
+icon: email
 order: 1
 author: yanhom
 date: 2022-06-11

@@ -1,6 +1,6 @@
 ---
 title: apollo 应用接入
-icon: palette
+icon: a-apollo1
 order: 1
 author: yanhom
 date: 2022-06-11

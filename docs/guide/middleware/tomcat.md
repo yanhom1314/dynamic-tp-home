@@ -1,6 +1,6 @@
 ---
 title: tomcat 线程池管理
-icon: Apache
+icon: TOMCAT
 order: 1
 author: yanhom
 date: 2023-02-11

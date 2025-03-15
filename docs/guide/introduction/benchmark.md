@@ -1,6 +1,6 @@
 ---
 title: 性能测试
-icon: ability
+icon: benchmark
 order: 1
 author: yanhom
 date: 2025-03-09

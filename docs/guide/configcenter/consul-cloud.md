@@ -1,6 +1,6 @@
 ---
 title: consul-cloud 应用接入
-icon: emoji
+icon: a-consul-community_on-lighte8e68a5f
 order: 1
 author: yanhom
 date: 2022-06-11

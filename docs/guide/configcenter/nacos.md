@@ -1,6 +1,6 @@
 ---
 title: nacos 应用接入
-icon: module
+icon: Nacoskongzhitai
 order: 1
 author: yanhom
 date: 2022-06-11

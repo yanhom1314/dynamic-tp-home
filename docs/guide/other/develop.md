@@ -1,6 +1,6 @@
 ---
 title: 参与开发
-icon: merge
+icon: develop
 order: 1
 author: yanhom
 date: 2023-03-24

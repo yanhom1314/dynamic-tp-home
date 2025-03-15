@@ -1,6 +1,6 @@
 ---
 title: prometheus+grafana 接入流程
-icon: config
+icon: grafana
 order: 1
 author: yanhom
 date: 2022-06-11
