@@ -124,9 +124,7 @@ SpringBoot3x、Spring6x 及以上用此依赖
 
 # 💘 致谢
 
-DynamicTp 自从 2022 年开源以来，获得了很多开发人员的支持与喜爱。
-
-目前社区群 1500+ 人，Gitee 上 Stars 2.3k+，Github 上 Stars 4.3k+，已登记接入公司 20+，贡献者 100+，非常感谢！
+DynamicTp 自从 2022 年开源以来，获得了很多开发人员的支持与喜爱。目前社区群 1500+ 人，Gitee 上 Stars 2.3k+，Github 上 Stars 4.3k+，已登记接入公司 20+，贡献者 100+，非常感谢！
 
 DynamicTp 在 2023 年成为了"中国信通院可信开源社区共同体(TWOS)成员"。
 

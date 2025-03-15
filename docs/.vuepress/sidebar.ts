@@ -346,6 +346,12 @@ export default sidebar([
         link: "/guide/other/contact"
       },
       {
+        text: "常见问题",
+        icon: "question",
+        collapsable: false,
+        link: "/guide/other/faq"
+      },
+      {
         text: "项目成员",
         icon: "member",
         collapsable: false,
