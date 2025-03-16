@@ -6,6 +6,7 @@ author: yanhom
 date: 2023-03-23
 tag:
   - 赞助
+  - 支持
   - dynamictp
 sticky: false
 star: true
