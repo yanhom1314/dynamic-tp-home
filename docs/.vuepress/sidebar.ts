@@ -57,7 +57,7 @@ export default sidebar([
       },
       {
         text: "代码使用",
-        icon: "code1",
+        icon: "Code",
         collapsable: false,
         link: "/guide/use/code"
       },
@@ -89,7 +89,7 @@ export default sidebar([
   },
   {
     text: "配置中心",
-    icon: "type",
+    icon: "peizhizhongxin",
     prefix: "/guide",
     children: [
       {
@@ -229,7 +229,7 @@ export default sidebar([
       },
       {
         text: "hertzbeat 监控",
-        icon: "deals",
+        icon: "jiankong",
         collapsable: false,
         link: "/guide/monitor/hertzbeat"
       },
@@ -303,7 +303,7 @@ export default sidebar([
       },
       {
         text: "motan 线程池管理",
-        icon: "mairui",
+        icon: "mixi",
         collapsable: false,
         link: "/guide/middleware/motan"
       },

@@ -13,7 +13,7 @@ export default hopeTheme({
     url: "https://gitee.com/dromara/dynamic-tp",
   },
 
-  iconAssets: "//at.alicdn.com/t/c/font_3911244_clwcg3w09fr.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3911244_0nrdb6tr4fn.css",
 
   logo: "/logo.png",
 

@@ -1,6 +1,6 @@
 ---
 title: hertzbeat 接入流程
-icon: deals
+icon: jiankong
 order: 1
 author: yanhom
 date: 2023-02-12
