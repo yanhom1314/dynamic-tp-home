@@ -21,14 +21,15 @@ import AdPage from "./AdPage.vue"
   max-width: var(--content-width, 800px);
   margin: 0 auto;
   background-color: #f4f8fa;
-  padding: 5px;
-  min-height: 120px;
-  margin-top: 20px;
+  padding: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   box-sizing: border-box;
   border-radius: 3px;
-  font-family: sans-serif;
   display: flex;
   min-width: 200px;
   position: relative;
+  padding-bottom: 0px;
+  padding-top: 3px;
 }
 </style>
