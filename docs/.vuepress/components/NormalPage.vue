@@ -21,8 +21,6 @@ import AdPage from "./AdPage.vue"
   max-width: var(--content-width, 780px);
   margin: -15px auto;
   background-color: #f4f8fa;
-  margin-top: 2px;
-  margin-bottom: 2px;
   box-sizing: border-box;
   border-radius: 3px;
   display: flex;
