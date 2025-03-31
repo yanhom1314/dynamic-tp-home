@@ -3,8 +3,8 @@
     <template #contentBefore>
       <AdPage content="content" />
       <div class="zsxq">
-        <a href="https://t.zsxq.com/DVGGO" target="_blank">
-          <img src="/images/sponsor/img.png" width="800px">
+        <a href="https://t.zsxq.com/annca" target="_blank">
+          <img src="/images/sponsor/zsxq-ad.png" width="776px">
         </a>
       </div>
     </template>
@@ -18,7 +18,7 @@ import AdPage from "./AdPage.vue"
 <style>
 @use "vuepress-shared/styles/wrapper";
 .zsxq {
-  max-width: var(--content-width, 800px);
+  max-width: var(--content-width, 780px);
   margin: 0 auto;
   background-color: #f4f8fa;
   padding: 2px;
@@ -31,5 +31,6 @@ import AdPage from "./AdPage.vue"
   position: relative;
   padding-bottom: 0px;
   padding-top: 3px;
+  padding-right: 2px;
 }
 </style>
