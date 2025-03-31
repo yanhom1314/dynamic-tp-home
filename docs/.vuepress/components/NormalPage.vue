@@ -19,7 +19,7 @@ import AdPage from "./AdPage.vue"
 @use "vuepress-shared/styles/wrapper";
 .zsxq {
   max-width: var(--content-width, 780px);
-  margin: -10px auto;
+  margin: 0 auto;
   background-color: #f4f8fa;
   margin-top: 2px;
   margin-bottom: 2px;
