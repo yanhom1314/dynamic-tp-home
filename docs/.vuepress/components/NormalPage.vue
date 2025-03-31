@@ -2,11 +2,11 @@
   <NormalPage>
     <template #contentBefore>
       <AdPage content="content" />
-<!--      <div class="zsxq">-->
-<!--        <a href="https://t.zsxq.com/annca" target="_blank">-->
-<!--          <img src="/images/sponsor/zsxq-ad.png" width="776px">-->
-<!--        </a>-->
-<!--      </div>-->
+      <div class="zsxq">
+        <a href="https://t.zsxq.com/annca" target="_blank">
+          <img src="/images/sponsor/zsxq-ad.png" width="776px">
+        </a>
+      </div>
     </template>
   </NormalPage>
 </template>
@@ -21,7 +21,6 @@ import AdPage from "./AdPage.vue"
   max-width: var(--content-width, 780px);
   margin: 0 auto;
   background-color: #f4f8fa;
-  padding: 2px;
   margin-top: 2px;
   margin-bottom: 2px;
   box-sizing: border-box;
