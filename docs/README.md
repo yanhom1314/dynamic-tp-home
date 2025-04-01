@@ -40,17 +40,6 @@ features:
 
 # 💓 特别赞助
 
-<SiteInfo
-    name="引迈信息"
-    desc="JNPF低代码开发平台，技术双引擎系统，无限制业务场景，永久使用权，全源码交付"
-    url="https://www.jnpfsoft.com?from=dynamictp"
-    logo="/images/sponsor/jnpfsoft-logo.png"
-    preview="/images/sponsor/jnpfsoft-site.png"
-    style="max-width:300px"
-/>
-
-<br/>
-
 <div align="center" class="sponsor">
   <a class="become-sponsor" href="/guide/other/supportme.html#成为赞助商">成为赞助者</a>
 </div>
