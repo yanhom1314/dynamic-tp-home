@@ -18,6 +18,23 @@ v1.1.9 及之前版本核心模块强依赖 Spring，代码中用到了不少 Sp
 
 v1.2.0 是一个大版本，主要功能是对 Spring 做了解耦，Spring 相关特性以独立 Module 的形式提供，其他非 Spring 框架集成 DynamicTp 时通过引入核心模块即可。
 
+### v1.2.0 升级注意事项
+
+- Spring 启动类注解移动到 Spring 模块中，包路径有调整，需重新导入
+
+```java
+org.dromara.dynamictp.spring.annotation.EnableDynamicTp
+```
+
+- 配置文件前缀有调整，从 spring.dynamic.tp 调整为 dynamictp
+
+```yml
+dynamictp:
+  enabled: true
+  enabledBanner: true
+  enabledCollect: true
+```
+
 #### Feature
 
 - 核心模块中移除对 Spring 的依赖，方便在其他非 Spring 项目中使用。

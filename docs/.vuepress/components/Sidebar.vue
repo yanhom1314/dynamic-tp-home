@@ -2,9 +2,9 @@
   <Sidebar>
     <template #top>
       <div id="sidebar-slot-top" style="padding: 1rem 0;width:100%;margin:0 auto;display:flex;flex-direction: column;">
-        <a style="margin: 0px auto; width: 100%;" href="https://t.zsxq.com/annca" target="_blank" data-date="2025-03-29">
-          <img className="no-zoom" height="60" style="width: 100%; " src="/images/sponsor/zsxq-mini.png">
-        </a>
+<!--        <a style="margin: 0px auto; width: 100%;" href="https://t.zsxq.com/annca" target="_blank" data-date="2025-03-29">-->
+<!--          <img className="no-zoom" height="60" style="width: 100%; " src="/images/sponsor/zsxq-mini.png">-->
+<!--        </a>-->
         <div style="margin-top: 10px; order: 9999;">
           <span><a style="color: #E01E5A;font-size: smaller;font-weight: bolder;float: right;margin-right: 10px" href="/guide/other/supportme.html#成为赞助商">❤️成为赞助商</a></span>
         </div>
