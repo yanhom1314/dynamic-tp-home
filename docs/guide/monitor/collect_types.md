@@ -46,7 +46,7 @@ star: true
 
 ### endpoint
 
-暴露端点(dynamic-tp)，可以通过 http 方式实时请求
+暴露端点(dynamictp)，可以通过 http 方式实时请求
 
   ```json
   [

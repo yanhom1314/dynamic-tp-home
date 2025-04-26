@@ -87,25 +87,25 @@ features:
 
 # ✈️ 最新版本
 
-SpringBoot1x、2x、Spring6x 以下用此依赖
+SpringBoot1x、2x、Spring6x 以下用此 Maven bom
 
 ```xml
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
 ```
 
-SpringBoot3x、Spring6x 及以上用此依赖
+SpringBoot3x、Spring6x 及以上用此 Maven bom
 
 ```xml
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.2.0-x</version>
+    <version>1.2.1-x</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
@@ -113,7 +113,7 @@ SpringBoot3x、Spring6x 及以上用此依赖
 
 # 💘 致谢
 
-DynamicTp 自从 2022 年开源以来，获得了很多开发人员的支持与喜爱。目前社区群 1500+ 人，Gitee 上 Stars 2.4k+，Github 上 Stars 4.3k+，已登记接入公司 20+，贡献者 100+，非常感谢各位的一路支持！
+DynamicTp 自从 2022 年开源以来，获得了很多开发人员的支持与喜爱。目前社区群 1700+ 人，Gitee 上 Stars 2.4k+，Github 上 Stars 4.4k+，已登记接入公司 20+，贡献者 100+，非常感谢各位的一路支持！
 
 DynamicTp 在 2023 年成为了"中国信通院可信开源社区共同体(TWOS)成员"。
 

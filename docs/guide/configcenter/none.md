@@ -38,7 +38,7 @@ SpringBoot1x、2x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-common</artifactId>
-     <version>1.2.0</version>
+     <version>1.2.1</version>
  </dependency>
  ```
 SpringBoot3x 用此依赖
@@ -47,7 +47,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-common</artifactId>
-     <version>1.2.0-x</version>
+     <version>1.2.1-x</version>
  </dependency>
  ```
 
@@ -95,31 +95,36 @@ dynamictp:
     taskWrapperNames: ["swTrace", "ttl", "mdc"]
     queueTimeout: 300
     runTimeout: 300
-    notifyItems:                     # 报警项，不配置自动会按默认值（查看源码NotifyItem类）配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
-      - type: change
-        enabled: true
-    
+    notifyItems:                     # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
+      - type: change                 # 线程池核心参数变更通知
+        silencePeriod: 120           # 通知静默时间（单位：s），默认值1，0表示不静默
+
       - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
-        enabled: true
-        threshold: 80                # 报警阈值，默认70，意思是队列使用率达到70%告警
-        platformIds: [2]             # 可选配置，本配置优先级 > 所属线程池platformIds > 全局配置platforms
-        interval: 120                # 报警间隔（单位：s），默认120
-    
+        threshold: 80                # 报警阈值，意思是队列使用率达到70%告警；默认值=70
+        count: 2                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默，默认值=120
+
       - type: liveness               # 线程池活性
-        enabled: true
-        threshold: 80                # 报警阈值，默认 70，意思是活性达到70%告警
-    
+        threshold: 80                # 报警阈值，意思是活性达到70%告警；默认值=70
+        count: 3                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
+
       - type: reject                 # 触发任务拒绝告警
-        enabled: true
-        threshold: 100               # 默认阈值10
-    
+        count: 1                     # 在一个统计周期内，如果触发拒绝策略次数达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
+
       - type: run_timeout            # 任务执行超时告警
-        enabled: true
-        threshold: 100               # 默认阈值10
-    
+        count: 20                    # 在一个统计周期内，如果执行超时次数达到 count，则触发报警；默认值=10
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 30            # 报警静默时间（单位：s），0表示不静默；默认值=120
+
       - type: queue_timeout          # 任务排队超时告警
-        enabled: true
-        threshold: 100               # 默认阈值10
+        count: 5                     # 在一个统计周期内，如果排队超时次数达到 count，则触发报警；默认值=10
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
   
   # 线程池配置      
   executors:                               # 动态线程池配置，都有默认值，采用默认值的可以不配置该项，减少配置量
@@ -184,30 +189,41 @@ dynamictp.globalExecutorProps.awaitTerminationSeconds=3
 dynamictp.globalExecutorProps.taskWrapperNames=swTrace,ttl,mdc
 dynamictp.globalExecutorProps.queueTimeout=300
 dynamictp.globalExecutorProps.runTimeout=300
+# 核心参数变更通知
 dynamictp.globalExecutorProps.notifyItems[0].type=change
-dynamictp.globalExecutorProps.notifyItems[0].enabled=true
+dynamictp.globalExecutorProps.notifyItems[0].silencePeriod=120
 
+# 队列容量使用率报警
 dynamictp.globalExecutorProps.notifyItems[1].type=capacity
-dynamictp.globalExecutorProps.notifyItems[1].enabled=true
 dynamictp.globalExecutorProps.notifyItems[1].threshold=80
-dynamictp.globalExecutorProps.notifyItems[1].platformIds=2
-dynamictp.globalExecutorProps.notifyItems[1].interval=120
+dynamictp.globalExecutorProps.notifyItems[1].count=2
+dynamictp.globalExecutorProps.notifyItems[1].period=30
+dynamictp.globalExecutorProps.notifyItems[1].silencePeriod=0
 
+# 线程池活性报警
 dynamictp.globalExecutorProps.notifyItems[2].type=liveness
-dynamictp.globalExecutorProps.notifyItems[2].enabled=true
 dynamictp.globalExecutorProps.notifyItems[2].threshold=80
+dynamictp.globalExecutorProps.notifyItems[2].count=3
+dynamictp.globalExecutorProps.notifyItems[2].period=30
+dynamictp.globalExecutorProps.notifyItems[2].silencePeriod=0
 
+# 拒绝策略触发报警
 dynamictp.globalExecutorProps.notifyItems[3].type=reject
-dynamictp.globalExecutorProps.notifyItems[3].enabled=true
-dynamictp.globalExecutorProps.notifyItems[3].threshold=100
+dynamictp.globalExecutorProps.notifyItems[3].count=1
+dynamictp.globalExecutorProps.notifyItems[3].period=30
+dynamictp.globalExecutorProps.notifyItems[3].silencePeriod=0
 
+# 任务执行超时报警
 dynamictp.globalExecutorProps.notifyItems[4].type=run_timeout
-dynamictp.globalExecutorProps.notifyItems[4].enabled=true
-dynamictp.globalExecutorProps.notifyItems[4].threshold=100
+dynamictp.globalExecutorProps.notifyItems[4].count=20
+dynamictp.globalExecutorProps.notifyItems[4].period=30
+dynamictp.globalExecutorProps.notifyItems[4].silencePeriod=30
 
+# 任务排队超时报警
 dynamictp.globalExecutorProps.notifyItems[5].type=queue_timeout
-dynamictp.globalExecutorProps.notifyItems[5].enabled=true
-dynamictp.globalExecutorProps.notifyItems[5].threshold=100
+dynamictp.globalExecutorProps.notifyItems[5].count=5
+dynamictp.globalExecutorProps.notifyItems[5].period=30
+dynamictp.globalExecutorProps.notifyItems[5].silencePeriod=0
 
 # 线程池配置      
 dynamictp.executors[0].threadPoolName=dtpExecutor1         # 线程池名称，必填

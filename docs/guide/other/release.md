@@ -12,6 +12,168 @@ star: true
 ---
 
 ::: tip
+## v1.2.1 发版记录
+
+### v1.2.1 升级注意事项
+
+#### DtpEndpoint 端点名称修改
+
+实时指标监控端点名称从 `dynamic-tp` 修改为 `dynamictp`，消除 springboot 的非法字符 warn 警告。
+
+#### 告警规则重构
+
+v1.2.1 之前版本里告警规则比较简单，通过 `threshold` 和 `interval` 字段来控制。
+
+```yml
+dynamictp:
+  # 全局配置
+  globalExecutorProps:                        # 线程池配置 > 全局配置 > 字段默认值
+    rejectedHandlerType: CallerRunsPolicy
+    queueType: VariableLinkedBlockingQueue
+    waitForTasksToCompleteOnShutdown: true
+    awaitTerminationSeconds: 3
+    taskWrapperNames: ["swTrace", "ttl", "mdc"]
+    queueTimeout: 300
+    runTimeout: 300
+    notifyItems:                     # 报警项，不配置自动会按默认值（查看源码NotifyItem类）配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
+      - type: change
+        interval: 10
+
+      - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
+        threshold: 80                # 报警阈值，默认70，意思是队列使用率达到70%告警
+        interval: 120                # 报警间隔（单位：s），默认120
+
+      - type: liveness               # 线程池活性
+        threshold: 80                # 报警阈值，默认 70，意思是活性达到70%告警
+        interval: 120
+
+      - type: reject                 # 触发任务拒绝告警
+        threshold: 1               # 默认阈值10
+        interval: 120
+
+      - type: run_timeout            # 任务执行超时告警
+        threshold: 100               # 默认阈值10
+        interval: 120
+
+      - type: queue_timeout          # 任务排队超时告警
+        threshold: 100               # 默认阈值10
+        interval: 120
+```
+
+比如对于 capacity 项：**语义为当线程池队列容量达到 80%时触发一次告警，告警后 120s 内再产生的报警保持静默。**
+
+设计的比较草率，有几个问题：
+
+- 数据统计需要限定在一定的时间窗口内，过期需重新计数，此处 interval 只用在了静默处理上，没统计窗口的概念
+
+- 只要阈值达到了就会产生一次报警，更好的做法应该是达到阈值的次数达到某个值才算一个异常，触发一次报警
+
+- 无效告警多，静默不能关闭
+
+在 v1.2.1 版本里，我们重构了告警规则，引入 `threshold`、`count`、`period`、`silencePeriod` 四个配置字段。
+
+目前的告警语义：**对于某一个告警项，在一定的统计窗口（period）内，达到阈值（threshold）的次数达到某个值（count）时才算为一个有效的异常，触发一次报警。告警后（silencePeriod）内再产生的报警保持静默，且静默可以关闭。**
+
+```yml
+dynamictp:
+  globalExecutorProps:
+    rejectedHandlerType: CallerRunsPolicy
+    queueType: VariableLinkedBlockingQueue
+    waitForTasksToCompleteOnShutdown: true
+    awaitTerminationSeconds: 3
+    taskWrapperNames: ["swTrace", "ttl", "mdc"]
+    queueTimeout: 300
+    runTimeout: 300
+    notifyItems:                     # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
+      - type: change                 # 线程池核心参数变更通知
+        silencePeriod: 120           # 通知静默时间（单位：s），默认值1，0表示不静默
+
+      - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
+        threshold: 80                # 报警阈值，意思是队列使用率达到70%告警；默认值=70
+        count: 2                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默，默认值=120
+
+      - type: liveness               # 线程池活性
+        threshold: 80                # 报警阈值，意思是活性达到70%告警；默认值=70
+        count: 3                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
+
+      - type: reject                 # 触发任务拒绝告警
+        count: 1                     # 在一个统计周期内，如果触发拒绝策略次数达到 count，则触发报警；默认值=1
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
+
+      - type: run_timeout            # 任务执行超时告警
+        count: 20                    # 在一个统计周期内，如果执行超时次数达到 count，则触发报警；默认值=10
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 30            # 报警静默时间（单位：s），0表示不静默；默认值=120
+
+      - type: queue_timeout          # 任务排队超时告警
+        count: 5                     # 在一个统计周期内，如果排队超时次数达到 count，则触发报警；默认值=10
+        period: 30                   # 报警统计周期（单位：s），默认值=120
+        silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
+```
+
+#### Feature
+
+- 新增 jmh benchmark 基准测试模块。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/545
+```
+
+#### Refactor
+
+- 移除 cglib，动态代理采用 bytebuddy 重构。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/538
+```
+
+- 重构告警规则，减少无用告警，告警更可控。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/553
+```
+
+- 实时监控指标暴露的端点名称从 dynamic-tp 修改为 dynamictp，消除 springboot 的 warn 警告
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/542
+```
+
+#### Bugfix
+
+- 修复 springboot devtool restart 后 DtpMonitor 中线程池被关闭报错拒绝任务问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/529
+```
+
+- 修复如果未引入 jackson-datatype-jsr310 会导致 jackson 异常并且无提示问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/534
+```
+
+- 优化潜在的 NPE 异常。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/537
+```
+
+#### Dependency
+
+- sofa-rpc 升级，5.9.1 -> 5.12.0
+- apache-dubbo 升级，3.0.7 -> 3.0.14
+- apollo 升级，1.5.0 -> 2.0.0
+- skywalking 升级，8.11.0 -> 9.1.0
+- tars 升级，1.7.2 -> 1.7.3
+:::
+
+::: tip
 ## v1.2.0 发版记录
 
 v1.1.9 及之前版本核心模块强依赖 Spring，代码中用到了不少 Spring 的特性，这样不利于其他非 Spring 项目的接入集成。
@@ -141,7 +303,7 @@ https://gitee.com/dromara/dynamic-tp/issues/IAPNE8
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-extension-agent</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
@@ -209,7 +371,7 @@ https://github.com/dromara/dynamic-tp/issues/474
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-spring-boot-starter-adapter-liteflow</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 

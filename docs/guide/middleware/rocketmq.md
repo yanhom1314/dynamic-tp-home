@@ -26,7 +26,7 @@ SpringBoot1x、2x 用此依赖
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-spring-boot-starter-adapter-rocketmq</artifactId>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 SpringBoot3x 用此依赖
@@ -35,7 +35,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-adapter-rocketmq</artifactId>
-     <version>1.2.0-x</version>
+     <version>1.2.1-x</version>
  </dependency>
  ```
 2. 配置文件中配置 rocketmq 线程池
@@ -54,30 +54,35 @@ dynamictp:
       queueTimeout: 100
       platformIds: [1,2]               # 通知报警平台id，不配置默认拿上层platforms配置的所有平台
       notifyItems:                     # 报警项，不配置自动会按默认值配置（变更通知、容量报警、活性报警、拒绝报警、任务超时报警）
-        - type: change
-          enabled: true
+        - type: change                 # 线程池核心参数变更通知
+          silencePeriod: 120           # 通知静默时间（单位：s），默认值1，0表示不静默
 
         - type: capacity               # 队列容量使用率，报警项类型，查看源码 NotifyTypeEnum枚举类
-          enabled: true
-          threshold: 80                # 报警阈值，默认70，意思是队列使用率达到70%告警
-          platformIds: [2]             # 可选配置，本配置优先级 > 所属线程池platformIds > 全局配置platforms
-          interval: 120                # 报警间隔（单位：s），默认120
+          threshold: 80                # 报警阈值，意思是队列使用率达到70%告警；默认值=70
+          count: 2                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+          period: 30                   # 报警统计周期（单位：s），默认值=120
+          silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默，默认值=120
 
         - type: liveness               # 线程池活性
-          enabled: true
-          threshold: 80                # 报警阈值，默认 70，意思是活性达到70%告警
+          threshold: 80                # 报警阈值，意思是活性达到70%告警；默认值=70
+          count: 3                     # 在一个统计周期内，如果触发阈值的数量达到 count，则触发报警；默认值=1
+          period: 30                   # 报警统计周期（单位：s），默认值=120
+          silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
 
         - type: reject                 # 触发任务拒绝告警
-          enabled: true
-          threshold: 100               # 默认阈值10
+          count: 1                     # 在一个统计周期内，如果触发拒绝策略次数达到 count，则触发报警；默认值=1
+          period: 30                   # 报警统计周期（单位：s），默认值=120
+          silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
 
         - type: run_timeout            # 任务执行超时告警
-          enabled: true
-          threshold: 100               # 默认阈值10
+          count: 20                    # 在一个统计周期内，如果执行超时次数达到 count，则触发报警；默认值=10
+          period: 30                   # 报警统计周期（单位：s），默认值=120
+          silencePeriod: 30            # 报警静默时间（单位：s），0表示不静默；默认值=120
 
         - type: queue_timeout          # 任务排队超时告警
-          enabled: true
-          threshold: 100               # 默认阈值10
+          count: 5                     # 在一个统计周期内，如果排队超时次数达到 count，则触发报警；默认值=10
+          period: 30                   # 报警统计周期（单位：s），默认值=120
+          silencePeriod: 0             # 报警静默时间（单位：s），0表示不静默；默认值=120
 ```
 
 3. 启动日志

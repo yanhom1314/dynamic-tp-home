@@ -41,7 +41,7 @@ SpringBoot1x、2x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-cloud-starter-zookeeper</artifactId>
-     <version>1.2.0</version>
+     <version>1.2.1</version>
  </dependency>
  ```
 SpringBoot3x 用此依赖
@@ -50,7 +50,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-cloud-starter-zookeeper</artifactId>
-     <version>1.2.0-x</version>
+     <version>1.2.1-x</version>
  </dependency>
  ```
 ### 线程池配置文件
@@ -94,30 +94,41 @@ dynamictp.globalExecutorProps.awaitTerminationSeconds=3
 dynamictp.globalExecutorProps.taskWrapperNames=swTrace,ttl,mdc
 dynamictp.globalExecutorProps.queueTimeout=300
 dynamictp.globalExecutorProps.runTimeout=300
+# 核心参数变更通知
 dynamictp.globalExecutorProps.notifyItems[0].type=change
-dynamictp.globalExecutorProps.notifyItems[0].enabled=true
+dynamictp.globalExecutorProps.notifyItems[0].silencePeriod=120
 
+# 队列容量使用率报警
 dynamictp.globalExecutorProps.notifyItems[1].type=capacity
-dynamictp.globalExecutorProps.notifyItems[1].enabled=true
 dynamictp.globalExecutorProps.notifyItems[1].threshold=80
-dynamictp.globalExecutorProps.notifyItems[1].platformIds=2
-dynamictp.globalExecutorProps.notifyItems[1].interval=120
+dynamictp.globalExecutorProps.notifyItems[1].count=2
+dynamictp.globalExecutorProps.notifyItems[1].period=30
+dynamictp.globalExecutorProps.notifyItems[1].silencePeriod=0
 
+# 线程池活性报警
 dynamictp.globalExecutorProps.notifyItems[2].type=liveness
-dynamictp.globalExecutorProps.notifyItems[2].enabled=true
 dynamictp.globalExecutorProps.notifyItems[2].threshold=80
+dynamictp.globalExecutorProps.notifyItems[2].count=3
+dynamictp.globalExecutorProps.notifyItems[2].period=30
+dynamictp.globalExecutorProps.notifyItems[2].silencePeriod=0
 
+# 拒绝策略触发报警
 dynamictp.globalExecutorProps.notifyItems[3].type=reject
-dynamictp.globalExecutorProps.notifyItems[3].enabled=true
-dynamictp.globalExecutorProps.notifyItems[3].threshold=100
+dynamictp.globalExecutorProps.notifyItems[3].count=1
+dynamictp.globalExecutorProps.notifyItems[3].period=30
+dynamictp.globalExecutorProps.notifyItems[3].silencePeriod=0
 
+# 任务执行超时报警
 dynamictp.globalExecutorProps.notifyItems[4].type=run_timeout
-dynamictp.globalExecutorProps.notifyItems[4].enabled=true
-dynamictp.globalExecutorProps.notifyItems[4].threshold=100
+dynamictp.globalExecutorProps.notifyItems[4].count=20
+dynamictp.globalExecutorProps.notifyItems[4].period=30
+dynamictp.globalExecutorProps.notifyItems[4].silencePeriod=30
 
+# 任务排队超时报警
 dynamictp.globalExecutorProps.notifyItems[5].type=queue_timeout
-dynamictp.globalExecutorProps.notifyItems[5].enabled=true
-dynamictp.globalExecutorProps.notifyItems[5].threshold=100
+dynamictp.globalExecutorProps.notifyItems[5].count=5
+dynamictp.globalExecutorProps.notifyItems[5].period=30
+dynamictp.globalExecutorProps.notifyItems[5].silencePeriod=0
 
 # 线程池配置      
 dynamictp.executors[0].threadPoolName=dtpExecutor1         # 线程池名称，必填
