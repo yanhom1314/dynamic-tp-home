@@ -14,13 +14,13 @@ star: true
 ::: tip
 ## v1.2.1 发版记录
 
-### v1.2.1 升级注意事项
+**v1.2.1 升级注意事项**
 
-#### DtpEndpoint 端点名称修改
+- DtpEndpoint 端点名称修改
 
 实时指标监控端点名称从 `dynamic-tp` 修改为 `dynamictp`，消除 springboot 的非法字符 warn 警告。
 
-#### 告警规则重构
+- 告警规则重构
 
 v1.2.1 之前版本里告警规则比较简单，通过 `threshold` 和 `interval` 字段来控制。
 
@@ -180,7 +180,7 @@ v1.1.9 及之前版本核心模块强依赖 Spring，代码中用到了不少 Sp
 
 v1.2.0 是一个大版本，主要功能是对 Spring 做了解耦，Spring 相关特性以独立 Module 的形式提供，其他非 Spring 框架集成 DynamicTp 时通过引入核心模块即可。
 
-### v1.2.0 升级注意事项
+**v1.2.0 升级注意事项**
 
 - Spring 启动类注解移动到 Spring 模块中，包路径有调整，需重新导入
 
