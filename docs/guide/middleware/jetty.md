@@ -31,7 +31,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-adapter-webserver</artifactId>
-     <version>1.2.1-x</version>
+     <version>1.2.2-x</version>
  </dependency>
  ```
 2. 配置文件中配置 jetty 线程池
