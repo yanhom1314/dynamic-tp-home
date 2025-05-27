@@ -58,6 +58,8 @@ star: true
 - [东方福利网](https://www.dongfangfuli.com/)
 
 - [哔哩哔哩](https://www.bilibili.com/)
+
+- [阳光电源](https://www.sungrowpower.com/) 
 :::
 
 ### 登记
