@@ -27,7 +27,7 @@ SpringBoot1x、2x、Spring5x 用此依赖
   <dependency>
       <groupId>org.dromara.dynamictp</groupId>
       <artifactId>dynamic-tp-extension-agent</artifactId>
-      <version>1.2.1</version>
+      <version>1.2.2</version>
   </dependency>
  ```
 

@@ -330,6 +330,12 @@ export default sidebar([
         icon: "flow",
         collapsable: false,
         link: "/guide/middleware/liteflow"
+      },
+      {
+        text: "thrift 线程池管理",
+        icon: "Thrift",
+        collapsable: false,
+        link: "/guide/middleware/thrift"
       }
     ],
   },

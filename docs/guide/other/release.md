@@ -303,7 +303,7 @@ https://gitee.com/dromara/dynamic-tp/issues/IAPNE8
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-extension-agent</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 </dependency>
 ```
 
@@ -371,7 +371,7 @@ https://github.com/dromara/dynamic-tp/issues/474
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-spring-boot-starter-adapter-liteflow</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
 </dependency>
 ```
 

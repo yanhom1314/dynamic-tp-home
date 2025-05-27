@@ -41,7 +41,7 @@ SpringBoot1x、2x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-zookeeper</artifactId>
-     <version>1.2.1</version>
+     <version>1.2.2</version>
  </dependency>
  ```
 SpringBoot3x 用此依赖
@@ -50,7 +50,7 @@ SpringBoot3x 用此依赖
  <dependency>
      <groupId>org.dromara.dynamictp</groupId>
      <artifactId>dynamic-tp-spring-boot-starter-zookeeper</artifactId>
-     <version>1.2.1-x</version>
+     <version>1.2.2-x</version>
  </dependency>
  ```
 ### 线程池配置文件

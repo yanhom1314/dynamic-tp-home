@@ -93,7 +93,7 @@ SpringBoot1x、2x、Spring6x 以下用此 Maven bom
 <dependency>
     <groupId>org.dromara.dynamictp</groupId>
     <artifactId>dynamic-tp-dependencies</artifactId>
-    <version>1.2.1</version>
+    <version>1.2.2</version>
     <type>pom</type>
     <scope>import</scope>
 </dependency>
