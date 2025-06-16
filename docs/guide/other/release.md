@@ -12,6 +12,51 @@ star: true
 ---
 
 ::: tip
+
+## v1.2.2 发版记录
+
+#### Feature
+
+- adapter 模块新增对 thrift server 端线程池的管理，by@devin。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/570
+```
+
+#### Refactor
+
+- 重构 adapter-hystrix 实现方式，by@devin。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/571
+```
+
+#### Optimize
+
+- 告警发送优化，增加 http 代理配置
+
+```
+https://github.com/dromara/dynamic-tp/pull/560
+```
+
+- 支持 springboot 1.x 版本 tomcat 线程池管理
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/573
+```
+
+- 优化 adapter 模块日志输出
+
+#### Bugfix
+
+- 修复当没有配置 platforms 字段，刷新时报 npe 问题。
+
+```xml
+https://github.com/dromara/dynamic-tp/pull/572
+```
+:::
+
+::: tip
 ## v1.2.1 发版记录
 
 **v1.2.1 升级注意事项**
