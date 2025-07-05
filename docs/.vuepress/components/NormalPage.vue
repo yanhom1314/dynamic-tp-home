@@ -2,11 +2,11 @@
   <NormalPage>
     <template #contentBefore>
       <AdPage content="content" />
-      <div class="zsxq">
-        <a href="https://t.zsxq.com/annca" target="_blank">
-          <img src="/images/sponsor/zsxq-ad.png" width="776px">
-        </a>
-      </div>
+      <!-- <div class="zsxq">-->
+        <!-- <a href="https://t.zsxq.com/annca" target="_blank">-->
+          <!-- <img src="/images/sponsor/zsxq-ad.png" width="776px">-->
+        <!-- </a>-->
+      <!-- </div>-->
     </template>
   </NormalPage>
 </template>
