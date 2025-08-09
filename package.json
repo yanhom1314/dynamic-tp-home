@@ -14,7 +14,7 @@
   },
   "dependencies": {
       "@mdit/plugin-container": "0.16.0",
-      "@vuepress/bundler-vite": "2.0.0-rc.20",
+      "@vuepress/bundler-vite": "2.0.0-rc.23",
       "@vuepress/plugin-docsearch": "2.0.0-rc.82",
       "chart.js": "^4.4.8",
       "sass": "^1.85.1",
