@@ -12,24 +12,27 @@
     "packages:check-update": "pnpm dlx npm-check-updates -u --deep --timeout 600000",
     "packages:update": "pnpm dlx vp-update"
   },
-  "packageManager": "pnpm@8.15.1",
   "dependencies": {
-    "@mdit/plugin-container": "0.8.0",
-    "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "@vuepress/client": "2.0.0-rc.9",
-    "@vuepress/plugin-docsearch": "2.0.0-rc.21",
-    "@vuepress/utils": "2.0.0-rc.9",
-    "chart.js": "^4.4.2",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vue3-carousel": "^0.3.1",
-    "vuepress": "2.0.0-rc.9",
-    "vuepress-theme-hope": "2.0.0-rc.32"
-  },
-  "devDependencies": {
-    "@vuepress/plugin-slimsearch": "2.0.0-rc.61",
-    "prettier": "3.2.5"
-  },
+      "@mdit/plugin-container": "0.16.0",
+      "@vuepress/bundler-vite": "2.0.0-rc.20",
+      "@vuepress/plugin-docsearch": "2.0.0-rc.82",
+      "chart.js": "^4.4.8",
+      "sass": "^1.85.1",
+      "vidstack": "^1.12.13",
+      "vue": "^3.5.16",
+      "vue3-carousel": "^0.14.0",
+      "vuepress": "2.0.0-rc.23",
+      "vuepress-theme-hope": "2.0.0-rc.90"
+    },
+   "devDependencies": {
+      "markdownlint-cli2": "^0.17.2",
+      "@vuepress/plugin-slimsearch": "2.0.0-rc.61",
+      "prettier": "3.5.3"
+    },
+   "engines": {
+      "node": ">=18.19.0"
+    },
+  "packageManager": "pnpm@10.5.2",
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
