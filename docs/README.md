@@ -134,10 +134,13 @@ DynamicTp 于 2024 年获得 "GitCode G-Star 毕业项目" 认证！
 <br/>
 <br/>
 
-# 🌏 知识星球
-<a href="https://t.zsxq.com/annca" target="_blank">
-    <img class="no-zoom" src="/images/sponsor/zsxq.png" width="50%" height="50%"/>
-</a>
+[//]: # (# 🌏 知识星球)
+
+[//]: # (<a href="https://t.zsxq.com/annca" target="_blank">)
+
+[//]: # (    <img class="no-zoom" src="/images/sponsor/zsxq.png" width="50%" height="50%"/>)
+
+[//]: # (</a>)
 
 # ⏳ 技术架构 
 

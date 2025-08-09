@@ -15,9 +15,6 @@ star: true
 
 按登记时间排序
 
-::: tip 用户
-
-- [完美世界](https://www.pwrd.com)
 
 - [实在智能](https://www.ai-indeed.com)
 
