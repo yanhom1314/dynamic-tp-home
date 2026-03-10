@@ -41,11 +41,11 @@ features:
 # 💓 特别赞助
 
 <SiteInfo
-    name="引迈信息"
-    desc="JNPF低代码开发平台，技术双引擎系统，无限制业务场景，永久使用权，全源码交付"
-    url="https://www.jnpfsoft.com?from=dynamictp"
-    logo="/images/sponsor/jnpfsoft-logo.png"
-    preview="/images/sponsor/jnpfsoft-site.png"
+    name="Easysearch"
+    desc="企业级的分布式搜索型数据库"
+    url="https://easysearch.cn"
+    logo="/images/sponsor/Easysearch-Logo.png"
+    preview="/images/sponsor/easysearch-preview.png"
     style="max-width:300px"
 />
 
