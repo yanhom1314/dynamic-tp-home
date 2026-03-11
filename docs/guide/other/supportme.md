@@ -34,9 +34,9 @@ star: true
 
 - 赞助达到 50 元，您将获得 [赞助者列表](/guide/other/supportme.html#赞助人列表) 的永久留名，并可在赞助者列表里附上投放链接。
 
-- 赞助达 500 元，您将获得 [dynamictp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达 1 年）。
+- 赞助达 800 元，您将获得 [dynamictp](https://dynamictp.cn/) 文档首页的特别赞助广告展示栏位（长达 1 年）。
 
-- 赞助达 1000 元，您将获得 [dynamictp](https://dynamictp.cn/) 所有文档页面的广告栏位，包括 gitee、github（长达 1 年），并且在 1700+ 社群里 @ 全体推广一次。
+- 赞助达 1500 元，您将获得 [dynamictp](https://dynamictp.cn/) 所有文档页面的广告栏位，包括 gitee、github（长达 1 年），并且在 1700+ 社群里 @ 全体推广一次。
 :::
 
 目前 dynamictp 官网的流量日均 PV 在 2w 左右，日均 UV 900 左右
