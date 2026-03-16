@@ -44,7 +44,7 @@ features:
     name="Easysearch"
     desc="企业级的分布式搜索型数据库"
     url="https://easysearch.cn"
-    logo="/images/sponsor/Easysearch-Logo.png"
+    logo="/images/sponsor/easysearch_logo.png"
     preview="/images/sponsor/easysearch-preview.png"
     style="max-width:300px"
 />
