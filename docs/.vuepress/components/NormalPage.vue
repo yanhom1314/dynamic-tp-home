@@ -1,7 +1,6 @@
 <template>
   <NormalPage>
     <template #contentBefore>
-      <AdPage content="content" />
        <div class="zsxq">
          <a href="https://easysearch.cn/" target="_blank">
           <img src="/images/sponsor/easysearch-top.png" width="776px">
@@ -12,7 +11,6 @@
 </template>
 <script setup lang="ts">
 import NormalPage from "vuepress-theme-hope/components/NormalPage.js";
-import AdPage from "./AdPage.vue"
 </script>
 
 <style>
